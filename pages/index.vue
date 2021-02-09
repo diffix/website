@@ -8,7 +8,7 @@
             open-diffix
           </span>
         </h1>
-        <h2 class="mx-12 mt-4 text-2xl text-center">
+        <h2 class="mx-12 mt-8 text-2xl text-center">
           Free and Open Dynamic Anonymization for PostgreSQL
         </h2>
       </header>
