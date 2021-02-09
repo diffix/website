@@ -1,5 +1,5 @@
 <template>
-  <div class="text-white transition-all bg-gray-900 rounded-lg shadow-lg dark:bg-shamrock-800 hover:bg-gray-800 w-96">
+  <div class="text-white transition-all duration-500 bg-gray-900 rounded-lg shadow-lg dark:hover:bg-shamrock-900 dark:bg-shamrock-800 hover:bg-gray-800 w-96">
     <div class="flex px-2 pt-2 pb-2 border-b border-gray-700">
       <div class="w-3 h-3 bg-red-500 rounded-full hover:bg-red-400"></div>
       <div class="w-3 h-3 ml-1 bg-yellow-500 rounded-full hover:bg-yellow-400"></div>
