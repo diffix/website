@@ -1,7 +1,8 @@
 <template>
   <div class="flex flex-col h-screen dark:text-gray-300">
-    <div class="flex-grow w-full">
-      <header class="max-w-2xl pt-20 mx-auto transition-all duration-500 lg:pt-60">
+    <div class="flex-grow"></div>
+    <div class="flex-grow-0 w-full">
+      <header class="max-w-2xl pt-20 mx-auto transition-all duration-500">
         <h1 class="block font-bold text-center text-white transition-all duration-500 text-8xl w-100 md:text-9xl">
           <span class="text-transparent bg-gradient-to-r bg-clip-text from-pink-500 to-purple-500 md:from-shamrock-500 md:to-royalblue-500">
             open-diffix
@@ -29,7 +30,9 @@
       </div>
     </div>
 
-    <footer class="mx-auto my-10 text-sm text-gray-500">
+    <div class="flex-grow"></div>
+
+    <footer class="flex-grow-0 pt-20 pb-10 mx-auto text-sm text-gray-500">
       Copyright MPI-SWS for Software Systems |
       <a
         href="https://imprint.mpi-klsb.mpg.de/sws/www.mpi-sws.org/"
