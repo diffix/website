@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full max-w-sm text-white bg-gray-900 rounded-lg shadow-lg max-w-96 dark:bg-shamrock-800">
+  <div class="w-full max-w-sm overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg max-w-96 dark:bg-shamrock-800">
     <div class="flex px-2 pt-2 pb-2 transition-colors border-b border-gray-700">
       <div class="w-3 h-3 bg-red-500 rounded-full hover:bg-red-400"></div>
       <div class="w-3 h-3 ml-1 bg-yellow-500 rounded-full hover:bg-yellow-400"></div>
