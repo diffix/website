@@ -1,5 +1,5 @@
 <template>
-  <div id="mc_embed_signup" class="px-8 py-6 bg-gray-50 dark:bg-gray-800">
+  <div id="mc_embed_signup" class="px-8 py-10 bg-gray-50 dark:bg-gray-800">
     <form
       action="https://open-diffix.us1.list-manage.com/subscribe/post?u=4006b84ec4d64e7ae6f4c8f49&amp;id=bc48f0af67"
       method="post"
@@ -10,7 +10,7 @@
       novalidate
     >
       <div id="mc_embed_signup_scroll">
-        <h2 class="mt-4 text-2xl text-gray-800 dark:text-gray-100">Stay informed - sign up to our mailinglist</h2>
+        <h2 class="text-2xl text-gray-800 dark:text-gray-100">Stay informed - sign up to our mailinglist</h2>
         <div
           id="mergeRow-gdpr"
           class="text-sm mergeRow gdpr-mergeRow content__gdprBlock mc-field-group"
