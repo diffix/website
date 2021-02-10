@@ -20,7 +20,7 @@
             to your software project, and is free to use for most use cases.
           </p>
           <p class="mt-4 font-semibold">
-            It's Postgres as you know it - only anonymous.
+            It's PostgreSQL as you know it - only anonymous.
           </p>
         </div>
         <Terminal class="mx-auto mt-8 text-base lg:mt-0 lg:mx-0 lg:w-1/2" />
