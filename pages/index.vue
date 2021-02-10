@@ -36,7 +36,7 @@
     <footer class="flex-grow-0 pt-20 pb-10 mx-auto text-sm text-gray-500">
       Copyright MPI-SWS for Software Systems |
       <a
-        href="https://imprint.mpi-klsb.mpg.de/sws/www.mpi-sws.org/"
+        href="https://imprint.mpi-klsb.mpg.de/sws/www.open-diffix.org/"
         class="text-gray-800 underline dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-300"
       >
         Imprint
