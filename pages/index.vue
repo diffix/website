@@ -26,7 +26,8 @@
         <Terminal class="mx-auto mt-8 text-base lg:mt-0 lg:mx-0 lg:w-1/2" />
       </div>
 
-      <div>
+      <div class="max-w-xl px-4 mx-auto mt-24">
+        <Mailinglist />
       </div>
     </div>
 
