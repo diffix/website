@@ -1,5 +1,8 @@
 # Open Diffix website
 
+This page is automatically deployed to github pages
+upon pushing code to github.
+
 ## Build Setup
 
 ```bash
