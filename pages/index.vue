@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-screen overflow-scroll dark:text-gray-300">
+  <div class="flex flex-col h-screen overflow-y-auto dark:text-gray-300">
     <div class="flex-grow"></div>
     <div class="flex-grow-0 w-full">
       <header class="max-w-2xl pt-20 mx-auto transition-all duration-500">
