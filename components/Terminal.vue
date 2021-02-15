@@ -42,8 +42,7 @@ export default {
     const queries = [
       {
         query: `count(dogs)
-  FROM dalmatians;
-        `,
+  FROM dalmatians`,
         answer: "   103"
       },
       {
