@@ -2,6 +2,9 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
 
+  // Only required until we re-enable the domain for our website
+  router: { base: '/website' },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "open-diffix - Free and Open Dynamic Anonymization for PostgreSQL",
