@@ -9,16 +9,13 @@
       <pre>
 $ psql
 
-# SELECT zip_code, count(*)
-  FROM country
-  GROUP BY zip_code;
+# SELECT count(dogs)
+  FROM dalmatians
 
- zip_code | count
-----------+-------
-    10119 |   101
-    67541 |    24
-    80539 |  1911
-(3 rows)
+ count
+-------
+   103
+(1 row)
       </pre>
       # <span class="blink">_</span>
     </div>
