@@ -6,17 +6,8 @@
       <div class="w-3 h-3 ml-1 bg-green-500 rounded-full hover:bg-green-400"></div>
     </div>
     <div class="p-2 font-mono text-gray-300 bg-gray-800 dark:bg-shamrock-900">
-      <pre>
-$ psql
-
-# SELECT count(dogs)
-  FROM dalmatians
-
- count
--------
-   103
-(1 row)
-      </pre>
+      <pre>$ psql</pre>
+      <pre>{{ query }}</pre>
       # <span class="blink">_</span>
     </div>
   </div>
@@ -34,3 +25,44 @@ $ psql
   }
 }
 </style>
+
+<script>
+export default {
+  data: function () {
+    const queries = [
+      `
+# SELECT count(dogs)
+  FROM dalmatians;
+
+ count
+-------
+   103
+(1 row)
+      `, `
+# SELECT count(samurai)
+  FROM kurosawa_movies;
+
+ count
+-------
+     6
+      `, `
+# SELECT count(soldiers)
+  FROM movie_dirty_dozen;
+
+ count
+-------
+    11
+      `, `
+# SELECT count(citizens)
+  FROM citizen_kane;
+
+ count
+-------
+  null
+      `
+    ];
+    const query = queries[Math.floor(Math.random() * queries.length)];
+    return {query: query}
+  }
+}
+</script>
