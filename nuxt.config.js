@@ -3,7 +3,9 @@ export default {
   target: "static",
 
   // Only required until we re-enable the domain for our website
-  router: { base: '/website' },
+  router: {
+    base: process.env.NODE_ENV === "production" ? "/website" : "/"
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
