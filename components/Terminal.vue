@@ -45,6 +45,7 @@ export default {
  count
 -------
      6
+(1 row)
       `, `
 # SELECT count(soldiers)
   FROM movie_dirty_dozen;
@@ -52,6 +53,7 @@ export default {
  count
 -------
     11
+(1 row)
       `, `
 # SELECT count(citizens)
   FROM citizen_kane;
@@ -59,6 +61,7 @@ export default {
  count
 -------
   null
+(1 row)
       `
     ];
     const query = queries[Math.floor(Math.random() * queries.length)];
