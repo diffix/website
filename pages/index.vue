@@ -44,8 +44,8 @@
           <a href="https://www.mpi-sws.org">
             <img class="h-16" src="mpi-sws-logo.svg" alt="Max Planck Institute for Software Systems">
           </a>
-          <a href="https://aircloak.com">
-            <img class="h-16" src="aircloak_web.svg" alt="Aircloak GmbH">
+          <a href="https://aircloak.com" class="xl:flex xl:flex-row xl:items-center xl:justify-end xl:w-full xl:h-full">
+            <img class="h-14 xl:h-12" src="aircloak_web.svg" alt="Aircloak GmbH">
           </a>
         </div>
       </div>
