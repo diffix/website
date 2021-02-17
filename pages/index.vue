@@ -29,6 +29,25 @@
       <div class="max-w-xl px-4 mx-auto mt-24">
         <Mailinglist />
       </div>
+
+      <div class="max-w-xl px-4 mx-auto mt-16 xl:max-w-5xl">
+        <h2 class="text-xl text-center text-gray-500">This project is sponsored by</h2>
+
+        <div class="flex flex-col items-center mx-auto mt-12 space-y-8 xl:space-y-0 xl:mt-8 xl:items-end justify-items-start xl:flex-none xl:grid xl:grid-cols-3 xl:gap-6">
+          <div class="">
+            <a href="https://www.mpg.de">
+              <img class="inline-block h-16" src="mpg-logo.svg" alt="Max-Planck-Gesellschaft">
+              <span class="text-lg">Max-Planck-Gesellschaft</span>
+            </a>
+          </div>
+          <a href="https://www.mpi-sws.org">
+            <img class="h-16" src="mpi-sws-logo.svg" alt="Max Planck Institute for Software Systems">
+          </a>
+          <a href="https://aircloak.com">
+            <img class="h-16" src="aircloak_web.svg" alt="Aircloak GmbH">
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="flex-grow"></div>
