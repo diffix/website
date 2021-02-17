@@ -3,10 +3,8 @@
     <div class="flex-grow"></div>
     <div class="flex-grow-0 w-full">
       <header class="max-w-2xl pt-20 mx-auto transition-all duration-500">
-        <h1 class="block font-bold text-center text-white transition-all duration-500 text-8xl w-100 md:text-9xl">
-          <span class="text-transparent bg-gradient-to-r bg-clip-text from-pink-500 to-purple-500 md:from-shamrock-500 md:to-royalblue-500">
-            open-diffix
-          </span>
+        <h1 class="block text-center text-8xl w-100 md:text-9xl">
+          <OpenDiffixWordmark />
         </h1>
         <h2 class="mx-12 mt-8 text-2xl text-center">
           Free and Open Dynamic Anonymization for PostgreSQL
@@ -32,11 +30,7 @@
 
       <div class="max-w-xl px-4 mx-auto mt-24 xl:max-w-5xl">
         <h2 class="text-xl text-center text-gray-500">
-          <span class="font-bold text-center text-white transition-all duration-500">
-            <span class="text-transparent bg-gradient-to-r bg-clip-text from-pink-500 to-purple-500 md:from-shamrock-500 md:to-royalblue-500">
-              open-diffix
-            </span>
-          </span>
+          <OpenDiffixWordmark />
           is sponsored by
         </h2>
 
