@@ -457,7 +457,7 @@
       "url": "_framework\/zh-Hant\/FSharp.Core.resources.dll"
     },
     {
-      "hash": "sha256-x\/jswWyI51xAPrEBGCD+\/5CyOruXTPVyZpYFPu\/DPqw=",
+      "hash": "sha256-Ui12wsw8zwJvUZRl4XNPFECjrQpBKlz8L+2\/kgFdgtk=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -465,5 +465,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "KJUphnBX"
+  "version": "zyCm3T0n"
 };
