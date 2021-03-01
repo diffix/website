@@ -10,6 +10,11 @@ module.exports = {
       "app.html"
     ]
   },
+  variants: {
+    extend: {
+      backgroundImage: ["hover"]
+    }
+  },
   theme: {
     extend: {
       colors: {
