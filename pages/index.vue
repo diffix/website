@@ -24,47 +24,39 @@
         <Terminal class="mx-auto mt-8 text-base lg:mt-0 lg:mx-0 lg:w-1/2" />
       </div>
 
-      <div class="max-w-xl px-4 mx-auto mt-24">
-        <Mailinglist />
+      <div class="flex flex-col items-center max-w-xl px-4 mx-auto mt-32 space-y-4 text-lg">
+        <span>Want to stay informed about the development of <OpenDiffixWordmark />?</span>
+        <NuxtLink to="/newsletter" class="inline-block px-4 py-2 text-2xl text-center text-white transition-all duration-500 rounded-lg active:outline-none active:ring-2 hover:shadow hover:translate-x-12 bg-shamrock-500 hover:bg-gradient-to-r from-pink-500 to-purple-500 md:from-shamrock-500 md:to-royalblue-500">Sign up to our newsletter</NuxtLink>
       </div>
 
-      <div class="max-w-xl px-4 mx-auto mt-24 xl:max-w-5xl">
-        <h2 class="text-xl text-center text-gray-500">
-          <OpenDiffixWordmark />
-          is sponsored by
-        </h2>
+      <div class="flex-grow py-32 mt-32 bg-gray-50">
+        <div class="max-w-xl px-4 mx-auto xl:max-w-5xl">
+          <h2 class="text-xl text-center text-gray-500">
+            <OpenDiffixWordmark />
+            is sponsored by
+          </h2>
 
-        <div class="flex flex-col items-center mx-auto mt-12 space-y-8 xl:space-y-0 xl:mt-8 xl:items-end justify-items-start xl:flex-none xl:grid xl:grid-cols-3 xl:gap-6">
-          <div class="">
-            <a href="https://www.mpg.de">
-              <img class="inline-block h-16" src="mpg-logo.svg" alt="Max-Planck-Gesellschaft">
-              <span class="text-lg">Max-Planck-Gesellschaft</span>
+          <div class="flex flex-col items-center max-w-4xl mx-auto mt-12 space-y-8 xl:space-y-0 xl:mt-8 xl:items-end justify-items-start xl:flex-none xl:grid xl:grid-cols-3 xl:gap-6">
+            <div>
+              <a href="https://www.mpg.de">
+                <img class="inline-block h-12" src="mpg-logo.svg" alt="Max-Planck-Gesellschaft">
+                <span class="text-lg">Max-Planck-Gesellschaft</span>
+              </a>
+            </div>
+            <a href="https://www.mpi-sws.org">
+              <img class="h-12" src="mpi-sws-logo.svg" alt="Max Planck Institute for Software Systems">
+            </a>
+            <a href="https://aircloak.com" class="xl:flex xl:flex-row xl:items-center xl:justify-end xl:w-full xl:h-full">
+              <img class="h-10 xl:h-10" src="aircloak_web.svg" alt="Aircloak GmbH">
             </a>
           </div>
-          <a href="https://www.mpi-sws.org">
-            <img class="h-16" src="mpi-sws-logo.svg" alt="Max Planck Institute for Software Systems">
-          </a>
-          <a href="https://aircloak.com" class="xl:flex xl:flex-row xl:items-center xl:justify-end xl:w-full xl:h-full">
-            <img class="h-14 xl:h-12" src="aircloak_web.svg" alt="Aircloak GmbH">
-          </a>
         </div>
       </div>
+
     </div>
 
     <div class="flex-grow"></div>
 
-    <footer class="flex flex-col flex-grow-0 p-2 pt-20 pb-10 mx-auto text-sm text-gray-500">
-      <span>Copyright MPI-SWS for Software Systems</span>
-      <span class="mx-auto mt-2 space-x-2">
-        <a
-          href="https://imprint.mpi-klsb.mpg.de/sws/open-diffix.org/"
-          class="text-gray-800 underline dark:text-gray-400 hover:text-gray-500 dark:hover:text-gray-200"
-        >Imprint</a>
-        <a
-          href="https://data-protection.mpi-klsb.mpg.de/sws/open-diffix.org"
-          class="text-gray-800 underline dark:text-gray-400 hover:text-gray-500 dark:hover:text-gray-200"
-        >Privacy Policy</a>
-      </span>
-    </footer>
+    <Footer />
   </div>
 </template>
