@@ -34,7 +34,7 @@ $ psql
 
 <script>
 function randomwShortWait() {
-  return 100 + 100 * Math.floor(Math.random() * 2);
+  return 25 + 100 * Math.floor(Math.random() * 2);
 }
 
 export default {
