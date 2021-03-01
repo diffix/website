@@ -4,7 +4,7 @@ export default {
 
   // Only required until we re-enable the domain for our website
   router: {
-    base: process.env.NODE_ENV === "production" ? "/website" : "/"
+    base: "/"
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
