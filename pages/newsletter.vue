@@ -147,8 +147,7 @@
 export default {
   methods: {
     trackSignup() {
-      alert("signup");
-      this.$ackee.action('26e9ae45-09ed-4cd8-bac3-7a385017760b', { key: 'Signup', value: '1' });
+      this.$ackee.action('adce3874-710e-4e55-8872-f4547df40a8e', { key: 'Signup', value: '1' });
     }
   }
 }
