@@ -30,10 +30,18 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
+  ackee: {
+    server: 'https://ackee.open-diffix.org',
+    domainId: '8ba9af76-dd3d-47d0-85fa-9387bc693605',
+    ignoreLocalhost: true,
+    detailed: false
+  },
+
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    "nuxt-ackee"
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

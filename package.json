@@ -15,6 +15,7 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.4.2",
     "autoprefixer": "^9",
+    "nuxt-ackee": "lihbr/nuxt-ackee#090804a0d6e0ba0844527ad57c949e93b2122a2d",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }

@@ -26,7 +26,9 @@
 
       <div class="flex flex-col items-center max-w-xl px-4 mx-auto mt-32 space-y-4 text-lg">
         <span>Want to stay informed about the development of <OpenDiffixWordmark />?</span>
-        <NuxtLink to="/newsletter" class="inline-block px-4 py-2 text-2xl text-center text-white transition-all duration-500 rounded-lg bg-shamrock-500 hover:bg-gradient-to-r from-pink-500 to-purple-500 md:from-shamrock-500 md:to-royalblue-500">Sign up to our newsletter</NuxtLink>
+        <span @click="trackSignupIntent">
+          <NuxtLink to="/newsletter" class="inline-block px-4 py-2 text-2xl text-center text-white transition-all duration-500 rounded-lg bg-shamrock-500 hover:bg-gradient-to-r from-pink-500 to-purple-500 md:from-shamrock-500 md:to-royalblue-500">Sign up to our newsletter</NuxtLink>
+        </span>
       </div>
 
       <div class="flex-grow pt-16 pb-16 mt-32 dark:pb-4 sm:pt-32 sm:pb-32 bg-gray-50 dark:bg-gray-800">
@@ -60,3 +62,13 @@
     <Footer />
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    trackSignupIntent() {
+      this.$ackee.action('26e9ae45-09ed-4cd8-bac3-7a385017760b', { key: 'Signup intent', value: '1' });
+    }
+  }
+}
+</script>

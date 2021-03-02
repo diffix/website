@@ -77,13 +77,15 @@
                     placeholder="you@privacy-aware.com"
                     id="mce-EMAIL"
                   />
-                  <input
-                    type="submit"
-                    value="Subscribe"
-                    name="subscribe"
-                    id="mc-embedded-subscribe"
-                    class="px-2 py-1 border rounded cursor-pointer bg-shamrock-600 border-shamrock-500 hover:bg-gradient-to-r from-pink-500 to-purple-500 md:from-shamrock-500 md:to-royalblue-500 dark:border-shamrock-700 text-gray-50 focus:outline-none focus:ring-2"
-                  />
+                  <span @click="trackSignup">
+                    <input
+                      type="submit"
+                      value="Subscribe"
+                      name="subscribe"
+                      id="mc-embedded-subscribe"
+                      class="px-2 py-1 border rounded cursor-pointer bg-shamrock-600 border-shamrock-500 hover:bg-gradient-to-r from-pink-500 to-purple-500 md:from-shamrock-500 md:to-royalblue-500 dark:border-shamrock-700 text-gray-50 focus:outline-none focus:ring-2"
+                    />
+                  </span>
                 </div>
               </div>
               <div>
@@ -140,3 +142,14 @@
     <Footer />
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    trackSignup() {
+      alert("signup");
+      this.$ackee.action('26e9ae45-09ed-4cd8-bac3-7a385017760b', { key: 'Signup', value: '1' });
+    }
+  }
+}
+</script>
