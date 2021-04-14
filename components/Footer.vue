@@ -1,7 +1,7 @@
 <template>
   <footer class="flex flex-col items-center flex-grow-0 p-2 pt-20 pb-10 mx-auto text-sm text-gray-500">
     <span>
-      If you have questions or want to discuss the project, please reach out to us at
+      If you have questions or want to discuss the project, please contact us at
       <a
         class="text-gray-800 underline dark:text-gray-400 hover:text-gray-500 dark:hover:text-gray-200"
         href="https://mailhide.io/e/vPh7lZ3o"
