@@ -9,13 +9,13 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
+    "core-js": "^3.10.1",
+    "nuxt": "^2.15.4"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.4.2",
     "autoprefixer": "^9",
-    "nuxt-ackee": "lihbr/nuxt-ackee#090804a0d6e0ba0844527ad57c949e93b2122a2d",
+    "nuxt-ackee": "bdrtsky/nuxt-ackee#69ebbfcb39232f801212dd37798d8a7c85670124",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
