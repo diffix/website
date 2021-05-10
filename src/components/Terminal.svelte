@@ -60,21 +60,23 @@
       <pre>
   $ psql
 
-  # SELECT { renderedQuery }
+# SELECT { renderedQuery }
       </pre>
 
       {#if query === ""}
         <pre
           class="-mt-8">
         <br class="h-1" />
-    count
-    -------
-    { answer }
-    (1 row)
+   count
+  -------
+  { answer }
+  (1 row)
 
       </pre>
 
-        #<span class="blink">_</span>
+      <div class="mt-4">
+        # <span class="blink">_</span>
+      </div>
       {/if}
     </div>
   </div>
