@@ -28,7 +28,7 @@
     }
   ];
 
-  let {query, answer} = queries[Math.floor(Math.random() * queries.length)];
+  let { query, answer } = queries[Math.floor(Math.random() * queries.length)];
   let renderedQuery = "";
 
   function addNextCharcter() {
@@ -37,7 +37,7 @@
       if (query.length > 1) {
         query = query.substr(1, query.length);
       } else {
-        renderedQuery = renderedQuery + ";"
+        renderedQuery = renderedQuery + ";";
         query = "";
       }
       setTimeout(addNextCharcter, randomwShortWait());
@@ -46,6 +46,39 @@
 
   onMount(() => setTimeout(addNextCharcter, 100));
 </script>
+
+<div class="mx-auto mt-8 text-base lg:mt-0 lg:mx-0 lg:w-1/2">
+  <div
+    class="mx-auto max-w-sm overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg h-96 max-w-96 dark:bg-shamrock-800"
+  >
+    <div class="flex px-2 pt-2 pb-2 transition-colors border-b border-gray-700">
+      <div class="w-3 h-3 bg-red-500 rounded-full hover:bg-red-400" />
+      <div class="w-3 h-3 ml-1 bg-yellow-500 rounded-full hover:bg-yellow-400" />
+      <div class="w-3 h-3 ml-1 bg-green-500 rounded-full hover:bg-green-400" />
+    </div>
+    <div class="h-full p-2 font-mono text-gray-300 bg-gray-800 dark:bg-shamrock-900">
+      <pre>
+  $ psql
+
+  # SELECT { renderedQuery }
+      </pre>
+
+      {#if query === ""}
+        <pre
+          class="-mt-8">
+        <br class="h-1" />
+    count
+    -------
+    { answer }
+    (1 row)
+
+      </pre>
+
+        #<span class="blink">_</span>
+      {/if}
+    </div>
+  </div>
+</div>
 
 <style>
   .blink {
@@ -58,34 +91,3 @@
     }
   }
 </style>
-
-<div class="mx-auto mt-8 text-base lg:mt-0 lg:mx-0 lg:w-1/2">
-  <div class="mx-auto max-w-sm overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg h-96 max-w-96 dark:bg-shamrock-800">
-    <div class="flex px-2 pt-2 pb-2 transition-colors border-b border-gray-700">
-      <div class="w-3 h-3 bg-red-500 rounded-full hover:bg-red-400"></div>
-      <div class="w-3 h-3 ml-1 bg-yellow-500 rounded-full hover:bg-yellow-400"></div>
-      <div class="w-3 h-3 ml-1 bg-green-500 rounded-full hover:bg-green-400"></div>
-    </div>
-    <div class="h-full p-2 font-mono text-gray-300 bg-gray-800 dark:bg-shamrock-900">
-      <pre>
-  $ psql
-
-  # SELECT { renderedQuery }
-      </pre>
-
-      {#if query === ""}
-      <pre class="-mt-8">
-        <br class="h-1" />
-    count
-    -------
-    { answer }
-    (1 row)
-
-      </pre>
-
-      # <span class="blink">_</span>
-      {/if}
-
-    </div>
-  </div>
-</div>
