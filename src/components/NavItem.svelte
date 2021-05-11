@@ -1,0 +1,23 @@
+<script lang="ts">
+  import { page } from '$app/stores';
+
+  export let href: string;
+  $: currentPage = href && href === $page.path;
+</script>
+
+<div>
+  {#if currentPage}
+    <div
+      class="px-4 pt-4 h-full border-b-4 border-shamrock-600 bg-shamrock-400 text-white"
+    >
+      <slot />
+    </div>
+  {:else}
+    <a
+      {href}
+      class="px-4 py-4 block text-gray-600 hover:text-gray-700 hover:pb-3 hover:bg-gray-100 hover:border-b-4 border-gray-200"
+    >
+      <slot />
+    </a>
+  {/if}
+</div>
