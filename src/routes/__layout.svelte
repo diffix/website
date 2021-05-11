@@ -4,6 +4,9 @@
   import { afterUpdate, beforeUpdate } from "svelte";
   import { useAckeeSapper } from "svelte-ackee";
 
+  import NavBar from "../components/NavBar.svelte";
+  import Link from "../components/Link.svelte";
+
   useAckeeSapper(
     beforeUpdate,
     afterUpdate,
@@ -18,36 +21,24 @@
 </script>
 
 <div class="flex flex-col min-h-screen dark:text-gray-300">
-  <div class="flex-grow" />
+  <NavBar />
+  <div class="flex-grow"></div>
   <div class="flex-grow-0 w-full">
     <slot />
   </div>
 
-  <div class="flex-grow" />
+  <div class="flex-grow"></div>
 
-  <footer
-    class="flex flex-col items-center flex-grow-0 p-2 pt-20 pb-10 mx-auto text-sm text-gray-500"
-  >
+  <footer class="flex flex-col items-center flex-grow-0 p-2 pt-20 pb-10 mx-auto text-sm text-gray-500">
     <span>
       If you have questions or want to discuss the project, please visit our
-      <a
-        class="text-gray-800 underline dark:text-gray-400 hover:text-gray-500 dark:hover:text-gray-200"
-        href="https://github.com/diffix/pg_diffix_extension">Github repository</a
-      >.
+      <Link href="https://github.com/diffix/pg_diffix_extension">Github repository</Link>.
     </span>
 
     <span class="mt-8">Copyright MPI-SWS for Software Systems</span>
     <span class="mx-auto mt-2 space-x-2">
-      <a
-        href="https://imprint.mpi-klsb.mpg.de/sws/open-diffix.org/"
-        class="text-gray-800 underline dark:text-gray-400 hover:text-gray-500 dark:hover:text-gray-200"
-        >Imprint</a
-      >
-      <a
-        href="https://data-protection.mpi-klsb.mpg.de/sws/open-diffix.org"
-        class="text-gray-800 underline dark:text-gray-400 hover:text-gray-500 dark:hover:text-gray-200"
-        >Privacy Policy</a
-      >
+      <Link href="https://imprint.mpi-klsb.mpg.de/sws/open-diffix.org/">Imprint</Link>
+      <Link href="https://data-protection.mpi-klsb.mpg.de/sws/open-diffix.org">Privacy Policy</Link>
     </span>
   </footer>
 </div>
