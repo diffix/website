@@ -107,7 +107,7 @@
 <FAQItem {addToToc} question="When will a full version be released? What will be the feature set of version X?">
   We do not release roadmaps or timelines. However, Open Diffix is a full time effort,
   and will definitely improve. The best early warning you can get is by
-  <Link href="newsletter">signing up to our newsletter</Link>,
+  <Link href="/newsletter">signing up to our newsletter</Link>,
   where we share the newest developments and ask for beta signups.
 </FAQItem>
 
