@@ -22,12 +22,12 @@
 
 <div class="flex flex-col min-h-screen dark:text-gray-300">
   <NavBar />
-  <div class="flex-grow"></div>
+  <div class="flex-grow" />
   <div class="flex-grow-0 w-full">
     <slot />
   </div>
 
-  <div class="flex-grow"></div>
+  <div class="flex-grow" />
 
   <footer class="flex flex-col items-center flex-grow-0 p-2 pt-20 pb-10 mx-auto text-sm text-gray-500">
     <span>

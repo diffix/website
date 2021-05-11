@@ -48,7 +48,9 @@
 </script>
 
 <div class="mx-auto mt-8 text-base lg:mt-0 lg:mx-0 lg:w-1/2">
-  <div class="bg-flamingo-400 md:bg-shamrock-300 rounded-lg shadow-2xl transform transition duration-500 md:rotate-3 -rotate-3 mx-auto max-w-sm">
+  <div
+    class="bg-flamingo-400 md:bg-shamrock-300 rounded-lg shadow-2xl transform transition duration-500 md:rotate-3 -rotate-3 mx-auto max-w-sm"
+  >
     <div
       class="transform rotate-3 transition duration-500 md:-rotate-3 overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg h-96 max-w-96 dark:bg-shamrock-800"
     >
@@ -65,8 +67,7 @@
         </pre>
 
         {#if query === ""}
-          <pre
-            class="-mt-8">
+          <pre class="-mt-8">
           <br class="h-1" />
     count
     -------
@@ -75,9 +76,9 @@
 
         </pre>
 
-        <div class="mt-4">
-          # <span class="blink">_</span>
-        </div>
+          <div class="mt-4">
+            # <span class="blink">_</span>
+          </div>
         {/if}
       </div>
     </div>

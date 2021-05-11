@@ -4,9 +4,7 @@
   export let question: string;
   export let addToToc: (i: string, q: string) => void;
 
-  $: id = question
-    .replace(/[?!,./]+/g, "")
-    .replace(/ /g, "-");
+  $: id = question.replace(/[?!,./]+/g, "").replace(/ /g, "-");
 
   onMount(() => addToToc(id, question));
 </script>

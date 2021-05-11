@@ -11,16 +11,14 @@
   <h1 class="block text-center text-8xl w-100 md:text-9xl">
     <Wordmark />
   </h1>
-  <h2 class="mx-12 mt-8 text-2xl text-center">
-    Free and Open Dynamic Anonymization for PostgreSQL
-  </h2>
+  <h2 class="mx-12 mt-8 text-2xl text-center">Free and Open Dynamic Anonymization for PostgreSQL</h2>
 </header>
 
 <div class="max-w-4xl px-4 mx-auto mt-20 text-lg lg:flex">
   <div class="flex-col justify-center max-w-lg mx-auto lg:w-1/2 lg:px-16 lg:pb-16 lg:flex">
     <p>
-      The Open Diffix project aims to bring world-class dynamic anonymization to your software
-      project, and is free to use for most use cases.
+      The Open Diffix project aims to bring world-class dynamic anonymization to your software project, and is free to
+      use for most use cases.
     </p>
     <p class="mt-4 font-semibold">It's PostgreSQL as you know it - only anonymous.</p>
   </div>
@@ -55,10 +53,7 @@
       <a href="https://www.mpi-sws.org">
         <img class="h-12" src="mpi-sws-logo.svg" alt="Max Planck Institute for Software Systems" />
       </a>
-      <a
-        href="https://aircloak.com"
-        class="xl:flex xl:flex-row xl:items-center xl:justify-end xl:w-full xl:h-full"
-      >
+      <a href="https://aircloak.com" class="xl:flex xl:flex-row xl:items-center xl:justify-end xl:w-full xl:h-full">
         <img class="h-10 xl:h-10" src="aircloak_web.svg" alt="Aircloak GmbH" />
       </a>
     </div>
