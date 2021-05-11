@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-  <title>open-diffix - Frequently asked questions</title>
+  <title>open-diffix - Questions and answers</title>
 </svelte:head>
 
 <header class="max-w-2xl pt-28 mx-auto transition-all duration-500">
