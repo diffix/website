@@ -3,6 +3,14 @@
 This page is automatically deployed to github pages
 upon pushing code to github.
 
+## Pre-requisites
+
+Install [asdf](https://github.com/asdf-vm/asdf), along with the
+plugins for [nodejs](https://github.com/asdf-vm/asdf-nodejs) and
+[yarn](https://github.com/twuni/asdf-yarn).
+
+Then run `asdf install`.
+
 ## Build Setup
 
 ```bash
