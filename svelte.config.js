@@ -19,7 +19,14 @@ const config = {
 
     files: {
       assets: "static"
-    }
+    },
+
+    router: true,
+
+    // Opt-out of Google's FLoC. This might only have an effect
+    // if we have a server component too, but well, here it is, just for
+    // good measure.
+    floc: false,
   }
 };
 
