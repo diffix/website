@@ -15,7 +15,7 @@
   {:else}
     <a
       {href}
-      class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-700 hover:pb-4 hover:bg-white-50 hover:border-b-4 border-gray-200 md:hover:border-shamrock-200 hover:border-pink-300"
+      class="duration-50 transition-shadow px-4 py-4 block text-gray-500 dark:text-gray-200 dark:hover:text-white hover:text-gray-700 hover:pb-4 hover:bg-white-50 hover:border-b-4 dark:hover:bg-gray-800 border-gray-200 md:hover:border-shamrock-200 md:dark:hover:border-shamrock-800 hover:border-pink-300"
     >
       <slot />
     </a>

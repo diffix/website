@@ -3,7 +3,7 @@
 </script>
 
 <div class="h-auto md:h-24 transition-all duration-200">
-  <div class="md:fixed w-full border-b-2 border-collapse md:shadow-lg md:bg-gray-50 md:border-none">
+  <div class="md:fixed w-full border-b-2 border-collapse md:shadow-sm dark:border-gray-800 md:bg-gray-50 md:dark:bg-gray-900">
     <nav class="max-w-2xl mx-auto w-full -mb-1 flex justify-end text-xl">
       <NavItem href="/">
         Home
