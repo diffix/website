@@ -63,16 +63,16 @@
         <pre>
     $ psql
 
-  # SELECT { renderedQuery }
+# SELECT { renderedQuery }
         </pre>
 
         {#if query === ""}
           <pre class="-mt-8">
           <br class="h-1" />
-    count
-    -------
-    { answer }
-    (1 row)
+   count
+  -------
+  { answer }
+  (1 row)
 
         </pre>
 
