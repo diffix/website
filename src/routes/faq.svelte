@@ -16,14 +16,14 @@
 <div class="p-4">
   <header class="max-w-2xl pt-12 mx-auto transition-all duration-500">
     <a id="faq-top">
-      <h1 class="block text-6xl font-semibold w-100">
+      <h1 class="block text-6xl lg:ml-32 font-semibold w-100">
         Questions and answers
       </h1>
     </a>
   </header>
 
-  <div class="max-w-2xl lg:max-w-6xl mx-auto mt-16 mb-12">
-    <div class="lg:w-72 lg:fixed">
+  <div class="max-w-2xl lg:max-w-6xl mx-auto mt-16 lg:mt-0 mb-12">
+    <div class="lg:w-72 lg:fixed lg:-mt-24">
       <h2 class="block text-2xl w-100 font-semibold">
         Table of contents
       </h2>
@@ -37,7 +37,7 @@
       </ul>
     </div>
 
-    <div class="lg:w-full lg:ml-32 space-y-12 pt-12 lg:pt-0">
+    <div class="lg:w-full lg:ml-32 space-y-6 lg:space-y-12 pt-12 lg:pt-0">
       <FAQItem {addToToc} question="What is Open Diffix?">
         Open Diffix is a PostgreSQL extension for strong dynamic anonymization.
         It enables you to query your PostgreSQL database (nearly) as you’re used to,
