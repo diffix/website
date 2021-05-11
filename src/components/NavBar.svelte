@@ -14,7 +14,7 @@
       </NavItem>
 
       <NavItem href="/faq">
-        Questions
+        FAQ
       </NavItem>
     </nav>
   </div>
