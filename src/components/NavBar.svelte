@@ -2,7 +2,7 @@
   import NavItem from "./NavItem.svelte";
 </script>
 
-<div class="w-full border-b-2 border-collapse border-gray-100 bg-gray-50">
+<div class="md:fixed w-full border-b-2 border-collapse shadow-sm bg-gray-50">
   <nav class="max-w-2xl mx-auto w-full -mb-1 flex justify-end text-xl">
     <NavItem href="/">
       Home
