@@ -48,7 +48,7 @@
                   class="flex items-center px-1 -mx-1 rounded cursor-pointer checkbox subfield hover:bg-gray-100 dark:hover:bg-gray-700"
                   for="gdpr_39706"
                 >
-                  <input type="checkbox" id="gdpr_39706" name="gdpr[39706]" value="Y" class="av-checkbox gdpr" />
+                  <input type="checkbox" id="gdpr_39706" name="gdpr[39706]" value="Y" class="av-checkbox gdpr" checked/>
                   <span class="ml-2">Updates about the Open-Diffix project - no spam, no ads</span>
                 </label>
                 <label
