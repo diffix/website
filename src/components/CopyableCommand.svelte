@@ -1,14 +1,35 @@
 <script lang="ts">
   export let cmd: string;
+
   let textarea;
 
   let copied = false;
 
-  function copy() {
+  function indicateCopied() {
     copied = true;
     setTimeout(() => (copied = false), 3000);
+  }
+
+  function fallbackCopy() {
     textarea.select();
-    document.execCommand("copy");
+    if (document.execCommand("copy")) {
+      indicateCopied();
+    }
+  }
+
+  function copy() {
+    if (!navigator.clipboard) {
+      fallbackCopy();
+      return;
+    }
+    navigator.clipboard.writeText(cmd).then(
+      function () {
+        indicateCopied();
+      },
+      function (err) {
+        // sorry world... not much to do here...
+      }
+    );
   }
 </script>
 
