@@ -6,7 +6,7 @@
 
   function copy() {
     copied = true;
-    setInterval(() => (copied = false), 3000);
+    setTimeout(() => (copied = false), 3000);
     textarea.select();
     document.execCommand("copy");
   }
