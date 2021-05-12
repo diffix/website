@@ -44,18 +44,19 @@
     <h2 class="mt-6 text-xl">Credentials</h2>
     <p class="mt-2">
       You are given the credentials for two distinct PostgreSQL roles. One is called <span>banking</span> and gives you
-      un-anonymized read-only access to all the data in the database. The other is called <span>banking_publish</span> and
+      read-only access to all the data in the database (not anonymized).
+      The other is called <span>banking_publish</span> and
       gives you access to the same tables, but with the anonymization restrictions applied.
     </p>
 
     <div class="shadow rounded-lg -mx-2 p-2 mt-4">
-      <table class="table-fixed text-sm">
+      <table class="table-fixed text-sm w-full">
         <thead class="text-left">
           <tr>
-            <th class="w-4/12">Role</th>
+            <th class="w-3/12">Role</th>
             <th class="w-2/12">Password</th>
             <th class="w-2/12">DB name</th>
-            <th class="w-4/12">Description</th>
+            <th class="w-5/12">Description</th>
           </tr>
         </thead>
         <tbody class="border-t-2">
@@ -63,7 +64,7 @@
             <td>banking</td>
             <td>demo</td>
             <td>banking</td>
-            <td>Read-only. No anonymization</td>
+            <td>Read-only. Not anonymized</td>
           </tr>
 
           <tr class="hover:bg-gray-50">
