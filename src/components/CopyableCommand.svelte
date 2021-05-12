@@ -12,6 +12,7 @@
 
   function fallbackCopy() {
     textarea.select();
+    textarea.setSelectionRange(0, 99999); // apparently useful for mobile devices...
     if (document.execCommand("copy")) {
       indicateCopied();
     }
