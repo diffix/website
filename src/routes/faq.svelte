@@ -14,10 +14,8 @@
 </svelte:head>
 
 <div class="p-4">
-  <header class="max-w-2xl pt-12 mx-auto transition-all duration-500">
-    <a id="faq-top">
-      <h1 class="block text-6xl lg:ml-32 font-semibold w-100">Frequently Asked Questions</h1>
-    </a>
+  <header id="faq-top" class="max-w-2xl pt-12 mx-auto transition-all duration-500">
+    <h1 class="block text-6xl lg:ml-32 font-semibold w-100">Frequently Asked Questions</h1>
   </header>
 
   <div class="max-w-2xl lg:max-w-6xl mx-auto mt-16 lg:mt-0 mb-12">
