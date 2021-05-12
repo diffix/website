@@ -21,7 +21,14 @@
     aria-label="Click to copy the command to the clipboard"
   >
     {#if copied}
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="Icon of a clipboard indicating the contents have been copied">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        aria-label="Icon of a clipboard indicating the contents have been copied"
+      >
         <path
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -30,7 +37,14 @@
         />
       </svg>
     {:else}
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="Icon of a clipboard">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        aria-label="Icon of a clipboard"
+      >
         <path
           stroke-linecap="round"
           stroke-linejoin="round"
