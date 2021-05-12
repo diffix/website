@@ -12,6 +12,8 @@
       <NavItem href="/newsletter">Newsletter</NavItem>
 
       <NavItem href="/faq">FAQ</NavItem>
+
+      <NavItem href="/demo">Demo</NavItem>
     </nav>
   </div>
 </div>
