@@ -7,24 +7,6 @@
 </svelte:head>
 
 <div class="flex-grow-0 w-full">
-  <header class="max-w-xl px-4 pt-4 mx-auto transition-all duration-500 sm:pt-20">
-    <a href="/">
-      <h1 class="text-3xl text-left text-gray-400 sm:-ml-8 hover:text-gray-600 w-100">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          class="hidden sm:w-8 sm:-mr-2 sm:inline"
-          aria-hidden="true"
-        >
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-        <Wordmark />
-      </h1>
-    </a>
-  </header>
-
   <div class="max-w-xl px-4 mx-auto mt-10">
     <h2 class="mt-12 text-6xl font-semibold">Newsletter</h2>
     <div id="mc_embed_signup" class="py-8">
