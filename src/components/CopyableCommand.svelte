@@ -26,7 +26,7 @@
       function () {
         indicateCopied();
       },
-      function (err) {
+      function () {
         // sorry world... not much to do here...
       }
     );
