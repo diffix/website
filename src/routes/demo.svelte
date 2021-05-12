@@ -44,9 +44,8 @@
     <h2 class="mt-6 text-xl">Credentials</h2>
     <p class="mt-2">
       You are given the credentials for two distinct PostgreSQL roles. One is called <span>banking</span> and gives you
-      read-only access to all the data in the database (not anonymized).
-      The other is called <span>banking_publish</span> and
-      gives you access to the same tables, but with the anonymization restrictions applied.
+      read-only access to all the data in the database (not anonymized). The other is called
+      <span>banking_publish</span> and gives you access to the same tables, but with the anonymization restrictions applied.
     </p>
 
     <div class="shadow rounded-lg -mx-2 p-2 mt-4">
