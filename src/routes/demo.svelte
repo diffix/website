@@ -41,6 +41,15 @@
       data (like you will too), but wishes to produce a report or dashboard that is safe to share with others.
     </p>
 
+    <h2 class="mt-6 text-xl">Capabilities</h2>
+    <p class="mt-2">
+      You will be able to play with a tech demo at this point. Most notably, the query capabilities will be severely
+      restricted. Specifically, the only aggregate functions available in the current demo are <span class="font-mono"
+        >COUNT(*)</span
+      >, <span class="font-mono">COUNT(x)</span>
+      and <span class="font-mono">COUNT(DISTINCT x)</span>. More will be added soon.
+    </p>
+
     <h2 class="mt-6 text-xl">Credentials</h2>
     <p class="mt-2">
       You are given the credentials for two distinct PostgreSQL roles. One is called <span>banking</span> and gives you
