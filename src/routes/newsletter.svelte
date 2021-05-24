@@ -1,5 +1,10 @@
 <script>
   import Wordmark from "../components/Wordmark.svelte";
+  import { trackAction } from "../ackee";
+
+  function trackSubscription() {
+    trackAction("adce3874-710e-4e55-8872-f4547df40a8e", "Subscription", "1");
+  }
 </script>
 
 <svelte:head>
@@ -18,6 +23,7 @@
         class="validate"
         target="_blank"
         novalidate
+        on:submit={trackSubscription}
       >
         <div id="mc_embed_signup_scroll">
           <p class="mt-4">
@@ -71,6 +77,7 @@
                 name="subscribe"
                 id="mc-embedded-subscribe"
                 class="px-2 py-1 border rounded cursor-pointer bg-shamrock-700 hover:bg-gradient-to-r from-pink-500 to-purple-500 md:from-shamrock-500 md:to-royalblue-500 dark:border-shamrock-700 text-white text-lg focus:outline-none focus:ring-2"
+                on:click={trackSubscription}
               />
             </div>
           </div>
