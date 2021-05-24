@@ -32,6 +32,6 @@
   },
   "type": "module",
   "dependencies": {
-    "svelte-ackee": "^1.2.9"
+    "platform": "^1.3.6"
   }
 }
