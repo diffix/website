@@ -7,8 +7,8 @@
   <title>open-diffix - Free and Open Dynamic Anonymization for PostgreSQL</title>
 </svelte:head>
 
-<header class="max-w-2xl pt-12 md:pt-32 mx-auto transition-all duration-500">
-  <h1 class="block text-center text-8xl w-100 md:text-9xl">
+<header class="max-w-3xl pt-8 md:pt-12 mx-auto transition-all duration-500">
+  <h1 class="text-center text-8xl w-100 px-4 md:text-9xl">
     <Wordmark />
   </h1>
   <h2 class="mx-12 mt-8 text-2xl text-center">Free and Open Dynamic Anonymization for PostgreSQL</h2>
