@@ -1,21 +1,17 @@
 <script>
   import "../app.postcss";
 
-  import { afterUpdate, beforeUpdate } from "svelte";
-  import { useAckeeSapper } from "svelte-ackee";
+  import { useAckee } from "../ackee";
 
   import NavBar from "../components/NavBar.svelte";
   import Link from "../components/Link.svelte";
 
-  useAckeeSapper(
-    beforeUpdate,
-    afterUpdate,
+  useAckee(
+    "https://ackee.open-diffix.org",
+    "8ba9af76-dd3d-47d0-85fa-9387bc693605",
     {
-      server: "https://ackee.open-diffix.org", // Set to your Ackee instance
-      domainId: "8ba9af76-dd3d-47d0-85fa-9387bc693605" // Set to your domain ID
-    },
-    {
-      ignoreLocalhost: true
+      ignoreLocalhost: true,
+      detailed: true,
     }
   );
 </script>
