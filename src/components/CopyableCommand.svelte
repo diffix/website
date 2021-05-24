@@ -34,11 +34,13 @@
   }
 </script>
 
-<div class="flex items-center mt-2 font-mono text-semibold text-sm px-2 py-1 bg-gray-100 -mx-2 rounded-md">
+<div
+  class="flex break-all space-x-2 items-center mt-2 font-mono text-semibold text-sm px-2 py-1 bg-gray-100 dark:bg-gray-600 -mx-2 rounded-md"
+>
   <span class="flex-grow" on:dblclick={copy}>{cmd}</span>
 
   <button
-    class="hover:bg-shamrock-400 transition-all focus:outline-none duration-200 bg-shamrock-200 text-gray-800 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 border rounded-lg w-10 h-8 flex justify-center items-center"
+    class="flex-grow-0 hover:bg-shamrock-400 transition-all focus:outline-none duration-200 bg-shamrock-200 text-gray-800 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 border rounded-lg w-10 h-8 flex justify-center items-center"
     on:click={copy}
     aria-label="Click to copy the command to the clipboard"
   >

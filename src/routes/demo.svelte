@@ -18,7 +18,9 @@
       <Wordmark /> is currently under development, but we are happy to show you the progress we have made to date.
     </p>
 
-    <div class="bg-gray-50 border shadow-sm my-6 -mx-2 px-4 py-2 rounded-lg text-gray-700">
+    <div
+      class="bg-gray-50 dark:bg-gray-700 dark:text-gray-50 dark:border-gray-500 border shadow-sm my-6 -mx-2 px-4 py-2 rounded-lg text-gray-700"
+    >
       <h2 class="text-2xl">TL;DR</h2>
 
       <p class="mt-2 text-sm">
@@ -57,7 +59,41 @@
       <span>banking_publish</span> and gives you access to the same tables, but with the anonymization restrictions applied.
     </p>
 
-    <div class="shadow rounded-lg -mx-2 p-2 mt-4">
+    <div class="sm:hidden mt-4 flex w-100">
+      <div class="w-1/2">
+        <h3 class="text-lg font-medium">Not anonymized</h3>
+        <div>
+          <span class="font-medium">Role:</span>
+          banking
+        </div>
+        <div>
+          <span class="font-medium">Password:</span>
+          demo
+        </div>
+        <div>
+          <span class="font-medium">Database:</span>
+          banking
+        </div>
+      </div>
+
+      <div class="w-1/2">
+        <h3 class="text-lg font-medium">Anonymized</h3>
+        <div>
+          <span class="font-medium">Role:</span>
+          banking_publish
+        </div>
+        <div>
+          <span class="font-medium">Password:</span>
+          demo
+        </div>
+        <div>
+          <span class="font-medium">Database:</span>
+          banking
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden sm:block shadow rounded-lg -mx-2 p-2 mt-4">
       <table class="table-fixed text-sm w-full">
         <thead class="text-left">
           <tr>
@@ -85,7 +121,7 @@
       </table>
     </div>
 
-    <p class="mt-10">
+    <p class="mt-6 sm:mt-10">
       If you have the
       <Link href="https://blog.timescale.com/tutorials/how-to-install-psql-on-mac-ubuntu-debian-windows/"
         >PostgreSQL client tools</Link
