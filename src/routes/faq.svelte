@@ -19,7 +19,7 @@
   </header>
 
   <div class="max-w-2xl lg:max-w-6xl mx-auto mt-16 lg:mt-0 mb-12">
-    <div class="lg:w-72 lg:fixed lg:-mt-24">
+    <div class="lg:w-72 lg:fixed lg:-mt-36">
       <h2 class="block text-2xl w-100 font-semibold">Table of contents</h2>
 
       <ul class="mt-4 ml-4 space-y-1.5 text-sm list-disc list-outside">
@@ -31,7 +31,7 @@
       </ul>
     </div>
 
-    <div class="lg:w-full lg:ml-32 space-y-6 lg:space-y-12 pt-12 lg:pt-0">
+    <div class="lg:w-full lg:mt-12 lg:ml-32 space-y-6 lg:space-y-12 pt-12 lg:pt-0">
       <FAQItem {addToToc} question="What is Open Diffix?">
         Open Diffix is a PostgreSQL extension for strong dynamic anonymization. It enables you to query your PostgreSQL
         database (nearly) as you’re used to, but makes sure you receive fully anonymous output. By "anonymous", we mean
