@@ -1,5 +1,4 @@
 <script>
-  import Wordmark from "../components/Wordmark.svelte";
   import { trackAction } from "../ackee";
 
   function trackSubscription() {
