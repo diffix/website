@@ -38,14 +38,16 @@ export function useAckee(server: string, domainId: string, opts = {}): void {
     const instance = ackeeTracker.create(window, server, opts);
     writableInstance.set(instance);
     trackLocation(instance, domainId, opts);
-    beforeUpdate(() => { trackLocation(instance, domainId, opts) });
+    beforeUpdate(() => {
+      trackLocation(instance, domainId, opts);
+    });
   }
-};
+}
 
 export function trackAction(id: string, key: string, value: string): void {
   const instance = get(writableInstance);
   if (instance !== undefined) {
-    instance.action(id, {key, value});
+    instance.action(id, { key, value });
   } else {
     console.error(`Cannot track acke events unless you first initialize ackee with useAckee`);
   }

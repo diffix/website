@@ -6,14 +6,10 @@
   import NavBar from "../components/NavBar.svelte";
   import Link from "../components/Link.svelte";
 
-  useAckee(
-    "https://ackee.open-diffix.org",
-    "8ba9af76-dd3d-47d0-85fa-9387bc693605",
-    {
-      ignoreLocalhost: true,
-      detailed: true,
-    }
-  );
+  useAckee("https://ackee.open-diffix.org", "8ba9af76-dd3d-47d0-85fa-9387bc693605", {
+    ignoreLocalhost: true,
+    detailed: true
+  });
 </script>
 
 <div class="flex flex-col min-h-screen dark:text-gray-300">
