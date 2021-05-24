@@ -34,7 +34,9 @@
   }
 </script>
 
-<div class="flex break-all space-x-2 items-center mt-2 font-mono text-semibold text-sm px-2 py-1 bg-gray-100 dark:bg-gray-600 -mx-2 rounded-md">
+<div
+  class="flex break-all space-x-2 items-center mt-2 font-mono text-semibold text-sm px-2 py-1 bg-gray-100 dark:bg-gray-600 -mx-2 rounded-md"
+>
   <span class="flex-grow" on:dblclick={copy}>{cmd}</span>
 
   <button
