@@ -1,11 +1,8 @@
 import * as ackeeTracker from "./vendor/ackee-tracker";
 import { beforeUpdate } from "svelte";
-import { writable, get } from "svelte/store";
 
 let stopFn;
 let recordedPathname = undefined;
-
-const writableInstance = writable(null);
 
 function isNewLocation() {
   return !recordedPathname || recordedPathname !== window.location.pathname;
@@ -36,19 +33,9 @@ function trackLocation(instance, domainId, opts) {
 export function useAckee(server: string, domainId: string, opts = {}): void {
   if (typeof window !== "undefined") {
     const instance = ackeeTracker.create(window, server, opts);
-    writableInstance.set(instance);
     trackLocation(instance, domainId, opts);
     beforeUpdate(() => {
       trackLocation(instance, domainId, opts);
     });
-  }
-}
-
-export function trackAction(id: string, key: string, value: string): void {
-  const instance = get(writableInstance);
-  if (instance !== undefined) {
-    instance.action(id, { key, value });
-  } else {
-    console.error(`Cannot track acke events unless you first initialize ackee with useAckee`);
   }
 }
