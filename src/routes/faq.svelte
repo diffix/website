@@ -83,7 +83,7 @@
       </FAQItem>
 
       <FAQItem {addToToc} question="I would like to try out Open Diffix. Where can I schedule a demo?">
-        You don’t have to schedule anything – we host a <Link href="https://www.open-diffix.org/demo">demo system</Link>
+        You don’t have to schedule anything – we host a <Link href="/demo">demo system</Link>
         of our very first version for you to test. Please note that this is only a technical demo of Open Diffix Publish,
         with a highly restricted interface and without any privacy guarantees. Check back later for newer versions.
       </FAQItem>
