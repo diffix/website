@@ -141,5 +141,12 @@
         >Python notebook here</Link
       >.
     </p>
+
+    <h2 class="mt-12 text-2xl">Help</h2>
+    <p class="mt-2">
+      If you require help, you want to report a bug or request a feature, please do so in our <Link
+        href="https://github.com/diffix/pg_diffix_extension">Github repository</Link
+      >.
+    </p>
   </div>
 </div>
