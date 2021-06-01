@@ -51,6 +51,13 @@
       >, <span class="font-mono">COUNT(x)</span>
       and <span class="font-mono">COUNT(DISTINCT x)</span>. More will be added soon.
     </p>
+    <p>
+      To learn more about the exact anonymization techniques applied in the demo (and later versions of pg_diffix),
+      please consult
+      <Link href="https://github.com/diffix/pg_diffix_extension/blob/main/documents/publish-short-anon.md"
+        >our quick explanation on Github.</Link
+      >
+    </p>
 
     <h2 class="mt-6 text-xl">Credentials</h2>
     <p class="mt-2">
