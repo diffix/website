@@ -33,105 +33,100 @@
 
     <div class="lg:w-full lg:mt-12 lg:ml-32 space-y-6 lg:space-y-12 pt-12 lg:pt-0">
       <FAQItem {addToToc} question="What is Open Diffix?">
-        Open Diffix is a PostgreSQL extension for strong dynamic anonymization. It enables you to query your PostgreSQL
-        database (nearly) as you’re used to, but makes sure you receive fully anonymous output. By "anonymous", we mean
-        GDPR-level anonymous, meaning the results can’t be tied back to individuals, even if you have external
-        information or you know how the anonymization process works in detail.
+        Open Diffix is a project to make Diffix anonymization free and open. The Open Diffix
+        project develops two software products, a stand-alone desktop product, and a PostgreSQL
+        extension. The desktop product is aimed towards ease-of-use, while the PostgreSQL
+        extension targets higher complexity and scale. Both are strongly anonymous, and
+        satisfy the GDPR definition of anonymity.
       </FAQItem>
 
       <FAQItem {addToToc} question="How does Open Diffix work?">
         Open Diffix is based on Diffix, the anonymization approach developed by Aircloak and the Max Planck Institute
-        for Software Systems. Diffix takes ideas from tried and tested anonymization techniques, combines them in a
-        smart and solution oriented way, and adds some proprietary protections on top.
-        <!--  See here for our papers on the technology.-->
+        for Software Systems. Diffix combines the three most common anonymization mechanisms,
+        generalization, noise, and low-count suppression. It automatically applies these mechanisms as needed on a
+        query-by-query basis to minimize noise while ensuring strong anonymity.
+        <!--  TODO: See here for our papers on the technology.-->
       </FAQItem>
 
-      <FAQItem {addToToc} question="Does Open Diffix work for my use case X?">
-        Because of the dynamic nature of the anonymization provided, certain use cases make more sense than others. Some
-        use cases that are more likely to work well:
-
-        <ul class="mt-2 mb-4 list-disc list-inside">
-          <li>Descriptive and diagnostic analytics</li>
-          <li>Business intelligence</li>
-          <li>Dynamic or static reports and dashboards</li>
-        </ul>
-
-        Some use cases that Open Diffix was not built for and where you should expect unsatisfactory results:
-
-        <ul class="mt-2 list-disc list-inside">
-          <li>Prescriptive analytics</li>
-          <li>Training machine learning algorithms</li>
-          <li>Test data generation</li>
-          <li>Data masking</li>
-          <li>Pseudonymization</li>
-        </ul>
+      <FAQItem {addToToc} question="How does Diffix compare with Differential Privacy and k-anonymity?">
+        K-anonymity uses generalization and low-count suppression. Systems based on Differential
+        Privacy use noise and often use generalization. Diffix uses all three, and so
+        combines the benefits of both k-anonymity and Differential Privacy without formerly adhering to
+        either model. While Diffix does not offer the mathematical guarantees of Differential Privacy,
+        it also does not have the drawback of a privacy budget.
+        <!--  TODO: Please see here for our papers on the technology.-->
       </FAQItem>
 
-      <FAQItem {addToToc} question="Does Open Diffix use Differential Privacy?">
-        No. Diffix and Differential Privacy have many surface level likenesses (like distorting answers by adding
-        noise), but fundamentally differ in their implementations. Crucially, Diffix does not have the concept of a
-        privacy budget, which makes it much easier to use in real world scenarios, but in turn also does not offer
-        mathematical guarantees.
-        <!--  Please see here for our papers on the technology.-->
+      <FAQItem {addToToc} question="What kinds of analytics does Diffix support?">
+        Diffix supports descriptive analytics over structured data like relational databases or
+        CSV files: selecting columns, requesting
+        counts or sums over those columns, putting data in bins of different sizes, and so on.
+        Descriptive analytics is used to produce visualizations like bar graphs or scatter plots
+        or heat maps.
+
+        Diffix does <strong>not</strong> support machine learning, synthetic data generation, data masking,
+        pseudonymization, image fuzzing, or anonymization of free-form text (redacting).
       </FAQItem>
 
-      <FAQItem {addToToc} question="How do I use Open Diffix for my project / company?">
-        At this point in time, you can’t use Open Diffix yet. When the time has come, you will be able to download an
-        extension and install it in your PostgreSQL database. There will be a small setup step for datasets that you
-        want to be able to query through the Open Diffix layer. Afterwards, you can work with the data as you’re used
-        to.
+      <FAQItem {addToToc} question="Why are there both desktop and PostgreSQL extension releases?">
+        Descriptive analytics over structured data covers a wide range of use cases. At one extreme,
+        a non-technical user may wish to release simple summary statistics over data from a CSV
+        file on his or her machine. A simple desktop application satisfies this use case. At
+        the other extreme, someone may wish to stream data summaries of dynamic data
+        over millions of users into an SQL-based dashboard application. For this the Diffix PostgreSQL
+        extension is appropriate.
       </FAQItem>
 
-      <FAQItem {addToToc} question="I would like to try out Open Diffix. Where can I schedule a demo?">
-        You don’t have to schedule anything – we host a <Link href="/demo">demo system</Link>
-        of our very first version for you to test. Please note that this is only a technical demo of Open Diffix Publish,
-        with a highly restricted interface and without any privacy guarantees. Check back later for newer versions.
+      <FAQItem {addToToc} question="What is the trust model for users/analysts?">
+        Diffix has two modes of operation, Trusted Mode and Untrusted Mode. Trusted Mode protects
+        against accidental release of personal data. Untrusted Mode protects against intentional, malicious
+        exposure of personal data. A Trusted Mode analyst does not require any expertise in
+        anonymization in order to safely release data queried through Diffix.
       </FAQItem>
 
-      <FAQItem {addToToc} question="What is Open Diffix “Publish”?">
-        We are currently aiming at releasing Open Diffix in several steps, for several use cases. The first versions
-        we’ll release are centered around what we call Open Diffix Publish. Publish is intended for use cases in which
-        the analyst, i.e. the person running live queries, can be trusted to not try and attack the system (for instance
-        because they are contractually bound, or have access to the raw data anyway, or because their interface doesn’t
-        allow them to). It is therefore ideal for use cases in reports generated by trusted analysts or business
-        intelligence dashboards that should still be anonymous and safe to share with anyone.
-      </FAQItem>
-
-      <FAQItem {addToToc} question="When will a full version be released? What will be the feature set of version X?">
-        We do not release roadmaps or timelines. However, Open Diffix is a full time effort, and will definitely
-        improve. The best early warning you can get is by
-        <Link href="/newsletter">signing up to our newsletter</Link>, where we share the newest developments and ask for
-        beta signups.
+      <FAQItem {addToToc} question="Why wouldn't I always use Untrusted Mode?">
+        Trusted Mode is easier to use. It has more query features, and in the desktop version it
+        allows an analyst to view the anonymized and original data side-by-side. In this way the 
+        analyst knows exactly how much the data is distorted through suppression and noise,
+        and can more easily adjust column selection and generalization as needed. 
       </FAQItem>
 
       <FAQItem {addToToc} question="Is Open Diffix GDPR compliant?">
-        The intent is that you will be able to use Open Diffix in good conscience in the EU and anywhere in the world.
-        We are trying to provide the highest level of anonymization. We will be working with national authorities to
-        provide users with legal certainty where possible.
+        The short answer is 'yes'. The longer answer is that there are no concrete criteria for GDPR
+        anonymity. Ultimately it is up to a Data Protection Officer (DPO) or Authority (DPA) to
+        make the call. Diffix as implemented by Aircloak was almost always evaluated as GDPR anonymous,
+        and the same will hold for Open Diffix releases.
       </FAQItem>
 
-      <FAQItem {addToToc} question="How does Open Diffix make money?">
-        Open Diffix will be free to use for the vast majority of use cases. Since Open Diffix is not an organization or
-        company as such, it does not necessarily have to generate money. However, in order to secure the longevity of
-        the project and provide incentive for any sponsors, we are planning to charge for certain use cases. Equally,
-        adapting the technology to other databases than PostgreSQL will only be possible with licenses we can provide.
+      <FAQItem {addToToc} question="Can the Open Diffix project help with GDPR compliance?">
+        The Open Diffix project will provide supporting documentation with each of its releases.
+        The documentation will describe the Diffix algorithms in detail, along with analysis of
+        the anonymization properties against an exhaustive set of attacks. This documentation can 
+        be used as the basis of a GDPR (or other privacy standard) evaluation by DPOs and DPAs.
+        For assistance in this process you can contact us at
+        <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>.
       </FAQItem>
 
       <FAQItem {addToToc} question="Is Open Diffix Open Source?">
         No. For the moment, Open Diffix will not be Open Source in the sense of the Open Source Initiative definition.
-        However, it will be “open code” or “code available” – meaning you will be able to view, adapt and copy the code,
-        and the vast majority of use cases will be free to use.
+        Although the license isn't finalized, we are expecting a Business Source License (BSL). The intent
+        is to make Diffix free for all use cases that do not resell Diffix software or interfaces.
       </FAQItem>
 
-      <FAQItem {addToToc} question="Where can I see the Open Diffix code?">
-        At this point in time, the code is not public yet. When it is, you will find a link to our github repository on
-        our website.
+      <FAQItem {addToToc} question="When will Open Diffix releases be available?">
+        The first version of Desktop will be released in October 2021. We are targeting mid to late
+        2022 for the first version of the PostgreSQL extension. You may
+        <Link href="/newsletter">sign up for our newsletter</Link> to get release announcements.
+      </FAQItem>
+
+      <FAQItem {addToToc} question="How is Open Diffix funded?">
+        For the first few years, Open Diffix is funded by the Max Planck Institute for Software Systems
+        as a research initiative. Our goal is to become self-sustaining through sponsorships,
+        consultancy, or licensing.
       </FAQItem>
 
       <FAQItem {addToToc} question="I have a general question, who can I contact?">
-        Please contact Felix at <Link href="mailto:felix@open-diffix.org">felix@open-diffix.org</Link>
-        or visit our <Link href="https://github.com/diffix/pg_diffix_extension">Github repository</Link>
-        to take part in the discussions there
+        Please contact us at <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>.
       </FAQItem>
     </div>
   </div>
