@@ -109,6 +109,7 @@
         <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>.
       </FAQItem>
 
+      <!--  TODO: Add back in when we have clarity
       <FAQItem {addToToc} question="Is Open Diffix Open Source?">
         No. For the moment, Open Diffix will not be Open Source in the sense of the Open Source Initiative definition.
         Although the license isn't finalized, we are expecting a Business Source License
@@ -116,6 +117,7 @@
         The intent
         is to make Diffix free for all use cases that do not resell Diffix software or interfaces.
       </FAQItem>
+      -->
 
       <FAQItem {addToToc} question="When will Open Diffix releases be available?">
         The first desktop version will be released in October 2021. We are targeting mid to late
