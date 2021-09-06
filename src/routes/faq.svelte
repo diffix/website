@@ -32,20 +32,22 @@
     </div>
 
     <div class="lg:w-full lg:mt-12 lg:ml-32 space-y-6 lg:space-y-12 pt-12 lg:pt-0">
+
+      <FAQItem {addToToc} question="What is Diffix?">
+        Diffix is an algorithm for anonymizing structured data. It was jointly developed by
+        Aircloak GmbH and the Max Planck Institute
+        for Software Systems. Diffix combines the three most common anonymization mechanisms,
+        generalization, noise, and low-count suppression. It automatically applies these mechanisms as needed on a
+        query-by-query basis to minimize noise while ensuring strong anonymity.
+        <!--  TODO: See here for our papers on the technology.-->
+      </FAQItem>
+
       <FAQItem {addToToc} question="What is Open Diffix?">
         Open Diffix is a project to make Diffix anonymization free and open. The Open Diffix
         project develops two software products, a stand-alone desktop product, and a PostgreSQL
         extension. The desktop product is aimed towards ease-of-use, while the PostgreSQL
         extension targets higher complexity and scale. Both are strongly anonymous, and
         satisfy the GDPR definition of anonymity.
-      </FAQItem>
-
-      <FAQItem {addToToc} question="How does Open Diffix work?">
-        Open Diffix is based on Diffix, the anonymization approach developed by Aircloak and the Max Planck Institute
-        for Software Systems. Diffix combines the three most common anonymization mechanisms,
-        generalization, noise, and low-count suppression. It automatically applies these mechanisms as needed on a
-        query-by-query basis to minimize noise while ensuring strong anonymity.
-        <!--  TODO: See here for our papers on the technology.-->
       </FAQItem>
 
       <FAQItem {addToToc} question="How does Diffix compare with Differential Privacy and k-anonymity?">
@@ -78,7 +80,7 @@
       </FAQItem>
 
       <FAQItem {addToToc} question="What is the trust model for users/analysts?">
-        Diffix has two modes of operation, Trusted Mode and Untrusted Mode. Trusted Mode protects
+        Diffix has two modes of operation, Trusted Analyst Mode and Untrusted Analyst Mode. Trusted Mode protects
         against accidental release of personal data. Untrusted Mode protects against intentional, malicious
         exposure of personal data. A Trusted Mode analyst does not require any expertise in
         anonymization in order to safely release data queried through Diffix.
@@ -109,12 +111,14 @@
 
       <FAQItem {addToToc} question="Is Open Diffix Open Source?">
         No. For the moment, Open Diffix will not be Open Source in the sense of the Open Source Initiative definition.
-        Although the license isn't finalized, we are expecting a Business Source License (BSL). The intent
+        Although the license isn't finalized, we are expecting a Business Source License
+        (<Link href="https://mariadb.com/de/bsl11/">BSL</Link>).
+        The intent
         is to make Diffix free for all use cases that do not resell Diffix software or interfaces.
       </FAQItem>
 
       <FAQItem {addToToc} question="When will Open Diffix releases be available?">
-        The first version of Desktop will be released in October 2021. We are targeting mid to late
+        The first desktop version will be released in October 2021. We are targeting mid to late
         2022 for the first version of the PostgreSQL extension. You may
         <Link href="/newsletter">sign up for our newsletter</Link> to get release announcements.
       </FAQItem>
