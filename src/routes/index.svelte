@@ -4,23 +4,20 @@
 </script>
 
 <svelte:head>
-  <title>open-diffix - Free and Open Dynamic Anonymization for PostgreSQL</title>
+  <title>open-diffix - Free and Open Dynamic Anonymization</title>
 </svelte:head>
 
 <header class="max-w-3xl pt-8 md:pt-12 mx-auto transition-all duration-500">
   <h1 class="text-center text-8xl w-100 px-4 md:text-9xl">
     <Wordmark />
   </h1>
-  <h2 class="mx-12 mt-8 text-2xl text-center">Free and Open Dynamic Anonymization for PostgreSQL</h2>
+  <h2 class="mx-12 mt-8 text-2xl text-center">Free and Open Dynamic Anonymization for Desktop and PostgreSQL</h2>
 </header>
 
 <div class="max-w-6xl px-4 mx-auto mt-20 text-lg lg:flex">
   <div class="flex-col justify-center max-w-lg mx-auto lg:w-2/5 lg:pr-10 lg:pb-16 lg:flex">
-    <p>
-      The Open Diffix project aims to bring world-class dynamic anonymization to your software project, and is free to
-      use for most use cases.
-    </p>
-    <p class="mt-4 font-semibold">It's PostgreSQL as you know it - only anonymous.</p>
+    <p>Placeholder for Desktop. Placeholder for Desktop. Placeholder for Desktop.</p>
+    <p class="mt-4 font-semibold">Placeholder for Desktop.</p>
   </div>
   <div class="mx-auto mt-8 text-base lg:mt-0 lg:mx-0 lg:w-3/5">
     <!-- svelte-ignore a11y-media-has-caption -->
