@@ -18,7 +18,7 @@
   <div class="flex-col justify-center max-w-lg mx-auto lg:w-2/5 lg:pr-10 lg:pb-16 lg:flex">
     <p class="mt-4 text-2xl font-semibold"><Wordmark /> for Desktop.</p>
     <p class="mt-2">Desktop app for unprecedented ease-of-use</p>
-    <ul class="list-disc m-8 -mt-1">
+    <ul class="list-disc ml-8 mt-1">
       <li>Import data from CSV</li>
       <li>Select columns and bin sizes</li>
       <li>Examine data quality</li>
@@ -47,7 +47,7 @@
   <div class="flex-col justify-center max-w-lg mx-auto lg:w-2/5 lg:pr-10 lg:pb-16 lg:flex">
     <p class="mt-4 text-2xl font-semibold"><Wordmark /> for PostgreSQL.</p>
     <p class="mt-2">PostgreSQL extension for high-end use cases</p>
-    <ul class="list-disc m-8 -mt-1">
+    <ul class="list-disc ml-8 mt-1">
       <li>Scale and speed of PostgreSQL</li>
       <li>Standard SQL interface</li>
     </ul>
