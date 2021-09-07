@@ -32,8 +32,8 @@
         <div class="w-3 h-3 ml-1 bg-yellow-500 rounded-full hover:bg-yellow-400" />
         <div class="w-3 h-3 ml-1 bg-green-500 rounded-full hover:bg-green-400" />
       </div>
-      <video autoplay controls muted loop>
-        <source src="static/short_demo.webm" type="video/mp4" />
+      <video width="1920" height="1080" autoplay controls muted loop>
+        <source src="static/short_demo.webm" type="video/webm" />
         Your browser does not support the video tag.
       </video>
     </div>
