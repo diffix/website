@@ -10,12 +10,12 @@
 
 <div class="p-4">
   <header class="max-w-xl pt-12 mx-auto">
-    <h1 class="block text-6xl font-semibold">Demo</h1>
+    <h1 class="block text-6xl font-semibold">PostgreSQL Demo</h1>
   </header>
 
   <div class="max-w-xl mx-auto mt-8">
     <p>
-      <Wordmark /> is currently under development, but we are happy to show you the progress we have made to date.
+      <Wordmark /> for PostgreSQL is still under development, but we are happy to show you the progress we have made to date.
     </p>
 
     <div

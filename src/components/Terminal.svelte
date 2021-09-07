@@ -47,12 +47,12 @@
   onMount(() => setTimeout(addNextCharcter, 100));
 </script>
 
-<div class="mx-auto mt-8 text-base lg:mt-0 lg:mx-0 lg:w-1/2">
+<div class="mx-1 mt-8 text-base lg:mt-0 lg:mx-0 lg:w-3/5">
   <div
-    class="bg-flamingo-400 md:bg-shamrock-300 rounded-lg shadow-2xl transform transition duration-500 md:rotate-3 -rotate-3 mx-auto max-w-sm"
+    class="bg-flamingo-400 md:bg-shamrock-300 rounded-lg shadow-2xl transform transition duration-500 md:rotate-3 -rotate-3"
   >
     <div
-      class="transform rotate-3 transition duration-500 md:-rotate-3 overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg h-96 max-w-96 dark:bg-shamrock-800"
+      class="transform rotate-3 transition duration-500 md:-rotate-3 overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg h-96 dark:bg-shamrock-800"
     >
       <div class="flex px-2 pt-2 pb-2 transition-colors border-b border-gray-700">
         <div class="w-3 h-3 bg-red-500 rounded-full hover:bg-red-400" />
