@@ -25,20 +25,17 @@
       <li>Export anonymized data as CSV</li>
     </ul>
   </div>
-  <div class="mx-auto mt-8 text-base lg:mt-0 lg:mx-0 lg:w-3/5">
-    <!-- svelte-ignore a11y-media-has-caption -->
-    <div class="">
-      <div class="overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg dark:bg-shamrock-800">
-        <div class="flex px-2 pt-2 pb-2 transition-colors border-b border-gray-700">
-          <div class="w-3 h-3 bg-red-500 rounded-full hover:bg-red-400" />
-          <div class="w-3 h-3 ml-1 bg-yellow-500 rounded-full hover:bg-yellow-400" />
-          <div class="w-3 h-3 ml-1 bg-green-500 rounded-full hover:bg-green-400" />
-        </div>
-        <video autoplay controls muted loop>
-          <source src="static/short_demo.webm" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+  <div class="mx-1 mt-8 text-base lg:mt-0 lg:mx-0 lg:w-3/5">
+    <div class="overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg dark:bg-shamrock-800">
+      <div class="flex px-2 pt-2 pb-2 transition-colors border-b border-gray-700">
+        <div class="w-3 h-3 bg-red-500 rounded-full hover:bg-red-400" />
+        <div class="w-3 h-3 ml-1 bg-yellow-500 rounded-full hover:bg-yellow-400" />
+        <div class="w-3 h-3 ml-1 bg-green-500 rounded-full hover:bg-green-400" />
       </div>
+      <video autoplay controls muted loop>
+        <source src="static/short_demo.webm" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   </div>
 </div>
