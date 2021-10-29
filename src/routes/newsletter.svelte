@@ -57,9 +57,7 @@
               </fieldset>
             </div>
           </div>
-          <div
-            class="px-2 pb-2 mt-4 -mx-2 bg-gray-100 rounded-lg mc-field-group group focus-within:bg-gray-100"
-          >
+          <div class="px-2 pb-2 mt-4 -mx-2 bg-gray-100 rounded-lg mc-field-group group focus-within:bg-gray-100">
             <label for="mce-EMAIL" class="font-medium ml-1 text-xs text-gray-800">Your email address</label>
             <div class="flex flex-col space-y-1 sm:space-y-0 sm:space-x-1 sm:flex-row">
               <input
@@ -87,8 +85,7 @@
                 our privacy practices, please read our
                 <a
                   href="https://data-protection.mpi-klsb.mpg.de/sws/open-diffix.org"
-                  class="text-gray-700 underline hover:text-gray-900"
-                  >privacy policy</a
+                  class="text-gray-700 underline hover:text-gray-900">privacy policy</a
                 >.
               </p>
             </div>

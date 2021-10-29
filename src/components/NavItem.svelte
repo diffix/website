@@ -7,9 +7,7 @@
 
 <div class="font-semibold">
   {#if currentPage}
-    <div
-      class="transition-colors duration-500 px-4 py-4 h-full border-shamrock-600 border-b-4"
-    >
+    <div class="transition-colors duration-500 px-4 py-4 h-full border-shamrock-600 border-b-4">
       <slot />
     </div>
   {:else}
