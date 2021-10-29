@@ -1,6 +1,5 @@
 module.exports = {
   mode: "jit",
-  darkMode: "media",
   purge: ["./src/**/*.{html,js,svelte,ts}", "./src/**/*.{html,js,svelte,ts}", "./src/*.{html,js,svelte,ts}"],
   plugins: [],
   theme: {

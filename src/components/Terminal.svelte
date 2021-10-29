@@ -52,14 +52,14 @@
     class="bg-flamingo-400 md:bg-shamrock-300 rounded-lg shadow-2xl transform transition duration-500 md:rotate-3 -rotate-3"
   >
     <div
-      class="transform rotate-3 transition duration-500 md:-rotate-3 overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg h-96 dark:bg-shamrock-800"
+      class="transform rotate-3 transition duration-500 md:-rotate-3 overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg h-96"
     >
       <div class="flex px-2 pt-2 pb-2 transition-colors border-b border-gray-700">
         <div class="w-3 h-3 bg-red-500 rounded-full hover:bg-red-400" />
         <div class="w-3 h-3 ml-1 bg-yellow-500 rounded-full hover:bg-yellow-400" />
         <div class="w-3 h-3 ml-1 bg-green-500 rounded-full hover:bg-green-400" />
       </div>
-      <div class="h-full p-2 font-mono text-gray-300 bg-gray-800 dark:bg-shamrock-900">
+      <div class="h-full p-2 font-mono text-gray-300 bg-gray-800">
         <pre>
     $ psql
 
