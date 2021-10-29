@@ -26,7 +26,7 @@
     </ul>
   </div>
   <div class="mx-1 mt-8 text-base lg:mt-0 lg:mx-0 lg:w-3/5">
-    <div class="overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg dark:bg-shamrock-800">
+    <div class="overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg">
       <div class="flex px-2 pt-2 pb-2 transition-colors border-b border-gray-700">
         <div class="w-3 h-3 bg-red-500 rounded-full hover:bg-red-400" />
         <div class="w-3 h-3 ml-1 bg-yellow-500 rounded-full hover:bg-yellow-400" />
@@ -56,12 +56,12 @@
   <span>Want to stay informed about the development of <Wordmark />?</span>
   <a
     href="/newsletter"
-    class="inline-block px-4 py-2 text-2xl text-center text-white transition-all duration-500 rounded-lg bg-shamrock-600 hover:bg-gradient-to-r from-pink-500 to-purple-500 md:from-shamrock-500 md:to-royalblue-500"
+    class="inline-block px-4 py-2 text-2xl text-center text-white transition-all duration-500 rounded-lg bg-shamrock-600 hover:bg-gradient-to-r from-shamrock-500 to-royalblue-500"
     >Sign up to our newsletter</a
   >
 </div>
 
-<div class="flex-grow pt-16 pb-16 mt-32 dark:pb-4 sm:pt-32 sm:pb-32 bg-gray-50 dark:bg-gray-800">
+<div class="flex-grow pt-16 pb-16 mt-32 sm:pt-32 sm:pb-32 bg-gray-50">
   <div class="max-w-xl px-4 mx-auto xl:max-w-5xl">
     <h2 class="text-xl text-center text-gray-500">
       <Wordmark />
@@ -69,7 +69,7 @@
     </h2>
 
     <div
-      class="flex flex-col items-center max-w-4xl px-6 py-8 mx-auto mt-12 space-y-8 rounded-lg sm:py-4 xl:rounded-full dark:bg-gray-300 xl:space-y-0 xl:mt-8 xl:items-end justify-items-start xl:flex-none xl:grid xl:grid-cols-3 xl:gap-6"
+      class="flex flex-col items-center max-w-4xl px-6 py-8 mx-auto mt-12 space-y-8 rounded-lg sm:py-4 xl:rounded-full xl:space-y-0 xl:mt-8 xl:items-end justify-items-start xl:flex-none xl:grid xl:grid-cols-3 xl:gap-6"
     >
       <div>
         <a href="https://www.mpg.de">

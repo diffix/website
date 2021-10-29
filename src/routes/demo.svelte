@@ -18,9 +18,7 @@
       <Wordmark /> for PostgreSQL is still under development, but we are happy to show you the progress we have made to date.
     </p>
 
-    <div
-      class="bg-gray-50 dark:bg-gray-700 dark:text-gray-50 dark:border-gray-500 border shadow-sm my-6 -mx-2 px-4 py-2 rounded-lg text-gray-700"
-    >
+    <div class="bg-gray-50 border shadow-sm my-6 -mx-2 px-4 py-2 rounded-lg text-gray-700">
       <h2 class="text-2xl">TL;DR</h2>
 
       <p class="mt-2 text-sm">

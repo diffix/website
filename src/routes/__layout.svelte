@@ -12,7 +12,7 @@
   });
 </script>
 
-<div class="flex flex-col min-h-screen dark:text-gray-300">
+<div class="flex flex-col min-h-screen">
   <NavBar />
   <div class="flex-grow" />
   <div class="flex-grow-0 w-full">
