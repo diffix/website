@@ -56,7 +56,7 @@
   <span>Want to stay informed about the development of <Wordmark />?</span>
   <a
     href="/newsletter"
-    class="inline-block px-4 py-2 text-2xl text-center text-white transition-all duration-500 rounded-lg bg-shamrock-600 hover:bg-gradient-to-r from-pink-500 to-purple-500 md:from-shamrock-500 md:to-royalblue-500"
+    class="inline-block px-4 py-2 text-2xl text-center text-white transition-all duration-500 rounded-lg bg-shamrock-600 hover:bg-gradient-to-r from-shamrock-500 to-royalblue-500"
     >Sign up to our newsletter</a
   >
 </div>
