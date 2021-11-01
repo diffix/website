@@ -10,10 +10,13 @@
   <title>open-diffix - Newsletter</title>
 </svelte:head>
 
-<div class="flex-grow-0 w-full">
-  <div class="max-w-xl px-4 mx-auto mt-10">
-    <h2 class="mt-12 text-6xl font-semibold">Newsletter</h2>
-    <div id="mc_embed_signup" class="py-8">
+<div class="p-4">
+  <header class="max-w-xl pt-12 mx-auto">
+    <h1 class="block text-6xl font-semibold">Newsletter</h1>
+  </header>
+
+  <div class="max-w-xl mx-auto mt-8">
+    <div id="mc_embed_signup">
       <form
         action="https://open-diffix.us1.list-manage.com/subscribe/post?u=4006b84ec4d64e7ae6f4c8f49&amp;id=bc48f0af67"
         method="post"
@@ -26,7 +29,7 @@
       >
         <div id="mc_embed_signup_scroll">
           <p class="mt-4">
-            Sign up to our mailinglist and we will keep you up to date on the latest developments around open-diffix.
+            Sign up to our mailing list and we will keep you up to date on the latest developments around open-diffix.
           </p>
           <div id="mergeRow-gdpr" class="text-sm mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
             <div class="mt-8 text-base content__gdpr">
