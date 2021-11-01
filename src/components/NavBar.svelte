@@ -11,7 +11,7 @@
 
       <NavItem href="/faq">FAQ</NavItem>
 
-      <NavItem href="/demo">Demo</NavItem>
+      <NavItem href="/download">Download</NavItem>
     </nav>
   </div>
 </div>
