@@ -42,9 +42,17 @@
 
       <FAQItem {addToToc} question="What is Open Diffix?">
         Open Diffix is a project to make Diffix anonymization free and open. The Open Diffix project develops two
-        software products, a stand-alone desktop product, and a PostgreSQL extension. The desktop product is aimed
-        towards ease-of-use, while the PostgreSQL extension targets higher complexity and scale. Both are strongly
+        software products, a stand-alone desktop product, and a PostgreSQL extension. Diffix for Desktop is aimed
+        towards ease-of-use, while Diffix for PostgreSQL targets higher complexity and scale. Both are strongly
         anonymous, and satisfy the GDPR definition of anonymity.
+      </FAQItem>
+
+      <FAQItem {addToToc} question="When will Open Diffix releases be available?">
+        <Link href="https://open-diffix.org/download">Diffix for Desktop beta</Link>
+        was released on Nov. 2, 2021.
+        We expect the first full release by the end of Nov. 2021. 
+        We are targeting mid to late 2022 for the first version of Diffix for PostgreSQL. You may
+        <Link href="/newsletter">sign up for our newsletter</Link> to get release announcements.
       </FAQItem>
 
       <FAQItem {addToToc} question="How does Diffix compare with Differential Privacy and k-anonymity?">
@@ -63,12 +71,19 @@
         fuzzing, or anonymization of free-form text (redacting).
       </FAQItem>
 
+      <FAQItem {addToToc} question="What about data quality?">
+        All anonymization mechanisms reduce data quality, by generalizing or distorting, and Diffix is no exception.
+        The data quality of Diffix, however, usually far exceeds that of k-anonymity and Differential Privacy.
+        Diffix for Desktop displays the amount of distortion, both as summary statistics and by displaying
+        the original and anonymized data side-by-side. This way, you can observe Diffix' data quality for yourself.
+      </FAQItem>
+
       <FAQItem {addToToc} question="Why are there both desktop and PostgreSQL extension releases?">
         Descriptive analytics over structured data covers a wide range of use cases. At one extreme, a non-technical
-        user may wish to release simple summary statistics over data from a CSV file on his or her machine. A simple
-        desktop application satisfies this use case. At the other extreme, someone may wish to stream data summaries of
-        dynamic data over millions of users into an SQL-based dashboard application. For this the Diffix PostgreSQL
-        extension is appropriate.
+        user may wish to release simple summary statistics over data from a CSV file on his or her machine.
+        Diffix for Desktop satisfies this use case. At the other extreme, someone may wish to stream data summaries of
+        dynamic data over millions of users into an SQL-based dashboard application. For this the Diffix for PostgreSQL
+        is appropriate.
       </FAQItem>
 
       <FAQItem {addToToc} question="What is the trust model for users/analysts?">
@@ -79,7 +94,7 @@
       </FAQItem>
 
       <FAQItem {addToToc} question="Why wouldn't I always use Untrusted Mode?">
-        Trusted Mode is easier to use. It has more query features, and in the desktop version it allows an analyst to
+        Trusted Mode is easier to use. It has more query features, and in Diffix for Desktop it allows an analyst to
         view the anonymized and original data side-by-side. In this way the analyst knows exactly how much the data is
         distorted through suppression and noise, and can more easily adjust column selection and generalization as
         needed.
@@ -100,20 +115,12 @@
         <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>.
       </FAQItem>
 
-      <!--  TODO: Add back in when we have clarity
       <FAQItem {addToToc} question="Is Open Diffix Open Source?">
-        No. For the moment, Open Diffix will not be Open Source in the sense of the Open Source Initiative definition.
-        Although the license isn't finalized, we are expecting a Business Source License
-        (<Link href="https://mariadb.com/de/bsl11/">BSL</Link>).
-        The intent
-        is to make Diffix free for all use cases that do not resell Diffix software or interfaces.
-      </FAQItem>
-      -->
-
-      <FAQItem {addToToc} question="When will Open Diffix releases be available?">
-        The first desktop version will be released in October 2021. We are targeting mid to late 2022 for the first
-        version of the PostgreSQL extension. You may
-        <Link href="/newsletter">sign up for our newsletter</Link> to get release announcements.
+        No. Open Diffix operates under the
+        <Link href="https://mariadb.com/de/bsl11/">Business Source License (BSL1.1)</Link>.
+        <Link href="https://github.com/diffix/desktop/blob/master/LICENSE.md">Our license</Link>
+        makes Diffix free for all use cases, including commercial,
+        that do not resell Diffix software or interfaces.
       </FAQItem>
 
       <FAQItem {addToToc} question="How is Open Diffix funded?">
