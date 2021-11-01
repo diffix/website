@@ -12,7 +12,7 @@
 
 <div class="p-4">
   <header class="max-w-xl pt-12 mx-auto">
-    <h1 class="block text-6xl font-semibold">Newsletter</h1>
+    <h1 class="block text-5xl font-semibold">Newsletter</h1>
   </header>
 
   <div class="max-w-xl mx-auto mt-8">
