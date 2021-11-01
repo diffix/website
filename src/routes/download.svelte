@@ -37,6 +37,27 @@
       >.
     </p>
 
+    <h2 class="mt-12 text-2xl">Sample Tables</h2>
+
+    <p class="mt-2">
+      CSV files that can be used to test Diffix for Desktop. Descriptions of tables can be found <Link
+        href="https://github.com/diffix/desktop/tree/master/sample_data">here</Link
+      >.
+    </p>
+
+    <ul class="mt-2 list-disc list-inside">
+      <li>
+        <DownloadLink href="https://github.com/diffix/desktop/raw/master/sample_data/taxi.csv.zip"
+          >taxi.csv.zip</DownloadLink
+        >
+      </li>
+      <li>
+        <DownloadLink href="https://github.com/diffix/desktop/raw/master/sample_data/census.csv.zip"
+          >census.csv.zip</DownloadLink
+        >
+      </li>
+    </ul>
+
     <h2 class="mt-12 text-2xl">Diffix for PostgreSQL</h2>
 
     <p class="mt-2">
