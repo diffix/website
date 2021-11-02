@@ -7,6 +7,11 @@
 <ContentPage title="Download">
   <h2 class="mt-12 text-2xl">Diffix for Desktop (Beta)</h2>
 
+  <p class="mt-2">
+    <strong>Diffix for Desktop</strong> is currently in beta testing. Releases are unsigned and will display a warning message
+    during installation.
+  </p>
+
   <h3 class="mt-4 font-semibold text-xl">Latest version</h3>
 
   <ul class="mt-2 list-disc list-inside">
