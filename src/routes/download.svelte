@@ -17,7 +17,10 @@
       <DownloadLink href="#">MacOS</DownloadLink>
     </li>
     <li>
-      <DownloadLink href="#">Debian</DownloadLink>
+      <DownloadLink href="#">Linux (Debian)</DownloadLink>
+    </li>
+    <li>
+      <DownloadLink href="#">Linux (RedHat)</DownloadLink>
     </li>
   </ul>
 
