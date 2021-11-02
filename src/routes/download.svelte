@@ -37,7 +37,7 @@
       >.
     </p>
 
-    <h2 class="mt-12 text-2xl">Sample Tables</h2>
+    <h2 class="mt-12 text-2xl">Sample Data</h2>
 
     <p class="mt-2">
       CSV files that can be used to test Diffix for Desktop. Descriptions of tables can be found <Link
