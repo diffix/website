@@ -10,12 +10,12 @@
 </script>
 
 <svelte:head>
-  <title>open-diffix - FAQ</title>
+  <title>Open Diffix - FAQ</title>
 </svelte:head>
 
 <div class="p-4">
   <header id="faq-top" class="max-w-2xl pt-12 mx-auto transition-all duration-500">
-    <h1 class="block text-6xl lg:ml-32 font-semibold w-100">Frequently Asked Questions</h1>
+    <h1 class="block text-5xl lg:ml-32 font-semibold w-100">Frequently Asked Questions</h1>
   </header>
 
   <div class="max-w-2xl lg:max-w-6xl mx-auto mt-16 lg:mt-0 mb-12">
@@ -49,9 +49,8 @@
 
       <FAQItem {addToToc} question="When will Open Diffix releases be available?">
         <Link href="https://open-diffix.org/download">Diffix for Desktop beta</Link>
-        was released on Nov. 2, 2021.
-        We expect the first full release by the end of Nov. 2021. 
-        We are targeting mid to late 2022 for the first version of Diffix for PostgreSQL. You may
+        was released on Nov. 2, 2021. We expect the first full release by the end of Nov. 2021. We are targeting mid to late
+        2022 for the first version of Diffix for PostgreSQL. You may
         <Link href="/newsletter">sign up for our newsletter</Link> to get release announcements.
       </FAQItem>
 
@@ -72,18 +71,18 @@
       </FAQItem>
 
       <FAQItem {addToToc} question="What about data quality?">
-        All anonymization mechanisms reduce data quality, by generalizing or distorting, and Diffix is no exception.
-        The data quality of Diffix, however, usually far exceeds that of k-anonymity and Differential Privacy.
-        Diffix for Desktop displays the amount of distortion, both as summary statistics and by displaying
-        the original and anonymized data side-by-side. This way, you can observe Diffix' data quality for yourself.
+        All anonymization mechanisms reduce data quality, by generalizing or distorting, and Diffix is no exception. The
+        data quality of Diffix, however, usually far exceeds that of k-anonymity and Differential Privacy. Diffix for
+        Desktop displays the amount of distortion, both as summary statistics and by displaying the original and
+        anonymized data side-by-side. This way, you can observe Diffix' data quality for yourself.
       </FAQItem>
 
       <FAQItem {addToToc} question="Why are there both desktop and PostgreSQL extension releases?">
         Descriptive analytics over structured data covers a wide range of use cases. At one extreme, a non-technical
-        user may wish to release simple summary statistics over data from a CSV file on his or her machine.
-        Diffix for Desktop satisfies this use case. At the other extreme, someone may wish to stream data summaries of
-        dynamic data over millions of users into an SQL-based dashboard application. For this the Diffix for PostgreSQL
-        is appropriate.
+        user may wish to release simple summary statistics over data from a CSV file on his or her machine. Diffix for
+        Desktop satisfies this use case. At the other extreme, someone may wish to stream data summaries of dynamic data
+        over millions of users into an SQL-based dashboard application. For this the Diffix for PostgreSQL is
+        appropriate.
       </FAQItem>
 
       <FAQItem {addToToc} question="What is the trust model for users/analysts?">
@@ -119,8 +118,7 @@
         No. Open Diffix operates under the
         <Link href="https://mariadb.com/de/bsl11/">Business Source License (BSL1.1)</Link>.
         <Link href="https://github.com/diffix/desktop/blob/master/LICENSE.md">Our license</Link>
-        makes Diffix free for all use cases, including commercial,
-        that do not resell Diffix software or interfaces.
+        makes Diffix free for all use cases, including commercial, that do not resell Diffix software or interfaces.
       </FAQItem>
 
       <FAQItem {addToToc} question="How is Open Diffix funded?">

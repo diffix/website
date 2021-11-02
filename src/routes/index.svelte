@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>open-diffix - Free and Open Anonymization</title>
+  <title>Open Diffix - Free and Open Anonymization</title>
 </svelte:head>
 
 <header class="max-w-3xl pt-8 md:pt-12 mx-auto transition-all duration-500">
@@ -61,7 +61,7 @@
   >
 </div>
 
-<div class="flex-grow pt-16 pb-16 mt-32 sm:pt-32 sm:pb-32 bg-gray-50">
+<div class="flex-grow pt-16 pb-16 mt-32 mb-10 sm:pt-32 sm:pb-32 bg-gray-50">
   <div class="max-w-xl px-4 mx-auto xl:max-w-5xl">
     <h2 class="text-xl text-center text-gray-500">
       <Wordmark />
