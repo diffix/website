@@ -21,7 +21,7 @@
 
   <div class="flex-grow" />
 
-  <footer class="flex flex-col items-center flex-grow-0 p-4 pt-20 pb-10 mx-auto text-sm text-gray-500">
+  <footer class="flex flex-col items-center flex-grow-0 p-4 pt-10 pb-10 mx-auto text-sm text-gray-500">
     <span class="max-w-sm  text-center">
       If you have questions or want to discuss the project, please send us an email at <Link
         href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link
