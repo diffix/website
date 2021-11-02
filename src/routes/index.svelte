@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>open-diffix - Free and Open Anonymization</title>
+  <title>Open Diffix - Free and Open Anonymization</title>
 </svelte:head>
 
 <header class="max-w-3xl pt-8 md:pt-12 mx-auto transition-all duration-500">

@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-  <title>open-diffix - FAQ</title>
+  <title>Open Diffix - FAQ</title>
 </svelte:head>
 
 <div class="p-4">

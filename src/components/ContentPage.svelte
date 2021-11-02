@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>open-diffix - {title}</title>
+  <title>Open Diffix - {title}</title>
 </svelte:head>
 
 <div class="max-w-xl mx-auto box-content  p-4">
