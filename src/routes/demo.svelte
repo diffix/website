@@ -1,13 +1,13 @@
 <script>
   import ContentPage from "../components/ContentPage.svelte";
-  import Wordmark from "../components/Wordmark.svelte";
   import Link from "../components/Link.svelte";
   import CopyableCommand from "../components/CopyableCommand.svelte";
 </script>
 
 <ContentPage title="PostgreSQL Demo">
   <p>
-    <Wordmark /> for PostgreSQL is still under development, but we are happy to show you the progress we have made to date.
+    <strong>Diffix for PostgreSQL</strong> is still under development, but we are happy to show you the progress we have
+    made to date.
   </p>
 
   <div class="bg-gray-50 border shadow-sm my-6 -mx-2 px-4 py-2 rounded-lg text-gray-700">

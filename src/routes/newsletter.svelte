@@ -21,7 +21,7 @@
     >
       <div id="mc_embed_signup_scroll">
         <p class="mt-4">
-          Sign up to our mailing list and we will keep you up to date on the latest developments around open-diffix.
+          Sign up to our mailing list and we will keep you up to date on the latest developments around Open Diffix.
         </p>
         <div id="mergeRow-gdpr" class="text-sm mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
           <div class="mt-8 text-base content__gdpr">
@@ -34,13 +34,13 @@
                 for="gdpr_39706"
               >
                 <input type="checkbox" id="gdpr_39706" name="gdpr[39706]" value="Y" class="av-checkbox gdpr" checked />
-                <span class="ml-2">Updates about the Open-Diffix project - no spam, no ads</span>
+                <span class="ml-2">Updates about the Open Diffix project - no spam, no ads</span>
               </label>
               <label
                 class="flex items-baseline px-1 mt-1 -mx-1 rounded cursor-pointer hover:bg-gray-100 checkbox subfield"
                 for="gdpr_39710"
                 ><input type="checkbox" id="gdpr_39710" name="gdpr[39710]" value="Y" class="av-checkbox gdpr" />
-                <span class="ml-2"> Information from partner organizations about Open-Diffix related services </span>
+                <span class="ml-2"> Information from partner organizations about Open Diffix related services </span>
               </label>
             </fieldset>
           </div>

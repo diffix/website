@@ -35,7 +35,7 @@
   <h2 class="mt-12 text-2xl">Sample Data</h2>
 
   <p class="mt-2">
-    CSV files that can be used to test Diffix for Desktop. Descriptions of tables can be found <Link
+    CSV files that can be used to test <strong>Diffix for Desktop</strong>. Descriptions of tables can be found <Link
       href="https://github.com/diffix/desktop/tree/master/sample_data">here</Link
     >.
   </p>
@@ -56,6 +56,6 @@
   <h2 class="mt-12 text-2xl">Diffix for PostgreSQL</h2>
 
   <p class="mt-2">
-    Diffix for PostgreSQL is still under development. Click <Link href="/demo">here</Link> for more details.
+    <strong>Diffix for PostgreSQL</strong> is still under development. Click <Link href="/demo">here</Link> for more details.
   </p>
 </ContentPage>
