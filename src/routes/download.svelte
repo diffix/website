@@ -5,35 +5,32 @@
 </script>
 
 <ContentPage title="Download">
-  <h2 class="mt-12 text-2xl">Diffix for Desktop (Beta)</h2>
+  <h2 class="mt-12 text-2xl">Diffix for Desktop V1</h2>
 
-  <p class="mt-2">
-    <strong>Diffix for Desktop</strong> is currently in beta testing. Releases are unsigned and will display a warning message
-    during installation.
-  </p>
+  <p class="mt-2">Releases are currently unsigned and will display a warning message during installation.</p>
 
   <h3 class="mt-4 font-semibold text-xl">Latest version</h3>
 
   <ul class="mt-2 list-disc list-inside">
     <li>
-      <DownloadLink href="https://github.com/diffix/desktop/releases/download/v0.4.0/DiffixForDesktop-0.4.0.Setup.exe"
+      <DownloadLink href="https://github.com/diffix/desktop/releases/download/v1.0.0/DiffixForDesktop-1.0.0.Setup.exe"
         >Windows</DownloadLink
       >
     </li>
     <li>
       <DownloadLink
-        href="https://github.com/diffix/desktop/releases/download/v0.4.0/DiffixForDesktop-darwin-x64-0.4.0.zip"
+        href="https://github.com/diffix/desktop/releases/download/v1.0.0/DiffixForDesktop-darwin-x64-1.0.0.zip"
         >MacOS</DownloadLink
       >
     </li>
     <li>
-      <DownloadLink href="https://github.com/diffix/desktop/releases/download/v0.4.0/DiffixForDesktop_0.4.0_amd64.deb"
+      <DownloadLink href="https://github.com/diffix/desktop/releases/download/v1.0.0/DiffixForDesktop_1.0.0_amd64.deb"
         >Linux (Debian)</DownloadLink
       >
     </li>
     <li>
       <DownloadLink
-        href="https://github.com/diffix/desktop/releases/download/v0.4.0/DiffixForDesktop-0.4.0-1.x86_64.rpm"
+        href="https://github.com/diffix/desktop/releases/download/v1.0.0/DiffixForDesktop-1.0.0-1.x86_64.rpm"
         >Linux (RedHat)</DownloadLink
       >
     </li>
