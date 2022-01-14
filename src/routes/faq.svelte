@@ -35,42 +35,44 @@
       <FAQItem {addToToc} question="What is Diffix?">
         Diffix is an algorithm for anonymizing structured data. It was jointly developed by Aircloak GmbH and the Max
         Planck Institute for Software Systems. Diffix combines the three most common anonymization mechanisms,
-        <b>generalization</b>, <b>noise</b>, and <b>suppression</b>. It automatically applies these mechanisms as needed on a
-        query-by-query basis to minimize noise while ensuring strong anonymity.
+        <b>generalization</b>, <b>noise</b>, and <b>suppression</b>. It automatically applies these mechanisms as needed
+        on a query-by-query basis to minimize noise while ensuring strong anonymity.
         <!--  TODO: See here for our papers on the technology.-->
       </FAQItem>
 
       <FAQItem {addToToc} question="What is Open Diffix?">
         Open Diffix is a project to make Diffix anonymization free and open. The Open Diffix project develops two
         software products, a stand-alone desktop product, and a PostgreSQL extension. <b>Diffix for Desktop</b> is aimed
-        towards ease-of-use, while <b>Diffix for PostgreSQL</b> targets higher complexity and scale. Both are strongly
-        anonymous, and satisfy the GDPR definition of anonymity.
+        towards ease-of-use, while <b>Diffix for PostgreSQL</b> targets higher complexity and scale. Both are strongly anonymous,
+        and satisfy the GDPR definition of anonymity.
       </FAQItem>
 
       <FAQItem {addToToc} question="What is Diffix Elm?">
-        Major versions of Diffix are named after trees. Diffix Elm is the latest version (after Aspen, Birch, Cedar, and Dogwood), and is the basis for the first releases of Diffix for Desktop and Diffix for PostgreSQL. Diffix Elm represents a kind of "reset". It is much <b>simpler</b> than previous versions, making it <b>easier to use</b> and easier to analyze (though less feature rich).
+        Major versions of Diffix are named after trees. Diffix Elm is the latest version (after Aspen, Birch, Cedar, and
+        Dogwood), and is the basis for the first releases of Diffix for Desktop and Diffix for PostgreSQL. Diffix Elm
+        represents a kind of "reset". It is much <b>simpler</b> than previous versions, making it <b>easier to use</b> and
+        easier to analyze (though less feature rich).
       </FAQItem>
 
       <FAQItem {addToToc} question="Where can I learn about Diffix Elm?">
         An overview of Diffix Elm may be found
-        <Link href="https://github.com/diffix/desktop/blob/master/docs/anonymization.md">on our Github repo</Link>.
-        A detailed description
-        <Link href="https://arxiv.org/abs/2201.04351">is available on ArXiv</Link>.
-        Besides including a <b>full specification</b>, it includes a complete privacy analysis and guidance for writing a risk assessment.
+        <Link href="https://github.com/diffix/desktop/blob/master/docs/anonymization.md">on our Github repo</Link>. A
+        detailed description
+        <Link href="https://arxiv.org/abs/2201.04351">is available on ArXiv</Link>. Besides including a
+        <b>full specification</b>, it includes a complete privacy analysis and guidance for writing a risk assessment.
       </FAQItem>
 
       <FAQItem {addToToc} question="When will Open Diffix releases be available?">
         <Link href="https://open-diffix.org/download">Diffix for Desktop V1</Link>
-        is now available. We are targeting mid to late
-        2022 for the first version of Diffix for PostgreSQL. You may
+        is now available. We are targeting mid to late 2022 for the first version of Diffix for PostgreSQL. You may
         <Link href="/newsletter">sign up for our newsletter</Link> to get release announcements.
       </FAQItem>
 
       <FAQItem {addToToc} question="How does Diffix compare with Differential Privacy and k-anonymity?">
-        K-anonymity uses generalization and suppression. Systems based on Differential Privacy use noise and
-        often use generalization. Diffix uses all three, and so combines the benefits of both k-anonymity and
-        Differential Privacy without formerly adhering to either model. While Diffix does not offer the mathematical
-        guarantees of Differential Privacy, it also does not have the drawback of a privacy budget.
+        K-anonymity uses generalization and suppression. Systems based on Differential Privacy use noise and often use
+        generalization. Diffix uses all three, and so combines the benefits of both k-anonymity and Differential Privacy
+        without formerly adhering to either model. While Diffix does not offer the mathematical guarantees of
+        Differential Privacy, it also does not have the drawback of a privacy budget.
         <!--  TODO: Please see here for our papers on the technology.-->
       </FAQItem>
 
@@ -99,9 +101,9 @@
 
       <FAQItem {addToToc} question="What is the trust model for users/analysts?">
         Diffix has two modes of operation, Trusted Analyst Mode and Untrusted Analyst Mode. Trusted Mode protects
-        against <b>accidental release</b> of personal data. Untrusted Mode protects against <b>intentional, malicious exposure</b> of
-        personal data. A Trusted Mode analyst does not require any expertise in anonymization in order to safely release
-        data queried through Diffix.
+        against <b>accidental release</b> of personal data. Untrusted Mode protects against
+        <b>intentional, malicious exposure</b> of personal data. A Trusted Mode analyst does not require any expertise in
+        anonymization in order to safely release data queried through Diffix.
       </FAQItem>
 
       <FAQItem {addToToc} question="Why wouldn't I always use Untrusted Mode?">
@@ -119,9 +121,11 @@
       </FAQItem>
 
       <FAQItem {addToToc} question="Can the Open Diffix project help us with GDPR compliance?">
-        The 
+        The
         <Link href="https://arxiv.org/abs/2201.04351">full specification of Diffix Elm</Link>
-        is designed to support <b>risk assessment</b> by DPOs and DPAs for GDPR or any other privacy standard. It describes the anonymization mechanisms in detail, and gives an analysis of the anonymization properties against an exhaustive set of attacks. For assistance in this process you can contact us at
+        is designed to support <b>risk assessment</b> by DPOs and DPAs for GDPR or any other privacy standard. It
+        describes the anonymization mechanisms in detail, and gives an analysis of the anonymization properties against
+        an exhaustive set of attacks. For assistance in this process you can contact us at
         <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>.
       </FAQItem>
 
