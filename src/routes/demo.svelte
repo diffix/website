@@ -55,7 +55,7 @@
     <span>banking_publish</span> and gives you access to the same tables, but with the anonymization restrictions applied.
   </p>
 
-  <div class="sm:hidden mt-4 flex w-100">
+  <div class="sm:hidden mt-4 flex w-full">
     <div class="w-1/2">
       <h3 class="text-lg font-medium">Not anonymized</h3>
       <div>

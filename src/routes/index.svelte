@@ -8,7 +8,7 @@
 </svelte:head>
 
 <header class="max-w-3xl pt-8 md:pt-12 mx-auto transition-all duration-500">
-  <h1 class="text-center text-8xl w-100 px-4 md:text-9xl">
+  <h1 class="text-center text-8xl w-full px-4 md:text-9xl">
     <Wordmark />
   </h1>
   <h2 class="mx-12 mt-8 text-2xl text-center">Strong Anonymization for Structured Data. Open. Free.</h2>

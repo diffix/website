@@ -15,12 +15,12 @@
 
 <div class="p-4">
   <header id="faq-top" class="max-w-2xl pt-12 mx-auto transition-all duration-500">
-    <h1 class="block text-5xl lg:ml-32 font-semibold w-100">Frequently Asked Questions</h1>
+    <h1 class="block text-5xl lg:ml-32 font-semibold w-full">Frequently Asked Questions</h1>
   </header>
 
   <div class="max-w-2xl lg:max-w-6xl mx-auto mt-16 lg:mt-0 mb-12">
     <div class="lg:w-72 lg:fixed lg:-mt-36">
-      <h2 class="block text-2xl w-100 font-semibold">Table of contents</h2>
+      <h2 class="block text-2xl w-full font-semibold">Table of contents</h2>
 
       <ul class="mt-4 ml-4 space-y-1.5 text-sm list-disc list-outside">
         {#each tocItems as question (question.id)}
