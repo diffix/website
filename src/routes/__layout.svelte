@@ -28,7 +28,7 @@
       >.
     </span>
 
-    <span class="mt-8">Copyright MPI-SWS for Software Systems</span>
+    <span class="mt-8">Copyright MPI-SWS</span>
     <span class="mx-auto mt-2 space-x-2">
       <Link href="https://imprint.mpi-klsb.mpg.de/sws/open-diffix.org/">Imprint</Link>
       <Link href="https://data-protection.mpi-klsb.mpg.de/sws/open-diffix.org">Privacy Policy</Link>
