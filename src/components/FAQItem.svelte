@@ -9,7 +9,8 @@
   onMount(() => addToToc(id, question));
 </script>
 
-<section {id}>
+<section>
+  <div {id} class="relative -top-1 md:-top-20" />
   <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
   <h2 class="max-w-lg text-2xl font-semibold mt-px">
     {question}
