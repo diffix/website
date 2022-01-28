@@ -11,6 +11,8 @@
 
       <NavItem href="/newsletter">Newsletter</NavItem>
 
+      <NavItem href="/blog" subpaths>Blog</NavItem>
+
       <NavItem href="/faq">FAQ</NavItem>
     </nav>
   </div>

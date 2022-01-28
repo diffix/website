@@ -2,14 +2,16 @@
   import { page } from "$app/stores";
 
   export let href: string;
-  $: currentPage = href && href === $page.path;
+  export let subpaths = false;
+
+  $: currentPage = href && (subpaths ? $page.path.indexOf(href) === 0 : $page.path === href);
 </script>
 
 <div class="font-semibold">
   {#if currentPage}
-    <div class="transition-colors duration-500 px-4 py-4 h-full border-shamrock-600 border-b-4">
+    <a {href} class="transition-colors duration-500 px-4 py-4 block h-full border-shamrock-600 border-b-4">
       <slot />
-    </div>
+    </a>
   {:else}
     <a
       {href}
