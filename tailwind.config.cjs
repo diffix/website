@@ -1,7 +1,7 @@
 module.exports = {
   mode: "jit",
-  purge: ["./src/**/*.{html,js,svelte,ts}", "./src/**/*.{html,js,svelte,ts}", "./src/*.{html,js,svelte,ts}"],
-  plugins: [],
+  content: ["./src/**/*.{html,js,svelte,ts}", "./src/**/*.{html,js,svelte,ts}", "./src/*.{html,js,svelte,ts}"],
+  plugins: [require("@tailwindcss/typography")],
   theme: {
     extend: {
       colors: {

@@ -7,7 +7,7 @@
   <title>Open Diffix - Free and Open Anonymization</title>
 </svelte:head>
 
-<header class="max-w-3xl pt-8 md:pt-12 mx-auto transition-all duration-500">
+<header class="max-w-3xl pt-8 md:pt-12 mx-auto">
   <h1 class="text-center text-8xl w-full px-4 md:text-9xl">
     <Wordmark />
   </h1>

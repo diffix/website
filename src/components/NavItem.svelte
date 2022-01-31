@@ -4,7 +4,7 @@
   export let href: string;
   export let subpaths = false;
 
-  $: currentPage = href && (subpaths ? $page.path.indexOf(href) === 0 : $page.path === href);
+  $: currentPage = href && (subpaths ? $page.url.pathname.indexOf(href) === 0 : $page.url.pathname === href);
 </script>
 
 <div class="font-semibold">
