@@ -58,7 +58,7 @@
       <pre>
 $ psql
 
-# SELECT { renderedQuery }
+# SELECT {renderedQuery}
 </pre>
 
       {#if query === ""}
@@ -66,7 +66,7 @@ $ psql
 <br class="h-1" />
    count
   -------
-  { answer }
+  {answer}
   (1 row)
 
 </pre>
