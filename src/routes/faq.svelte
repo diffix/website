@@ -36,11 +36,14 @@
     <div class="lg:mt-12 lg:ml-80">
       <div class="mx-auto lg:max-w-2xl space-y-6 lg:space-y-12 pt-12 lg:pt-0">
         <FAQItem {addToToc} question="What is Diffix?">
-          Diffix is an algorithm for anonymizing structured data. It was jointly developed by Aircloak GmbH and the Max
-          Planck Institute for Software Systems. Diffix combines the three most common anonymization mechanisms,
-          <b>generalization</b>, <b>noise</b>, and <b>suppression</b>. It automatically applies these mechanisms as
-          needed on a query-by-query basis to minimize noise while ensuring strong anonymity.
-          <!--  TODO: See here for our papers on the technology.-->
+          Diffix is a bundled set of mechanisms for anonymizing structured data. It was jointly developed by Aircloak
+          GmbH and the Max Planck Institute for Software Systems. Diffix' exploits mechansims that have been in use by
+          national statistics offices for decades:
+          <b>aggregation</b>, <b>generalization</b>, <b>noise</b>, <b>suppression</b>, and <b>swapping</b>. It
+          automatically applies these mechanisms as needed on a query-by-query basis to minimize noise while ensuring
+          strong anonymity.
+          <Link href="/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">Here</Link> is a brief
+          overview.
         </FAQItem>
 
         <FAQItem {addToToc} question="What is Open Diffix?">
@@ -58,9 +61,9 @@
         </FAQItem>
 
         <FAQItem {addToToc} question="Where can I learn about Diffix Elm?">
-          An overview of Diffix Elm may be found
-          <Link href="https://github.com/diffix/desktop/blob/master/docs/anonymization.md">on our Github repo</Link>. A
-          detailed description
+          A good overview of Diffix Elm can be found <Link
+            href="/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">here</Link
+          >. A detailed description
           <Link href="https://arxiv.org/abs/2201.04351">is available on ArXiv</Link>. Besides including a
           <b>full specification</b>, it includes a complete privacy analysis and guidance for writing a risk assessment.
         </FAQItem>
@@ -74,9 +77,9 @@
         <FAQItem {addToToc} question="How does Diffix compare with Differential Privacy and k-anonymity?">
           K-anonymity uses generalization and suppression. Systems based on Differential Privacy use noise and often use
           generalization. Diffix uses all three, and so combines the benefits of both k-anonymity and Differential
-          Privacy without formerly adhering to either model. While Diffix does not offer the mathematical guarantees of
-          Differential Privacy, it also does not have the drawback of a privacy budget.
-          <!--  TODO: Please see here for our papers on the technology.-->
+          Privacy without formally adhering to either model. In so doing, Diffix is more patterned after how national
+          statistics offices approach anonymization. While Diffix does not offer the mathematical guarantees of
+          low-epsilon Differential Privacy, it also does not have the drawback of a privacy budget.
         </FAQItem>
 
         <FAQItem {addToToc} question="What kinds of analytics does Diffix support (and not support)?">
@@ -89,9 +92,10 @@
 
         <FAQItem {addToToc} question="What about data quality?">
           All anonymization mechanisms reduce data quality, by generalizing or distorting, and Diffix is no exception.
-          The data quality of Diffix, however, usually far exceeds that of k-anonymity and Differential Privacy. Diffix
-          for Desktop displays the amount of distortion, both as summary statistics and by displaying the original and
-          anonymized data side-by-side. This way, you can observe Diffix' data quality for yourself.
+          The data quality of Diffix is similar to data released by national statistics offices (e.g. census data), and
+          usually far exceeds that of k-anonymity and Differential Privacy. Diffix for Desktop displays the amount of
+          distortion, both as summary statistics and by displaying the original and anonymized data side-by-side. This
+          way, you can observe Diffix' data quality for yourself.
         </FAQItem>
 
         <FAQItem {addToToc} question="Why are there both desktop and PostgreSQL extension releases?">

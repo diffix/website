@@ -1,11 +1,22 @@
 import preprocess from "svelte-preprocess";
 import adapter from "@sveltejs/adapter-static";
+import { mdsvex } from "mdsvex";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
-  preprocess: preprocess(),
+  preprocess: [
+    preprocess(),
+    mdsvex({
+      extensions: [".md"],
+      layout: {
+        blog: "src/routes/blog/_post.svelte"
+      }
+    })
+  ],
+
+  extensions: [".svelte", ".md"],
 
   kit: {
     adapter: adapter({
@@ -21,7 +32,9 @@ const config = {
       assets: "static"
     },
 
-    router: true,
+    browser: {
+      router: true
+    },
 
     // Opt-out of Google's FLoC. This might only have an effect
     // if we have a server component too, but well, here it is, just for
