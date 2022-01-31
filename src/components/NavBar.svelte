@@ -9,11 +9,11 @@
 
       <NavItem href="/download">Download</NavItem>
 
-      <NavItem href="/newsletter">Newsletter</NavItem>
+      <NavItem href="/faq">FAQ</NavItem>
 
       <NavItem href="/blog" subpaths>Blog</NavItem>
 
-      <NavItem href="/faq">FAQ</NavItem>
+      <NavItem href="/newsletter">Newsletter</NavItem>
     </nav>
   </div>
 </div>
