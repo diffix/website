@@ -5,19 +5,17 @@ date: 2022-01-31
 excerpt: A good way to understand Diffix Elm's anonymization is that it automates the mechanisms that national statistics offices have been using for decades. This short and simple post explains how.
 ---
 
-
 # Diffix Elm automates what statistics offices have been doing for decades
 
 Diffix Elm is a methodology for dynamic data anonymization. _Dynamic_ means that it operates on a query-by-query basis (versus generating a single static anonymized table). Diffix Elm is essentially an SQL query engine. It accepts SQL queries with a limited syntax, reads the original personal data, and returns an anonymized answer.
 
 <img src="figs/diffix-basic.png" width="400">
 
-The two strong anonymization _models_ that get the most attention are _k-anonymity_ and _Differential Privacy_. You might be surprised to learn, then, that organizations like statistics offices, which routinely release anonymized data about whole populations, don't use these models per se*. Rather, they use a combination of _mechanisms_. The most commonly used mechanisms are __aggregation__, __generalization__, __noise__, __suppression__, and __swapping__. These mechanisms have safely been in use for decades.
+The two strong anonymization _models_ that get the most attention are _k-anonymity_ and _Differential Privacy_. You might be surprised to learn, then, that organizations like statistics offices, which routinely release anonymized data about whole populations, don't use these models per se\*. Rather, they use a combination of _mechanisms_. The most commonly used mechanisms are **aggregation**, **generalization**, **noise**, **suppression**, and **swapping**. These mechanisms have safely been in use for decades.
 
 Diffix Elm uses these mechanisms too. You can think of Diffix Elm as _automating_ and _generalizing_ the bespoke methods used by statistics bureaus. In so doing, Diffix Elm brings "census strength" anonymization to non-experts across a wide range of use cases and datasets.
 
 In this article, we describe how and why Diffix Elm uses these mechanisms. Along the way, we contrast them with how the mechanisms are used by the Australian Bureau of Statistics (ABS), the US Census Bureau (USCB), and the UK Office for National Statistics (ONS).
-
 
 ## Aggregation
 
@@ -116,24 +114,20 @@ This is fine for statistics offices, but not everybody can afford a team of priv
 This article gives an overview of these mechanisms, and compares and contrasts how they are used by Diffix Elm and statistics offices alike. For more information, a full specification and risk analysis of Diffix Elm can be found at [[Elm]][Elm]. As always, please don't hesitate to get in touch with us at hello@open-diffix.org.
 
 ---
-\* The US Census Bureau ostensibly uses Differential Privacy. I'm just not sure a budget of epsilon around 20 really ought to be counted as a legitimate use of Differential Privacy. Note I'm not criticizing the US Census Bureau: their 2020 release is undoubtedly their most secure.
 
+\* The US Census Bureau ostensibly uses Differential Privacy. I'm just not sure a budget of epsilon around 20 really ought to be counted as a legitimate use of Differential Privacy. Note I'm not criticizing the US Census Bureau: their 2020 release is undoubtedly their most secure.
 
 ### References
 
-__\[ABS\]__ http://www.unece.org.net4all.ch/fileadmin/DAM/stats/documents/ece/ces/ge.46/2019/mtg1/SDC2019_S2_ABS_Bailie_D.pdf
+**\[ABS\]** http://www.unece.org.net4all.ch/fileadmin/DAM/stats/documents/ece/ces/ge.46/2019/mtg1/SDC2019_S2_ABS_Bailie_D.pdf
 
-__\[Elm\]__ https://arxiv.org/abs/2201.04351
+**\[Elm\]** https://arxiv.org/abs/2201.04351
 
-__\[ONS\]__ https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2020/07/EAP125-Statistical-Disclosure-Control-SDC-for-2021-UK-Census.docx
+**\[ONS\]** https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2020/07/EAP125-Statistical-Disclosure-Control-SDC-for-2021-UK-Census.docx
 
+**\[USCB\]** https://www2.census.gov/library/publications/decennial/2020/2020-census-disclosure-avoidance-handbook.pdf
 
-__\[USCB\]__ https://www2.census.gov/library/publications/decennial/2020/2020-census-disclosure-avoidance-handbook.pdf
-
-[ABS]:http://www.unece.org.net4all.ch/fileadmin/DAM/stats/documents/ece/ces/ge.46/2019/mtg1/SDC2019_S2_ABS_Bailie_D.pdf
-
-[Elm]:https://arxiv.org/abs/2201.04351
-
-[ONS]:https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2020/07/EAP125-Statistical-Disclosure-Control-SDC-for-2021-UK-Census.docx
-
-[USCB]:https://www2.census.gov/library/publications/decennial/2020/2020-census-disclosure-avoidance-handbook.pdf
+[abs]: http://www.unece.org.net4all.ch/fileadmin/DAM/stats/documents/ece/ces/ge.46/2019/mtg1/SDC2019_S2_ABS_Bailie_D.pdf
+[elm]: https://arxiv.org/abs/2201.04351
+[ons]: https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2020/07/EAP125-Statistical-Disclosure-Control-SDC-for-2021-UK-Census.docx
+[uscb]: https://www2.census.gov/library/publications/decennial/2020/2020-census-disclosure-avoidance-handbook.pdf
