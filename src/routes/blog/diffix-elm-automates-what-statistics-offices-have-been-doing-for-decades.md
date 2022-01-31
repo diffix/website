@@ -1,7 +1,7 @@
 ---
 title: Diffix Elm automates what statistics offices have been doing for decades
 author: Paul Francis
-date: "2021-01-31"
+date: 2022-01-31
 excerpt: A good way to understand Diffix Elm's anonymization is that it automates the mechanisms that national statistics offices have been using for decades. This short and simple post explains how.
 ---
 
@@ -81,10 +81,10 @@ In census data, this is most commonly done by exchanging a unique person in one 
 
 <img src="figs/area-swap.png" width="500">
 
-For the 2020 census, the USCB moved from a swapping-based approach to a noise-based approach. Nevertheless, the USCB does a kind of statistical swapping. Specifically, when noise would have caused a race category to have a negative count, they increase the count to zero and decrease other non-zero races by the corresponding amount 
+For the 2020 census, the USCB moved from a swapping-based approach to a noise-based approach. Nevertheless, the USCB does a kind of statistical swapping. Specifically, when noise would have caused a race category to have a negative count, they increase the count to zero and decrease other non-zero races by the corresponding amount
 [[USCB]][USCB].
 
-Diffix Elm has its own form of swapping, called _low-effect detection_ in 
+Diffix Elm has its own form of swapping, called _low-effect detection_ in
 [[Elm]][Elm]. This swapping is used in cases where two different queries would cause a bin in one query to differ by a single person from the corresponding bin in the other query. For example, suppose that there is a single female in the computer science department of a university. A query for department, salary (generalized to $10K), and sex would suppress the bin composed of the woman. A query for only department and salary, on the other hand, would include the woman along with the men in the corresponding salary bin. If the analyst knows that there is only one woman in the CS department, in some cases it would be possible to infer the woman's salary bin with high confidence.
 
 <img src="figs/low-effect.png" width="600">
