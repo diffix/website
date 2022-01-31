@@ -78,7 +78,6 @@
           Privacy without formally adhering to either model. In so doing, Diffix is more patterned after how national statistics offices approach anonymization.
           While Diffix does not offer the mathematical guarantees of low-epsilon
           Differential Privacy, it also does not have the drawback of a privacy budget.
-          <!--  TODO: Please see here for our papers on the technology.-->
         </FAQItem>
 
         <FAQItem {addToToc} question="What kinds of analytics does Diffix support (and not support)?">
