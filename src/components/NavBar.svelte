@@ -12,8 +12,6 @@
       <NavItem href="/faq">FAQ</NavItem>
 
       <NavItem href="/blog" subpaths>Blog</NavItem>
-
-      <NavItem href="/newsletter">Newsletter</NavItem>
     </nav>
   </div>
 </div>
