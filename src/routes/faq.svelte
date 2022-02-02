@@ -48,15 +48,17 @@
 
         <FAQItem {addToToc} question="What is Open Diffix?">
           Open Diffix is a project to make Diffix anonymization free and open. The Open Diffix project develops two
-          software products, a stand-alone desktop product, and a PostgreSQL extension. <b>Diffix for Desktop</b> is
-          aimed towards ease-of-use, while <b>Diffix for PostgreSQL</b> targets higher complexity and scale. Both are strongly
-          anonymous, and satisfy the GDPR definition of anonymity.
+          Diffix query engine implementations, one based on .NET and the other a PostgreSQL extension. We have developed <b
+            >Diffix for Desktop</b
+          >, a GUI-based application on the .NET query engine. Diffix for Desktop is aimed towards ease-of-use, while
+          <b>Diffix for PostgreSQL</b> targets higher complexity and scale. Both are strongly anonymous, and satisfy the
+          GDPR definition of anonymity.
         </FAQItem>
 
         <FAQItem {addToToc} question="What is Diffix Elm?">
           Major versions of Diffix are named after trees. Diffix Elm is the latest version (after Aspen, Birch, Cedar,
           and Dogwood), and is the basis for the first releases of Diffix for Desktop and Diffix for PostgreSQL. Diffix
-          Elm represents a kind of "reset". It is much <b>simpler</b> than previous versions, making it
+          Elm represents a kind of "complexity reset". It is much <b>simpler</b> than previous versions, making it
           <b>easier to use</b> and easier to analyze (though less feature rich).
         </FAQItem>
 
