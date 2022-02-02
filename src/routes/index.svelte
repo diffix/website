@@ -19,8 +19,9 @@
 
 <div class="max-w-6xl px-4 mx-auto mt-20 text-lg lg:flex">
   <div class="flex-col justify-center max-w-lg mx-auto lg:w-2/5 lg:pr-10 lg:pb-16 lg:flex">
-    <p class="mt-4 text-2xl font-semibold">Diffix for Desktop.</p>
-    <p class="mt-2">Desktop app for unprecedented ease-of-use</p>
+    <p class="mt-4 text-2xl font-semibold">Diffix for Desktop</p>
+    <p class="mt-2">Desktop app for unprecedented ease-of-use.</p>
+    <p class="mt-2">Built on the .NET Diffix core code.</p>
     <ul class="list-disc ml-8 mt-1">
       <li>Import data from CSV</li>
       <li>Select columns and bin sizes</li>
@@ -45,8 +46,8 @@
 
 <div class="max-w-6xl px-4 mx-auto mt-20 text-lg lg:flex">
   <div class="flex-col justify-center max-w-lg mx-auto lg:w-2/5 lg:pr-10 lg:pb-16 lg:flex">
-    <p class="mt-4 text-2xl font-semibold">Diffix for PostgreSQL.</p>
-    <p class="mt-2">PostgreSQL extension for high-end use cases</p>
+    <p class="mt-4 text-2xl font-semibold">Diffix for PostgreSQL</p>
+    <p class="mt-2">PostgreSQL extension for high-end use cases.</p>
     <ul class="list-disc ml-8 mt-1">
       <li>Scale and speed of PostgreSQL</li>
       <li>Standard SQL interface</li>
@@ -66,7 +67,7 @@
 
 <div class="flex-grow pt-16 pb-16 mt-32 mb-10 sm:pt-32 sm:pb-32 bg-gray-50">
   <div class="max-w-xl px-4 mx-auto xl:max-w-5xl">
-    <h2 class="text-xl text-center text-gray-500">Open Diffix is sponsored by</h2>
+    <h2 class="text-xl text-center text-gray-500">Open Diffix is supported by</h2>
     <div
       class="flex flex-col items-center max-w-4xl px-6 py-8 mx-auto mt-12 space-y-8 rounded-lg sm:py-4 xl:rounded-full xl:space-y-0 xl:mt-8 xl:items-end justify-items-start xl:flex-none xl:grid xl:grid-cols-3 xl:gap-6"
     >
