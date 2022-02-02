@@ -47,10 +47,10 @@
         </FAQItem>
 
         <FAQItem {addToToc} question="What is Open Diffix?">
-          Open Diffix is a project to make Diffix anonymization free and open. The Open Diffix project develops two core
-          software implementations, one based on .NET and the other a PostgreSQL extension. We have developed <b
+          Open Diffix is a project to make Diffix anonymization free and open. The Open Diffix project develops two Diffix query engine
+          implementations, one based on .NET and the other a PostgreSQL extension. We have developed <b
             >Diffix for Desktop</b
-          >, a GUI-based application on the .NET implementation. Diffix for Desktop is aimed towards ease-of-use, while
+          >, a GUI-based application on the .NET query engine. Diffix for Desktop is aimed towards ease-of-use, while
           <b>Diffix for PostgreSQL</b> targets higher complexity and scale. Both are strongly anonymous, and satisfy the
           GDPR definition of anonymity.
         </FAQItem>
