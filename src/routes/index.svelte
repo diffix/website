@@ -21,7 +21,7 @@
   <div class="flex-col justify-center max-w-lg mx-auto lg:w-2/5 lg:pr-10 lg:pb-16 lg:flex">
     <p class="mt-4 text-2xl font-semibold">Diffix for Desktop</p>
     <p class="mt-2">Desktop app for unprecedented ease-of-use.</p>
-    <p class="mt-2">Built on the .NET Diffix core code.</p>
+    <p class="mt-2">Built on the .NET Diffix implementation.</p>
     <ul class="list-disc ml-8 mt-1">
       <li>Import data from CSV</li>
       <li>Select columns and bin sizes</li>
