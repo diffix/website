@@ -65,12 +65,10 @@
   >
 </div>
 
-<div class="flex-grow pt-16 pb-16 mt-32 mb-10 sm:pt-32 sm:pb-32 bg-gray-50">
-  <div class="max-w-xl px-4 mx-auto xl:max-w-5xl">
-    <h2 class="text-xl text-center text-gray-500">Open Diffix is supported by</h2>
-    <div
-      class="flex flex-col items-center max-w-4xl px-6 py-8 mx-auto mt-12 space-y-8 rounded-lg sm:py-4 xl:rounded-full xl:space-y-0 xl:mt-8 xl:items-end justify-items-start xl:flex-none xl:grid xl:grid-cols-3 xl:gap-6"
-    >
+<div class="flex-grow px-4 py-32 mt-32 mb-10 bg-gray-50">
+  <h2 class="text-xl text-center text-gray-500">Open Diffix is supported by</h2>
+  <div class="max-w-7xl mx-auto mt-12">
+    <div class="flex flex-col gap-y-10 xl:flex-row justify-evenly items-center">
       <div>
         <a href="https://www.mpg.de">
           <img class="inline-block h-12" src="mpg-logo.svg" alt="Max-Planck-Gesellschaft" />
@@ -80,8 +78,11 @@
       <a href="https://www.mpi-sws.org">
         <img class="h-12" src="mpi-sws-logo.svg" alt="Max Planck Institute for Software Systems" />
       </a>
-      <a href="https://aircloak.com" class="xl:flex xl:flex-row xl:items-center xl:justify-end xl:w-full xl:h-full">
-        <img class="h-10 xl:h-10" src="aircloak_web.svg" alt="Aircloak GmbH" />
+      <a href="https://www.foev-speyer.de" class="pb-2 xl:pb-4">
+        <img class="h-16" src="foev-logo.png" alt="FÖV" />
+      </a>
+      <a href="https://aircloak.com">
+        <img class="h-10" src="aircloak_web.svg" alt="Aircloak GmbH" />
       </a>
     </div>
   </div>
