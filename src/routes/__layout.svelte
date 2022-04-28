@@ -12,6 +12,10 @@
   });
 </script>
 
+<svelte:head>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</svelte:head>
+
 <div class="flex flex-col min-h-screen">
   <NavBar />
   <div class="flex-grow" />
@@ -22,11 +26,21 @@
   <div class="flex-grow" />
 
   <footer class="flex flex-col items-center flex-grow-0 p-4 pt-10 pb-10 mx-auto text-sm text-gray-500">
-    <span class="max-w-sm  text-center">
+    <span class="max-w-sm text-center">
       If you have questions or want to discuss the project, please send us an email at <Link
         href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link
       >.
     </span>
+
+    <div class="mt-4">
+      <a
+        href="https://twitter.com/OpenDiffix?ref_src=twsrc%5Etfw"
+        class="twitter-follow-button"
+        data-size="large"
+        data-dnt="true"
+        data-show-count="false">Follow @OpenDiffix</a
+      >
+    </div>
 
     <span class="mt-8">Copyright MPI-SWS</span>
     <span class="mx-auto mt-2 space-x-2">
