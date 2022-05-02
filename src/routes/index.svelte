@@ -59,10 +59,43 @@
 <div class="flex flex-col items-center max-w-xl px-4 mx-auto mt-32 space-y-4 text-lg">
   <span>Want to stay informed about the development of <Wordmark />?</span>
   <a
-    href="/newsletter"
-    class="inline-block px-4 py-2 text-2xl text-center text-white transition-all duration-500 rounded-lg bg-shamrock-600 hover:bg-gradient-to-r from-shamrock-500 to-royalblue-500"
-    >Sign up to our newsletter</a
+    href="https://twitter.com/OpenDiffix"
+    target="_blank"
+    class="inline-block px-4 py-3 text-xl text-center text-white transition-all duration-300 rounded-lg bg-sky-500 hover:bg-sky-400"
   >
+    <svg
+      class="inline w-6 h-6 mr-1"
+      fill="currentColor"
+      stroke="none"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+      />
+    </svg>
+    Follow @OpenDiffix on Twitter
+  </a>
+  <a
+    href="/newsletter"
+    class="inline-block px-4 py-3 text-xl text-center text-white transition-all duration-300 rounded-lg bg-shamrock-600 hover:bg-shamrock-500"
+  >
+    <svg
+      class="inline w-6 h-6 mr-1"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+      />
+    </svg>
+    Sign up to our newsletter
+  </a>
 </div>
 
 <div class="flex-grow px-4 py-32 mt-32 mb-10 bg-gray-50">
