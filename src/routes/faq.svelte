@@ -48,16 +48,18 @@
 
         <FAQItem {addToToc} question="What is Open Diffix?">
           Open Diffix is a project to make Diffix anonymization free and open. The Open Diffix project develops two
-          Diffix query engine implementations, one based on .NET and the other a PostgreSQL extension. <b>Diffix for Desktop</b
-          > is a GUI-based application on the .NET query engine. Diffix for Desktop is aimed towards ease-of-use, while
+          Diffix query engine implementations, one based on .NET and the other a PostgreSQL extension. <b
+            >Diffix for Desktop</b
+          >
+          is a GUI-based application on the .NET query engine. Diffix for Desktop is aimed towards ease-of-use, while
           <b>Diffix for PostgreSQL</b> targets higher complexity and scale. Both are strongly anonymous, and satisfy the
           GDPR definition of anonymity.
         </FAQItem>
 
         <FAQItem {addToToc} question="What is Diffix Elm?">
           Major versions of Diffix are named after trees. Diffix Elm is the latest version (after Aspen, Birch, Cedar,
-          and Dogwood), and is the basis for the first releases of Diffix for Desktop and Diffix for PostgreSQL. Compared to earlier versions, Diffix
-          Elm represents a kind of "complexity reset". It is much <b>simpler</b>, 
+          and Dogwood), and is the basis for the first releases of Diffix for Desktop and Diffix for PostgreSQL.
+          Compared to earlier versions, Diffix Elm represents a kind of "complexity reset". It is much <b>simpler</b>,
           <b>easier to use</b>, and easier to analyze (though less feature rich).
         </FAQItem>
 
@@ -70,9 +72,17 @@
         </FAQItem>
 
         <FAQItem {addToToc} question="How is Diffix Elm deployed?">
-          Open Diffix supports <Link href="https://open-diffix.org/download">two implementations</Link> of Diffix Elm, a <b>PostgreSQL extension</b> (pg_diffix), and a stand-alone <b>desktop application</b>.
-          <p> &nbsp &nbsp &nbsp Diffix for PostgreSQL provides all the benefits of PostgreSQL, allowing development of scalable web back-ends, dashboards, and applications over a standard API with SQL, as well as the use of SQL clients.</p>
-          <p>&nbsp &nbsp &nbsp Diffix for Desktop is built on a .NET implementation of Diffix Elm. It is designed for extreme ease of installation and use. It supports CSV tables and a simple GUI (no SQL required).</p>
+          Open Diffix supports <Link href="https://open-diffix.org/download">two implementations</Link> of Diffix Elm, a
+          <b>PostgreSQL extension</b>
+          (pg_diffix), and a stand-alone <b>desktop application</b>.
+          <p class="indent-6">
+            Diffix for PostgreSQL provides all the benefits of PostgreSQL, allowing development of scalable web
+            back-ends, dashboards, and applications over a standard API with SQL, as well as the use of SQL clients.
+          </p>
+          <p class="indent-6">
+            Diffix for Desktop is built on a .NET implementation of Diffix Elm. It is designed for extreme ease of
+            installation and use. It supports CSV tables and a simple GUI (no SQL required).
+          </p>
         </FAQItem>
 
         <FAQItem {addToToc} question="How does Diffix compare with Differential Privacy and k-anonymity?">
@@ -92,20 +102,23 @@
         </FAQItem>
 
         <FAQItem {addToToc} question="How much SQL does Diffix Elm support?">
-          Diffix Elm supports a very limited but useful subset of SQL. Basically, it lets you build multi-column histograms of counts, and supports basic generalization functions (e.g. rounding of numeric columns, and substring selection of text columns).
+          Diffix Elm supports a very limited but useful subset of SQL. Basically, it lets you build multi-column
+          histograms of counts, and supports basic generalization functions (e.g. rounding of numeric columns, and
+          substring selection of text columns).
         </FAQItem>
 
         <FAQItem {addToToc} question="What if I want more SQL features?">
-          The Open Diffix is constantly building new SQL features. If you require additional features for your use case, contact us at <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>. TODO add links to documentation.
+          The Open Diffix is constantly building new SQL features. If you require additional features for your use case,
+          contact us at <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>. TODO add links to
+          documentation.
         </FAQItem>
 
         <FAQItem {addToToc} question="What about data quality?">
           All anonymization mechanisms reduce data quality, by generalizing or distorting, and Diffix is no exception.
           The data quality of Diffix is similar to data released by national statistics offices (e.g. census data), and
           usually far exceeds that of k-anonymity and Differential Privacy.
-          <strong>Diffix for Desktop</strong> displays the amount of
-          distortion, both as summary statistics and by displaying the original and anonymized data side-by-side. This
-          way, you can observe Diffix' data quality for yourself.
+          <strong>Diffix for Desktop</strong> displays the amount of distortion, both as summary statistics and by displaying
+          the original and anonymized data side-by-side. This way, you can observe Diffix' data quality for yourself.
         </FAQItem>
 
         <FAQItem {addToToc} question="What is the trust model for users/analysts?">
