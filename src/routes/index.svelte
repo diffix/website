@@ -13,7 +13,9 @@
   </h1>
   <h2 class="mx-12 mt-8 text-2xl text-center">Strong Anonymization for Structured Data. Open. Free.</h2>
   <h3 class="font-bold mx-12 mt-8 text-xl text-center">
-    <span class="text-red-500">NEW!</span> Diffix for PostgreSQL now released!
+    <span class="text-red-500">NEW!</span>
+    Diffix for PostgreSQL now released!
+    <img class="inline ml-1 h-14" src="postgresql.svg" alt="PostgreSQL logo" />
   </h3>
 </header>
 
