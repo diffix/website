@@ -5,6 +5,24 @@
 </script>
 
 <ContentPage title="Download">
+  <h2 class="mt-12 text-2xl">Diffix for PostgreSQL</h2>
+
+  <p class="mt-2">
+    The application is provided as an extension module for PostgreSQL servers and has to be built from source before
+    installation. See the provided README file for detailed instructions.
+  </p>
+
+  <h3 class="mt-4 font-semibold text-xl">Latest version</h3>
+
+  <ul class="mt-2 list-disc list-inside">
+    <li>
+      <DownloadLink href="https://pgxn.org/dist/pg_diffix" showIcon={false}>PGXN</DownloadLink>
+    </li>
+    <li>
+      <DownloadLink href="https://github.com/diffix/pg_diffix/releases" showIcon={false}>GitHub</DownloadLink>
+    </li>
+  </ul>
+
   <h2 class="mt-12 text-2xl">Diffix for Desktop V1</h2>
 
   <p class="mt-2">Releases are currently unsigned and will display a warning message during installation.</p>
@@ -64,10 +82,4 @@
       >
     </li>
   </ul>
-
-  <h2 class="mt-12 text-2xl">Diffix for PostgreSQL</h2>
-
-  <p class="mt-2">
-    <strong>Diffix for PostgreSQL</strong> is still under development. Click <Link href="/demo">here</Link> for more details.
-  </p>
 </ContentPage>
