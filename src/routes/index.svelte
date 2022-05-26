@@ -13,9 +13,26 @@
   </h1>
   <h2 class="mx-12 mt-8 text-2xl text-center">Strong Anonymization for Structured Data. Open. Free.</h2>
   <h3 class="font-bold mx-12 mt-8 text-xl text-center">
-    <span class="text-red-500">NEW!</span> Diffix for Desktop V1 now released!
+    <span class="text-red-500">NEW!</span>
+    Diffix for PostgreSQL now released!
+    <img class="inline ml-1 h-14" src="postgresql.svg" alt="PostgreSQL logo" />
   </h3>
 </header>
+
+<div class="max-w-6xl px-4 mx-auto mt-20 text-lg lg:flex">
+  <div class="flex-col justify-center max-w-lg mx-auto lg:w-2/5 lg:pr-10 lg:pb-16 lg:flex">
+    <p class="mt-4 text-2xl font-semibold">Diffix for PostgreSQL</p>
+    <p class="mt-2">Diffix as a PostgreSQL extension</p>
+    <ul class="list-disc ml-8 mt-1">
+      <li>"GDPR Strength" anonymization on a standard PostgreSQL API</li>
+      <li>Easily build privacy-preserving web backends, dashboards, and apps</li>
+      <li>No anonymization expertise needed</li>
+      <li>Easy installation and configuration</li>
+      <li>Scale and speed of PostgreSQL</li>
+    </ul>
+  </div>
+  <Terminal />
+</div>
 
 <div class="max-w-6xl px-4 mx-auto mt-20 text-lg lg:flex">
   <div class="flex-col justify-center max-w-lg mx-auto lg:w-2/5 lg:pr-10 lg:pb-16 lg:flex">
@@ -44,20 +61,8 @@
   </div>
 </div>
 
-<div class="max-w-6xl px-4 mx-auto mt-20 text-lg lg:flex">
-  <div class="flex-col justify-center max-w-lg mx-auto lg:w-2/5 lg:pr-10 lg:pb-16 lg:flex">
-    <p class="mt-4 text-2xl font-semibold">Diffix for PostgreSQL</p>
-    <p class="mt-2">PostgreSQL extension for high-end use cases.</p>
-    <ul class="list-disc ml-8 mt-1">
-      <li>Scale and speed of PostgreSQL</li>
-      <li>Standard SQL interface</li>
-    </ul>
-  </div>
-  <Terminal />
-</div>
-
 <div class="flex flex-col items-center max-w-xl px-4 mx-auto mt-32 space-y-4 text-lg">
-  <span>Want to stay informed about the development of <Wordmark />?</span>
+  <span>Stay informed about the development of <Wordmark /></span>
   <a
     href="https://twitter.com/OpenDiffix"
     target="_blank"
