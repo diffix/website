@@ -108,9 +108,8 @@
         </FAQItem>
 
         <FAQItem {addToToc} question="What if I want more SQL features?">
-          The Open Diffix is constantly building new SQL features. If you require additional features for your use case,
-          contact us at <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>. TODO add links to
-          documentation.
+          Open Diffix is constantly building new SQL features. If you require additional features for your use case,
+          contact us at <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>.
         </FAQItem>
 
         <FAQItem {addToToc} question="What about data quality?">
@@ -138,7 +137,7 @@
         <FAQItem {addToToc} question="Is Open Diffix GDPR compliant?">
           The short answer is 'yes'. The longer answer is that there are no concrete criteria for GDPR anonymity.
           Ultimately it is up to a Data Protection Officer (DPO) or Authority (DPA) to make the call. Diffix as
-          implemented by Aircloak was almost always evaluated as GDPR anonymous, and the same will hold for Open Diffix
+          implemented by Aircloak was almost always evaluated as GDPR anonymous, and the same holds for Open Diffix
           releases.
         </FAQItem>
 
