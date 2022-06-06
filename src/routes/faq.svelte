@@ -137,7 +137,7 @@
         <FAQItem {addToToc} question="Is Open Diffix GDPR compliant?">
           The short answer is 'yes'. The longer answer is that there are no concrete criteria for GDPR anonymity.
           Ultimately it is up to a Data Protection Officer (DPO) or Authority (DPA) to make the call. Diffix as
-          implemented by Aircloak was almost always evaluated as GDPR anonymous, and the same will hold for Open Diffix
+          implemented by Aircloak was almost always evaluated as GDPR anonymous, and the same holds for Open Diffix
           releases.
         </FAQItem>
 
