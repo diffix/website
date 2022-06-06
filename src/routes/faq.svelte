@@ -108,9 +108,8 @@
         </FAQItem>
 
         <FAQItem {addToToc} question="What if I want more SQL features?">
-          The Open Diffix is constantly building new SQL features. If you require additional features for your use case,
-          contact us at <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>. TODO add links to
-          documentation.
+          Open Diffix is constantly building new SQL features. If you require additional features for your use case,
+          contact us at <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>.
         </FAQItem>
 
         <FAQItem {addToToc} question="What about data quality?">
