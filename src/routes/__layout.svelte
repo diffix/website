@@ -32,7 +32,7 @@
       >.
     </span>
 
-    <div class="mt-4">
+    <div class="mt-4 mx-auto">
       <a
         href="https://twitter.com/OpenDiffix?ref_src=twsrc%5Etfw"
         class="twitter-follow-button"
