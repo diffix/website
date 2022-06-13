@@ -44,7 +44,7 @@
       </div>
       <div class="flex">
         <span class="inline-block min-w-[6rem] font-medium">Description:</span>
-        Read-only, anonyzmied access in trusted mode
+        Read-only, anonymized access in trusted mode
       </div>
     </div>
 
@@ -59,7 +59,7 @@
       </div>
       <div class="flex">
         <span class="inline-block min-w-[6rem] font-medium">Description:</span>
-        Read-only, anonyzmied access in untrusted mode
+        Read-only, anonymized access in untrusted mode
       </div>
     </div>
 
@@ -92,7 +92,7 @@
         <tr class="hover:bg-gray-50">
           <td>trusted_user</td>
           <td>demo</td>
-          <td>Read-only, anonyzmied access in trusted mode</td>
+          <td>Read-only, anonymized access in trusted mode</td>
         </tr>
         <tr class="hover:bg-gray-50">
           <td>untrusted_user</td>
