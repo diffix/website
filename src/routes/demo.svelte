@@ -124,8 +124,8 @@
   </p>
 
   <p class="mt-4">
-    For the <span class="font-mono font-semibold">untrusted_user</span> role:
-    <CopyableCommand cmd="psql postgresql://untrusted_user:demo@demo-pg.open-diffix.org/banking" />
+    For the <span class="font-mono font-semibold">direct_user</span> role:
+    <CopyableCommand cmd="psql postgresql://direct_user:demo@demo-pg.open-diffix.org/banking" />
   </p>
 
   <h2 class="mt-8 text-2xl">Further reading</h2>
