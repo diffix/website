@@ -1,6 +1,7 @@
 <script>
   import Wordmark from "../components/Wordmark.svelte";
   import Terminal from "../components/Terminal.svelte";
+  import Link from "../components/Link.svelte";
 </script>
 
 <svelte:head>
@@ -22,7 +23,7 @@
 <div class="max-w-6xl px-4 mx-auto mt-20 text-lg lg:flex">
   <div class="flex-col justify-center max-w-lg mx-auto lg:w-2/5 lg:pr-10 lg:pb-16 lg:flex">
     <p class="mt-4 text-2xl font-semibold">Diffix for PostgreSQL</p>
-    <p class="mt-2">Diffix as a PostgreSQL extension</p>
+    <p class="mt-2">Diffix as a PostgreSQL extension.</p>
     <ul class="list-disc ml-8 mt-1">
       <li>"GDPR Strength" anonymization on a standard PostgreSQL API</li>
       <li>Easily build privacy-preserving web backends, dashboards, and apps</li>
@@ -30,6 +31,9 @@
       <li>Easy installation and configuration</li>
       <li>Scale and speed of PostgreSQL</li>
     </ul>
+    <p class="mt-2">
+      <Link href="/download">Download here</Link> or try the <Link href="/demo">hosted demo</Link>.
+    </p>
   </div>
   <Terminal />
 </div>
@@ -45,6 +49,9 @@
       <li>Examine data quality</li>
       <li>Export anonymized data as CSV</li>
     </ul>
+    <p class="mt-2">
+      <Link href="/download">Download Diffix for Desktop</Link>.
+    </p>
   </div>
   <div class="mx-1 mt-8 text-base lg:mt-0 lg:mx-0 lg:w-3/5">
     <div class="overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg">

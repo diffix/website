@@ -5,86 +5,76 @@
 </script>
 
 <ContentPage title="PostgreSQL Demo">
-  <p>
-    <strong>Diffix for PostgreSQL</strong> is still under development, but we are happy to show you the progress we have
-    made to date.
-  </p>
-
-  <div class="bg-gray-50 border shadow-sm my-6 -mx-2 px-4 py-2 rounded-lg text-gray-700">
-    <h2 class="text-2xl">TL;DR</h2>
-
-    <p class="mt-2 text-sm">
-      If you are impatient, go ahead and connect to the anonymized PostgreSQL database from your command line using:
-    </p>
-    <CopyableCommand cmd="psql postgresql://banking_publish:demo@demo-pg.open-diffix.org/banking" />
-  </div>
-
-  <h2 class="mt-12 text-2xl">Long version</h2>
   <p class="mt-3">
     We are hosting a PostgreSQL database instance containing a slightly altered version of the 20 odd year old
     <Link href="https://data.world/lpetrocelli/czech-financial-dataset-real-anonymized-transactions"
       >Berka bank dataset</Link
-    >.
+    >. The PostgreSQL instance has the Open Diffix plugin enabled and includes a role for each access mode. The database
+    is hosted on the following server:
   </p>
 
-  <p class="mt-2">
-    The PostgreSQL instance has the Open Diffix plugin installed and enabled in an early version of the Publish mode.
-    This is the mode whereby an analyst is expected not to be malicious, and is assumed to also have access to the raw
-    data (like you will too), but wishes to produce a report or dashboard that is safe to share with others.
-  </p>
+  <div class="mt-2 shadow rounded-lg -mx-2 p-2">
+    <div class="flex">
+      <span class="min-w-[6rem] font-medium">Hostname:</span>
+      demo-pg.open-diffix.org
+    </div>
+    <div class="flex">
+      <span class="inline-block min-w-[6rem] font-medium">Port:</span>
+      5432
+    </div>
+    <div class="flex">
+      <span class="inline-block min-w-[6rem] font-medium">Database:</span>
+      banking
+    </div>
+  </div>
 
-  <h2 class="mt-6 text-xl">Capabilities</h2>
-  <p class="mt-2">
-    You will be able to play with a tech demo at this point. Most notably, the query capabilities will be severely
-    restricted. Specifically, the only aggregate functions available in the current demo are <span class="font-mono"
-      >COUNT(*)</span
-    >, <span class="font-mono">COUNT(x)</span>
-    and <span class="font-mono">COUNT(DISTINCT x)</span>. More will be added soon.
-  </p>
-  <p class="mt-2">
-    To learn about how pg_diffix anonymizes data, please consult the
-    <Link href="https://github.com/diffix/pg_diffix_extension/blob/main/documents/publish-short-anon.md"
-      >Overview of Anonymization Mechanisms for Diffix Publish</Link
-    > on Github.
-  </p>
+  <h2 class="mt-8 text-2xl">Credentials</h2>
 
-  <h2 class="mt-6 text-xl">Credentials</h2>
-  <p class="mt-2">
-    You are given the credentials for two distinct PostgreSQL roles. One is called <span>banking</span> and gives you
-    read-only access to all the data in the database (not anonymized). The other is called
-    <span>banking_publish</span> and gives you access to the same tables, but with the anonymization restrictions applied.
-  </p>
+  <p class="mt-3">Three roles are available for accessing the database:</p>
 
-  <div class="sm:hidden mt-4 flex w-full">
-    <div class="w-1/2">
-      <h3 class="text-lg font-medium">Not anonymized</h3>
-      <div>
-        <span class="font-medium">Role:</span>
-        banking
+  <div class="sm:hidden shadow rounded-lg mt-2 -mx-2 p-2">
+    <div>
+      <div class="flex">
+        <span class="min-w-[6rem] font-medium">Role:</span>
+        trusted_user
       </div>
-      <div>
-        <span class="font-medium">Password:</span>
+      <div class="flex">
+        <span class="inline-block min-w-[6rem] font-medium">Password:</span>
         demo
       </div>
-      <div>
-        <span class="font-medium">Database:</span>
-        banking
+      <div class="flex">
+        <span class="inline-block min-w-[6rem] font-medium">Description:</span>
+        Read-only, anonymized access in trusted mode
       </div>
     </div>
 
-    <div class="w-1/2">
-      <h3 class="text-lg font-medium">Anonymized</h3>
-      <div>
-        <span class="font-medium">Role:</span>
-        banking_publish
+    <div class="mt-2 pt-2 border-t-2">
+      <div class="flex">
+        <span class="min-w-[6rem] font-medium">Role:</span>
+        untrusted_user
       </div>
-      <div>
-        <span class="font-medium">Password:</span>
+      <div class="flex">
+        <span class="inline-block min-w-[6rem] font-medium">Password:</span>
         demo
       </div>
-      <div>
-        <span class="font-medium">Database:</span>
-        banking
+      <div class="flex">
+        <span class="inline-block min-w-[6rem] font-medium">Description:</span>
+        Read-only, anonymized access in untrusted mode
+      </div>
+    </div>
+
+    <div class="mt-2 pt-2 border-t-2">
+      <div class="flex">
+        <span class="min-w-[6rem] font-medium">Role:</span>
+        direct_user
+      </div>
+      <div class="flex">
+        <span class="inline-block min-w-[6rem] font-medium">Password:</span>
+        demo
+      </div>
+      <div class="flex">
+        <span class="inline-block min-w-[6rem] font-medium">Description:</span>
+        Read-only, unrestricted access to data
       </div>
     </div>
   </div>
@@ -95,53 +85,73 @@
         <tr>
           <th class="w-3/12">Role</th>
           <th class="w-2/12">Password</th>
-          <th class="w-2/12">DB name</th>
-          <th class="w-5/12">Description</th>
+          <th class="w-7/12">Description</th>
         </tr>
       </thead>
       <tbody class="border-t-2">
         <tr class="hover:bg-gray-50">
-          <td>banking</td>
+          <td>trusted_user</td>
           <td>demo</td>
-          <td>banking</td>
-          <td>Read-only. Not anonymized</td>
+          <td>Read-only, anonymized access in trusted mode</td>
         </tr>
-
         <tr class="hover:bg-gray-50">
-          <td>banking_publish</td>
+          <td>untrusted_user</td>
           <td>demo</td>
-          <td>banking</td>
-          <td>Read-only. Anonymized</td>
+          <td>Read-only, anonymized access in untrusted mode</td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td>direct_user</td>
+          <td>demo</td>
+          <td>Read-only, unrestricted access to data</td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <p class="mt-6 sm:mt-10">
+  <p class="mt-6">
     If you have the
     <Link href="https://blog.timescale.com/tutorials/how-to-install-psql-on-mac-ubuntu-debian-windows/"
       >PostgreSQL client tools</Link
     >
-    installed on your machine you can connect as the <span class="font-mono">banking</span> role with:
-    <CopyableCommand cmd="psql postgresql://banking:demo@demo-pg.open-diffix.org/banking" />
-
-    <span class="inline-block mt-2">
-      and as the <span class="font-mono">banking_publish</span> role with:
-      <CopyableCommand cmd="psql postgresql://banking_publish:demo@demo-pg.open-diffix.org/banking" />
-    </span>
+    installed on your machine you can connect as the <span class="font-mono font-semibold">trusted_user</span> role
+    with:
+    <CopyableCommand cmd="psql postgresql://trusted_user:demo@demo-pg.open-diffix.org/banking" />
   </p>
 
-  <h2 class="mt-12 text-2xl">Examples</h2>
+  <p class="mt-4">
+    For the <span class="font-mono font-semibold">untrusted_user</span> role:
+    <CopyableCommand cmd="psql postgresql://untrusted_user:demo@demo-pg.open-diffix.org/banking" />
+  </p>
+
+  <p class="mt-4">
+    For the <span class="font-mono font-semibold">direct_user</span> role:
+    <CopyableCommand cmd="psql postgresql://direct_user:demo@demo-pg.open-diffix.org/banking" />
+  </p>
+
+  <h2 class="mt-8 text-2xl">Further reading</h2>
+
   <p class="mt-2">
-    For some inspiration, you can view an example <Link href="https://github.com/diffix/demo_notebook"
-      >Python notebook here</Link
-    >.
+    <strong>For analysts:</strong> The <Link href="https://github.com/diffix/pg_diffix/blob/master/docs/banking.ipynb"
+      >banking notebook</Link
+    > provides example queries against the banking dataset. The <Link
+      href="https://github.com/diffix/pg_diffix/blob/master/docs/analyst_guide.md">analyst guide</Link
+    > describes the SQL features and limitations imposed by <span class="font-mono font-semibold">pg_diffix</span>.
   </p>
 
-  <h2 class="mt-12 text-2xl">Help</h2>
+  <p class="mt-2">
+    <strong>For administrators:</strong> Check out the <Link
+      href="https://github.com/diffix/pg_diffix/blob/master/docs/admin_tutorial.md">admin tutorial</Link
+    > for an example on how to set up <span class="font-mono font-semibold">pg_diffix</span>. See the <Link
+      href="https://github.com/diffix/pg_diffix/blob/master/docs/analyst_guide.md">admin guide</Link
+    > for details on configuring and using the extension. To install from source, see the <Link
+      href="https://github.com/diffix/pg_diffix#installation">installation section</Link
+    > of the repository README.
+  </p>
+
+  <h2 class="mt-8 text-2xl">Help and feedback</h2>
   <p class="mt-2 mb-12">
     If you require help, you want to report a bug or request a feature, please do so in our <Link
-      href="https://github.com/diffix/pg_diffix_extension">Github repository</Link
+      href="https://github.com/diffix/pg_diffix">Github repository</Link
     >.
   </p>
 </ContentPage>
