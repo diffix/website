@@ -9,7 +9,9 @@
 
   <p class="mt-2">
     The application is provided as an extension module for PostgreSQL servers and has to be built from source before
-    installation. See the provided README file for detailed instructions.
+    installation. See the provided README file for detailed instructions. Alternatively, try our <Link href="/demo"
+      >hosted demo</Link
+    >.
   </p>
 
   <h3 class="mt-4 font-semibold text-xl">Latest version</h3>
