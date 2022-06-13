@@ -32,7 +32,7 @@
       <li>Scale and speed of PostgreSQL</li>
     </ul>
     <p class="mt-2">
-      <Link href="/download">Download</Link> or try the <Link href="/demo">hosted demo</Link>.
+      <Link href="/download">Download here</Link> or try the <Link href="/demo">hosted demo</Link>.
     </p>
   </div>
   <Terminal />
