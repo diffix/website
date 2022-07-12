@@ -112,8 +112,8 @@
 
 <div class="flex-grow px-4 py-32 mt-32 mb-10 bg-gray-50">
   <h2 class="text-xl text-center text-gray-500">Open Diffix is supported by</h2>
-  <div class="max-w-7xl mx-auto mt-12">
-    <div class="flex flex-col gap-y-10 xl:flex-row justify-evenly items-center">
+  <div class="max-w-5xl mx-auto mt-12">
+    <div class="flex flex-col lg:flex-row flex-wrap gap-x-14 gap-y-10 justify-center items-center">
       <div>
         <a href="https://www.mpg.de">
           <img class="inline-block h-12" src="mpg-logo.svg" alt="Max-Planck-Gesellschaft" />
@@ -123,11 +123,14 @@
       <a href="https://www.mpi-sws.org">
         <img class="h-12" src="mpi-sws-logo.svg" alt="Max Planck Institute for Software Systems" />
       </a>
-      <a href="https://www.foev-speyer.de" class="pb-2 xl:pb-4">
+      <a href="https://www.foev-speyer.de" class="pb-2 lg:pb-4">
         <img class="h-16" src="foev-logo.png" alt="FÖV" />
       </a>
       <a href="https://aircloak.com">
         <img class="h-10" src="aircloak_web.svg" alt="Aircloak GmbH" />
+      </a>
+      <a href="https://kdvz.nrw">
+        <img class="h-20" src="kdvz-logo.svg" alt="Zweckverband Kommunale Datenverarbeitungszentrale" />
       </a>
     </div>
   </div>
