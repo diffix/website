@@ -21,7 +21,7 @@ The visualization comes with a slider that you can wipe across the heatmap. The 
 
 Here is a portion of the heatmap from lower Manhattan for average fares, rounded to the nearest dollar, in the 8:00 - 12:00 time window:
 
-<img src="figs/heatmap-ex.png" width="600">
+<img src="figs/heatmap-ex.gif" width="600">
 
 Not all locations are covered by boxes, and some boxes are larger than others.
 
