@@ -131,20 +131,20 @@
   <h2 class="mt-8 text-2xl">Further reading</h2>
 
   <p class="mt-2">
-    <strong>For analysts:</strong> The <Link href="https://github.com/diffix/pg_diffix/blob/master/docs/banking.ipynb"
-      >banking notebook</Link
+    <strong>For analysts:</strong> The <Link
+      href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/banking.ipynb">banking notebook</Link
     > provides example queries against the banking dataset. The <Link
-      href="https://github.com/diffix/pg_diffix/blob/master/docs/analyst_guide.md">analyst guide</Link
+      href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/analyst_guide.md">analyst guide</Link
     > describes the SQL features and limitations imposed by <span class="font-mono font-semibold">pg_diffix</span>.
   </p>
 
   <p class="mt-2">
     <strong>For administrators:</strong> Check out the <Link
-      href="https://github.com/diffix/pg_diffix/blob/master/docs/admin_tutorial.md">admin tutorial</Link
+      href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/admin_tutorial.md">admin tutorial</Link
     > for an example on how to set up <span class="font-mono font-semibold">pg_diffix</span>. See the <Link
-      href="https://github.com/diffix/pg_diffix/blob/master/docs/analyst_guide.md">admin guide</Link
+      href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/admin_guide.md">admin guide</Link
     > for details on configuring and using the extension. To install from source, see the <Link
-      href="https://github.com/diffix/pg_diffix#installation">installation section</Link
+      href="https://github.com/diffix/pg_diffix/blob/release/elm/README.md#installation">installation section</Link
     > of the repository README.
   </p>
 
