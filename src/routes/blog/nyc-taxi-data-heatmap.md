@@ -51,7 +51,4 @@ The key takeaways from this visualization are:
 
 **Diffix hides some data.** Any anonymization mechanism must either suppress or generalize data, and Diffix is no exception. We could certainly have shown the original data as exact points in time. Doing so, however, would in fact detract from the quality of the visualization. Heatmaps are good for visualization precisely because nearby values are cumulated. Given this, the fact that Diffix hides data hardly detracts from the quality of the visualization at all.
 
-
 Please feel free to contact us at hello@open-diffix.org if you have any questions, or would like to explore the use of Diffix for your own project!
-
-
