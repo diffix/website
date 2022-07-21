@@ -21,7 +21,7 @@ The visualization comes with a slider that you can wipe across the heatmap. The 
 
 Here is a portion of the heatmap from lower Manhattan for average fares, rounded to the nearest dollar, in the 8:00 - 9:00 time window:
 
-<img src="figs/heatmap-ex.gif" width="600">
+<img src="/blog/figs/heatmap-ex.gif" width="600">
 
 Not all locations are covered by boxes, and some boxes are larger than others.
 
@@ -35,11 +35,11 @@ As you explore the visualization, you will notice that sometimes the original da
 
 Imagine that you are flying to NYC via JFK airport, and you are wondering how flying in during rush hour will affect your taxi fare. Comparing 8am versus 8pm for both average trip speed and fare for rides out of JFK, we see that while trip speed is substantially slower during rush hour (as expected), the fares change only slightly.
 
-<img src="figs/speed-fare-diffix.png" width="600">
+<img src="/blog/figs/speed-fare-diffix.png" width="600">
 
 Now let's compare the Diffix heatmap above with the original heatmap.
 
-<img src="figs/speed-fare-raw.png" width="600">
+<img src="/blog/figs/speed-fare-raw.png" width="600">
 
 While there are slight differences, both the Diffix and original heatmaps convey the same basic insights.
 

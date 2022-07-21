@@ -9,7 +9,7 @@ excerpt: A good way to understand Diffix Elm's anonymization is that it automate
 
 Diffix Elm is a methodology for dynamic data anonymization. _Dynamic_ means that it operates on a query-by-query basis (versus generating a single static anonymized table). Diffix Elm is essentially an SQL query engine. It accepts SQL queries with a limited syntax, reads the original personal data, and returns an anonymized answer.
 
-<img src="figs/diffix-basic.png" width="400">
+<img src="/blog/figs/diffix-basic.png" width="400">
 
 The two strong anonymization _models_ that get the most attention are _k-anonymity_ and _Differential Privacy_. You might be surprised to learn, then, that organizations like statistics offices, which routinely release anonymized data about whole populations, don't use these models per se\*. Rather, they use a combination of _mechanisms_. The most commonly used mechanisms are **aggregation**, **generalization**, **noise**, **suppression**, and **swapping**. These mechanisms have safely been in use for decades.
 
@@ -21,7 +21,7 @@ In this article, we describe how and why Diffix Elm uses these mechanisms. Along
 
 The original personal data that Diffix Elm accesses has one row per person or per event (if time series data). Diffix Elm aggregates that data into counts:
 
-<img src="figs/aggregate.png" width="400">
+<img src="/blog/figs/aggregate.png" width="400">
 
 Virtually all statistics offices release aggregate data. One example of many is TableBuilder from the ABS ([https://www.abs.gov.au/websitedbs/censushome.nsf/home/tablebuilder](https://www.abs.gov.au/websitedbs/censushome.nsf/home/tablebuilder)).
 
@@ -31,7 +31,7 @@ Statistics offices also often release data in non-aggregated form, usually calle
 
 If data values are too detailed, then it may not be possible to release an aggregate without first generalizing the data. For example, a given birthdate might be unique to a single person. To deal with this, the birthdate may be generalized to year of birth:
 
-<img src="figs/generalize.png" width="400">
+<img src="/blog/figs/generalize.png" width="400">
 
 Diffix Elm does not _enforce_ generalization per se. This is because data quality relative to a given use case depends heavily on how much generalization is done. It may be that for some use cases, decade of birth is adequate precision, whereas for other use cases, month of birth is needed. The analyst must be able to choose the amount of generalization.
 
@@ -41,7 +41,7 @@ Instead, Diffix Elm _allows_ generalization, and leaves it to the analyst to sel
 
 Adding noise to data is one of the oldest privacy mechanisms, going back to the idea of randomized response in the 1960's. Note that noise here means adding noise to each bin's aggregate count, not adding noise to column values. In other words, we won't change the value of a birth year, but we will change the count of persons with a given birth year:
 
-<img src="figs/noise1.png" width="400">
+<img src="/blog/figs/noise1.png" width="400">
 
 Noise needs to be random. If it is not random, it might be possible to deduce the noise amount and recover the original count. The difficulty with random noise, however, is that if one can get multiple samples of the same data, then the random noise can be averaged away and the original count recovered.
 
@@ -60,7 +60,7 @@ The mere presence or absence of a distinct value in the data can leak private in
 
 A common way of preventing this is through suppression: literally removing the record from the released data. In the case of census data, distinct values typically come in the form of extreme values from numeric attributes like age, number of children, number of marriages, and so on.
 
-<img src="figs/top-code.png" width="400">
+<img src="/blog/figs/top-code.png" width="400">
 
 One approach that statistics offices use to suppress extreme values is with top- or bottom-coding. In this method, numeric ranges are capped with minimum and maximum values, and anything outside of this range is suppressed.
 
@@ -77,7 +77,7 @@ Another approach that statistics offices use to deal with data uniques is swappi
 In census data, this is most commonly done by exchanging a unique person in one area (census block) with a person in a randomly selected nearby area. In noiseless systems, the advantage of this approach over suppression is that block counts stay accurate. In spite of the fact that the ONS uses noise, it still primarily relies on block swapping. In
 [[ONS]][ONS], they refer to the noise as 'light touch perturbation'. It improves anonymization, but is not the primary mechanism.
 
-<img src="figs/area-swap.png" width="500">
+<img src="/blog/figs/area-swap.png" width="500">
 
 For the 2020 census, the USCB moved from a swapping-based approach to a noise-based approach. Nevertheless, the USCB does a kind of statistical swapping. Specifically, when noise would have caused a race category to have a negative count, they increase the count to zero and decrease other non-zero races by the corresponding amount
 [[USCB]][USCB].
@@ -85,7 +85,7 @@ For the 2020 census, the USCB moved from a swapping-based approach to a noise-ba
 Diffix Elm has its own form of swapping, called _low-effect detection_ in
 [[Elm]][Elm]. This swapping is used in cases where two different queries would cause a bin in one query to differ by a single person from the corresponding bin in the other query. For example, suppose that there is a single female in the computer science department of a university. A query for department, salary (generalized to $10K), and sex would suppress the bin composed of the woman. A query for only department and salary, on the other hand, would include the woman along with the men in the corresponding salary bin. If the analyst knows that there is only one woman in the CS department, in some cases it would be possible to infer the woman's salary bin with high confidence.
 
-<img src="figs/low-effect.png" width="600">
+<img src="/blog/figs/low-effect.png" width="600">
 
 To deal with this, Diffix Elm dynamically detects when this scenario takes place, and moves the person from the suppressed bin to the appropriate non-suppressed bin. This is a relatively rare operation, but sometimes happens
 
