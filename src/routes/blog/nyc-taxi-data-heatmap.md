@@ -11,15 +11,15 @@ excerpt: This heatmap visualization shows just how accurate Diffix anonymization
 
 The data we used covers 14776615 rides registered during January 2013 and comes from a publication by the [University of Illinois at Urbana-Champaign](https://databank.illinois.edu/datasets/IDB-9610843).
 
-Each row of the dataset describes a single ride; its pickup and dropoff time and location, the fare, the number of passengers and other details. The dataset includes a column that uniquely identifies the driver of each ride. Because it is pseudonymized, the dataset would be regarded as personal data by GDPR criteria. There [have been claims](https://vgc.engineering.nyu.edu/~juliana/pub/taxi-privacy.pdf) that driver privacy could be at risk from this data, and indeed NYC no longer includes a driver identification in its releases (our dataset is from 2013).
+Each row of the dataset describes a single ride; its pickup and dropoff time and location, the fare, the number of passengers and other details. The dataset includes a column that uniquely identifies the driver of each ride. Because it is pseudonymized, the dataset would be regarded as personal data by GDPR criteria. There [have been claims](https://vgc.engineering.nyu.edu/~juliana/pub/taxi-privacy.pdf) that driver privacy could be at risk from this data, and indeed NYC no longer includes a driver identification in its releases. This is unfortunate, because it is no longer possible to analyze driver statistics, such as driver work habits, length of employment, and so on. This data could safely be analyzed with Diffix.
 
 [The visualization](https://taxi-heatmap.open-diffix.org/) gives data for two parameters, average ride fare and average ride speed. Many other parameters could be queried ... these are just the two examples we chose. The data is shown as a grid heatmap. The size of the grid boxes depends on the zoom level, but can get down to the size of a small city block. Each heatmap covers a 1-hour time window at 4-hour intervals.
 
-The visualization comes with a slider that you can wipe across the heatmap. The heatmap to the left of the slider is without anonymization, and the heatmap to the right is anonymized by Diffix Fir. This lets you directly see how much Diffix distorts the results. We suggest you [go and try it](https://taxi-heatmap.open-diffix.org/) before reading further.
+The visualization comes with a slider that you can wipe across the heatmap. The heatmap to the left of the slider is without anonymization, and the heatmap to the right is anonymized by Diffix Fir. This lets you directly see how much Diffix distorts the results.
 
 ## How we make the boxes
 
-Here is a portion of the heatmap from lower Manhattan for average fares, rounded to the nearest dollar, in the 8:00 - 12:00 time window:
+Here is a portion of the heatmap from lower Manhattan for average fares, rounded to the nearest dollar, in the 8:00 - 9:00 time window:
 
 <img src="figs/heatmap-ex.gif" width="600">
 
@@ -33,7 +33,7 @@ As you explore the visualization, you will notice that sometimes the original da
 
 ## A simple example
 
-Imagine that you are flying to NYC via JFK airport, and you are wondering how flying in during rush hour will affect your taxi fare. Comparing 8am versus 8pm for both average trip speed and fare for rides out of JFK, we see that while trip speed is substantially slower for rush hour (as expected), the fares change only slightly.
+Imagine that you are flying to NYC via JFK airport, and you are wondering how flying in during rush hour will affect your taxi fare. Comparing 8am versus 8pm for both average trip speed and fare for rides out of JFK, we see that while trip speed is substantially slower during rush hour (as expected), the fares change only slightly.
 
 <img src="figs/speed-fare-diffix.png" width="600">
 
@@ -41,7 +41,7 @@ Now let's compare the Diffix heatmap above with the original heatmap.
 
 <img src="figs/speed-fare-raw.png" width="600">
 
-While there are slight differences, both the Diffix and original heatmaps convey the same insights.
+While there are slight differences, both the Diffix and original heatmaps convey the same basic insights.
 
 ## Key takeaways
 
