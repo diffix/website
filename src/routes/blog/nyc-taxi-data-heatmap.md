@@ -31,6 +31,18 @@ The reason some boxes are bigger than others is that we show the smallest box fo
 
 As you explore the visualization, you will notice that sometimes the original data displays a box where Diffix Fir does not, and vice versa. This is because the suppression threshold for Diffix Fir is not a specific value, but a range of values from three to roughly seven. ([Read more](https://www.open-diffix.org/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades) about noisy thresholds.) Sometimes Diffix Fir will display a box with only three or four distinct rides, or suppress a box with six or seven distinct rides. By contrast, the threshold for the original data is always five.
 
+## A simple example
+
+Imagine that you are flying to NYC via JFK airport, and you are wondering how flying in during rush hour will affect your taxi fare. Comparing 8am versus 8pm for both average trip speed and fare for rides out of JFK, we see that while trip speed is substantially slower for rush hour (as expected), the fares change only slightly.
+
+<img src="figs/speed-fare-diffix.png" width="600">
+
+Now let's compare the Diffix heatmap above with the original heatmap.
+
+<img src="figs/speed-fare-raw.png" width="600">
+
+While there are slight differences, both the Diffix and original heatmaps convey the same insights.
+
 ## Key takeaways
 
 The key takeaways from this visualization are:
@@ -38,6 +50,7 @@ The key takeaways from this visualization are:
 **Diffix is pretty accurate.** Visually you can see that the Diffix heatmap tracks the original data heatmap pretty closely. One can draw valid conclusions from the anonymized data.
 
 **Diffix hides some data.** Any anonymization mechanism must either suppress or generalize data, and Diffix is no exception. We could certainly have shown the original data as exact points in time. Doing so, however, would in fact detract from the quality of the visualization. Heatmaps are good for visualization precisely because nearby values are cumulated. Given this, the fact that Diffix hides data hardly detracts from the quality of the visualization at all.
+
 
 Please feel free to contact us at hello@open-diffix.org if you have any questions, or would like to explore the use of Diffix for your own project!
 
