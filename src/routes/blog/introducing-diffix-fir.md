@@ -19,9 +19,9 @@ Diffix Fir re-introduces the `WHERE` clause that was dropped by Diffix Elm. In F
 
 ## Learn more
 
-The <Link href="https://github.com/diffix/pg_diffix/blob/release/fir/docs/analyst_guide.md">analyst guide</Link> has all the details.
+The [analyst guide](https://github.com/diffix/pg_diffix/blob/release/fir/docs/analyst_guide.md) has all the details.
 
-Alternatively, the <Link href="https://https://training.open-diffix.org">Diffix Training App</Link> is an interactive online application that walks you through all of the features of Diffix Fir and shows how to manage noise and suppression.
+Alternatively, the [Diffix Training App](https://https://training.open-diffix.org) is an interactive online application that walks you through all of the features of Diffix Fir and shows how to manage noise and suppression.
 
 ## Next, Diffix Greenheart
 
