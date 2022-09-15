@@ -1,0 +1,4 @@
+Contact: mailto:security@open-diffix.org
+Expires: Sat, 31 Dec 2021 23:59 +0200
+Preferred-Languages: en, de
+Canonical: https://www.open-diffix.org/.well-known/security.txt

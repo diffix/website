@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta http-equiv="content-security-policy" content=""><title>Open Diffix - Diffix Elm automates what statistics offices have been doing for decades</title><script async src="//platform.twitter.com/widgets.js" charset="utf-8" data-svelte="svelte-1tl8nxd"></script>
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-bd6758f4.css">
+	<link rel="modulepreload" href="/_app/start-472a50b3.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-8665e618.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-70b8f3e1.js">
+	<link rel="modulepreload" href="/_app/chunks/ackee-dc53f939.js">
+	<link rel="modulepreload" href="/_app/chunks/Link-8dfb6494.js">
+	<link rel="modulepreload" href="/_app/pages/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md-86c17597.js">
+	<link rel="modulepreload" href="/_app/chunks/_post-3392f905.js">
+	<link rel="modulepreload" href="/_app/chunks/utils-6cf984b9.js"><script type="module">
+		import { start } from "/_app/start-472a50b3.js";
+		start({
+			target: document.querySelector("#opendiffix"),
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-70b8f3e1.js"),
+						import("/_app/pages/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md-86c17597.js")
+				],
+				url: new URL("http://sveltekit-prerender/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades"),
+				params: {}
+			}
+		});
+	</script>
+  </head>
+  <body>
+    <div id="opendiffix">
+
+
+
+
+<div class="flex flex-col min-h-screen"><div class="h-auto md:h-24 transition-all duration-200"><div class="md:fixed w-full bg-white z-50 md:border-b border-collapse"><nav class="max-w-2xl mx-auto w-full -mb-1 flex justify-end text-xl"><div class="font-semibold"><a href="/" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">Home</a></div>
+
+      <div class="font-semibold"><a href="/download" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">Download</a></div>
+
+      <div class="font-semibold"><a href="/faq" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">FAQ</a></div>
+
+      <div class="font-semibold"><a href="/blog" class="transition-colors duration-500 px-4 py-4 block h-full border-shamrock-600 border-b-4">Blog</a></div></nav></div></div>
+  <div class="flex-grow"></div>
+  <div class="flex-grow-0 w-full">
+
+<div class="px-4 py-8"><article class="break-words mx-auto prose lg:prose-lg"><p style="margin-bottom: 0.5em;">Published on January 31, 2022 by Paul Francis</p>
+    <h1>Diffix Elm automates what statistics offices have been doing for decades</h1>
+<p>Diffix Elm is a methodology for dynamic data anonymization. <em>Dynamic</em> means that it operates on a query-by-query basis (versus generating a single static anonymized table). Diffix Elm is essentially an SQL query engine. It accepts SQL queries with a limited syntax, reads the original personal data, and returns an anonymized answer.</p>
+<img src="/blog/figs/diffix-basic.png" width="400">
+<p>The two strong anonymization <em>models</em> that get the most attention are <em>k-anonymity</em> and <em>Differential Privacy</em>. You might be surprised to learn, then, that organizations like statistics offices, which routinely release anonymized data about whole populations, don’t use these models per se*. Rather, they use a combination of <em>mechanisms</em>. The most commonly used mechanisms are <strong>aggregation</strong>, <strong>generalization</strong>, <strong>noise</strong>, <strong>suppression</strong>, and <strong>swapping</strong>. These mechanisms have safely been in use for decades.</p>
+<p>Diffix Elm uses these mechanisms too. You can think of Diffix Elm as <em>automating</em> and <em>generalizing</em> the bespoke methods used by statistics bureaus. In so doing, Diffix Elm brings “census strength” anonymization to non-experts across a wide range of use cases and datasets.</p>
+<p>In this article, we describe how and why Diffix Elm uses these mechanisms. Along the way, we contrast them with how the mechanisms are used by the Australian Bureau of Statistics (ABS), the US Census Bureau (USCB), and the UK Office for National Statistics (ONS).</p>
+<h2>Aggregation</h2>
+<p>The original personal data that Diffix Elm accesses has one row per person or per event (if time series data). Diffix Elm aggregates that data into counts:</p>
+<img src="/blog/figs/aggregate.png" width="400">
+<p>Virtually all statistics offices release aggregate data. One example of many is TableBuilder from the ABS (<a href="https://www.abs.gov.au/websitedbs/censushome.nsf/home/tablebuilder" rel="nofollow">https://www.abs.gov.au/websitedbs/censushome.nsf/home/tablebuilder</a>).</p>
+<p>Statistics offices also often release data in non-aggregated form, usually called <em>microdata</em>. Diffix Elm does not release microdata.</p>
+<h2>Generalization</h2>
+<p>If data values are too detailed, then it may not be possible to release an aggregate without first generalizing the data. For example, a given birthdate might be unique to a single person. To deal with this, the birthdate may be generalized to year of birth:</p>
+<img src="/blog/figs/generalize.png" width="400">
+<p>Diffix Elm does not <em>enforce</em> generalization per se. This is because data quality relative to a given use case depends heavily on how much generalization is done. It may be that for some use cases, decade of birth is adequate precision, whereas for other use cases, month of birth is needed. The analyst must be able to choose the amount of generalization.</p>
+<p>Instead, Diffix Elm <em>allows</em> generalization, and leaves it to the analyst to select the amount. Diffix Elm supports numeric ranges and substrings for text (offset and length). Other forms of generalization, in particular hierarchical categorization, must be done as a pre-processing step.</p>
+<h2>Noise</h2>
+<p>Adding noise to data is one of the oldest privacy mechanisms, going back to the idea of randomized response in the 1960’s. Note that noise here means adding noise to each bin’s aggregate count, not adding noise to column values. In other words, we won’t change the value of a birth year, but we will change the count of persons with a given birth year:</p>
+<img src="/blog/figs/noise1.png" width="400">
+<p>Noise needs to be random. If it is not random, it might be possible to deduce the noise amount and recover the original count. The difficulty with random noise, however, is that if one can get multiple samples of the same data, then the random noise can be averaged away and the original count recovered.</p>
+<p>There are two classic ways to deal with this. One is to simply limit the amount of data that is released. This is the approach taken by Differential Privacy, leading to the concept of a privacy budget.</p>
+<p>The other way is to make the noise <em>sticky</em>. The concept here is that some given data, when repeated, has the same noise. The noise is random the first time, but subsequent repeats of the data have the same noise attached. This is the approach taken by both the ABS and the ONS.</p>
+<p>The ABS and the ONS effectively use the same approach. They select the noise value as a function of the set of persons that contribute to a given aggregate count. In
+<a href="http://www.unece.org.net4all.ch/fileadmin/DAM/stats/documents/ece/ces/ge.46/2019/mtg1/SDC2019_S2_ABS_Bailie_D.pdf" rel="nofollow">[ABS]</a>, it is referred to this as the <em>‘same contributors, same perturbation’</em> principle. In <a href="https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2020/07/EAP125-Statistical-Disclosure-Control-SDC-for-2021-UK-Census.docx" rel="nofollow">[ONS]</a>, it is called the Cell Key method.</p>
+<p>Diffix Elm uses sticky noise too, but we take it a little further. In addition to ‘same contributors, same perturbation’, we also have <em>‘same query, same perturbation’</em>. In other words, two noise samples. This adds an additional uncertainty in cases where different queries may result in the same set of contributors.</p>
+<h2>Suppression</h2>
+<p>The mere presence or absence of a distinct value in the data can leak private information. Take, for instance, the oldest living person in an area. The age or year of birth of that person uniquely identifies that person in the data.</p>
+<p>A common way of preventing this is through suppression: literally removing the record from the released data. In the case of census data, distinct values typically come in the form of extreme values from numeric attributes like age, number of children, number of marriages, and so on.</p>
+<img src="/blog/figs/top-code.png" width="400">
+<p>One approach that statistics offices use to suppress extreme values is with top- or bottom-coding. In this method, numeric ranges are capped with minimum and maximum values, and anything outside of this range is suppressed.</p>
+<p>More generally, a combination of multiple values like birthdate, zip code, and sex can refer to a single person even though each value taken alone refers to many persons. These combinations are called <em>pseudo-identifiers</em>.</p>
+<p>Diffix Elm suppresses by counting the number of distinct persons that comprise a bin, and removing that bin from the answer if the number falls below a threshold. Diffix Elm uses a <em>noisy threshold</em> with a hard lower bound, rather than a simple hard threshold. In other words, instead of suppressing all bins with fewer than say four users, Diffix Elm adds a small amount of sticky noise to a <em>mean threshold</em>, and suppresses when the count falls below the noisy threshold.</p>
+<p>An analyst can minimize the amount of suppression by increasing generalization to produce larger bins.</p>
+<h2>Swapping</h2>
+<p>Another approach that statistics offices use to deal with data uniques is swapping: exchange a person in one bin with a person in a “nearby” bin. This can be done for a variety of reasons.</p>
+<p>In census data, this is most commonly done by exchanging a unique person in one area (census block) with a person in a randomly selected nearby area. In noiseless systems, the advantage of this approach over suppression is that block counts stay accurate. In spite of the fact that the ONS uses noise, it still primarily relies on block swapping. In
+<a href="https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2020/07/EAP125-Statistical-Disclosure-Control-SDC-for-2021-UK-Census.docx" rel="nofollow">[ONS]</a>, they refer to the noise as ‘light touch perturbation’. It improves anonymization, but is not the primary mechanism.</p>
+<img src="/blog/figs/area-swap.png" width="500">
+<p>For the 2020 census, the USCB moved from a swapping-based approach to a noise-based approach. Nevertheless, the USCB does a kind of statistical swapping. Specifically, when noise would have caused a race category to have a negative count, they increase the count to zero and decrease other non-zero races by the corresponding amount
+<a href="https://www2.census.gov/library/publications/decennial/2020/2020-census-disclosure-avoidance-handbook.pdf" rel="nofollow">[USCB]</a>.</p>
+<p>Diffix Elm has its own form of swapping, called <em>low-effect detection</em> in
+<a href="https://arxiv.org/abs/2201.04351" rel="nofollow">[Elm]</a>. This swapping is used in cases where two different queries would cause a bin in one query to differ by a single person from the corresponding bin in the other query. For example, suppose that there is a single female in the computer science department of a university. A query for department, salary (generalized to $10K), and sex would suppress the bin composed of the woman. A query for only department and salary, on the other hand, would include the woman along with the men in the corresponding salary bin. If the analyst knows that there is only one woman in the CS department, in some cases it would be possible to infer the woman’s salary bin with high confidence.</p>
+<img src="/blog/figs/low-effect.png" width="600">
+<p>To deal with this, Diffix Elm dynamically detects when this scenario takes place, and moves the person from the suppressed bin to the appropriate non-suppressed bin. This is a relatively rare operation, but sometimes happens</p>
+<h2>Other mechanisms in Diffix Elm</h2>
+<p>Diffix Elm handles tables where each person appears in one row (survey or demographic data) as well as tables where each person appears in multiple rows (event or time-series data). Census data limited to the former type.</p>
+<p>When counts are aggregated in census data, by default the counts refer to counts of persons. By contrast, Diffix Elm can count either persons or rows. When counting persons, each person contributes exactly one to the count. When counting rows in time-series data, each person can contribute a different amount to the count. This requires Diffix Elm to have two mechanisms that aren’t required for census data. These two mechanisms are often found in systems that adhere to Differential Privacy.</p>
+<h3>Dynamic, proportional noise</h3>
+<p>Diffix Elm adds enough noise to statistically hide the presence or absence of a single person. For time-series data, this means that the amount of noise should be proportional to the largest contributors (the persons with the most rows).</p>
+<p>For each query, Diffix Elm dynamically adjusts the amount of noise per bin to hide the largest contributors. This is analogous to the concept of sensitivity in Differential Privacy. The amount of noise is proportional to the average contribution of the <em>K</em> largest contributors, where <em>K</em> is itself a noisy threshold.</p>
+<h3>Outlier flattening</h3>
+<p>Dynamic proportional noise leads to a problem where the amount of noise itself can reveal the presence or absence of extreme contributors. To prevent this, Diffix Elm has one additional mechanism, <em>outlier flattening</em>. Diffix Elm dynamically detects where there are one or two extreme contributors, and reduces the contribution to match the average of the next <em>K</em> largest contributors. Outlier flattening is analogous to the concept of clipping in Differential Privacy.</p>
+<h2>Conclusion</h2>
+<p>Statistics offices employ teams of privacy experts to design and analyze bespoke anonymization mechanisms for specific types of data. These offices release data every year covering millions of persons all over the world. This process has been remarkably successful: according to members of the US, UK, and Australian statistics offices, there are no known instances of malicious re-identification of census data.</p>
+<p>This is fine for statistics offices, but not everybody can afford a team of privacy experts. This is where Diffix Elm, as part of the Open Diffix project, can help. Diffix Elm takes the anonymization mechanisms used by statistics offices for decades, and engineers them so that they are easy to use for a wide variety of data types and use cases, and provide good quality data with strong anonymization.</p>
+<p>This article gives an overview of these mechanisms, and compares and contrasts how they are used by Diffix Elm and statistics offices alike. For more information, a full specification and risk analysis of Diffix Elm can be found at <a href="https://arxiv.org/abs/2201.04351" rel="nofollow">[Elm]</a>. As always, please don’t hesitate to get in touch with us at <a href="mailto:hello@open-diffix.org">hello@open-diffix.org</a>.</p>
+<hr>
+<p>* The US Census Bureau ostensibly uses Differential Privacy. I’m just not sure a budget of epsilon around 20 really ought to be counted as a legitimate use of Differential Privacy. Note I’m not criticizing the US Census Bureau: their 2020 release is undoubtedly their most secure.</p>
+<h3>References</h3>
+<p><strong>[ABS]</strong> <a href="http://www.unece.org.net4all.ch/fileadmin/DAM/stats/documents/ece/ces/ge.46/2019/mtg1/SDC2019_S2_ABS_Bailie_D.pdf" rel="nofollow">http://www.unece.org.net4all.ch/fileadmin/DAM/stats/documents/ece/ces/ge.46/2019/mtg1/SDC2019_S2_ABS_Bailie_D.pdf</a></p>
+<p><strong>[Elm]</strong> <a href="https://arxiv.org/abs/2201.04351" rel="nofollow">https://arxiv.org/abs/2201.04351</a></p>
+<p><strong>[ONS]</strong> <a href="https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2020/07/EAP125-Statistical-Disclosure-Control-SDC-for-2021-UK-Census.docx" rel="nofollow">https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2020/07/EAP125-Statistical-Disclosure-Control-SDC-for-2021-UK-Census.docx</a></p>
+<p><strong>[USCB]</strong> <a href="https://www2.census.gov/library/publications/decennial/2020/2020-census-disclosure-avoidance-handbook.pdf" rel="nofollow">https://www2.census.gov/library/publications/decennial/2020/2020-census-disclosure-avoidance-handbook.pdf</a></p></article></div></div>
+
+  <div class="flex-grow"></div>
+
+  <footer class="flex flex-col items-center flex-grow-0 p-4 pt-10 pb-10 mx-auto text-sm text-gray-500"><span class="max-w-sm text-center">If you have questions or want to discuss the project, please send us an email at <a class="text-gray-800 underline hover:text-gray-500" href="mailto:hello@open-diffix.org">hello@open-diffix.org</a>.
+    </span>
+
+    <div class="mt-4 mx-auto"><a href="https://twitter.com/OpenDiffix?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="false">Follow @OpenDiffix</a></div>
+
+    <span class="mt-8">Copyright MPI-SWS</span>
+    <span class="mx-auto mt-2 space-x-2"><a class="text-gray-800 underline hover:text-gray-500" href="https://imprint.mpi-klsb.mpg.de/sws/open-diffix.org/">Imprint</a>
+      <a class="text-gray-800 underline hover:text-gray-500" href="https://data-protection.mpi-klsb.mpg.de/sws/open-diffix.org">Privacy Policy</a></span></footer></div>
+
+</div>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta http-equiv="content-security-policy" content=""><title>Open Diffix - Side-by-side comparison of Diffix Fir and original data using the NYC taxi data</title><script async src="//platform.twitter.com/widgets.js" charset="utf-8" data-svelte="svelte-1tl8nxd"></script>
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-bd6758f4.css">
+	<link rel="modulepreload" href="/_app/start-472a50b3.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-8665e618.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-70b8f3e1.js">
+	<link rel="modulepreload" href="/_app/chunks/ackee-dc53f939.js">
+	<link rel="modulepreload" href="/_app/chunks/Link-8dfb6494.js">
+	<link rel="modulepreload" href="/_app/pages/blog/nyc-taxi-data-heatmap.md-f522aad6.js">
+	<link rel="modulepreload" href="/_app/chunks/_post-3392f905.js">
+	<link rel="modulepreload" href="/_app/chunks/utils-6cf984b9.js"><script type="module">
+		import { start } from "/_app/start-472a50b3.js";
+		start({
+			target: document.querySelector("#opendiffix"),
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-70b8f3e1.js"),
+						import("/_app/pages/blog/nyc-taxi-data-heatmap.md-f522aad6.js")
+				],
+				url: new URL("http://sveltekit-prerender/blog/nyc-taxi-data-heatmap"),
+				params: {}
+			}
+		});
+	</script>
+  </head>
+  <body>
+    <div id="opendiffix">
+
+
+
+
+<div class="flex flex-col min-h-screen"><div class="h-auto md:h-24 transition-all duration-200"><div class="md:fixed w-full bg-white z-50 md:border-b border-collapse"><nav class="max-w-2xl mx-auto w-full -mb-1 flex justify-end text-xl"><div class="font-semibold"><a href="/" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">Home</a></div>
+
+      <div class="font-semibold"><a href="/download" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">Download</a></div>
+
+      <div class="font-semibold"><a href="/faq" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">FAQ</a></div>
+
+      <div class="font-semibold"><a href="/blog" class="transition-colors duration-500 px-4 py-4 block h-full border-shamrock-600 border-b-4">Blog</a></div></nav></div></div>
+  <div class="flex-grow"></div>
+  <div class="flex-grow-0 w-full">
+
+<div class="px-4 py-8"><article class="break-words mx-auto prose lg:prose-lg"><p style="margin-bottom: 0.5em;">Published on July 12, 2022 by Paul Francis</p>
+    <h1>Side-by-side comparison of Diffix Fir and original data using the NYC taxi data</h1>
+<p><a href="https://github.com/pdobacz" rel="nofollow">Piotr Dobaczewski</a> wrote a <a href="https://taxi-heatmap.open-diffix.org/" rel="nofollow">nice little visualization</a> that compares the accuracy of Diffix anonymization with the original data. The visualization uses the NYC taxi data; a pseudonymized dataset of every taxi ride in NYC that is released each year. The <a href="https://github.com/diffix/taxi-heatmap" rel="nofollow">code is on GitHub</a>. The version of Diffix used for the visualization is Fir.</p>
+<p>The data we used covers 14776615 rides registered during January 2013 and comes from a publication by the <a href="https://databank.illinois.edu/datasets/IDB-9610843" rel="nofollow">University of Illinois at Urbana-Champaign</a>.</p>
+<p>Each row of the dataset describes a single ride; its pickup and dropoff time and location, the fare, the number of passengers and other details. The dataset includes a column that uniquely identifies the driver of each ride. Because it is pseudonymized, the dataset would be regarded as personal data by GDPR criteria. There <a href="https://vgc.engineering.nyu.edu/~juliana/pub/taxi-privacy.pdf" rel="nofollow">have been claims</a> that driver privacy could be at risk from this data, and indeed NYC no longer includes a driver identification in its releases. This is unfortunate, because it is no longer possible to analyze driver statistics, such as driver work habits, length of employment, and so on. This data could safely be analyzed with Diffix.</p>
+<p><a href="https://taxi-heatmap.open-diffix.org/" rel="nofollow">The visualization</a> gives data for two parameters, average ride fare and average ride speed. Many other parameters could be queried … these are just the two examples we chose. The data is shown as a grid heatmap. The size of the grid boxes depends on the zoom level, but can get down to the size of a small city block. Each heatmap covers a 1-hour time window at 4-hour intervals.</p>
+<p>The visualization comes with a slider that you can wipe across the heatmap. The heatmap to the left of the slider is without anonymization, and the heatmap to the right is anonymized by Diffix Fir. This lets you directly see how much Diffix distorts the results.</p>
+<h2>How we make the boxes</h2>
+<p>Here is a portion of the heatmap from lower Manhattan for average fares, rounded to the nearest dollar, in the 8:00 - 9:00 time window:</p>
+<img src="/blog/figs/heatmap-ex.gif" width="600">
+<p>Not all locations are covered by boxes, and some boxes are larger than others.</p>
+<p>The reason that not all locations have boxes is because there were not enough rides in the given time/space window to generate a meaningful average. In the case of the original (non-anonymized) data, we require that there be five or more rides originating in the time/space window. If not, we suppress the data and publish nothing. Diffix naturally suppresses data for which there are too few drivers as part of its anonymization. The average suppression threshold for Diffix Fir was set to five distinct drivers.</p>
+<p>The reason some boxes are bigger than others is that we show the smallest box for which all of the four sub-boxes at the next zoom level are suppressed. (Box dimensions grow as a power of two, so each box can be divided into four smaller boxes. If all four smaller boxes would be suppressed, then we show the larger box.)</p>
+<p>As you explore the visualization, you will notice that sometimes the original data displays a box where Diffix Fir does not, and vice versa. This is because the suppression threshold for Diffix Fir is not a specific value, but a range of values from three to roughly seven. (<a href="https://www.open-diffix.org/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades" rel="nofollow">Read more</a> about noisy thresholds.) Sometimes Diffix Fir will display a box with only three or four distinct rides, or suppress a box with six or seven distinct rides. By contrast, the threshold for the original data is always five.</p>
+<h2>A simple example</h2>
+<p>Imagine that you are flying to NYC via JFK airport, and you are wondering how flying in during rush hour will affect your taxi fare. Comparing 8am versus 8pm for both average trip speed and fare for rides out of JFK, we see that while trip speed is substantially slower during rush hour (as expected), the fares change only slightly.</p>
+<img src="/blog/figs/speed-fare-diffix.png" width="600">
+<p>Now let’s compare the Diffix heatmap above with the original heatmap.</p>
+<img src="/blog/figs/speed-fare-raw.png" width="600">
+<p>While there are slight differences, both the Diffix and original heatmaps convey the same basic insights.</p>
+<h2>Key takeaways</h2>
+<p>The key takeaways from this visualization are:</p>
+<p><strong>Diffix is pretty accurate.</strong> Visually you can see that the Diffix heatmap tracks the original data heatmap pretty closely. One can draw valid conclusions from the anonymized data.</p>
+<p><strong>Diffix hides some data.</strong> Any anonymization mechanism must either suppress or generalize data, and Diffix is no exception. We could certainly have shown the original data as exact points in time. Doing so, however, would in fact detract from the quality of the visualization. Heatmaps are good for visualization precisely because nearby values are cumulated. Given this, the fact that Diffix hides data hardly detracts from the quality of the visualization at all.</p>
+<p>Please feel free to contact us at <a href="mailto:hello@open-diffix.org">hello@open-diffix.org</a> if you have any questions, or would like to explore the use of Diffix for your own project!</p></article></div></div>
+
+  <div class="flex-grow"></div>
+
+  <footer class="flex flex-col items-center flex-grow-0 p-4 pt-10 pb-10 mx-auto text-sm text-gray-500"><span class="max-w-sm text-center">If you have questions or want to discuss the project, please send us an email at <a class="text-gray-800 underline hover:text-gray-500" href="mailto:hello@open-diffix.org">hello@open-diffix.org</a>.
+    </span>
+
+    <div class="mt-4 mx-auto"><a href="https://twitter.com/OpenDiffix?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="false">Follow @OpenDiffix</a></div>
+
+    <span class="mt-8">Copyright MPI-SWS</span>
+    <span class="mx-auto mt-2 space-x-2"><a class="text-gray-800 underline hover:text-gray-500" href="https://imprint.mpi-klsb.mpg.de/sws/open-diffix.org/">Imprint</a>
+      <a class="text-gray-800 underline hover:text-gray-500" href="https://data-protection.mpi-klsb.mpg.de/sws/open-diffix.org">Privacy Policy</a></span></footer></div>
+
+</div>
+  </body>
+</html>

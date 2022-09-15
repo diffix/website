@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta http-equiv="content-security-policy" content=""><title>Open Diffix - FAQ</title><script async src="//platform.twitter.com/widgets.js" charset="utf-8" data-svelte="svelte-1tl8nxd"></script>
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-bd6758f4.css">
+	<link rel="modulepreload" href="/_app/start-472a50b3.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-8665e618.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-70b8f3e1.js">
+	<link rel="modulepreload" href="/_app/chunks/ackee-dc53f939.js">
+	<link rel="modulepreload" href="/_app/chunks/Link-8dfb6494.js">
+	<link rel="modulepreload" href="/_app/pages/faq.svelte-bd42ba5e.js"><script type="module">
+		import { start } from "/_app/start-472a50b3.js";
+		start({
+			target: document.querySelector("#opendiffix"),
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-70b8f3e1.js"),
+						import("/_app/pages/faq.svelte-bd42ba5e.js")
+				],
+				url: new URL("http://sveltekit-prerender/faq"),
+				params: {}
+			}
+		});
+	</script>
+  </head>
+  <body>
+    <div id="opendiffix">
+
+
+
+
+<div class="flex flex-col min-h-screen"><div class="h-auto md:h-24 transition-all duration-200"><div class="md:fixed w-full bg-white z-50 md:border-b border-collapse"><nav class="max-w-2xl mx-auto w-full -mb-1 flex justify-end text-xl"><div class="font-semibold"><a href="/" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">Home</a></div>
+
+      <div class="font-semibold"><a href="/download" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">Download</a></div>
+
+      <div class="font-semibold"><a href="/faq" class="transition-colors duration-500 px-4 py-4 block h-full border-shamrock-600 border-b-4">FAQ</a></div>
+
+      <div class="font-semibold"><a href="/blog" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">Blog</a></div></nav></div></div>
+  <div class="flex-grow"></div>
+  <div class="flex-grow-0 w-full">
+
+<div class="p-4 max-w-2xl lg:max-w-6xl mx-auto"><header id="faq-top" class="pt-12 lg:ml-80"><div class="mx-auto lg:max-w-2xl"><h1 class="text-5xl max-w-xl font-semibold">Frequently Asked Questions</h1></div></header>
+
+  <div class="mt-16 lg:mt-0 mb-12"><div class="lg:fixed lg:w-80 lg:pt-24 lg:pr-4 lg:pb-8 lg:top-16 lg:bottom-0 lg:overflow-y-auto"><h2 class="block text-2xl w-full font-semibold">Table of contents</h2>
+
+      <ul class="mt-4 ml-4 space-y-1.5 text-sm list-disc list-outside"></ul></div>
+
+    <div class="lg:mt-12 lg:ml-80"><div class="mx-auto lg:max-w-2xl space-y-6 lg:space-y-12 pt-12 lg:pt-0"><section><div id="What-is-Diffix" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">What is Diffix?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Diffix is a bundled set of mechanisms for anonymizing structured data. It was jointly developed by Aircloak
+          GmbH and the Max Planck Institute for Software Systems. Diffix&#39; exploits mechansims that have been in use by
+          national statistics offices for decades:
+          <b>aggregation</b>, <b>generalization</b>, <b>noise</b>, <b>suppression</b>, and <b>swapping</b>. It
+          automatically applies these mechanisms as needed on a query-by-query basis to minimize noise while ensuring
+          strong anonymity.
+          <a class="text-gray-800 underline hover:text-gray-500" href="/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">Here</a> is a brief
+          overview.
+        </p></section>
+
+        <section><div id="What-is-Open-Diffix" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">What is Open Diffix?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Open Diffix is a project to make Diffix anonymization free and open. The Open Diffix project develops two
+          Diffix query engine implementations, one based on .NET and the other a PostgreSQL extension. <b>Diffix for Desktop</b>
+          is a GUI-based application on the .NET query engine. Diffix for Desktop is aimed towards ease-of-use, while
+          <b>Diffix for PostgreSQL</b> targets higher complexity and scale. Both are strongly anonymous, and satisfy the
+          GDPR definition of anonymity.
+        </p></section>
+
+        <section><div id="What-is-Diffix-Elm" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">What is Diffix Elm?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Major versions of Diffix are named after trees. Diffix Elm is the latest version (after Aspen, Birch, Cedar,
+          and Dogwood), and is the basis for the first releases of Diffix for Desktop and Diffix for PostgreSQL.
+          Compared to earlier versions, Diffix Elm represents a kind of &quot;complexity reset&quot;. It is much <b>simpler</b>,
+          <b>easier to use</b>, and easier to analyze (though less feature rich).
+        </p></section>
+
+        <section><div id="Where-can-I-learn-about-Diffix-Elm" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Where can I learn about Diffix Elm?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">A good overview of Diffix Elm can be found <a class="text-gray-800 underline hover:text-gray-500" href="/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">here</a>. A detailed description
+          <a class="text-gray-800 underline hover:text-gray-500" href="https://arxiv.org/abs/2201.04351">is available on ArXiv</a>. Besides including a
+          <b>full specification</b>, it includes a complete privacy analysis and guidance for writing a risk assessment.
+        </p></section>
+
+        <section><div id="How-is-Diffix-Elm-deployed" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">How is Diffix Elm deployed?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Open Diffix supports <a class="text-gray-800 underline hover:text-gray-500" href="https://open-diffix.org/download">two implementations</a> of Diffix Elm, a
+          <b>PostgreSQL extension</b>
+          (pg_diffix), and a stand-alone <b>desktop application</b>.
+          <p class="indent-6">Diffix for PostgreSQL provides all the benefits of PostgreSQL, allowing development of scalable web
+            back-ends, dashboards, and applications over a standard API with SQL, as well as the use of SQL clients.
+          </p>
+          <p class="indent-6">Diffix for Desktop is built on a .NET implementation of Diffix Elm. It is designed for extreme ease of
+            installation and use. It supports CSV tables and a simple GUI (no SQL required).
+          </p></p></section>
+
+        <section><div id="How-does-Diffix-compare-with-Differential-Privacy-and-k-anonymity" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">How does Diffix compare with Differential Privacy and k-anonymity?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">K-anonymity uses generalization and suppression. Systems based on Differential Privacy use noise and often use
+          generalization. Diffix uses all three, and so combines the benefits of both k-anonymity and Differential
+          Privacy without formally adhering to either model. In so doing, Diffix is more patterned after how national
+          statistics offices approach anonymization. While Diffix does not offer the mathematical guarantees of
+          low-epsilon Differential Privacy, it also does not have the drawback of a privacy budget.
+        </p></section>
+
+        <section><div id="What-kinds-of-analytics-does-Diffix-support-(and-not-support)" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">What kinds of analytics does Diffix support (and not support)?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Diffix supports descriptive analytics over structured data like relational databases or CSV files: selecting
+          columns, requesting counts or sums over those columns, putting data in bins of different sizes, and so on.
+          Descriptive analytics is used to produce visualizations like bar graphs or scatter plots or heat maps. Diffix
+          does <strong>not</strong> support machine learning, synthetic data generation, data masking, pseudonymization,
+          image fuzzing, or anonymization of free-form text (redacting).
+        </p></section>
+
+        <section><div id="How-much-SQL-does-Diffix-Elm-support" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">How much SQL does Diffix Elm support?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Diffix Elm supports a very limited but useful subset of SQL. Basically, it lets you build multi-column
+          histograms of counts, and supports basic generalization functions (e.g. rounding of numeric columns, and
+          substring selection of text columns).
+        </p></section>
+
+        <section><div id="What-if-I-want-more-SQL-features" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">What if I want more SQL features?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Open Diffix is constantly building new SQL features. If you require additional features for your use case,
+          contact us at <a class="text-gray-800 underline hover:text-gray-500" href="mailto:hello@open-diffix.org">hello@open-diffix.org</a>.
+        </p></section>
+
+        <section><div id="What-about-data-quality" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">What about data quality?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">All anonymization mechanisms reduce data quality, by generalizing or distorting, and Diffix is no exception.
+          The data quality of Diffix is similar to data released by national statistics offices (e.g. census data), and
+          usually far exceeds that of k-anonymity and Differential Privacy.
+          <strong>Diffix for Desktop</strong> displays the amount of distortion, both as summary statistics and by displaying
+          the original and anonymized data side-by-side. This way, you can observe Diffix&#39; data quality for yourself.
+        </p></section>
+
+        <section><div id="What-is-the-trust-model-for-usersanalysts" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">What is the trust model for users/analysts?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Diffix has two modes of operation, Trusted Analyst Mode and Untrusted Analyst Mode. Trusted Mode protects
+          against <b>accidental release</b> of personal data. Untrusted Mode protects against
+          <b>intentional, malicious exposure</b> of personal data. A Trusted Mode analyst does not require any expertise
+          in anonymization in order to safely release data queried through Diffix.
+        </p></section>
+
+        <section><div id="Why-wouldn&#39;t-I-always-use-Untrusted-Mode" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Why wouldn&#39;t I always use Untrusted Mode?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Trusted Mode is easier to use. It has more query features, and in Diffix for Desktop it allows an analyst to
+          view the anonymized and original data side-by-side. In this way the analyst knows exactly how much the data is
+          distorted through suppression and noise, and can more easily adjust column selection and generalization as
+          needed.
+        </p></section>
+
+        <section><div id="Is-Open-Diffix-GDPR-compliant" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Is Open Diffix GDPR compliant?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">The short answer is &#39;yes&#39;. The longer answer is that there are no concrete criteria for GDPR anonymity.
+          Ultimately it is up to a Data Protection Officer (DPO) or Authority (DPA) to make the call. Diffix as
+          implemented by Aircloak was almost always evaluated as GDPR anonymous, and the same holds for Open Diffix
+          releases.
+        </p></section>
+
+        <section><div id="Can-the-Open-Diffix-project-help-us-with-GDPR-compliance" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Can the Open Diffix project help us with GDPR compliance?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">The
+          <a class="text-gray-800 underline hover:text-gray-500" href="https://arxiv.org/abs/2201.04351">full specification of Diffix Elm</a>
+          is designed to support <b>risk assessment</b> by DPOs and DPAs for GDPR or any other privacy standard. It
+          describes the anonymization mechanisms in detail, and gives an analysis of the anonymization properties
+          against an exhaustive set of attacks. For assistance in this process you can contact us at
+          <a class="text-gray-800 underline hover:text-gray-500" href="mailto:hello@open-diffix.org">hello@open-diffix.org</a>.
+        </p></section>
+
+        <section><div id="Is-Open-Diffix-Open-Source" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Is Open Diffix Open Source?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Almost. Open Diffix operates under the
+          <a class="text-gray-800 underline hover:text-gray-500" href="https://mariadb.com/de/bsl11/">Business Source License (BSL1.1)</a>.
+          <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/desktop/blob/master/LICENSE.md">Our license</a>
+          makes Diffix free for all use cases, including commercial, that do not resell Diffix software or interfaces.
+        </p></section>
+
+        <section><div id="How-is-Open-Diffix-funded" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">How is Open Diffix funded?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">For the first few years, Open Diffix is funded by the Max Planck Institute for Software Systems as a research
+          initiative. Our goal is to become self-sustaining through sponsorships, consultancy, or licensing.
+        </p></section>
+
+        <section><div id="I-have-other-questions-Who-can-I-contact" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">I have other questions. Who can I contact?</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Please contact us at <a class="text-gray-800 underline hover:text-gray-500" href="mailto:hello@open-diffix.org">hello@open-diffix.org</a>.
+        </p></section></div></div></div></div></div>
+
+  <div class="flex-grow"></div>
+
+  <footer class="flex flex-col items-center flex-grow-0 p-4 pt-10 pb-10 mx-auto text-sm text-gray-500"><span class="max-w-sm text-center">If you have questions or want to discuss the project, please send us an email at <a class="text-gray-800 underline hover:text-gray-500" href="mailto:hello@open-diffix.org">hello@open-diffix.org</a>.
+    </span>
+
+    <div class="mt-4 mx-auto"><a href="https://twitter.com/OpenDiffix?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="false">Follow @OpenDiffix</a></div>
+
+    <span class="mt-8">Copyright MPI-SWS</span>
+    <span class="mx-auto mt-2 space-x-2"><a class="text-gray-800 underline hover:text-gray-500" href="https://imprint.mpi-klsb.mpg.de/sws/open-diffix.org/">Imprint</a>
+      <a class="text-gray-800 underline hover:text-gray-500" href="https://data-protection.mpi-klsb.mpg.de/sws/open-diffix.org">Privacy Policy</a></span></footer></div>
+
+</div>
+  </body>
+</html>

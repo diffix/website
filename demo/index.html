@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta http-equiv="content-security-policy" content=""><title>Open Diffix - PostgreSQL Demo</title><script async src="//platform.twitter.com/widgets.js" charset="utf-8" data-svelte="svelte-1tl8nxd"></script>
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-bd6758f4.css">
+	<link rel="modulepreload" href="/_app/start-472a50b3.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-8665e618.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-70b8f3e1.js">
+	<link rel="modulepreload" href="/_app/chunks/ackee-dc53f939.js">
+	<link rel="modulepreload" href="/_app/chunks/Link-8dfb6494.js">
+	<link rel="modulepreload" href="/_app/pages/demo.svelte-9688ca05.js">
+	<link rel="modulepreload" href="/_app/chunks/ContentPage-8ea5e698.js"><script type="module">
+		import { start } from "/_app/start-472a50b3.js";
+		start({
+			target: document.querySelector("#opendiffix"),
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-70b8f3e1.js"),
+						import("/_app/pages/demo.svelte-9688ca05.js")
+				],
+				url: new URL("http://sveltekit-prerender/demo"),
+				params: {}
+			}
+		});
+	</script>
+  </head>
+  <body>
+    <div id="opendiffix">
+
+
+
+
+<div class="flex flex-col min-h-screen"><div class="h-auto md:h-24 transition-all duration-200"><div class="md:fixed w-full bg-white z-50 md:border-b border-collapse"><nav class="max-w-2xl mx-auto w-full -mb-1 flex justify-end text-xl"><div class="font-semibold"><a href="/" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">Home</a></div>
+
+      <div class="font-semibold"><a href="/download" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">Download</a></div>
+
+      <div class="font-semibold"><a href="/faq" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">FAQ</a></div>
+
+      <div class="font-semibold"><a href="/blog" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">Blog</a></div></nav></div></div>
+  <div class="flex-grow"></div>
+  <div class="flex-grow-0 w-full">
+
+<div class="max-w-xl mx-auto box-content p-4"><h1 class="text-5xl font-semibold mt-8 md:mt-0">PostgreSQL Demo</h1>
+
+  <div class="mt-8"><p class="mt-3">We are hosting a PostgreSQL database instance containing a slightly altered version of the 20 odd year old
+    <a class="text-gray-800 underline hover:text-gray-500" href="https://data.world/lpetrocelli/czech-financial-dataset-real-anonymized-transactions">Berka bank dataset</a>. The PostgreSQL instance has the Open Diffix plugin enabled and includes a role for each access mode. The database
+    is hosted on the following server:
+  </p>
+
+  <div class="mt-2 shadow rounded-lg -mx-2 p-2"><div class="flex"><span class="min-w-[6rem] font-medium">Hostname:</span>
+      demo-pg.open-diffix.org
+    </div>
+    <div class="flex"><span class="inline-block min-w-[6rem] font-medium">Port:</span>
+      5432
+    </div>
+    <div class="flex"><span class="inline-block min-w-[6rem] font-medium">Database:</span>
+      banking
+    </div></div>
+
+  <h2 class="mt-8 text-2xl">Credentials</h2>
+
+  <p class="mt-3">Three roles are available for accessing the database:</p>
+
+  <div class="sm:hidden shadow rounded-lg mt-2 -mx-2 p-2"><div><div class="flex"><span class="min-w-[6rem] font-medium">Role:</span>
+        trusted_user
+      </div>
+      <div class="flex"><span class="inline-block min-w-[6rem] font-medium">Password:</span>
+        demo
+      </div>
+      <div class="flex"><span class="inline-block min-w-[6rem] font-medium">Description:</span>
+        Read-only, anonymized access in trusted mode
+      </div></div>
+
+    <div class="mt-2 pt-2 border-t-2"><div class="flex"><span class="min-w-[6rem] font-medium">Role:</span>
+        untrusted_user
+      </div>
+      <div class="flex"><span class="inline-block min-w-[6rem] font-medium">Password:</span>
+        demo
+      </div>
+      <div class="flex"><span class="inline-block min-w-[6rem] font-medium">Description:</span>
+        Read-only, anonymized access in untrusted mode
+      </div></div>
+
+    <div class="mt-2 pt-2 border-t-2"><div class="flex"><span class="min-w-[6rem] font-medium">Role:</span>
+        direct_user
+      </div>
+      <div class="flex"><span class="inline-block min-w-[6rem] font-medium">Password:</span>
+        demo
+      </div>
+      <div class="flex"><span class="inline-block min-w-[6rem] font-medium">Description:</span>
+        Read-only, unrestricted access to data
+      </div></div></div>
+
+  <div class="hidden sm:block shadow rounded-lg -mx-2 p-2 mt-4"><table class="table-fixed text-sm w-full"><thead class="text-left"><tr><th class="w-3/12">Role</th>
+          <th class="w-2/12">Password</th>
+          <th class="w-7/12">Description</th></tr></thead>
+      <tbody class="border-t-2"><tr class="hover:bg-gray-50"><td>trusted_user</td>
+          <td>demo</td>
+          <td>Read-only, anonymized access in trusted mode</td></tr>
+        <tr class="hover:bg-gray-50"><td>untrusted_user</td>
+          <td>demo</td>
+          <td>Read-only, anonymized access in untrusted mode</td></tr>
+        <tr class="hover:bg-gray-50"><td>direct_user</td>
+          <td>demo</td>
+          <td>Read-only, unrestricted access to data</td></tr></tbody></table></div>
+
+  <p class="mt-6">If you have the
+    <a class="text-gray-800 underline hover:text-gray-500" href="https://blog.timescale.com/tutorials/how-to-install-psql-on-mac-ubuntu-debian-windows/">PostgreSQL client tools</a>
+    installed on your machine you can connect as the <span class="font-mono font-semibold">trusted_user</span> role
+    with:
+    <div class="flex break-all space-x-2 items-center mt-2 font-mono text-semibold text-sm px-2 py-1 bg-gray-100 -mx-2 rounded-md"><span class="flex-grow">psql postgresql://trusted_user:demo@demo-pg.open-diffix.org/banking</span>
+
+  <button class="flex-grow-0 hover:bg-shamrock-400 transition-all focus:outline-none duration-200 bg-shamrock-200 text-gray-800 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 border rounded-lg w-10 h-8 flex justify-center items-center" aria-label="Click to copy the command to the clipboard"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="Icon of a clipboard"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg></button></div>
+
+<textarea class="hidden">psql postgresql://trusted_user:demo@demo-pg.open-diffix.org/banking</textarea></p>
+
+  <p class="mt-4">For the <span class="font-mono font-semibold">untrusted_user</span> role:
+    <div class="flex break-all space-x-2 items-center mt-2 font-mono text-semibold text-sm px-2 py-1 bg-gray-100 -mx-2 rounded-md"><span class="flex-grow">psql postgresql://untrusted_user:demo@demo-pg.open-diffix.org/banking</span>
+
+  <button class="flex-grow-0 hover:bg-shamrock-400 transition-all focus:outline-none duration-200 bg-shamrock-200 text-gray-800 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 border rounded-lg w-10 h-8 flex justify-center items-center" aria-label="Click to copy the command to the clipboard"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="Icon of a clipboard"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg></button></div>
+
+<textarea class="hidden">psql postgresql://untrusted_user:demo@demo-pg.open-diffix.org/banking</textarea></p>
+
+  <p class="mt-4">For the <span class="font-mono font-semibold">direct_user</span> role:
+    <div class="flex break-all space-x-2 items-center mt-2 font-mono text-semibold text-sm px-2 py-1 bg-gray-100 -mx-2 rounded-md"><span class="flex-grow">psql postgresql://direct_user:demo@demo-pg.open-diffix.org/banking</span>
+
+  <button class="flex-grow-0 hover:bg-shamrock-400 transition-all focus:outline-none duration-200 bg-shamrock-200 text-gray-800 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 border rounded-lg w-10 h-8 flex justify-center items-center" aria-label="Click to copy the command to the clipboard"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-label="Icon of a clipboard"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg></button></div>
+
+<textarea class="hidden">psql postgresql://direct_user:demo@demo-pg.open-diffix.org/banking</textarea></p>
+
+  <h2 class="mt-8 text-2xl">Further reading</h2>
+
+  <p class="mt-2"><strong>For analysts:</strong> The <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/banking.ipynb">banking notebook</a> provides example queries against the banking dataset. The <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/analyst_guide.md">analyst guide</a> describes the SQL features and limitations imposed by <span class="font-mono font-semibold">pg_diffix</span>.
+  </p>
+
+  <p class="mt-2"><strong>For administrators:</strong> Check out the <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/admin_tutorial.md">admin tutorial</a> for an example on how to set up <span class="font-mono font-semibold">pg_diffix</span>. See the <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/admin_guide.md">admin guide</a> for details on configuring and using the extension. To install from source, see the <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/pg_diffix/blob/release/elm/README.md#installation">installation section</a> of the repository README.
+  </p>
+
+  <h2 class="mt-8 text-2xl">Help and feedback</h2>
+  <p class="mt-2 mb-12">If you require help, you want to report a bug or request a feature, please do so in our <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/pg_diffix">Github repository</a>.
+  </p></div></div></div>
+
+  <div class="flex-grow"></div>
+
+  <footer class="flex flex-col items-center flex-grow-0 p-4 pt-10 pb-10 mx-auto text-sm text-gray-500"><span class="max-w-sm text-center">If you have questions or want to discuss the project, please send us an email at <a class="text-gray-800 underline hover:text-gray-500" href="mailto:hello@open-diffix.org">hello@open-diffix.org</a>.
+    </span>
+
+    <div class="mt-4 mx-auto"><a href="https://twitter.com/OpenDiffix?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="false">Follow @OpenDiffix</a></div>
+
+    <span class="mt-8">Copyright MPI-SWS</span>
+    <span class="mx-auto mt-2 space-x-2"><a class="text-gray-800 underline hover:text-gray-500" href="https://imprint.mpi-klsb.mpg.de/sws/open-diffix.org/">Imprint</a>
+      <a class="text-gray-800 underline hover:text-gray-500" href="https://data-protection.mpi-klsb.mpg.de/sws/open-diffix.org">Privacy Policy</a></span></footer></div>
+
+</div>
+  </body>
+</html>
