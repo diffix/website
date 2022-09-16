@@ -14,7 +14,7 @@
     >.
   </p>
 
-  <h3 class="mt-4 font-semibold text-xl">Latest version</h3>
+  <h3 class="mt-4 font-semibold text-xl">Latest version (Diffix Fir)</h3>
 
   <ul class="mt-2 list-disc list-inside">
     <li>
@@ -22,6 +22,19 @@
     </li>
     <li>
       <DownloadLink href="https://github.com/diffix/pg_diffix/releases" showIcon={false}>GitHub</DownloadLink>
+    </li>
+  </ul>
+
+  <h3 class="mt-4 font-semibold text-xl">Older Versions</h3>
+
+  <h3 class="mt-4 text-xl">Diffix Elm</h3>
+
+  <ul class="mt-2 list-disc list-inside">
+    <li>
+      <DownloadLink href="https://pgxn.org/dist/pg_diffix" showIcon={false}>PGXN (TODO fix link)</DownloadLink>
+    </li>
+    <li>
+      <DownloadLink href="https://github.com/diffix/pg_diffix/releases" showIcon={false}>GitHub (TODO fix link)</DownloadLink>
     </li>
   </ul>
 
