@@ -57,21 +57,25 @@
         </FAQItem>
 
         <FAQItem {addToToc} question="What is Diffix Fir?">
-          Major versions of Diffix are named after trees. Diffix Aspen through Dogwood were developed by Aircloak GmbH. Diffix Elm was the first version developed by the Open Diffix project. Compared to earlier versions, Diffix Elm represented a kind of "complexity reset". It is much <b>simpler</b>, <b>easier to use</b>, and easier to analyze (though less feature rich).
+          Major versions of Diffix are named after trees. Diffix Aspen through Dogwood were developed by Aircloak GmbH.
+          Diffix Elm was the first version developed by the Open Diffix project. Compared to earlier versions, Diffix
+          Elm represented a kind of "complexity reset". It is much <b>simpler</b>, <b>easier to use</b>, and easier to
+          analyze (though less feature rich).
           <p class="indent-6">
-          The latest version is Diffix Fir, which adds several new features including sum, average, and WHERE.
+            The latest version is Diffix Fir, which adds several new features including sum, average, and WHERE.
           </p>
-          
         </FAQItem>
 
         <FAQItem {addToToc} question="Where can I learn about Diffix Fir?">
-          A full specification and privacy analysis of Diffix Fir is not yet complete. The full specification and privacy analysis of Diffix Elm 
-          <Link href="https://arxiv.org/abs/2201.04351">is available on ArXiv</Link>. It includes guidance for writing a risk assessment. Since Fir adds only a few new features to Elm, the Elm specification suffices for now.
+          A full specification and privacy analysis of Diffix Fir is not yet complete. The full specification and
+          privacy analysis of Diffix Elm
+          <Link href="https://arxiv.org/abs/2201.04351">is available on ArXiv</Link>. It includes guidance for writing a
+          risk assessment. Since Fir adds only a few new features to Elm, the Elm specification suffices for now.
           <p class="indent-6">
-          A good overview of Diffix Elm can be found
-          <Link href="/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">here</Link>,
-          with the additional features of Diffix Fir described
-          <Link href="/blog/introducing-diffix-fir">here</Link>.
+            A good overview of Diffix Elm can be found
+            <Link href="/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">here</Link>,
+            with the additional features of Diffix Fir described
+            <Link href="/blog/introducing-diffix-fir">here</Link>.
           </p>
         </FAQItem>
 
@@ -106,20 +110,25 @@
         </FAQItem>
 
         <FAQItem {addToToc} question="How much SQL does Diffix Fir support?">
-          Diffix Elm supports a very limited but useful subset of SQL. It lets you build multi-column histograms of counts, sums, and averages. It supports basic generalization functions (e.g. rounding of numeric columns, and substring selection of text columns). It supports WHERE with AND logic.
+          Diffix Elm supports a very limited but useful subset of SQL. It lets you build multi-column histograms of
+          counts, sums, and averages. It supports basic generalization functions (e.g. rounding of numeric columns, and
+          substring selection of text columns). It supports WHERE with AND logic.
         </FAQItem>
 
         <FAQItem {addToToc} question="What if I want more SQL features?">
-          Open Diffix is constantly building new SQL features.  The next planned version of Diffix (Greenheart) will support JOIN and native timestamp data types. If you require additional features for your use case,
-          contact us at <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>.
+          Open Diffix is constantly building new SQL features. The next planned version of Diffix (Greenheart) will
+          support JOIN and native timestamp data types. If you require additional features for your use case, contact us
+          at <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>.
         </FAQItem>
 
         <FAQItem {addToToc} question="What about data quality?">
           All anonymization mechanisms reduce data quality, by generalizing or distorting, and Diffix is no exception.
-          The data quality of Diffix is similar to data released by many national statistics offices (e.g. census data), and
-          usually far exceeds that of k-anonymity and Differential Privacy.
+          The data quality of Diffix is similar to data released by many national statistics offices (e.g. census data),
+          and usually far exceeds that of k-anonymity and Differential Privacy.
           <p class="indent-6">
-          <strong>Diffix for Desktop</strong> displays the amount of distortion, both as summary statistics and by displaying the original and anonymized data side-by-side. This way, you can observe Diffix' data quality for yourself. <strong>Diffix for PostgreSQL</strong> can display the magnitude of noise added to each output bin.
+            <strong>Diffix for Desktop</strong> displays the amount of distortion, both as summary statistics and by
+            displaying the original and anonymized data side-by-side. This way, you can observe Diffix' data quality for
+            yourself. <strong>Diffix for PostgreSQL</strong> can display the magnitude of noise added to each output bin.
           </p>
         </FAQItem>
 
