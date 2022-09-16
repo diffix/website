@@ -15,7 +15,7 @@
   <h2 class="mx-12 mt-8 text-2xl text-center">Strong Anonymization for Structured Data. Open. Free.</h2>
   <h3 class="font-bold mx-12 mt-8 text-xl text-center">
     <span class="text-red-500">NEW!</span>
-    Diffix Fir released! <Link href="/download">Learn more</Link>.
+    Diffix Fir released! <Link href="/blog/introducing-diffix-fir">Learn more</Link>.
   </h3>
 </header>
 
