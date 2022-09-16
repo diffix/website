@@ -56,23 +56,27 @@
           GDPR definition of anonymity.
         </FAQItem>
 
-        <FAQItem {addToToc} question="What is Diffix Elm?">
-          Major versions of Diffix are named after trees. Diffix Elm is the latest version (after Aspen, Birch, Cedar,
-          and Dogwood), and is the basis for the first releases of Diffix for Desktop and Diffix for PostgreSQL.
-          Compared to earlier versions, Diffix Elm represents a kind of "complexity reset". It is much <b>simpler</b>,
-          <b>easier to use</b>, and easier to analyze (though less feature rich).
+        <FAQItem {addToToc} question="What is Diffix Fir?">
+          Major versions of Diffix are named after trees. Diffix Aspen through Dogwood were developed by Aircloak GmbH. Diffix Elm was the first version developed by the Open Diffix project. Compared to earlier versions, Diffix Elm represented a kind of "complexity reset". It is much <b>simpler</b>, <b>easier to use</b>, and easier to analyze (though less feature rich).
+          <p class="indent-6">
+          The latest version is Diffix Fir, which adds several new features including sum, average, and WHERE.
+          </p>
+          
         </FAQItem>
 
-        <FAQItem {addToToc} question="Where can I learn about Diffix Elm?">
-          A good overview of Diffix Elm can be found <Link
-            href="/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">here</Link
-          >. A detailed description
-          <Link href="https://arxiv.org/abs/2201.04351">is available on ArXiv</Link>. Besides including a
-          <b>full specification</b>, it includes a complete privacy analysis and guidance for writing a risk assessment.
+        <FAQItem {addToToc} question="Where can I learn about Diffix Fir?">
+          A full specification and privacy analysis of Diffix Fir is not yet complete. The full specification and privacy analysis of Diffix Elm 
+          <Link href="https://arxiv.org/abs/2201.04351">is available on ArXiv</Link>. It includes guidance for writing a risk assessment. Since Fir adds only a few new features to Elm, the Elm specification suffices for now.
+          <p class="indent-6">
+          A good overview of Diffix Elm can be found
+          <Link href="/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">here</Link>,
+          with the additional features of Diffix Fir described
+          <Link href="/blog/introducing-diffix-fir">here</Link>.
+          </p>
         </FAQItem>
 
-        <FAQItem {addToToc} question="How is Diffix Elm deployed?">
-          Open Diffix supports <Link href="https://open-diffix.org/download">two implementations</Link> of Diffix Elm, a
+        <FAQItem {addToToc} question="How is Diffix Fir deployed?">
+          Open Diffix supports <Link href="https://open-diffix.org/download">two implementations</Link> of Diffix Fir, a
           <b>PostgreSQL extension</b>
           (pg_diffix), and a stand-alone <b>desktop application</b>.
           <p class="indent-6">
@@ -80,7 +84,7 @@
             back-ends, dashboards, and applications over a standard API with SQL, as well as the use of SQL clients.
           </p>
           <p class="indent-6">
-            Diffix for Desktop is built on a .NET implementation of Diffix Elm. It is designed for extreme ease of
+            Diffix for Desktop is built on a .NET implementation of Diffix Fir. It is designed for extreme ease of
             installation and use. It supports CSV tables and a simple GUI (no SQL required).
           </p>
         </FAQItem>
@@ -93,7 +97,7 @@
           low-epsilon Differential Privacy, it also does not have the drawback of a privacy budget.
         </FAQItem>
 
-        <FAQItem {addToToc} question="What kinds of analytics does Diffix support (and not support)?">
+        <FAQItem {addToToc} question="What kinds of analytics does Diffix Fir support (and not support)?">
           Diffix supports descriptive analytics over structured data like relational databases or CSV files: selecting
           columns, requesting counts or sums over those columns, putting data in bins of different sizes, and so on.
           Descriptive analytics is used to produce visualizations like bar graphs or scatter plots or heat maps. Diffix
@@ -101,23 +105,22 @@
           image fuzzing, or anonymization of free-form text (redacting).
         </FAQItem>
 
-        <FAQItem {addToToc} question="How much SQL does Diffix Elm support?">
-          Diffix Elm supports a very limited but useful subset of SQL. Basically, it lets you build multi-column
-          histograms of counts, and supports basic generalization functions (e.g. rounding of numeric columns, and
-          substring selection of text columns).
+        <FAQItem {addToToc} question="How much SQL does Diffix Fir support?">
+          Diffix Elm supports a very limited but useful subset of SQL. It lets you build multi-column histograms of counts, sums, and averages. It supports basic generalization functions (e.g. rounding of numeric columns, and substring selection of text columns). It supports WHERE with AND logic.
         </FAQItem>
 
         <FAQItem {addToToc} question="What if I want more SQL features?">
-          Open Diffix is constantly building new SQL features. If you require additional features for your use case,
+          Open Diffix is constantly building new SQL features.  The next planned version of Diffix (Greenheart) will support JOIN and native timestamp data types. If you require additional features for your use case,
           contact us at <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>.
         </FAQItem>
 
         <FAQItem {addToToc} question="What about data quality?">
           All anonymization mechanisms reduce data quality, by generalizing or distorting, and Diffix is no exception.
-          The data quality of Diffix is similar to data released by national statistics offices (e.g. census data), and
+          The data quality of Diffix is similar to data released by many national statistics offices (e.g. census data), and
           usually far exceeds that of k-anonymity and Differential Privacy.
-          <strong>Diffix for Desktop</strong> displays the amount of distortion, both as summary statistics and by displaying
-          the original and anonymized data side-by-side. This way, you can observe Diffix' data quality for yourself.
+          <p class="indent-6">
+          <strong>Diffix for Desktop</strong> displays the amount of distortion, both as summary statistics and by displaying the original and anonymized data side-by-side. This way, you can observe Diffix' data quality for yourself. <strong>Diffix for PostgreSQL</strong> can display the magnitude of noise added to each output bin.
+          </p>
         </FAQItem>
 
         <FAQItem {addToToc} question="What is the trust model for users/analysts?">
