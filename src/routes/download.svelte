@@ -14,7 +14,7 @@
     >.
   </p>
 
-  <h3 class="mt-4 font-semibold text-xl">Latest version</h3>
+  <h3 class="mt-4 font-semibold text-xl">Latest version (Diffix Fir)</h3>
 
   <ul class="mt-2 list-disc list-inside">
     <li>
