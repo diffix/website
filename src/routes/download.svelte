@@ -25,19 +25,6 @@
     </li>
   </ul>
 
-  <h3 class="mt-4 font-semibold text-xl">Older Versions</h3>
-
-  <h3 class="mt-4 text-xl">Diffix Elm</h3>
-
-  <ul class="mt-2 list-disc list-inside">
-    <li>
-      <DownloadLink href="https://pgxn.org/dist/pg_diffix" showIcon={false}>PGXN (TODO fix link)</DownloadLink>
-    </li>
-    <li>
-      <DownloadLink href="https://github.com/diffix/pg_diffix/releases" showIcon={false}>GitHub (TODO fix link)</DownloadLink>
-    </li>
-  </ul>
-
   <h2 class="mt-12 text-2xl">Diffix for Desktop V1</h2>
 
   <p class="mt-2">Releases are currently unsigned and will display a warning message during installation.</p>
