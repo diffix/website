@@ -9,6 +9,8 @@
 
       <NavItem href="/download">Download</NavItem>
 
+      <NavItem href="/play">Play</NavItem>
+
       <NavItem href="/faq">FAQ</NavItem>
 
       <NavItem href="/blog" subpaths>Blog</NavItem>
