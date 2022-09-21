@@ -36,103 +36,116 @@
     <div class="lg:mt-12 lg:ml-80">
       <div class="mx-auto lg:max-w-2xl space-y-6 lg:space-y-12 pt-12 lg:pt-0">
         <FAQItem {addToToc} question="Introduction">
-          There are several ways to experiment with Diffix without going through the effort of setting up PostgreSQL and installing the <b>pg_diffix</b> extension. First and foremost, the Open Diffix project runs an online PostgreSQL server with <b>pg_diffix</b> and several representative databases. There are several ways to interact with our PostgreSQL service. Alternatively you can
-          <Link href="
+          There are several ways to experiment with Diffix without going through the effort of setting up PostgreSQL and
+          installing the <b>pg_diffix</b> extension. First and foremost, the Open Diffix project runs an online
+          PostgreSQL server with <b>pg_diffix</b> and several representative databases. There are several ways to
+          interact with our PostgreSQL service. Alternatively you can
+          <Link
+            href="
           /download
-          ">
-          download
+          "
+          >
+            download
           </Link>
           <b>Diffix for Desktop</b> and try it on sample CSV datasets we provide, or on your own CSV dataset.
           <p class="mt-4">
-          As always, you can contact us at 
-          <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link> if you have questions or comments.
+            As always, you can contact us at
+            <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link> if you have questions or comments.
           </p>
         </FAQItem>
 
-
         <FAQItem {addToToc} question="Documentation">
-          <h2 class="block text-1xl w-full font-bold">
-            How to use Diffix
-          </h2>
+          <h2 class="block text-1xl w-full font-bold">How to use Diffix</h2>
           <ul class="mt-2 ml-8 space-y-1.0 list-disc list-outside">
             <li>
-              <Link href="
+              <Link
+                href="
               https://github.com/diffix/pg_diffix/blob/master/docs/analyst_guide.md
-              ">
-              Analyst Guide
+              "
+              >
+                Analyst Guide
               </Link>
               (for SQL usage of pg_diffix, the PostgreSQL Diffix extension).
             </li>
             <li>
-              <Link href="
+              <Link
+                href="
               https://github.com/diffix/desktop/blob/master/docs/en/operation.md
-              ">
-              Online instructions
+              "
+              >
+                Online instructions
               </Link>
               for Diffix for Desktop operation (also available in the application itself).
             </li>
             <li>
               The online
-              <Link href="
+              <Link
+                href="
               https://training.open-diffix.org/training
-              ">
-              Training App
+              "
+              >
+                Training App
               </Link>
               has built in usage documentation.
             </li>
           </ul>
-          <h2 class="mt-4 block text-1xl w-full font-bold">
-            How to configure Diffix
-          </h2>
+          <h2 class="mt-4 block text-1xl w-full font-bold">How to configure Diffix</h2>
           <ul class="mt-2 ml-8 space-y-1.0 list-disc list-outside">
             <li>
               A
-              <Link href="
+              <Link
+                href="
               https://github.com/diffix/pg_diffix/blob/master/docs/admin_tutorial.md
-              ">
-              short tutorial.
+              "
+              >
+                short tutorial.
               </Link>
             </li>
             <li>
               The
-              <Link href="
+              <Link
+                href="
               https://github.com/diffix/pg_diffix/blob/master/docs/admin_guide.md
-              ">
-              complete install and configure documentation.
+              "
+              >
+                complete install and configure documentation.
               </Link>
             </li>
           </ul>
-          <h2 class="mt-4 block text-1xl w-full font-bold">
-            How Diffix works
-          </h2>
+          <h2 class="mt-4 block text-1xl w-full font-bold">How Diffix works</h2>
           <ul class="mt-2 ml-8 space-y-1.0 list-disc list-outside">
             <li>
-              <Link href="
+              <Link
+                href="
               /blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades
-              ">
-              Short, intuitive, and easy to read.
+              "
+              >
+                Short, intuitive, and easy to read.
               </Link>
             </li>
             <li>
               The online version of the short
-              <Link href="
+              <Link
+                href="
               https://github.com/diffix/desktop/blob/master/docs/en/anonymization.md
-              ">
-              description embedded in Diffix for Desktop.
+              "
+              >
+                description embedded in Diffix for Desktop.
               </Link>
             </li>
             <li>
-              <Link href="
+              <Link
+                href="
               https://arxiv.org/abs/2201.04351
-              ">
-              A full specification (10 pages) and risk analysis (26 pages).
+              "
+              >
+                A full specification (10 pages) and risk analysis (26 pages).
               </Link>
             </li>
           </ul>
         </FAQItem>
 
         <FAQItem {addToToc} question="Servers and Datasets">
-
           The following databases running <b>pg_diffix</b> are available online:
 
           <div class="hidden sm:block shadow rounded-lg -mx-2 p-2 mt-4">
@@ -271,11 +284,11 @@
           </div>
 
           <p class="mt-4">
-          Databases with trusted_user and untrusted_user users are protected with Diffix (untrusted user mode has slightly stronger anonymity at the expense of less flexible SQL). Databases with direct_user users have no protections, and can be used to compare the raw data with Diffix' protected data.
-
-          <p class="mt-4">
-            The databases contain the following tables and data:
-
+            Databases with trusted_user and untrusted_user users are protected with Diffix (untrusted user mode has
+            slightly stronger anonymity at the expense of less flexible SQL). Databases with direct_user users have no
+            protections, and can be used to compare the raw data with Diffix' protected data.
+          </p>
+          <p class="mt-4">The databases contain the following tables and data:</p>
           <div class="hidden sm:block shadow rounded-lg -mx-2 p-2 mt-4">
             <table class="table-fixed text-sm w-full">
               <thead class="text-left">
@@ -287,19 +300,34 @@
               <tbody class="border-t-2">
                 <tr class="hover:bg-gray-50">
                   <td>banking0</td>
-                  <td>The banking0 database contains a set of banking transactions and other data from a Czech bank. It has seven different tables. The transactions table for example contains over 1.2M transactions across 5300 customers.</td>
+                  <td
+                    >The banking0 database contains a set of banking transactions and other data from a Czech bank. It
+                    has seven different tables. The transactions table for example contains over 1.2M transactions
+                    across 5300 customers.</td
+                  >
                 </tr>
                 <tr class="hover:bg-gray-50">
                   <td>taxi</td>
-                  <td>The taxi database contains four hours of New York City taxi rides (from Jan. 8, 2013, 8AM to noon). It has over 95000 taxi rides driven by over 11000 drivers. It has 29 columns.</td>
+                  <td
+                    >The taxi database contains four hours of New York City taxi rides (from Jan. 8, 2013, 8AM to noon).
+                    It has over 95000 taxi rides driven by over 11000 drivers. It has 29 columns.</td
+                  >
                 </tr>
                 <tr class="hover:bg-gray-50">
                   <td>census0</td>
-                  <td>The census0 database is taken from the US Census of 2013. This dataset is already anonymized by the US Census Bureau through sampling, aggregation, and other means. It contains 120 columns and represents 250K individuals.</td>
+                  <td
+                    >The census0 database is taken from the US Census of 2013. This dataset is already anonymized by the
+                    US Census Bureau through sampling, aggregation, and other means. It contains 120 columns and
+                    represents 250K individuals.</td
+                  >
                 </tr>
                 <tr class="hover:bg-gray-50">
                   <td>scihub</td>
-                  <td>The scihub database contains one week’s worth of downloads from the Sci-Hub scientific papers free download system. The week is the first week of September 2015. It has 15 columns, and contains over 1.1M downloads from around 160K different pseudonymized IP addresses.</td>
+                  <td
+                    >The scihub database contains one week’s worth of downloads from the Sci-Hub scientific papers free
+                    download system. The week is the first week of September 2015. It has 15 columns, and contains over
+                    1.1M downloads from around 160K different pseudonymized IP addresses.</td
+                  >
                 </tr>
                 <tr class="hover:bg-gray-50">
                   <td>banking</td>
@@ -307,7 +335,10 @@
                 </tr>
                 <tr class="hover:bg-gray-50">
                   <td>moers</td>
-                  <td>The moers database contains traffic violations issued in the German city of Moers. Synthetic license plate numbers have been added.</td>
+                  <td
+                    >The moers database contains traffic violations issued in the German city of Moers. Synthetic
+                    license plate numbers have been added.</td
+                  >
                 </tr>
               </tbody>
             </table>
@@ -316,31 +347,45 @@
 
         <FAQItem {addToToc} question="Online Training App">
           The easiest and best way to get a quick feel for how Diffix operates is the
-              <Link href="
+          <Link
+            href="
               https://training.open-diffix.org/training
-              ">
-              online training app.
-              </Link>
-            <p class="mt-6">
-            <img src="/static/figs/training-screenshot.png" width="500">
+              "
+          >
+            online training app.
+          </Link>
           <p class="mt-6">
-            The training app contains examples of each of Diffix' query features. It displays anonymized and original data side-by-side to show how Diffix distorts and hides data. The training app also lets you write your own SQL queries against both the Diffix and original data.
+            <img src="/static/figs/training-screenshot.png" width="500" />
+          </p>
+          <p class="mt-6">
+            The training app contains examples of each of Diffix' query features. It displays anonymized and original
+            data side-by-side to show how Diffix distorts and hides data. The training app also lets you write your own
+            SQL queries against both the Diffix and original data.
+          </p>
           <p class="mt-4">
-            The training app has connections to the banking0, taxi, census0, and scihub databases. It takes only a few minutes to get an immediate understanding of Diffix' basic query capabilities, and about 30 minutes to run through every example.
-        </FAQItem>
+            The training app has connections to the banking0, taxi, census0, and scihub databases. It takes only a few
+            minutes to get an immediate understanding of Diffix' basic query capabilities, and about 30 minutes to run
+            through every example.
+          </p></FAQItem
+        >
 
         <FAQItem {addToToc} question="Metabase">
-              <Link href="
+          <Link
+            href="
               https://www.metabase.com
-              ">
-              Metabase
-              </Link>
-          is a popular open source Business Intelligence (data visualization) tool. It uses SQL to access data and works with a variety of backend database technologies including PostgreSQL and <b>pg_diffix</b>. Metabase supports data visualization and dashboards.
-            <p class="mt-6">
-            <img src="/static/figs/metabase-screenshot.png" width="500">
+              "
+          >
+            Metabase
+          </Link>
+          is a popular open source Business Intelligence (data visualization) tool. It uses SQL to access data and works
+          with a variety of backend database technologies including PostgreSQL and <b>pg_diffix</b>. Metabase supports
+          data visualization and dashboards.
+          <p class="mt-6">
+            <img src="/static/figs/metabase-screenshot.png" width="500" />
+          </p>
           <p class="mt-6">
             We are running an online Metabase server that connects with the moers database. Login credentials are:
-
+          </p>
           <div class="hidden sm:block shadow rounded-lg -mx-2 p-2 mt-4">
             <table class="table-fixed text-sm w-full">
               <thead class="text-left">
@@ -353,11 +398,13 @@
               <tbody class="border-t-2">
                 <tr class="hover:bg-gray-50">
                   <td>
-              <Link href="
+                    <Link
+                      href="
                 https://metabase.open-diffix.org/
-              ">
-                metabase.open-diffix.org
-              </Link>
+              "
+                    >
+                      metabase.open-diffix.org
+                    </Link>
                   </td>
                   <td> participant@moershackday.de </td>
                   <td> moershackday2022 </td>
@@ -367,92 +414,118 @@
           </div>
 
           <p class="mt-4">
-            Metabase has two means of writing queries, through a GUI query-builder and with SQL. The query-builder translates the users selections into SQL. Because Diffix uses a restricted subset of SQL, not all of the query-builder works with the <b>pg_diffix</b> back end. Practically speaking, the user should expect to write SQL queries when using Metabase with Diffix.
+            Metabase has two means of writing queries, through a GUI query-builder and with SQL. The query-builder
+            translates the users selections into SQL. Because Diffix uses a restricted subset of SQL, not all of the
+            query-builder works with the <b>pg_diffix</b> back end. Practically speaking, the user should expect to write
+            SQL queries when using Metabase with Diffix.
+          </p>
           <p class="mt-4">
             We have prepared
-              <Link href="
+            <Link
+              href="
                 https://github.com/diffix/moers-hackday/blob/main/metabase.md
-              ">
-                brief instructions 
-              </Link>
+              "
+            >
+              brief instructions
+            </Link>
             on how to do this.
-
-        </FAQItem>
+          </p></FAQItem
+        >
 
         <FAQItem {addToToc} question="SQL Clients">
-          In principle, any SQL client that supports PostgreSQL should work with <b>pg_diffix</b>. In practice, each SQL client has its own idiosynchrocies in how it explores the database, and so not all SQL clients work with <b>pg_diffix</b>.
+          In principle, any SQL client that supports PostgreSQL should work with <b>pg_diffix</b>. In practice, each SQL
+          client has its own idiosynchrocies in how it explores the database, and so not all SQL clients work with
+          <b>pg_diffix</b>.
 
           <p class="mt-6">
-            <img src="/static/figs/dbeaver-screenshot.png" width="500">
+            <img src="/static/figs/dbeaver-screenshot.png" width="500" />
+          </p>
           <p class="mt-6">
             We have successfully used two SQL clients with <b>pg_diffix</b>,
-              <Link href="
+            <Link
+              href="
                 https://www.pgadmin.org/
-              ">
-                pgAdmin
-              </Link>
-              and
-              <Link href="
+              "
+            >
+              pgAdmin
+            </Link>
+            and
+            <Link
+              href="
                 https://dbeaver.io/
-              ">
-                DBeaver
-              </Link>
-        </FAQItem>
+              "
+            >
+              DBeaver
+            </Link>
+          </p></FAQItem
+        >
 
         <FAQItem {addToToc} question="Software APIs and Notebooks">
           Any software with a PostgreSQL interface can work with <b>pg_diffix</b>. We have prepared
-              <Link href="
+          <Link
+            href="
                 /demo
-              ">
-                a demo notebook
-              </Link>
-            using psycopg2 and ipython-sql that you may use as a template for building your own notebook.
-
+              "
+          >
+            a demo notebook
+          </Link>
+          using psycopg2 and ipython-sql that you may use as a template for building your own notebook.
         </FAQItem>
 
         <FAQItem {addToToc} question="Diffix for Desktop">
           If you prefer to play with your own data, one quick and easy way to get started is with
-          <Link href="
+          <Link
+            href="
           /download
-          ">
-          Diffix for Desktop,
+          "
+          >
+            Diffix for Desktop,
           </Link>
           a standalone desktop for Windows, Mac, and Linux that works with a local CSV file.
 
           <p class="mt-6">
-            <img src="/static/figs/desktop-screenshot.png" width="500">
-
+            <img src="/static/figs/desktop-screenshot.png" width="500" />
+          </p>
           <p class="mt-6">
-            Diffix for Desktop does not require SQL, but rather works with a simple GUI query-builder. It lacks all of the SQL features of <b>pg_diffix</b>, but is very easy to use. If you don't have your own data to play with, we offer a couple of sample CSV datasets from the
-          <Link href="
+            Diffix for Desktop does not require SQL, but rather works with a simple GUI query-builder. It lacks all of
+            the SQL features of <b>pg_diffix</b>, but is very easy to use. If you don't have your own data to play with,
+            we offer a couple of sample CSV datasets from the
+            <Link
+              href="
           /download
-          ">
-          download
-          </Link>
-          page.
-        </FAQItem>
+          "
+            >
+              download
+            </Link>
+            page.
+          </p></FAQItem
+        >
 
         <FAQItem {addToToc} question="A visual comparison">
           We have prepared a Diffix demo in the form of a
-          <Link href="
+          <Link
+            href="
           https://taxi-heatmap.open-diffix.org/
-          ">
-          heatmap visualization of the NYC taxi data.
+          "
+          >
+            heatmap visualization of the NYC taxi data.
           </Link>
           (You can find a description
-          <Link href="
+          <Link
+            href="
           /blog/nyc-taxi-data-heatmap
-          ">
-          here
+          "
+          >
+            here
           </Link>
-          ).
-          This demo displays the heatmap built from Diffix side-by-side with the corresponding heatmap built from the raw data. It gives a concrete impression of the power and accuracy of Diffix anonymization.
+          ). This demo displays the heatmap built from Diffix side-by-side with the corresponding heatmap built from the
+          raw data. It gives a concrete impression of the power and accuracy of Diffix anonymization.
 
           <p class="mt-6">
-          <img src="/static/blog/figs/speed-fare-diffix.png" width="500">
-          <p class="mt-6">
-        </FAQItem>
-
+            <img src="/static/blog/figs/speed-fare-diffix.png" width="500" />
+          </p>
+          <p class="mt-6" /></FAQItem
+        >
       </div>
     </div>
   </div>
