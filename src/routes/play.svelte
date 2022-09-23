@@ -86,7 +86,7 @@
               >
                 Training App
               </Link>
-              has built in usage documentation.
+              has built-in usage documentation.
             </li>
           </ul>
           <h2 class="mt-4 block text-1xl w-full font-bold">How to configure Diffix</h2>
@@ -355,7 +355,7 @@
             online training app.
           </Link>
           <p class="mt-6">
-            <img src="/static/figs/training-screenshot.png" width="500" />
+            <img src="/figs/training-screenshot.png" width="500" />
           </p>
           <p class="mt-6">
             The training app contains examples of each of Diffix' query features. It displays anonymized and original
@@ -381,7 +381,7 @@
           with a variety of backend database technologies including PostgreSQL and <b>pg_diffix</b>. Metabase supports
           data visualization and dashboards.
           <p class="mt-6">
-            <img src="/static/figs/metabase-screenshot.png" width="500" />
+            <img src="/figs/metabase-screenshot.png" width="500" />
           </p>
           <p class="mt-6">
             We are running an online Metabase server that connects with the moers database. Login credentials are:
@@ -438,7 +438,7 @@
           <b>pg_diffix</b>.
 
           <p class="mt-6">
-            <img src="/static/figs/dbeaver-screenshot.png" width="500" />
+            <img src="/figs/dbeaver-screenshot.png" width="500" />
           </p>
           <p class="mt-6">
             We have successfully used two SQL clients with <b>pg_diffix</b>,
@@ -464,11 +464,20 @@
           Any software with a PostgreSQL interface can work with <b>pg_diffix</b>. We have prepared
           <Link
             href="
-                /demo
+              https://github.com/diffix/pg_diffix/blob/release/elm/docs/banking.ipynb
               "
           >
             a demo notebook
           </Link>
+          (see 
+          <Link
+            href="
+                /demo
+              "
+          >
+            here
+          </Link>
+          for a description) 
           using psycopg2 and ipython-sql that you may use as a template for building your own notebook.
         </FAQItem>
 
@@ -484,7 +493,7 @@
           a standalone desktop for Windows, Mac, and Linux that works with a local CSV file.
 
           <p class="mt-6">
-            <img src="/static/figs/desktop-screenshot.png" width="500" />
+            <img src="/figs/desktop-screenshot.png" width="500" />
           </p>
           <p class="mt-6">
             Diffix for Desktop does not require SQL, but rather works with a simple GUI query-builder. It lacks all of
@@ -522,7 +531,7 @@
           raw data. It gives a concrete impression of the power and accuracy of Diffix anonymization.
 
           <p class="mt-6">
-            <img src="/static/blog/figs/speed-fare-diffix.png" width="500" />
+            <img src="/blog/figs/speed-fare-diffix.png" width="500" />
           </p>
           <p class="mt-6" /></FAQItem
         >
