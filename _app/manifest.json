@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-703edd17.js",
+    "file": "start-65d6f452.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -17,11 +17,12 @@
       "src/routes/blog/introducing-diffix-fir.md",
       "src/routes/blog/nyc-taxi-data-heatmap.md",
       "src/routes/demo.svelte",
+      "src/routes/play.svelte",
       "src/routes/faq.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-70b8f3e1.js",
+    "file": "pages/__layout.svelte-15990374.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -31,7 +32,7 @@
       "_Link-8dfb6494.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-3dc0428f.css"
+      "assets/pages/__layout.svelte-93da8d3c.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -132,13 +133,25 @@
       "_Link-8dfb6494.js"
     ]
   },
+  "src/routes/play.svelte": {
+    "file": "pages/play.svelte-368a5ca0.js",
+    "src": "src/routes/play.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-8665e618.js",
+      "_FAQItem-85bc5d63.js",
+      "_Link-8dfb6494.js"
+    ]
+  },
   "src/routes/faq.svelte": {
-    "file": "pages/faq.svelte-2e3277b3.js",
+    "file": "pages/faq.svelte-fe375cb7.js",
     "src": "src/routes/faq.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-8665e618.js",
+      "_FAQItem-85bc5d63.js",
       "_Link-8dfb6494.js"
     ]
   },
@@ -171,6 +184,12 @@
     "imports": [
       "_vendor-8665e618.js",
       "_utils-6cf984b9.js"
+    ]
+  },
+  "_FAQItem-85bc5d63.js": {
+    "file": "chunks/FAQItem-85bc5d63.js",
+    "imports": [
+      "_vendor-8665e618.js"
     ]
   }
 }

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta http-equiv="content-security-policy" content=""><title>Open Diffix - Play</title><script async src="//platform.twitter.com/widgets.js" charset="utf-8" data-svelte="svelte-1tl8nxd"></script>
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-93da8d3c.css">
+	<link rel="modulepreload" href="/_app/start-65d6f452.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-8665e618.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-15990374.js">
+	<link rel="modulepreload" href="/_app/chunks/ackee-dc53f939.js">
+	<link rel="modulepreload" href="/_app/chunks/Link-8dfb6494.js">
+	<link rel="modulepreload" href="/_app/pages/play.svelte-368a5ca0.js">
+	<link rel="modulepreload" href="/_app/chunks/FAQItem-85bc5d63.js"><script type="module">
+		import { start } from "/_app/start-65d6f452.js";
+		start({
+			target: document.querySelector("#opendiffix"),
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-15990374.js"),
+						import("/_app/pages/play.svelte-368a5ca0.js")
+				],
+				url: new URL("http://sveltekit-prerender/play"),
+				params: {}
+			}
+		});
+	</script>
+  </head>
+  <body>
+    <div id="opendiffix">
+
+
+
+
+<div class="flex flex-col min-h-screen"><div class="h-auto md:h-24 transition-all duration-200"><div class="md:fixed w-full bg-white z-50 md:border-b border-collapse"><nav class="max-w-2xl mx-auto w-full -mb-1 flex justify-end text-xl"><div class="font-semibold"><a href="/" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">Home</a></div>
+
+      <div class="font-semibold"><a href="/download" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">Download</a></div>
+
+      <div class="font-semibold"><a href="/play" class="transition-colors duration-500 px-4 py-4 block h-full border-shamrock-600 border-b-4">Play</a></div>
+
+      <div class="font-semibold"><a href="/faq" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">FAQ</a></div>
+
+      <div class="font-semibold"><a href="/blog" class="duration-50 transition-shadow px-4 py-4 block text-gray-500 hover:text-gray-900 hover:pb-4 hover:border-b-4 border-gray-200 hover:border-shamrock-200">Blog</a></div></nav></div></div>
+  <div class="flex-grow"></div>
+  <div class="flex-grow-0 w-full">
+
+<div class="p-4 max-w-2xl lg:max-w-6xl mx-auto"><header id="faq-top" class="pt-12 lg:ml-80"><div class="mx-auto lg:max-w-2xl"><h1 class="text-5xl max-w-xl font-semibold">Play with Diffix</h1></div></header>
+
+  <div class="mt-16 lg:mt-0 mb-12"><div class="lg:fixed lg:w-80 lg:pt-24 lg:pr-4 lg:pb-8 lg:top-16 lg:bottom-0 lg:overflow-y-auto"><h2 class="block text-2xl w-full font-semibold">Table of contents</h2>
+
+      <ul class="mt-4 ml-4 space-y-1.5 text-sm list-disc list-outside"></ul></div>
+
+    <div class="lg:mt-12 lg:ml-80"><div class="mx-auto lg:max-w-2xl space-y-6 lg:space-y-12 pt-12 lg:pt-0"><section><div id="Introduction" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Introduction</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">There are several ways to experiment with Diffix without going through the effort of setting up PostgreSQL and
+          installing the <b>pg_diffix</b> extension. First and foremost, the Open Diffix project runs an online
+          PostgreSQL server with <b>pg_diffix</b> and several representative databases. There are several ways to
+          interact with our PostgreSQL service. Alternatively you can
+          <a class="text-gray-800 underline hover:text-gray-500" href="/download">download</a>
+          <b>Diffix for Desktop</b> and try it on sample CSV datasets we provide, or on your own CSV dataset.
+          <p class="mt-4">As always, you can contact us at
+            <a class="text-gray-800 underline hover:text-gray-500" href="mailto:hello@open-diffix.org">hello@open-diffix.org</a> if you have questions or comments.
+          </p></p></section>
+
+        <section><div id="Documentation" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Documentation</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3"><h2 class="block text-1xl w-full font-bold">How to use Diffix</h2>
+          <ul class="mt-2 ml-8 space-y-1.0 list-disc list-outside"><li><a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/pg_diffix/blob/master/docs/analyst_guide.md">Analyst Guide</a>
+              (for SQL usage of pg_diffix, the PostgreSQL Diffix extension).
+            </li>
+            <li><a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/desktop/blob/master/docs/en/operation.md">Online instructions</a>
+              for Diffix for Desktop operation (also available in the application itself).
+            </li>
+            <li>The online
+              <a class="text-gray-800 underline hover:text-gray-500" href="https://training.open-diffix.org/training">Training App</a>
+              has built-in usage documentation.
+            </li></ul>
+          <h2 class="mt-4 block text-1xl w-full font-bold">How to configure Diffix</h2>
+          <ul class="mt-2 ml-8 space-y-1.0 list-disc list-outside"><li>A
+              <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/pg_diffix/blob/master/docs/admin_tutorial.md">short tutorial.</a></li>
+            <li>The
+              <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/pg_diffix/blob/master/docs/admin_guide.md">complete install and configure documentation.
+              </a></li></ul>
+          <h2 class="mt-4 block text-1xl w-full font-bold">How Diffix works</h2>
+          <ul class="mt-2 ml-8 space-y-1.0 list-disc list-outside"><li><a class="text-gray-800 underline hover:text-gray-500" href="/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">Short, intuitive, and easy to read.
+              </a></li>
+            <li>The online version of the short
+              <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/desktop/blob/master/docs/en/anonymization.md">description embedded in Diffix for Desktop.
+              </a></li>
+            <li><a class="text-gray-800 underline hover:text-gray-500" href="https://arxiv.org/abs/2201.04351">A full specification (10 pages) and risk analysis (26 pages).
+              </a></li></ul></p></section>
+
+        <section><div id="Servers-and-Datasets" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Servers and Datasets</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">The following databases running <b>pg_diffix</b> are available online:
+
+          <div class="hidden sm:block shadow rounded-lg -mx-2 p-2 mt-4"><table class="table-fixed text-sm w-full"><thead class="text-left"><tr><th class="w-4/12">Host</th>
+                  <th class="w-1/12">Port</th>
+                  <th class="w-2/12">Database</th>
+                  <th class="w-2/12">User</th>
+                  <th class="w-2/12">Password</th></tr></thead>
+              <tbody class="border-t-2"><tr class="hover:bg-gray-50"><td>db001.gda-score.org</td>
+                  <td>5432</td>
+                  <td>banking0</td>
+                  <td>direct_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>db001.gda-score.org</td>
+                  <td>5432</td>
+                  <td>banking0</td>
+                  <td>trusted_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>db001.gda-score.org</td>
+                  <td>5432</td>
+                  <td>banking0</td>
+                  <td>untrusted_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>db001.gda-score.org</td>
+                  <td>5432</td>
+                  <td>taxi</td>
+                  <td>direct_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>db001.gda-score.org</td>
+                  <td>5432</td>
+                  <td>taxi</td>
+                  <td>trusted_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>db001.gda-score.org</td>
+                  <td>5432</td>
+                  <td>taxi</td>
+                  <td>untrusted_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>db001.gda-score.org</td>
+                  <td>5432</td>
+                  <td>census0</td>
+                  <td>direct_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>db001.gda-score.org</td>
+                  <td>5432</td>
+                  <td>census0</td>
+                  <td>trusted_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>db001.gda-score.org</td>
+                  <td>5432</td>
+                  <td>census0</td>
+                  <td>untrusted_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>db001.gda-score.org</td>
+                  <td>5432</td>
+                  <td>scihub</td>
+                  <td>direct_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>db001.gda-score.org</td>
+                  <td>5432</td>
+                  <td>scihub</td>
+                  <td>trusted_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>db001.gda-score.org</td>
+                  <td>5432</td>
+                  <td>scihub</td>
+                  <td>untrusted_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>demo-pg.open-diffix.org</td>
+                  <td>5432</td>
+                  <td>banking</td>
+                  <td>direct_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>demo-pg.open-diffix.org</td>
+                  <td>5432</td>
+                  <td>banking</td>
+                  <td>trusted_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>demo-pg.open-diffix.org</td>
+                  <td>5432</td>
+                  <td>banking</td>
+                  <td>untrusted_user</td>
+                  <td>demo</td></tr>
+                <tr class="hover:bg-gray-50"><td>db001.gda-score.org</td>
+                  <td>5432</td>
+                  <td>moers</td>
+                  <td>hackday</td>
+                  <td>moers</td></tr>
+                <tr class="hover:bg-gray-50"><td>db001.gda-score.org</td>
+                  <td>5432</td>
+                  <td>moers</td>
+                  <td>hackday_direct</td>
+                  <td>moers</td></tr></tbody></table></div>
+
+          <p class="mt-4">Databases with trusted_user and untrusted_user users are protected with Diffix (untrusted user mode has
+            slightly stronger anonymity at the expense of less flexible SQL). Databases with direct_user users have no
+            protections, and can be used to compare the raw data with Diffix&#39; protected data.
+          </p>
+          <p class="mt-4">The databases contain the following tables and data:</p>
+          <div class="hidden sm:block shadow rounded-lg -mx-2 p-2 mt-4"><table class="table-fixed text-sm w-full"><thead class="text-left"><tr><th class="w-2/12">Database</th>
+                  <th class="w-9/12">Description</th></tr></thead>
+              <tbody class="border-t-2"><tr class="hover:bg-gray-50"><td>banking0</td>
+                  <td>The banking0 database contains a set of banking transactions and other data from a Czech bank. It
+                    has seven different tables. The transactions table for example contains over 1.2M transactions
+                    across 5300 customers.</td></tr>
+                <tr class="hover:bg-gray-50"><td>taxi</td>
+                  <td>The taxi database contains four hours of New York City taxi rides (from Jan. 8, 2013, 8AM to noon).
+                    It has over 95000 taxi rides driven by over 11000 drivers. It has 29 columns.</td></tr>
+                <tr class="hover:bg-gray-50"><td>census0</td>
+                  <td>The census0 database is taken from the US Census of 2013. This dataset is already anonymized by the
+                    US Census Bureau through sampling, aggregation, and other means. It contains 120 columns and
+                    represents 250K individuals.</td></tr>
+                <tr class="hover:bg-gray-50"><td>scihub</td>
+                  <td>The scihub database contains one week’s worth of downloads from the Sci-Hub scientific papers free
+                    download system. The week is the first week of September 2015. It has 15 columns, and contains over
+                    1.1M downloads from around 160K different pseudonymized IP addresses.</td></tr>
+                <tr class="hover:bg-gray-50"><td>banking</td>
+                  <td>This is a simplified subset of the banking0 data.</td></tr>
+                <tr class="hover:bg-gray-50"><td>moers</td>
+                  <td>The moers database contains traffic violations issued in the German city of Moers. Synthetic
+                    license plate numbers have been added.</td></tr></tbody></table></div></p></section>
+
+        <section><div id="Online-Training-App" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Online Training App</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">The easiest and best way to get a quick feel for how Diffix operates is the
+          <a class="text-gray-800 underline hover:text-gray-500" href="https://training.open-diffix.org/training">online training app.</a>
+          <p class="mt-6"><img src="/figs/training-screenshot.png" width="500"></p>
+          <p class="mt-6">The training app contains examples of each of Diffix&#39; query features. It displays anonymized and original
+            data side-by-side to show how Diffix distorts and hides data. The training app also lets you write your own
+            SQL queries against both the Diffix and original data.
+          </p>
+          <p class="mt-4">The training app has connections to the banking0, taxi, census0, and scihub databases. It takes only a few
+            minutes to get an immediate understanding of Diffix&#39; basic query capabilities, and about 30 minutes to run
+            through every example.
+          </p></p></section>
+
+        <section><div id="Metabase" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Metabase</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3"><a class="text-gray-800 underline hover:text-gray-500" href="https://www.metabase.com">Metabase</a>
+          is a popular open source Business Intelligence (data visualization) tool. It uses SQL to access data and works
+          with a variety of backend database technologies including PostgreSQL and <b>pg_diffix</b>. Metabase supports
+          data visualization and dashboards.
+          <p class="mt-6"><img src="/figs/metabase-screenshot.png" width="500"></p>
+          <p class="mt-6">We are running an online Metabase server that connects with the moers database. Login credentials are:
+          </p>
+          <div class="hidden sm:block shadow rounded-lg -mx-2 p-2 mt-4"><table class="table-fixed text-sm w-full"><thead class="text-left"><tr><th class="w-2/12">URL</th>
+                  <th class="w-3/12">User</th>
+                  <th class="w-2/12">Password</th></tr></thead>
+              <tbody class="border-t-2"><tr class="hover:bg-gray-50"><td><a class="text-gray-800 underline hover:text-gray-500" href="https://metabase.open-diffix.org/">metabase.open-diffix.org</a></td>
+                  <td>participant@moershackday.de </td>
+                  <td>moershackday2022 </td></tr></tbody></table></div>
+
+          <p class="mt-4">Metabase has two means of writing queries, through a GUI query-builder and with SQL. The query-builder
+            translates the users selections into SQL. Because Diffix uses a restricted subset of SQL, not all of the
+            query-builder works with the <b>pg_diffix</b> back end. Practically speaking, the user should expect to write
+            SQL queries when using Metabase with Diffix.
+          </p>
+          <p class="mt-4">We have prepared
+            <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/moers-hackday/blob/main/metabase.md">brief instructions</a>
+            on how to do this.
+          </p></p></section>
+
+        <section><div id="SQL-Clients" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">SQL Clients</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">In principle, any SQL client that supports PostgreSQL should work with <b>pg_diffix</b>. In practice, each SQL
+          client has its own idiosynchrocies in how it explores the database, and so not all SQL clients work with
+          <b>pg_diffix</b>.
+
+          <p class="mt-6"><img src="/figs/dbeaver-screenshot.png" width="500"></p>
+          <p class="mt-6">We have successfully used two SQL clients with <b>pg_diffix</b>,
+            <a class="text-gray-800 underline hover:text-gray-500" href="https://www.pgadmin.org/">pgAdmin</a>
+            and
+            <a class="text-gray-800 underline hover:text-gray-500" href="https://dbeaver.io/">DBeaver</a></p></p></section>
+
+        <section><div id="Software-APIs-and-Notebooks" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Software APIs and Notebooks</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Any software with a PostgreSQL interface can work with <b>pg_diffix</b>. We have prepared
+          <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/banking.ipynb">a demo notebook</a>
+          (see
+          <a class="text-gray-800 underline hover:text-gray-500" href="/demo">here</a>
+          for a description) using psycopg2 and ipython-sql that you may use as a template for building your own notebook.
+        </p></section>
+
+        <section><div id="Diffix-for-Desktop" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Diffix for Desktop</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">If you prefer to play with your own data, one quick and easy way to get started is with
+          <a class="text-gray-800 underline hover:text-gray-500" href="/download">Diffix for Desktop,</a>
+          a standalone desktop for Windows, Mac, and Linux that works with a local CSV file.
+
+          <p class="mt-6"><img src="/figs/desktop-screenshot.png" width="500"></p>
+          <p class="mt-6">Diffix for Desktop does not require SQL, but rather works with a simple GUI query-builder. It lacks all of
+            the SQL features of <b>pg_diffix</b>, but is very easy to use. If you don&#39;t have your own data to play with,
+            we offer a couple of sample CSV datasets from the
+            <a class="text-gray-800 underline hover:text-gray-500" href="/download">download</a>
+            page.
+          </p></p></section>
+
+        <section><div id="A-visual-comparison" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">A visual comparison</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">We have prepared a Diffix demo in the form of a
+          <a class="text-gray-800 underline hover:text-gray-500" href="https://taxi-heatmap.open-diffix.org/">heatmap visualization of the NYC taxi data.</a>
+          (You can find a description
+          <a class="text-gray-800 underline hover:text-gray-500" href="/blog/nyc-taxi-data-heatmap">here</a>
+          ). This demo displays the heatmap built from Diffix side-by-side with the corresponding heatmap built from the
+          raw data. It gives a concrete impression of the power and accuracy of Diffix anonymization.
+
+          <p class="mt-6"><img src="/blog/figs/speed-fare-diffix.png" width="500"></p>
+          <p class="mt-6"></p></p></section></div></div></div></div></div>
+
+  <div class="flex-grow"></div>
+
+  <footer class="flex flex-col items-center flex-grow-0 p-4 pt-10 pb-10 mx-auto text-sm text-gray-500"><span class="max-w-sm text-center">If you have questions or want to discuss the project, please send us an email at <a class="text-gray-800 underline hover:text-gray-500" href="mailto:hello@open-diffix.org">hello@open-diffix.org</a>.
+    </span>
+
+    <div class="mt-4 mx-auto"><a href="https://twitter.com/OpenDiffix?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="false">Follow @OpenDiffix</a></div>
+
+    <span class="mt-8">Copyright MPI-SWS</span>
+    <span class="mx-auto mt-2 space-x-2"><a class="text-gray-800 underline hover:text-gray-500" href="https://imprint.mpi-klsb.mpg.de/sws/open-diffix.org/">Imprint</a>
+      <a class="text-gray-800 underline hover:text-gray-500" href="https://data-protection.mpi-klsb.mpg.de/sws/open-diffix.org">Privacy Policy</a></span></footer></div>
+
+</div>
+  </body>
+</html>
