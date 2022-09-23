@@ -40,13 +40,7 @@
           installing the <b>pg_diffix</b> extension. First and foremost, the Open Diffix project runs an online
           PostgreSQL server with <b>pg_diffix</b> and several representative databases. There are several ways to
           interact with our PostgreSQL service. Alternatively you can
-          <Link
-            href="
-          /download
-          "
-          >
-            download
-          </Link>
+          <Link href="/download">download</Link>
           <b>Diffix for Desktop</b> and try it on sample CSV datasets we provide, or on your own CSV dataset.
           <p class="mt-4">
             As always, you can contact us at
@@ -58,34 +52,16 @@
           <h2 class="block text-1xl w-full font-bold">How to use Diffix</h2>
           <ul class="mt-2 ml-8 space-y-1.0 list-disc list-outside">
             <li>
-              <Link
-                href="
-              https://github.com/diffix/pg_diffix/blob/master/docs/analyst_guide.md
-              "
-              >
-                Analyst Guide
-              </Link>
+              <Link href="https://github.com/diffix/pg_diffix/blob/master/docs/analyst_guide.md">Analyst Guide</Link>
               (for SQL usage of pg_diffix, the PostgreSQL Diffix extension).
             </li>
             <li>
-              <Link
-                href="
-              https://github.com/diffix/desktop/blob/master/docs/en/operation.md
-              "
-              >
-                Online instructions
-              </Link>
+              <Link href="https://github.com/diffix/desktop/blob/master/docs/en/operation.md">Online instructions</Link>
               for Diffix for Desktop operation (also available in the application itself).
             </li>
             <li>
               The online
-              <Link
-                href="
-              https://training.open-diffix.org/training
-              "
-              >
-                Training App
-              </Link>
+              <Link href="https://training.open-diffix.org/training">Training App</Link>
               has built-in usage documentation.
             </li>
           </ul>
@@ -93,21 +69,11 @@
           <ul class="mt-2 ml-8 space-y-1.0 list-disc list-outside">
             <li>
               A
-              <Link
-                href="
-              https://github.com/diffix/pg_diffix/blob/master/docs/admin_tutorial.md
-              "
-              >
-                short tutorial.
-              </Link>
+              <Link href="https://github.com/diffix/pg_diffix/blob/master/docs/admin_tutorial.md">short tutorial.</Link>
             </li>
             <li>
               The
-              <Link
-                href="
-              https://github.com/diffix/pg_diffix/blob/master/docs/admin_guide.md
-              "
-              >
+              <Link href="https://github.com/diffix/pg_diffix/blob/master/docs/admin_guide.md">
                 complete install and configure documentation.
               </Link>
             </li>
@@ -115,30 +81,18 @@
           <h2 class="mt-4 block text-1xl w-full font-bold">How Diffix works</h2>
           <ul class="mt-2 ml-8 space-y-1.0 list-disc list-outside">
             <li>
-              <Link
-                href="
-              /blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades
-              "
-              >
+              <Link href="/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">
                 Short, intuitive, and easy to read.
               </Link>
             </li>
             <li>
               The online version of the short
-              <Link
-                href="
-              https://github.com/diffix/desktop/blob/master/docs/en/anonymization.md
-              "
-              >
+              <Link href="https://github.com/diffix/desktop/blob/master/docs/en/anonymization.md">
                 description embedded in Diffix for Desktop.
               </Link>
             </li>
             <li>
-              <Link
-                href="
-              https://arxiv.org/abs/2201.04351
-              "
-              >
+              <Link href="https://arxiv.org/abs/2201.04351">
                 A full specification (10 pages) and risk analysis (26 pages).
               </Link>
             </li>
@@ -347,13 +301,7 @@
 
         <FAQItem {addToToc} question="Online Training App">
           The easiest and best way to get a quick feel for how Diffix operates is the
-          <Link
-            href="
-              https://training.open-diffix.org/training
-              "
-          >
-            online training app.
-          </Link>
+          <Link href="https://training.open-diffix.org/training">online training app.</Link>
           <p class="mt-6">
             <img src="/figs/training-screenshot.png" width="500" />
           </p>
@@ -370,13 +318,7 @@
         >
 
         <FAQItem {addToToc} question="Metabase">
-          <Link
-            href="
-              https://www.metabase.com
-              "
-          >
-            Metabase
-          </Link>
+          <Link href="https://www.metabase.com">Metabase</Link>
           is a popular open source Business Intelligence (data visualization) tool. It uses SQL to access data and works
           with a variety of backend database technologies including PostgreSQL and <b>pg_diffix</b>. Metabase supports
           data visualization and dashboards.
@@ -398,13 +340,7 @@
               <tbody class="border-t-2">
                 <tr class="hover:bg-gray-50">
                   <td>
-                    <Link
-                      href="
-                https://metabase.open-diffix.org/
-              "
-                    >
-                      metabase.open-diffix.org
-                    </Link>
+                    <Link href="https://metabase.open-diffix.org/">metabase.open-diffix.org</Link>
                   </td>
                   <td> participant@moershackday.de </td>
                   <td> moershackday2022 </td>
@@ -421,13 +357,7 @@
           </p>
           <p class="mt-4">
             We have prepared
-            <Link
-              href="
-                https://github.com/diffix/moers-hackday/blob/main/metabase.md
-              "
-            >
-              brief instructions
-            </Link>
+            <Link href="https://github.com/diffix/moers-hackday/blob/main/metabase.md">brief instructions</Link>
             on how to do this.
           </p></FAQItem
         >
@@ -442,53 +372,23 @@
           </p>
           <p class="mt-6">
             We have successfully used two SQL clients with <b>pg_diffix</b>,
-            <Link
-              href="
-                https://www.pgadmin.org/
-              "
-            >
-              pgAdmin
-            </Link>
+            <Link href="https://www.pgadmin.org/">pgAdmin</Link>
             and
-            <Link
-              href="
-                https://dbeaver.io/
-              "
-            >
-              DBeaver
-            </Link>
+            <Link href="https://dbeaver.io/">DBeaver</Link>
           </p></FAQItem
         >
 
         <FAQItem {addToToc} question="Software APIs and Notebooks">
           Any software with a PostgreSQL interface can work with <b>pg_diffix</b>. We have prepared
-          <Link
-            href="
-              https://github.com/diffix/pg_diffix/blob/release/elm/docs/banking.ipynb
-              "
-          >
-            a demo notebook
-          </Link>
+          <Link href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/banking.ipynb">a demo notebook</Link>
           (see
-          <Link
-            href="
-                /demo
-              "
-          >
-            here
-          </Link>
+          <Link href="/demo">here</Link>
           for a description) using psycopg2 and ipython-sql that you may use as a template for building your own notebook.
         </FAQItem>
 
         <FAQItem {addToToc} question="Diffix for Desktop">
           If you prefer to play with your own data, one quick and easy way to get started is with
-          <Link
-            href="
-          /download
-          "
-          >
-            Diffix for Desktop,
-          </Link>
+          <Link href="/download">Diffix for Desktop,</Link>
           a standalone desktop for Windows, Mac, and Linux that works with a local CSV file.
 
           <p class="mt-6">
@@ -498,34 +398,16 @@
             Diffix for Desktop does not require SQL, but rather works with a simple GUI query-builder. It lacks all of
             the SQL features of <b>pg_diffix</b>, but is very easy to use. If you don't have your own data to play with,
             we offer a couple of sample CSV datasets from the
-            <Link
-              href="
-          /download
-          "
-            >
-              download
-            </Link>
+            <Link href="/download">download</Link>
             page.
           </p></FAQItem
         >
 
         <FAQItem {addToToc} question="A visual comparison">
           We have prepared a Diffix demo in the form of a
-          <Link
-            href="
-          https://taxi-heatmap.open-diffix.org/
-          "
-          >
-            heatmap visualization of the NYC taxi data.
-          </Link>
+          <Link href="https://taxi-heatmap.open-diffix.org/">heatmap visualization of the NYC taxi data.</Link>
           (You can find a description
-          <Link
-            href="
-          /blog/nyc-taxi-data-heatmap
-          "
-          >
-            here
-          </Link>
+          <Link href="/blog/nyc-taxi-data-heatmap">here</Link>
           ). This demo displays the heatmap built from Diffix side-by-side with the corresponding heatmap built from the
           raw data. It gives a concrete impression of the power and accuracy of Diffix anonymization.
 
