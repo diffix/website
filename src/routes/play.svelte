@@ -469,7 +469,7 @@
           >
             a demo notebook
           </Link>
-          (see 
+          (see
           <Link
             href="
                 /demo
@@ -477,8 +477,7 @@
           >
             here
           </Link>
-          for a description) 
-          using psycopg2 and ipython-sql that you may use as a template for building your own notebook.
+          for a description) using psycopg2 and ipython-sql that you may use as a template for building your own notebook.
         </FAQItem>
 
         <FAQItem {addToToc} question="Diffix for Desktop">
