@@ -1,10 +1,10 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-65d6f452.js",
+    "file": "start-ade5b7a6.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-8665e618.js"
+      "_vendor-9c4cfb71.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -22,174 +22,174 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-15990374.js",
+    "file": "pages/__layout.svelte-cbac5816.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-8665e618.js",
-      "_ackee-dc53f939.js",
-      "_Link-8dfb6494.js"
+      "_vendor-9c4cfb71.js",
+      "_ackee-84d5e9fa.js",
+      "_Link-af5330e8.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-93da8d3c.css"
+      "assets/pages/__layout.svelte-ec565d80.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-8efa0437.js",
+    "file": "error.svelte-90983cf8.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-8665e618.js"
+      "_vendor-9c4cfb71.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-b0492422.js",
+    "file": "pages/index.svelte-28334dad.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-8665e618.js",
-      "_Link-8dfb6494.js"
+      "_vendor-9c4cfb71.js",
+      "_Link-af5330e8.js"
     ],
     "css": [
       "assets/pages/index.svelte-2a3b44a5.css"
     ]
   },
   "src/routes/newsletter.svelte": {
-    "file": "pages/newsletter.svelte-72838e14.js",
+    "file": "pages/newsletter.svelte-7b16f4cb.js",
     "src": "src/routes/newsletter.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-8665e618.js",
-      "_ContentPage-8ea5e698.js",
-      "_ackee-dc53f939.js"
+      "_vendor-9c4cfb71.js",
+      "_ContentPage-ef663c8a.js",
+      "_ackee-84d5e9fa.js"
     ]
   },
   "src/routes/download.svelte": {
-    "file": "pages/download.svelte-a5c22aef.js",
+    "file": "pages/download.svelte-555f8edf.js",
     "src": "src/routes/download.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-8665e618.js",
-      "_ContentPage-8ea5e698.js",
-      "_Link-8dfb6494.js"
+      "_vendor-9c4cfb71.js",
+      "_ContentPage-ef663c8a.js",
+      "_Link-af5330e8.js"
     ]
   },
   "src/routes/blog/index.svelte": {
-    "file": "pages/blog/index.svelte-8f08edf2.js",
+    "file": "pages/blog/index.svelte-ec5af3a5.js",
     "src": "src/routes/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-8665e618.js",
+      "_vendor-9c4cfb71.js",
       "_utils-6cf984b9.js"
     ]
   },
   "src/routes/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md": {
-    "file": "pages/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md-86c17597.js",
+    "file": "pages/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md-1da764e7.js",
     "src": "src/routes/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-8665e618.js",
-      "__post-3392f905.js",
+      "_vendor-9c4cfb71.js",
+      "__post-4f001286.js",
       "_utils-6cf984b9.js"
     ]
   },
   "src/routes/blog/introducing-diffix-fir.md": {
-    "file": "pages/blog/introducing-diffix-fir.md-e23add69.js",
+    "file": "pages/blog/introducing-diffix-fir.md-38f2066c.js",
     "src": "src/routes/blog/introducing-diffix-fir.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-8665e618.js",
-      "__post-3392f905.js",
+      "_vendor-9c4cfb71.js",
+      "__post-4f001286.js",
       "_utils-6cf984b9.js"
     ]
   },
   "src/routes/blog/nyc-taxi-data-heatmap.md": {
-    "file": "pages/blog/nyc-taxi-data-heatmap.md-f522aad6.js",
+    "file": "pages/blog/nyc-taxi-data-heatmap.md-a7273b38.js",
     "src": "src/routes/blog/nyc-taxi-data-heatmap.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-8665e618.js",
-      "__post-3392f905.js",
+      "_vendor-9c4cfb71.js",
+      "__post-4f001286.js",
       "_utils-6cf984b9.js"
     ]
   },
   "src/routes/demo.svelte": {
-    "file": "pages/demo.svelte-9688ca05.js",
+    "file": "pages/demo.svelte-484caf5a.js",
     "src": "src/routes/demo.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-8665e618.js",
-      "_ContentPage-8ea5e698.js",
-      "_Link-8dfb6494.js"
+      "_vendor-9c4cfb71.js",
+      "_ContentPage-ef663c8a.js",
+      "_Link-af5330e8.js"
     ]
   },
   "src/routes/play.svelte": {
-    "file": "pages/play.svelte-368a5ca0.js",
+    "file": "pages/play.svelte-6bb6b631.js",
     "src": "src/routes/play.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-8665e618.js",
-      "_FAQItem-85bc5d63.js",
-      "_Link-8dfb6494.js"
+      "_vendor-9c4cfb71.js",
+      "_FAQItem-9719b089.js",
+      "_Link-af5330e8.js"
     ]
   },
   "src/routes/faq.svelte": {
-    "file": "pages/faq.svelte-fe375cb7.js",
+    "file": "pages/faq.svelte-3fa7ddc4.js",
     "src": "src/routes/faq.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-8665e618.js",
-      "_FAQItem-85bc5d63.js",
-      "_Link-8dfb6494.js"
+      "_vendor-9c4cfb71.js",
+      "_FAQItem-9719b089.js",
+      "_Link-af5330e8.js"
     ]
   },
-  "_vendor-8665e618.js": {
-    "file": "chunks/vendor-8665e618.js"
+  "_vendor-9c4cfb71.js": {
+    "file": "chunks/vendor-9c4cfb71.js"
   },
-  "_ackee-dc53f939.js": {
-    "file": "chunks/ackee-dc53f939.js",
+  "_ackee-84d5e9fa.js": {
+    "file": "chunks/ackee-84d5e9fa.js",
     "imports": [
-      "_vendor-8665e618.js"
+      "_vendor-9c4cfb71.js"
     ]
   },
-  "_Link-8dfb6494.js": {
-    "file": "chunks/Link-8dfb6494.js",
+  "_Link-af5330e8.js": {
+    "file": "chunks/Link-af5330e8.js",
     "imports": [
-      "_vendor-8665e618.js"
+      "_vendor-9c4cfb71.js"
     ]
   },
-  "_ContentPage-8ea5e698.js": {
-    "file": "chunks/ContentPage-8ea5e698.js",
+  "_ContentPage-ef663c8a.js": {
+    "file": "chunks/ContentPage-ef663c8a.js",
     "imports": [
-      "_vendor-8665e618.js"
+      "_vendor-9c4cfb71.js"
     ]
   },
   "_utils-6cf984b9.js": {
     "file": "chunks/utils-6cf984b9.js"
   },
-  "__post-3392f905.js": {
-    "file": "chunks/_post-3392f905.js",
+  "__post-4f001286.js": {
+    "file": "chunks/_post-4f001286.js",
     "imports": [
-      "_vendor-8665e618.js",
+      "_vendor-9c4cfb71.js",
       "_utils-6cf984b9.js"
     ]
   },
-  "_FAQItem-85bc5d63.js": {
-    "file": "chunks/FAQItem-85bc5d63.js",
+  "_FAQItem-9719b089.js": {
+    "file": "chunks/FAQItem-9719b089.js",
     "imports": [
-      "_vendor-8665e618.js"
+      "_vendor-9c4cfb71.js"
     ]
   }
 }
