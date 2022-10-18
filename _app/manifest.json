@@ -1,195 +1,214 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-ade5b7a6.js",
+    "file": "start-57a0df88.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-9c4cfb71.js"
+      "_vendor-cf06609c.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
-      "src/routes/index.svelte",
-      "src/routes/newsletter.svelte",
-      "src/routes/download.svelte",
-      "src/routes/blog/index.svelte",
-      "src/routes/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md",
-      "src/routes/blog/introducing-diffix-fir.md",
-      "src/routes/blog/nyc-taxi-data-heatmap.md",
-      "src/routes/demo.svelte",
-      "src/routes/play.svelte",
-      "src/routes/faq.svelte"
+      "src/routes/[...lang]/newsletter.svelte",
+      "src/routes/[...lang]/download.svelte",
+      "src/routes/[...lang]/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md",
+      "src/routes/[...lang]/blog/introducing-diffix-fir.md",
+      "src/routes/[...lang]/blog/nyc-taxi-data-heatmap.md",
+      "src/routes/[...lang]/blog/index.svelte",
+      "src/routes/[...lang]/demo.svelte",
+      "src/routes/[...lang]/play.svelte",
+      "src/routes/[...lang]/faq.svelte",
+      "src/routes/[...lang]/index.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-cbac5816.js",
+    "file": "pages/__layout.svelte-79d0dd44.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-9c4cfb71.js",
-      "_ackee-84d5e9fa.js",
-      "_Link-af5330e8.js"
+      "_vendor-cf06609c.js",
+      "_ackee-c5a4a257.js",
+      "_Trans-c3b6647f.js",
+      "_Link-e657120f.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-ec565d80.css"
+      "assets/pages/__layout.svelte-210a0798.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-90983cf8.js",
+    "file": "error.svelte-154aea3f.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-9c4cfb71.js"
+      "_vendor-cf06609c.js"
     ]
   },
-  "src/routes/index.svelte": {
-    "file": "pages/index.svelte-28334dad.js",
-    "src": "src/routes/index.svelte",
+  "src/routes/[...lang]/newsletter.svelte": {
+    "file": "pages/_...lang_/newsletter.svelte-fa432b35.js",
+    "src": "src/routes/[...lang]/newsletter.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-9c4cfb71.js",
-      "_Link-af5330e8.js"
+      "_vendor-cf06609c.js",
+      "_ContentPage-32ca77d9.js",
+      "_ackee-c5a4a257.js",
+      "_Trans-c3b6647f.js"
+    ]
+  },
+  "src/routes/[...lang]/download.svelte": {
+    "file": "pages/_...lang_/download.svelte-daac0633.js",
+    "src": "src/routes/[...lang]/download.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-cf06609c.js",
+      "_ContentPage-32ca77d9.js",
+      "_Link-e657120f.js",
+      "_Trans-c3b6647f.js"
+    ]
+  },
+  "src/routes/[...lang]/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md": {
+    "file": "pages/_...lang_/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md-aca413e9.js",
+    "src": "src/routes/[...lang]/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-cf06609c.js",
+      "__post-bd8d404a.js",
+      "_utils-68f461b3.js",
+      "_Trans-c3b6647f.js"
+    ]
+  },
+  "src/routes/[...lang]/blog/introducing-diffix-fir.md": {
+    "file": "pages/_...lang_/blog/introducing-diffix-fir.md-a760335f.js",
+    "src": "src/routes/[...lang]/blog/introducing-diffix-fir.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-cf06609c.js",
+      "__post-bd8d404a.js",
+      "_utils-68f461b3.js",
+      "_Trans-c3b6647f.js"
+    ]
+  },
+  "src/routes/[...lang]/blog/nyc-taxi-data-heatmap.md": {
+    "file": "pages/_...lang_/blog/nyc-taxi-data-heatmap.md-d439c15d.js",
+    "src": "src/routes/[...lang]/blog/nyc-taxi-data-heatmap.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-cf06609c.js",
+      "__post-bd8d404a.js",
+      "_utils-68f461b3.js",
+      "_Trans-c3b6647f.js"
+    ]
+  },
+  "src/routes/[...lang]/blog/index.svelte": {
+    "file": "pages/_...lang_/blog/index.svelte-9f8e7fc4.js",
+    "src": "src/routes/[...lang]/blog/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-cf06609c.js",
+      "_Trans-c3b6647f.js",
+      "_utils-68f461b3.js"
+    ]
+  },
+  "src/routes/[...lang]/demo.svelte": {
+    "file": "pages/_...lang_/demo.svelte-37b28a23.js",
+    "src": "src/routes/[...lang]/demo.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-cf06609c.js",
+      "_ContentPage-32ca77d9.js",
+      "_Link-e657120f.js",
+      "_Trans-c3b6647f.js"
+    ]
+  },
+  "src/routes/[...lang]/play.svelte": {
+    "file": "pages/_...lang_/play.svelte-5c27ae88.js",
+    "src": "src/routes/[...lang]/play.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-cf06609c.js",
+      "_FAQItem-83c07128.js",
+      "_Link-e657120f.js",
+      "_Trans-c3b6647f.js"
+    ]
+  },
+  "src/routes/[...lang]/faq.svelte": {
+    "file": "pages/_...lang_/faq.svelte-f2ab8c3a.js",
+    "src": "src/routes/[...lang]/faq.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-cf06609c.js",
+      "_FAQItem-83c07128.js",
+      "_Link-e657120f.js",
+      "_Trans-c3b6647f.js"
+    ]
+  },
+  "src/routes/[...lang]/index.svelte": {
+    "file": "pages/_...lang_/index.svelte-f861c94c.js",
+    "src": "src/routes/[...lang]/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-cf06609c.js",
+      "_Link-e657120f.js",
+      "_Trans-c3b6647f.js"
     ],
     "css": [
-      "assets/pages/index.svelte-2a3b44a5.css"
+      "assets/pages/_...lang_/index.svelte-7a515423.css"
     ]
   },
-  "src/routes/newsletter.svelte": {
-    "file": "pages/newsletter.svelte-7b16f4cb.js",
-    "src": "src/routes/newsletter.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
+  "_vendor-cf06609c.js": {
+    "file": "chunks/vendor-cf06609c.js"
+  },
+  "_ackee-c5a4a257.js": {
+    "file": "chunks/ackee-c5a4a257.js",
     "imports": [
-      "_vendor-9c4cfb71.js",
-      "_ContentPage-ef663c8a.js",
-      "_ackee-84d5e9fa.js"
+      "_vendor-cf06609c.js"
     ]
   },
-  "src/routes/download.svelte": {
-    "file": "pages/download.svelte-555f8edf.js",
-    "src": "src/routes/download.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
+  "_Trans-c3b6647f.js": {
+    "file": "chunks/Trans-c3b6647f.js",
     "imports": [
-      "_vendor-9c4cfb71.js",
-      "_ContentPage-ef663c8a.js",
-      "_Link-af5330e8.js"
+      "_vendor-cf06609c.js"
     ]
   },
-  "src/routes/blog/index.svelte": {
-    "file": "pages/blog/index.svelte-ec5af3a5.js",
-    "src": "src/routes/blog/index.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
+  "_Link-e657120f.js": {
+    "file": "chunks/Link-e657120f.js",
     "imports": [
-      "_vendor-9c4cfb71.js",
-      "_utils-6cf984b9.js"
+      "_vendor-cf06609c.js"
     ]
   },
-  "src/routes/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md": {
-    "file": "pages/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md-1da764e7.js",
-    "src": "src/routes/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
+  "_ContentPage-32ca77d9.js": {
+    "file": "chunks/ContentPage-32ca77d9.js",
     "imports": [
-      "_vendor-9c4cfb71.js",
-      "__post-4f001286.js",
-      "_utils-6cf984b9.js"
+      "_vendor-cf06609c.js"
     ]
   },
-  "src/routes/blog/introducing-diffix-fir.md": {
-    "file": "pages/blog/introducing-diffix-fir.md-38f2066c.js",
-    "src": "src/routes/blog/introducing-diffix-fir.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
+  "__post-bd8d404a.js": {
+    "file": "chunks/_post-bd8d404a.js",
     "imports": [
-      "_vendor-9c4cfb71.js",
-      "__post-4f001286.js",
-      "_utils-6cf984b9.js"
+      "_vendor-cf06609c.js",
+      "_utils-68f461b3.js",
+      "_Trans-c3b6647f.js"
     ]
   },
-  "src/routes/blog/nyc-taxi-data-heatmap.md": {
-    "file": "pages/blog/nyc-taxi-data-heatmap.md-a7273b38.js",
-    "src": "src/routes/blog/nyc-taxi-data-heatmap.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
+  "_utils-68f461b3.js": {
+    "file": "chunks/utils-68f461b3.js"
+  },
+  "_FAQItem-83c07128.js": {
+    "file": "chunks/FAQItem-83c07128.js",
     "imports": [
-      "_vendor-9c4cfb71.js",
-      "__post-4f001286.js",
-      "_utils-6cf984b9.js"
-    ]
-  },
-  "src/routes/demo.svelte": {
-    "file": "pages/demo.svelte-484caf5a.js",
-    "src": "src/routes/demo.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-9c4cfb71.js",
-      "_ContentPage-ef663c8a.js",
-      "_Link-af5330e8.js"
-    ]
-  },
-  "src/routes/play.svelte": {
-    "file": "pages/play.svelte-6bb6b631.js",
-    "src": "src/routes/play.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-9c4cfb71.js",
-      "_FAQItem-9719b089.js",
-      "_Link-af5330e8.js"
-    ]
-  },
-  "src/routes/faq.svelte": {
-    "file": "pages/faq.svelte-3fa7ddc4.js",
-    "src": "src/routes/faq.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-9c4cfb71.js",
-      "_FAQItem-9719b089.js",
-      "_Link-af5330e8.js"
-    ]
-  },
-  "_vendor-9c4cfb71.js": {
-    "file": "chunks/vendor-9c4cfb71.js"
-  },
-  "_ackee-84d5e9fa.js": {
-    "file": "chunks/ackee-84d5e9fa.js",
-    "imports": [
-      "_vendor-9c4cfb71.js"
-    ]
-  },
-  "_Link-af5330e8.js": {
-    "file": "chunks/Link-af5330e8.js",
-    "imports": [
-      "_vendor-9c4cfb71.js"
-    ]
-  },
-  "_ContentPage-ef663c8a.js": {
-    "file": "chunks/ContentPage-ef663c8a.js",
-    "imports": [
-      "_vendor-9c4cfb71.js"
-    ]
-  },
-  "_utils-6cf984b9.js": {
-    "file": "chunks/utils-6cf984b9.js"
-  },
-  "__post-4f001286.js": {
-    "file": "chunks/_post-4f001286.js",
-    "imports": [
-      "_vendor-9c4cfb71.js",
-      "_utils-6cf984b9.js"
-    ]
-  },
-  "_FAQItem-9719b089.js": {
-    "file": "chunks/FAQItem-9719b089.js",
-    "imports": [
-      "_vendor-9c4cfb71.js"
+      "_vendor-cf06609c.js",
+      "_Trans-c3b6647f.js"
     ]
   }
 }
