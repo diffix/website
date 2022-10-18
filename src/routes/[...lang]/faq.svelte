@@ -67,8 +67,9 @@
               <b>aggregation</b>, <b>generalization</b>, <b>noise</b>, <b>suppression</b>, and <b>swapping</b>. It
               automatically applies these mechanisms as needed on a query-by-query basis to minimize noise while
               ensuring strong anonymity.
-              <Link href="/en/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">Here</Link>
-              is a brief overview.
+              <Link href="/en/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades/">
+                Here
+              </Link> is a brief overview.
             </svelte:fragment>
             <svelte:fragment slot="de">
               Diffix ist eine Zusammenstellung von Mechanismen zur Anonymisierung strukturierter Daten. Es wurde
@@ -77,8 +78,9 @@
               <b>Aggregation</b>, <b>Generalisierung</b>, <b>Rauschen</b>, <b>Unterdrückung</b> und <b>Vertauschung</b>.
               Es wendet diese Mechanismen bei Bedarf automatisch auf jede einzelne Abfrage an, um das Rauschen zu
               minimieren und gleichzeitig eine hohe Anonymität zu gewährleisten.
-              <Link href="/de/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">Hier</Link>
-              finden Sie einen kurzen Überblick.
+              <Link href="/de/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades/">
+                Hier
+              </Link> finden Sie einen kurzen Überblick.
             </svelte:fragment>
           </Trans>
         </FAQItem>
@@ -155,10 +157,10 @@
               for now.
               <p class="indent-6">
                 A good overview of Diffix Elm can be found
-                <Link href="/en/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">
+                <Link href="/en/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades/">
                   here
                 </Link>, with the additional features of Diffix Fir described
-                <Link href="/en/blog/introducing-diffix-fir">here</Link>.
+                <Link href="/en/blog/introducing-diffix-fir/">here</Link>.
               </p>
             </svelte:fragment>
             <svelte:fragment slot="de">
@@ -169,10 +171,10 @@
               zu Elm hinzufügt, reicht die Elm-Spezifikation für den Moment.
               <p class="indent-6">
                 Einen guten Überblick über Diffix Elm finden Sie hier
-                <Link href="/de/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">
+                <Link href="/de/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades/">
                   hier
                 </Link>, wobei die zusätzlichen Funktionen von Diffix Fir beschrieben werden
-                <Link href="/de/blog/introducing-diffix-fir">hier</Link>.
+                <Link href="/de/blog/introducing-diffix-fir/">hier</Link>.
               </p>
             </svelte:fragment>
           </Trans>

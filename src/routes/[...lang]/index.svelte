@@ -76,10 +76,10 @@
     <p class="mt-2">
       <Trans>
         <svelte:fragment slot="en">
-          <Link href="/en/download">Download here</Link> or try the <Link href="/en/demo">hosted demo</Link>.
+          <Link href="/en/download/">Download here</Link> or try the <Link href="/en/demo/">hosted demo</Link>.
         </svelte:fragment>
         <svelte:fragment slot="de">
-          <Link href="/de/download">Herunterladen</Link> oder <Link href="/de/demo">Demo testen</Link>.
+          <Link href="/de/download/">Herunterladen</Link> oder <Link href="/de/demo/">Demo testen</Link>.
         </svelte:fragment>
       </Trans>
     </p>
@@ -136,10 +136,10 @@
     <p class="mt-2">
       <Trans>
         <svelte:fragment slot="en">
-          <Link href="/en/download">Download Diffix for Desktop</Link>.
+          <Link href="/en/download/">Download Diffix for Desktop</Link>.
         </svelte:fragment>
         <svelte:fragment slot="de">
-          <Link href="/de/download">Diffix für Desktop herunterladen</Link>.
+          <Link href="/de/download/">Diffix für Desktop herunterladen</Link>.
         </svelte:fragment>
       </Trans>
     </p>
@@ -152,7 +152,7 @@
         <div class="w-3 h-3 ml-1 bg-green-500 rounded-full hover:bg-green-400" />
       </div>
       <video width="1920" height="1080" autoplay controls muted loop>
-        <source src="short_demo.webm" type="video/webm" />
+        <source src="/short_demo.webm" type="video/webm" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -191,7 +191,7 @@
     })}
   </a>
   <a
-    href="/{$lang}/newsletter"
+    href="/{$lang}/newsletter/"
     class="inline-block px-4 py-3 text-xl text-center text-white transition-all duration-300 rounded-lg bg-shamrock-600 hover:bg-shamrock-500"
   >
     <svg
@@ -226,21 +226,21 @@
     <div class="flex flex-col lg:flex-row flex-wrap gap-x-14 gap-y-10 justify-center items-center">
       <div>
         <a href="https://www.mpg.de">
-          <img class="inline-block h-12" src="mpg-logo.svg" alt="Max-Planck-Gesellschaft" />
+          <img class="inline-block h-12" src="/mpg-logo.svg" alt="Max-Planck-Gesellschaft" />
           <span class="text-lg text-gray-800">Max-Planck-Gesellschaft</span>
         </a>
       </div>
       <a href="https://www.mpi-sws.org">
-        <img class="h-12" src="mpi-sws-logo.svg" alt="Max Planck Institute for Software Systems" />
+        <img class="h-12" src="/mpi-sws-logo.svg" alt="Max Planck Institute for Software Systems" />
       </a>
       <a href="https://www.foev-speyer.de" class="pb-2 lg:pb-4">
-        <img class="h-16" src="foev-logo.png" alt="FÖV" />
+        <img class="h-16" src="/foev-logo.png" alt="FÖV" />
       </a>
       <a href="https://aircloak.com">
-        <img class="h-10" src="aircloak_web.svg" alt="Aircloak GmbH" />
+        <img class="h-10" src="/aircloak_web.svg" alt="Aircloak GmbH" />
       </a>
       <a href="https://kdvz.nrw">
-        <img class="h-20" src="kdvz-logo.svg" alt="Zweckverband Kommunale Datenverarbeitungszentrale" />
+        <img class="h-20" src="/kdvz-logo.svg" alt="Zweckverband Kommunale Datenverarbeitungszentrale" />
       </a>
     </div>
   </div>

@@ -30,24 +30,24 @@ const config = {
       enabled: true,
       onError: "fail",
       entries: [
-        "/en",
-        "/de",
+        "/en/",
+        "/de/",
 
         // --- For backwards compatibility default these pages to "en" ---
         "/",
-        "/demo",
-        "/download",
-        "/faq",
-        "/newsletter",
-        "/play",
-        "/blog",
-        "/blog",
-        "/blog",
-        "/blog/introducing-diffix-fir",
-        "/blog/nyc-taxi-data-heatmap",
-        "/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades"
+        "/demo/",
+        "/download/",
+        "/faq/",
+        "/newsletter/",
+        "/play/",
+        "/blog/",
+        "/blog/introducing-diffix-fir/",
+        "/blog/nyc-taxi-data-heatmap/",
+        "/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades/"
       ]
     },
+
+    trailingSlash: "always",
 
     // hydrate the <div id="opendiffix"> element in src/app.html
     target: "#opendiffix",

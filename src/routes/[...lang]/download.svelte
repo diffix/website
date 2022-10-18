@@ -24,12 +24,12 @@
       <svelte:fragment slot="en">
         The application is provided as an extension module for PostgreSQL servers and has to be built from source before
         installation. See the provided README file for detailed instructions. Alternatively, try our
-        <Link href="/en/demo">hosted demo</Link>.
+        <Link href="/en/demo/">hosted demo</Link>.
       </svelte:fragment>
       <svelte:fragment slot="de">
         Die Anwendung wird als Erweiterungsmodul für PostgreSQL-Server bereitgestellt und muss vor der Installation aus
         dem Quellcode erstellt werden. In der README-Datei stehen weitere Anweisungen. Alternativ können Sie auch unsere
-        <Link href="/de/demo">Demo testen</Link>.
+        <Link href="/de/demo/">Demo testen</Link>.
       </svelte:fragment>
     </Trans>
   </p>
