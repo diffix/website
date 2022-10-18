@@ -23,31 +23,31 @@
   </div>
   <div class="menu-container border-r border-collapse" class:open>
     <nav class="p-4 text-xl">
-      <NavItem on:click={closeMenu} href="/{$lang}">
+      <NavItem on:click={closeMenu} href="/{$lang}/">
         {$trans({
           en: "Home",
           de: "Start"
         })}
       </NavItem>
-      <NavItem on:click={closeMenu} href="/{$lang}/download">
+      <NavItem on:click={closeMenu} href="/{$lang}/download/">
         {$trans({
           en: "Download",
           de: "Download"
         })}
       </NavItem>
-      <NavItem on:click={closeMenu} href="/{$lang}/play">
+      <NavItem on:click={closeMenu} href="/{$lang}/play/">
         {$trans({
           en: "Play",
           de: "Testen"
         })}
       </NavItem>
-      <NavItem on:click={closeMenu} href="/{$lang}/faq">
+      <NavItem on:click={closeMenu} href="/{$lang}/faq/">
         {$trans({
           en: "FAQ",
           de: "FAQ"
         })}
       </NavItem>
-      <NavItem on:click={closeMenu} href="/{$lang}/blog" subpaths>
+      <NavItem on:click={closeMenu} href="/{$lang}/blog/" subpaths>
         {$trans({
           en: "Blog",
           de: "Blog"
@@ -70,31 +70,31 @@
 <div class="hidden md:block h-24">
   <div class="fixed w-full bg-white z-50 border-b border-collapse">
     <nav class="max-w-2xl mx-auto w-full -mb-1 flex justify-end text-xl">
-      <NavItem href="/{$lang}">
+      <NavItem href="/{$lang}/">
         {$trans({
           en: "Home",
           de: "Start"
         })}
       </NavItem>
-      <NavItem href="/{$lang}/download">
+      <NavItem href="/{$lang}/download/">
         {$trans({
           en: "Download",
           de: "Download"
         })}
       </NavItem>
-      <NavItem href="/{$lang}/play">
+      <NavItem href="/{$lang}/play/">
         {$trans({
           en: "Play",
           de: "Testen"
         })}
       </NavItem>
-      <NavItem href="/{$lang}/faq">
+      <NavItem href="/{$lang}/faq/">
         {$trans({
           en: "FAQ",
           de: "FAQ"
         })}
       </NavItem>
-      <NavItem href="/{$lang}/blog" subpaths>
+      <NavItem href="/{$lang}/blog/" subpaths>
         {$trans({
           en: "Blog",
           de: "Blog"

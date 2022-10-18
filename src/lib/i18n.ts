@@ -1,7 +1,7 @@
 import { derived } from "svelte/store";
 import { page } from "$app/stores";
 
-export const lang = derived(page, ($page) => (/^de$/i.test($page.params.lang) ? "de" : "en"));
+export const lang = derived(page, ($page) => (/^de\/?$/i.test($page.params.lang) ? "de" : "en"));
 
 export interface LocalizedString {
   en: string;
@@ -22,9 +22,9 @@ export function pathIncludesLanguage(path: string) {
 }
 
 export function pathWithLang(path: string, lang: string) {
-  if (path.endsWith("/")) {
-    // Remove trailing slash.
-    path = path.substring(0, path.length - 1);
+  if (!path.endsWith("/")) {
+    // Add trailing slash.
+    path += "/";
   }
 
   if (!pathIncludesLanguage(path)) {

@@ -18,9 +18,15 @@
 <script>
   export let posts;
 
+  function addSlashes(path) {
+    if (!path.endsWith("/")) path = path + "/";
+    if (!path.startsWith("/")) path = "/" + path;
+    return path;
+  }
+
   $: visiblePosts = posts
     .filter((post) => (post.meta.langs ? post.meta.langs.includes($lang) : true))
-    .map((post) => ({ ...post, path: post.path.replace("[...lang]", $lang) }));
+    .map((post) => ({ ...post, path: addSlashes(post.path.replace("[...lang]", $lang)) }));
 </script>
 
 <svelte:head>
@@ -43,7 +49,7 @@
 
     {#each visiblePosts as post}
       <h2 style="margin-bottom: 0;">
-        <a href={`/${post.path}`}>
+        <a href={post.path}>
           {post.meta.title}
         </a>
       </h2>
@@ -57,7 +63,7 @@
       </Trans>
       <p>
         {post.meta.excerpt}
-        <a href={`/${post.path}`}>
+        <a href={post.path}>
           {$trans({
             en: "Continue Reading",
             de: "mehr erfahren"

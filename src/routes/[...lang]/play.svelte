@@ -65,7 +65,7 @@
               and installing the <b>pg_diffix</b> extension. First and foremost, the Open Diffix project runs an online
               PostgreSQL server with <b>pg_diffix</b> and several representative databases. There are several ways to
               interact with our PostgreSQL service. Alternatively you can
-              <Link href="/en/download">download</Link>
+              <Link href="/en/download/">download</Link>
               <b>Diffix for Desktop</b> and try it on sample CSV datasets we provide, or on your own CSV dataset.
               <p class="mt-4">
                 As always, you can contact us at
@@ -78,7 +78,7 @@
               Diffix Projekt einen PostgreSQL Server mit <b>pg_diffix</b> und mehreren repräsentativen Datenbanken. Es
               gibt mehrere Möglichkeiten, mit unserem PostgreSQL-Dienst zu interagieren. Alternativ können Sie
               <b>Diffix für Desktop</b>
-              <Link href="/de/download">herunterladen</Link>
+              <Link href="/de/download/">herunterladen</Link>
               und testen es mit den von uns bereitgestellten CSV-Beispieldatensätzen oder mit Ihrem eigenen CSV-Datensatz.
               <p class="mt-4">
                 Schreiben Sie uns (<Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link>) wenn Sie
@@ -198,12 +198,12 @@
             <li>
               <Trans>
                 <svelte:fragment slot="en">
-                  <Link href="/en/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">
+                  <Link href="/en/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades/">
                     Short, intuitive, and easy to read
                   </Link>.
                 </svelte:fragment>
                 <svelte:fragment slot="de">
-                  <Link href="/de/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades">
+                  <Link href="/de/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades/">
                     Kurz, intuitiv und leicht verständlich
                   </Link>.
                 </svelte:fragment>
@@ -754,14 +754,14 @@
               <Link href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/banking.ipynb">
                 a demo notebook
               </Link>
-              (see <Link href="/en/demo">here</Link> for a description) using psycopg2 and ipython-sql that you may use as
-              a template for building your own notebook.
+              (see <Link href="/en/demo/">here</Link> for a description) using psycopg2 and ipython-sql that you may use
+              as a template for building your own notebook.
             </svelte:fragment>
             <svelte:fragment slot="de">
               Jede Software mit einer PostgreSQL-Schnittstelle kann mit <b>pg_diffix</b> arbeiten. Wir haben ein
               <Link href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/banking.ipynb">Demo-Notebook</Link>
-              vorbereitet (<Link href="/de/demo">hier</Link> erhalten Sie weitere Angaben und Details) unter Verwendung von
-              psycopg2 und ipython-sql, das Sie als Vorlage für die Erstellung Ihres eigenen Notebooks verwenden können.
+              vorbereitet (<Link href="/de/demo/">hier</Link> erhalten Sie weitere Angaben und Details) unter Verwendung
+              von psycopg2 und ipython-sql, das Sie als Vorlage für die Erstellung Ihres eigenen Notebooks verwenden können.
             </svelte:fragment>
           </Trans>
         </FAQItem>
@@ -776,12 +776,12 @@
           <Trans>
             <svelte:fragment slot="en">
               If you prefer to play with your own data, one quick and easy way to get started is with
-              <Link href="/en/download">Diffix for Desktop</Link>, a standalone desktop for Windows, Mac, and Linux that
-              works with a local CSV file.
+              <Link href="/en/download/">Diffix for Desktop</Link>, a standalone desktop for Windows, Mac, and Linux
+              that works with a local CSV file.
             </svelte:fragment>
             <svelte:fragment slot="de">
               Wenn Sie es vorziehen, mit Ihren eigenen Daten zu experimentieren, ist eine schnelle und einfache
-              Möglichkeit, <Link href="/de/download">Diffix für Desktop</Link>
+              Möglichkeit, <Link href="/de/download/">Diffix für Desktop</Link>
               zu benutzen, eine eigenständige Anwendung für Windows, Mac und Linux, die mit einer lokalen CSV-Datei arbeitet.
             </svelte:fragment>
           </Trans>
@@ -794,13 +794,13 @@
               <svelte:fragment slot="en">
                 Diffix for Desktop does not require SQL, but rather works with a simple GUI query-builder. It lacks all
                 of the SQL features of <b>pg_diffix</b>, but is very easy to use. If you don't have your own data to
-                play with, we offer a couple of sample CSV datasets from the <Link href="/en/download">download</Link> page.
+                play with, we offer a couple of sample CSV datasets from the <Link href="/en/download/">download</Link> page.
               </svelte:fragment>
               <svelte:fragment slot="de">
                 Diffix für Desktop benötigt kein SQL, sondern arbeitet mit einer einfachen grafischen Benutzeroberfläche
                 zur Abfrageerstellung. Es verfügt nicht über alle SQL-Funktionen von <b>pg_diffix</b>, ist aber sehr
                 einfach zu bedienen. Wenn Sie keine eigenen Daten haben, mit denen Sie experimentieren können, bieten
-                wir Ihnen eine Reihe von CSV-Beispieldatensätzen zum <Link href="/de/download">Herunterladen</Link> an.
+                wir Ihnen eine Reihe von CSV-Beispieldatensätzen zum <Link href="/de/download/">Herunterladen</Link> an.
               </svelte:fragment>
             </Trans>
           </p>
@@ -818,7 +818,7 @@
               We have prepared a Diffix demo in the form of a
               <Link href="https://taxi-heatmap.open-diffix.org/">heatmap visualization of the NYC taxi data.</Link>
               (You can find a description
-              <Link href="/en/blog/nyc-taxi-data-heatmap">here</Link>
+              <Link href="/en/blog/nyc-taxi-data-heatmap/">here</Link>
               ). This demo displays the heatmap built from Diffix side-by-side with the corresponding heatmap built from
               the raw data. It gives a concrete impression of the power and accuracy of Diffix anonymization.
             </svelte:fragment>
@@ -826,7 +826,7 @@
               Wir haben eine Diffix-Demo in Form einer
               <Link href="https://taxi-heatmap.open-diffix.org/">
                 Heatmap-Visualisierung von Taxidaten aus New York
-              </Link> erstellt. (Sie können eine Beschreibung <Link href="/de/blog/nyc-taxi-data-heatmap">hier</Link> erhalten).
+              </Link> erstellt. (Sie können eine Beschreibung <Link href="/de/blog/nyc-taxi-data-heatmap/">hier</Link> erhalten).
               Diese Demo zeigt die mit Diffix erstellte Heatmap Seite an Seite mit der entsprechenden Heatmap, die aus den
               Rohdaten erstellt wurde. Sie vermittelt einen konkreten Eindruck von der Leistungsfähigkeit und Genauigkeit
               der Diffix-Anonymisierung.

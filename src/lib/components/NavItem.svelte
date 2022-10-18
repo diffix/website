@@ -16,9 +16,9 @@
   }
 
   function normalizePath(path: string) {
-    if (path.endsWith("/")) {
-      // Remove trailing slash.
-      path = path.substring(0, path.length - 1);
+    if (!path.endsWith("/")) {
+      // Add trailing slash.
+      path += "/";
     }
 
     if (!pathIncludesLanguage(path)) {
