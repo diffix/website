@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-57a0df88.js",
+    "file": "start-5679ce85.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -22,14 +22,14 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-79d0dd44.js",
+    "file": "pages/__layout.svelte-c4116c6b.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-cf06609c.js",
       "_ackee-c5a4a257.js",
-      "_Trans-c3b6647f.js",
+      "_Trans-d72ba112.js",
       "_Link-e657120f.js"
     ],
     "css": [
@@ -46,7 +46,7 @@
     ]
   },
   "src/routes/[...lang]/newsletter.svelte": {
-    "file": "pages/_...lang_/newsletter.svelte-fa432b35.js",
+    "file": "pages/_...lang_/newsletter.svelte-3b0ff6f0.js",
     "src": "src/routes/[...lang]/newsletter.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -54,11 +54,11 @@
       "_vendor-cf06609c.js",
       "_ContentPage-32ca77d9.js",
       "_ackee-c5a4a257.js",
-      "_Trans-c3b6647f.js"
+      "_Trans-d72ba112.js"
     ]
   },
   "src/routes/[...lang]/download.svelte": {
-    "file": "pages/_...lang_/download.svelte-daac0633.js",
+    "file": "pages/_...lang_/download.svelte-71a5d3a3.js",
     "src": "src/routes/[...lang]/download.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -66,58 +66,58 @@
       "_vendor-cf06609c.js",
       "_ContentPage-32ca77d9.js",
       "_Link-e657120f.js",
-      "_Trans-c3b6647f.js"
+      "_Trans-d72ba112.js"
     ]
   },
   "src/routes/[...lang]/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md": {
-    "file": "pages/_...lang_/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md-aca413e9.js",
+    "file": "pages/_...lang_/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md-bf56221a.js",
     "src": "src/routes/[...lang]/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-cf06609c.js",
-      "__post-bd8d404a.js",
+      "__post-015bc996.js",
       "_utils-68f461b3.js",
-      "_Trans-c3b6647f.js"
+      "_Trans-d72ba112.js"
     ]
   },
   "src/routes/[...lang]/blog/introducing-diffix-fir.md": {
-    "file": "pages/_...lang_/blog/introducing-diffix-fir.md-a760335f.js",
+    "file": "pages/_...lang_/blog/introducing-diffix-fir.md-35d837eb.js",
     "src": "src/routes/[...lang]/blog/introducing-diffix-fir.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-cf06609c.js",
-      "__post-bd8d404a.js",
+      "__post-015bc996.js",
       "_utils-68f461b3.js",
-      "_Trans-c3b6647f.js"
+      "_Trans-d72ba112.js"
     ]
   },
   "src/routes/[...lang]/blog/nyc-taxi-data-heatmap.md": {
-    "file": "pages/_...lang_/blog/nyc-taxi-data-heatmap.md-d439c15d.js",
+    "file": "pages/_...lang_/blog/nyc-taxi-data-heatmap.md-14d673c3.js",
     "src": "src/routes/[...lang]/blog/nyc-taxi-data-heatmap.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-cf06609c.js",
-      "__post-bd8d404a.js",
+      "__post-015bc996.js",
       "_utils-68f461b3.js",
-      "_Trans-c3b6647f.js"
+      "_Trans-d72ba112.js"
     ]
   },
   "src/routes/[...lang]/blog/index.svelte": {
-    "file": "pages/_...lang_/blog/index.svelte-9f8e7fc4.js",
+    "file": "pages/_...lang_/blog/index.svelte-348ab392.js",
     "src": "src/routes/[...lang]/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-cf06609c.js",
-      "_Trans-c3b6647f.js",
+      "_Trans-d72ba112.js",
       "_utils-68f461b3.js"
     ]
   },
   "src/routes/[...lang]/demo.svelte": {
-    "file": "pages/_...lang_/demo.svelte-37b28a23.js",
+    "file": "pages/_...lang_/demo.svelte-591ca60f.js",
     "src": "src/routes/[...lang]/demo.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -125,42 +125,42 @@
       "_vendor-cf06609c.js",
       "_ContentPage-32ca77d9.js",
       "_Link-e657120f.js",
-      "_Trans-c3b6647f.js"
+      "_Trans-d72ba112.js"
     ]
   },
   "src/routes/[...lang]/play.svelte": {
-    "file": "pages/_...lang_/play.svelte-5c27ae88.js",
+    "file": "pages/_...lang_/play.svelte-bdd36cd7.js",
     "src": "src/routes/[...lang]/play.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-cf06609c.js",
-      "_FAQItem-83c07128.js",
+      "_FAQItem-20ac4842.js",
       "_Link-e657120f.js",
-      "_Trans-c3b6647f.js"
+      "_Trans-d72ba112.js"
     ]
   },
   "src/routes/[...lang]/faq.svelte": {
-    "file": "pages/_...lang_/faq.svelte-f2ab8c3a.js",
+    "file": "pages/_...lang_/faq.svelte-79c09ee6.js",
     "src": "src/routes/[...lang]/faq.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-cf06609c.js",
-      "_FAQItem-83c07128.js",
+      "_FAQItem-20ac4842.js",
       "_Link-e657120f.js",
-      "_Trans-c3b6647f.js"
+      "_Trans-d72ba112.js"
     ]
   },
   "src/routes/[...lang]/index.svelte": {
-    "file": "pages/_...lang_/index.svelte-f861c94c.js",
+    "file": "pages/_...lang_/index.svelte-c3f1225a.js",
     "src": "src/routes/[...lang]/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-cf06609c.js",
       "_Link-e657120f.js",
-      "_Trans-c3b6647f.js"
+      "_Trans-d72ba112.js"
     ],
     "css": [
       "assets/pages/_...lang_/index.svelte-7a515423.css"
@@ -175,8 +175,8 @@
       "_vendor-cf06609c.js"
     ]
   },
-  "_Trans-c3b6647f.js": {
-    "file": "chunks/Trans-c3b6647f.js",
+  "_Trans-d72ba112.js": {
+    "file": "chunks/Trans-d72ba112.js",
     "imports": [
       "_vendor-cf06609c.js"
     ]
@@ -193,22 +193,22 @@
       "_vendor-cf06609c.js"
     ]
   },
-  "__post-bd8d404a.js": {
-    "file": "chunks/_post-bd8d404a.js",
+  "__post-015bc996.js": {
+    "file": "chunks/_post-015bc996.js",
     "imports": [
       "_vendor-cf06609c.js",
       "_utils-68f461b3.js",
-      "_Trans-c3b6647f.js"
+      "_Trans-d72ba112.js"
     ]
   },
   "_utils-68f461b3.js": {
     "file": "chunks/utils-68f461b3.js"
   },
-  "_FAQItem-83c07128.js": {
-    "file": "chunks/FAQItem-83c07128.js",
+  "_FAQItem-20ac4842.js": {
+    "file": "chunks/FAQItem-20ac4842.js",
     "imports": [
       "_vendor-cf06609c.js",
-      "_Trans-c3b6647f.js"
+      "_Trans-d72ba112.js"
     ]
   }
 }
