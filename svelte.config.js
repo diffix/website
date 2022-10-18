@@ -11,7 +11,7 @@ const config = {
     mdsvex({
       extensions: [".md"],
       layout: {
-        blog: "src/routes/blog/_post.svelte"
+        blog: "src/routes/[...lang]/blog/_post.svelte"
       }
     })
   ],
@@ -24,6 +24,30 @@ const config = {
       assets: "build",
       fallback: null
     }),
+
+    prerender: {
+      crawl: true,
+      enabled: true,
+      onError: "fail",
+      entries: [
+        "/en",
+        "/de",
+
+        // --- For backwards compatibility default these pages to "en" ---
+        "/",
+        "/demo",
+        "/download",
+        "/faq",
+        "/newsletter",
+        "/play",
+        "/blog",
+        "/blog",
+        "/blog",
+        "/blog/introducing-diffix-fir",
+        "/blog/nyc-taxi-data-heatmap",
+        "/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades"
+      ]
+    },
 
     // hydrate the <div id="opendiffix"> element in src/app.html
     target: "#opendiffix",
