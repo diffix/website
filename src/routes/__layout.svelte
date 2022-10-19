@@ -77,12 +77,14 @@
           de: "Impressum"
         })}
       </Link>
-      <Link href="https://data-protection.mpi-klsb.mpg.de/sws/open-diffix.org">
-        {$trans({
-          en: "Privacy Policy",
-          de: "Datenschutzerklärung"
-        })}
-      </Link>
+      <Trans>
+        <svelte:fragment slot="en">
+          <Link href="https://data-protection.mpi-klsb.mpg.de/sws/open-diffix.org?lang=en">Privacy Policy</Link>
+        </svelte:fragment>
+        <svelte:fragment slot="de">
+          <Link href="https://data-protection.mpi-klsb.mpg.de/sws/open-diffix.org?lang=de">Datenschutzerklärung</Link>
+        </svelte:fragment>
+      </Trans>
     </span>
   </footer>
 </div>
