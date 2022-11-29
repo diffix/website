@@ -73,25 +73,25 @@
 
   <ul class="mt-2 list-disc list-inside">
     <li>
-      <DownloadLink href="https://github.com/diffix/desktop/releases/download/v1.0.2/DiffixForDesktop-1.0.2.Setup.exe">
+      <DownloadLink href="https://github.com/diffix/desktop/releases/download/v1.0.3/DiffixForDesktop-1.0.3.Setup.exe">
         Windows
       </DownloadLink>
     </li>
     <li>
       <DownloadLink
-        href="https://github.com/diffix/desktop/releases/download/v1.0.2/DiffixForDesktop-darwin-x64-1.0.2.zip"
+        href="https://github.com/diffix/desktop/releases/download/v1.0.3/DiffixForDesktop-darwin-x64-1.0.3.zip"
       >
         MacOS
       </DownloadLink>
     </li>
     <li>
-      <DownloadLink href="https://github.com/diffix/desktop/releases/download/v1.0.2/DiffixForDesktop_1.0.2_amd64.deb">
+      <DownloadLink href="https://github.com/diffix/desktop/releases/download/v1.0.3/DiffixForDesktop_1.0.3_amd64.deb">
         Linux (Debian)
       </DownloadLink>
     </li>
     <li>
       <DownloadLink
-        href="https://github.com/diffix/desktop/releases/download/v1.0.2/DiffixForDesktop-1.0.2-1.x86_64.rpm"
+        href="https://github.com/diffix/desktop/releases/download/v1.0.3/DiffixForDesktop-1.0.3-1.x86_64.rpm"
       >
         Linux (RedHat)
       </DownloadLink>
