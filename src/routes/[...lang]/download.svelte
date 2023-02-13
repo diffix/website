@@ -14,6 +14,30 @@
 >
   <h2 class="mt-12 text-2xl">
     {$trans({
+      en: "Diffix Dashboards V1",
+      de: "Diffix Dashboards V1"
+    })}
+  </h2>
+
+  <p class="mt-2">
+    {$trans({
+      en: "Releases are currently unsigned and will display a warning message during installation.",
+      de: "Die veröffentlichten Versionen sind derzeit nicht signiert und zeigen bei der Installation eine Warnmeldung an."
+    })}
+  </p>
+
+  <ul class="mt-2 list-disc list-inside">
+    <li>
+      <DownloadLink
+        href="https://github.com/diffix/dashboards/releases/download/v1.0.0/Diffix.Dashboards-1.0.0.Setup.exe"
+      >
+        Windows
+      </DownloadLink>
+    </li>
+  </ul>
+
+  <h2 class="mt-12 text-2xl">
+    {$trans({
       en: "Diffix for PostgreSQL",
       de: "Diffix für PostgreSQL"
     })}
