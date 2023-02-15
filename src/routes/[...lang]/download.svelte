@@ -29,7 +29,7 @@
   <ul class="mt-2 list-disc list-inside">
     <li>
       <DownloadLink
-        href="https://github.com/diffix/dashboards/releases/download/v1.0.0/Diffix.Dashboards-1.0.0.Setup.exe"
+        href="https://github.com/diffix/dashboards/releases/download/v1.0.1/Diffix.Dashboards-1.0.1.Setup.exe"
       >
         Windows
       </DownloadLink>
