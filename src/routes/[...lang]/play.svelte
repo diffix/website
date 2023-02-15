@@ -66,7 +66,7 @@
               PostgreSQL server with <b>pg_diffix</b> and several representative databases. There are several ways to
               interact with our PostgreSQL service. Alternatively you can
               <Link href="/en/download/">download</Link>
-              <b>Diffix for Desktop</b> and try it on sample CSV datasets we provide, or on your own CSV dataset.
+              <b>Diffix Dashboards</b> and try it on sample CSV datasets we provide, or on your own CSV dataset.
               <p class="mt-4">
                 As always, you can contact us at
                 <Link href="mailto:hello@open-diffix.org">hello@open-diffix.org</Link> if you have questions or comments.
@@ -77,7 +77,7 @@
               einzurichten und die Erweiterung <b>pg_diffix</b> zu installieren. In erster Linie betreibt das Open
               Diffix Projekt einen PostgreSQL Server mit <b>pg_diffix</b> und mehreren repräsentativen Datenbanken. Es
               gibt mehrere Möglichkeiten, mit unserem PostgreSQL-Dienst zu interagieren. Alternativ können Sie
-              <b>Diffix für Desktop</b>
+              <b>Diffix Dashboards</b>
               <Link href="/de/download/">herunterladen</Link>
               und testen es mit den von uns bereitgestellten CSV-Beispieldatensätzen oder mit Ihrem eigenen CSV-Datensatz.
               <p class="mt-4">
@@ -121,16 +121,30 @@
             <li>
               <Trans>
                 <svelte:fragment slot="en">
+                  <Link href="https://github.com/diffix/dashboards/blob/master/docs/en/operation.md"> Online instructions
+                  </Link>
+                  for Diffix Dashboards operation (also available in the application itself).
+                </svelte:fragment>
+                <svelte:fragment slot="de">
+                  <Link href="https://github.com/diffix/dashboards/blob/master/docs/en/operation.md"> Online-Anleitung
+                  </Link>
+                  für den Betrieb von Diffix Dashboards (auch in der Anwendung selbst verfügbar).
+                </svelte:fragment>
+              </Trans>
+            </li>
+            <li>
+              <Trans>
+                <svelte:fragment slot="en">
                   <Link href="https://github.com/diffix/desktop/blob/master/docs/en/operation.md">
                     Online instructions
                   </Link>
-                  for Diffix for Desktop operation (also available in the application itself).
+                  for (legacy) Diffix for Desktop operation (also available in the application itself).
                 </svelte:fragment>
                 <svelte:fragment slot="de">
                   <Link href="https://github.com/diffix/desktop/blob/master/docs/en/operation.md">
                     Online-Anleitung
                   </Link>
-                  für den Betrieb von Diffix für Desktop (auch in der Anwendung selbst verfügbar).
+                  für den Betrieb von (Legacy) Diffix für Desktop (auch in der Anwendung selbst verfügbar).
                 </svelte:fragment>
               </Trans>
             </li>
@@ -603,6 +617,110 @@
         <FAQItem
           {addToToc}
           question={{
+            en: "SQL Clients",
+            de: "SQL-Clients"
+          }}
+        >
+          <Trans>
+            <svelte:fragment slot="en">
+              In principle, any SQL client that supports PostgreSQL should work with <b>pg_diffix</b>. In practice, each
+              SQL client has its own idiosynchrocies in how it explores the database, and so not all SQL clients work
+              with <b>pg_diffix</b>.
+            </svelte:fragment>
+            <svelte:fragment slot="de">
+              Im Prinzip sollte jeder SQL-Client, der PostgreSQL unterstützt, mit <b>pg_diffix</b> funktionieren. In der
+              Praxis hat jeder SQL-Client seine eigenen Eigenheiten, wie er die Datenbank erkundet, und daher
+              funktionieren nicht alle SQL-Clients mit <b>pg_diffix</b>.
+            </svelte:fragment>
+          </Trans>
+
+          <p class="mt-6">
+            <img src="/figs/dbeaver-screenshot.png" width="500" />
+          </p>
+          <p class="mt-6">
+            <Trans>
+              <svelte:fragment slot="en">
+                We have successfully used two SQL clients with <b>pg_diffix</b>,
+                <Link href="https://www.pgadmin.org/">pgAdmin</Link>
+                and
+                <Link href="https://dbeaver.io/">DBeaver</Link>
+              </svelte:fragment>
+              <svelte:fragment slot="de">
+                Wir haben mit <b>pg_diffix</b> erfolgreich zwei SQL-Clients eingesetzt:
+                <Link href="https://www.pgadmin.org/">pgAdmin</Link>
+                und
+                <Link href="https://dbeaver.io/">DBeaver</Link>
+              </svelte:fragment>
+            </Trans>
+          </p>
+        </FAQItem>
+
+        <FAQItem
+          {addToToc}
+          question={{
+            en: "Software APIs and Notebooks",
+            de: "Software-APIs und Notebooks"
+          }}
+        >
+          <Trans>
+            <svelte:fragment slot="en">
+              Any software with a PostgreSQL interface can work with <b>pg_diffix</b>. We have prepared
+              <Link href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/banking.ipynb">
+                a demo notebook
+              </Link>
+              (see <Link href="/en/demo/">here</Link> for a description) using psycopg2 and ipython-sql that you may use
+              as a template for building your own notebook.
+            </svelte:fragment>
+            <svelte:fragment slot="de">
+              Jede Software mit einer PostgreSQL-Schnittstelle kann mit <b>pg_diffix</b> arbeiten. Wir haben ein
+              <Link href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/banking.ipynb">Demo-Notebook</Link>
+              vorbereitet (<Link href="/de/demo/">hier</Link> erhalten Sie weitere Angaben und Details) unter Verwendung
+              von psycopg2 und ipython-sql, das Sie als Vorlage für die Erstellung Ihres eigenen Notebooks verwenden können.
+            </svelte:fragment>
+          </Trans>
+        </FAQItem>
+
+        <FAQItem
+          {addToToc}
+          question={{
+            en: "Diffix Dashboards",
+            de: "Diffix Dashboards"
+          }}
+        >
+          <Trans>
+            <svelte:fragment slot="en">
+              If you prefer to play with your own data, one quick and easy way to get started is with
+              <Link href="/en/download/">Diffix Dashboards</Link>, a standalone desktop for Windows that works with a local CSV file.
+            </svelte:fragment>
+            <svelte:fragment slot="de">
+              Wenn Sie es vorziehen, mit Ihren eigenen Daten zu experimentieren, ist eine schnelle und einfache
+              Möglichkeit, <Link href="/de/download/">Diffix Dashboards</Link>
+              zu benutzen, eine eigenständige Anwendung für Windows die mit einer lokalen CSV-Datei arbeitet.
+            </svelte:fragment>
+          </Trans>
+
+          <p class="mt-6">
+            <img src="/figs/desktop-screenshot.png" width="500" />
+          </p>
+          <p class="mt-6">
+            <Trans>
+              <svelte:fragment slot="en">
+                Diffix Dashboards bundles the Business Intelligence tool <Link href="metabase.com">Metabase</Link> with pg_diffix. It does not require SQL, but rather can be used with a simple GUI query-builder. It also supports writing queries in SQL.
+                If you don't have your own data to
+                play with, we offer a couple of sample CSV datasets from the <Link href="/en/download/">download</Link> page.
+              </svelte:fragment>
+              <svelte:fragment slot="de">
+                Diffix Dashboards bündelt das Business Intelligence-Tool <Link href="metabase.com">Metabase</Link> mit pg_diffix. Es erfordert kein SQL, sondern kann mit einem einfachen GUI-Abfragegenerator verwendet werden. Es unterstützt auch das Schreiben von Abfragen in SQL.
+                Wenn Sie keine eigenen Daten haben, mit denen Sie experimentieren können, bieten
+                wir Ihnen eine Reihe von CSV-Beispieldatensätzen zum <Link href="/de/download/">Herunterladen</Link> an.
+              </svelte:fragment>
+            </Trans>
+          </p>
+        </FAQItem>
+
+        <FAQItem
+          {addToToc}
+          question={{
             en: "Metabase",
             de: "Metabase"
           }}
@@ -695,112 +813,6 @@
                 <Link href="https://github.com/diffix/moers-hackday/blob/main/metabase.md">
                   kurze Anleitung geschrieben
                 </Link>, wie man das macht vorbereitet.
-              </svelte:fragment>
-            </Trans>
-          </p>
-        </FAQItem>
-
-        <FAQItem
-          {addToToc}
-          question={{
-            en: "SQL Clients",
-            de: "SQL-Clients"
-          }}
-        >
-          <Trans>
-            <svelte:fragment slot="en">
-              In principle, any SQL client that supports PostgreSQL should work with <b>pg_diffix</b>. In practice, each
-              SQL client has its own idiosynchrocies in how it explores the database, and so not all SQL clients work
-              with <b>pg_diffix</b>.
-            </svelte:fragment>
-            <svelte:fragment slot="de">
-              Im Prinzip sollte jeder SQL-Client, der PostgreSQL unterstützt, mit <b>pg_diffix</b> funktionieren. In der
-              Praxis hat jeder SQL-Client seine eigenen Eigenheiten, wie er die Datenbank erkundet, und daher
-              funktionieren nicht alle SQL-Clients mit <b>pg_diffix</b>.
-            </svelte:fragment>
-          </Trans>
-
-          <p class="mt-6">
-            <img src="/figs/dbeaver-screenshot.png" width="500" />
-          </p>
-          <p class="mt-6">
-            <Trans>
-              <svelte:fragment slot="en">
-                We have successfully used two SQL clients with <b>pg_diffix</b>,
-                <Link href="https://www.pgadmin.org/">pgAdmin</Link>
-                and
-                <Link href="https://dbeaver.io/">DBeaver</Link>
-              </svelte:fragment>
-              <svelte:fragment slot="de">
-                Wir haben mit <b>pg_diffix</b> erfolgreich zwei SQL-Clients eingesetzt:
-                <Link href="https://www.pgadmin.org/">pgAdmin</Link>
-                und
-                <Link href="https://dbeaver.io/">DBeaver</Link>
-              </svelte:fragment>
-            </Trans>
-          </p>
-        </FAQItem>
-
-        <FAQItem
-          {addToToc}
-          question={{
-            en: "Software APIs and Notebooks",
-            de: "Software-APIs und Notebooks"
-          }}
-        >
-          <Trans>
-            <svelte:fragment slot="en">
-              Any software with a PostgreSQL interface can work with <b>pg_diffix</b>. We have prepared
-              <Link href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/banking.ipynb">
-                a demo notebook
-              </Link>
-              (see <Link href="/en/demo/">here</Link> for a description) using psycopg2 and ipython-sql that you may use
-              as a template for building your own notebook.
-            </svelte:fragment>
-            <svelte:fragment slot="de">
-              Jede Software mit einer PostgreSQL-Schnittstelle kann mit <b>pg_diffix</b> arbeiten. Wir haben ein
-              <Link href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/banking.ipynb">Demo-Notebook</Link>
-              vorbereitet (<Link href="/de/demo/">hier</Link> erhalten Sie weitere Angaben und Details) unter Verwendung
-              von psycopg2 und ipython-sql, das Sie als Vorlage für die Erstellung Ihres eigenen Notebooks verwenden können.
-            </svelte:fragment>
-          </Trans>
-        </FAQItem>
-
-        <FAQItem
-          {addToToc}
-          question={{
-            en: "Diffix for Desktop",
-            de: "Diffix für Desktop"
-          }}
-        >
-          <Trans>
-            <svelte:fragment slot="en">
-              If you prefer to play with your own data, one quick and easy way to get started is with
-              <Link href="/en/download/">Diffix for Desktop</Link>, a standalone desktop for Windows, Mac, and Linux
-              that works with a local CSV file.
-            </svelte:fragment>
-            <svelte:fragment slot="de">
-              Wenn Sie es vorziehen, mit Ihren eigenen Daten zu experimentieren, ist eine schnelle und einfache
-              Möglichkeit, <Link href="/de/download/">Diffix für Desktop</Link>
-              zu benutzen, eine eigenständige Anwendung für Windows, Mac und Linux, die mit einer lokalen CSV-Datei arbeitet.
-            </svelte:fragment>
-          </Trans>
-
-          <p class="mt-6">
-            <img src="/figs/desktop-screenshot.png" width="500" />
-          </p>
-          <p class="mt-6">
-            <Trans>
-              <svelte:fragment slot="en">
-                Diffix for Desktop does not require SQL, but rather works with a simple GUI query-builder. It lacks all
-                of the SQL features of <b>pg_diffix</b>, but is very easy to use. If you don't have your own data to
-                play with, we offer a couple of sample CSV datasets from the <Link href="/en/download/">download</Link> page.
-              </svelte:fragment>
-              <svelte:fragment slot="de">
-                Diffix für Desktop benötigt kein SQL, sondern arbeitet mit einer einfachen grafischen Benutzeroberfläche
-                zur Abfrageerstellung. Es verfügt nicht über alle SQL-Funktionen von <b>pg_diffix</b>, ist aber sehr
-                einfach zu bedienen. Wenn Sie keine eigenen Daten haben, mit denen Sie experimentieren können, bieten
-                wir Ihnen eine Reihe von CSV-Beispieldatensätzen zum <Link href="/de/download/">Herunterladen</Link> an.
               </svelte:fragment>
             </Trans>
           </p>
