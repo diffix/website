@@ -25,7 +25,7 @@
       de: "Starke Anonymisierung für strukturierte Daten. Offen. Frei."
     })}
   </h2>
-   <h3 class="font-bold mx-12 mt-8 text-xl text-center">
+  <h3 class="font-bold mx-12 mt-8 text-xl text-center">
     <span class="text-red-500">NEW!</span>
     <Link href="/download/">Diffix Dashboards</Link> released! <Link href="/blog/">Learn more</Link>.
   </h3>
@@ -90,7 +90,7 @@
   </div>
   <div class="mx-1 mt-8 text-base lg:mt-0 lg:mx-0 lg:w-3/5">
     <div class="overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg">
-        <img src="/dashboards-home.png" >
+      <img src="/dashboards-home.png" />
     </div>
   </div>
 </div>
