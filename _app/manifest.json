@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-d8450194.js",
+    "file": "start-f52e6427.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -14,6 +14,7 @@
       "src/routes/[...lang]/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades.md",
       "src/routes/[...lang]/blog/introducing-diffix-fir.md",
       "src/routes/[...lang]/blog/nyc-taxi-data-heatmap.md",
+      "src/routes/[...lang]/blog/diffix-dashboards.md",
       "src/routes/[...lang]/blog/index.svelte",
       "src/routes/[...lang]/demo.svelte",
       "src/routes/[...lang]/play.svelte",
@@ -96,6 +97,18 @@
   "src/routes/[...lang]/blog/nyc-taxi-data-heatmap.md": {
     "file": "pages/_...lang_/blog/nyc-taxi-data-heatmap.md-14d673c3.js",
     "src": "src/routes/[...lang]/blog/nyc-taxi-data-heatmap.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-cf06609c.js",
+      "__post-015bc996.js",
+      "_utils-68f461b3.js",
+      "_Trans-d72ba112.js"
+    ]
+  },
+  "src/routes/[...lang]/blog/diffix-dashboards.md": {
+    "file": "pages/_...lang_/blog/diffix-dashboards.md-78cf99df.js",
+    "src": "src/routes/[...lang]/blog/diffix-dashboards.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
