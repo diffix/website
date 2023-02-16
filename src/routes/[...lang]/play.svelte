@@ -121,12 +121,14 @@
             <li>
               <Trans>
                 <svelte:fragment slot="en">
-                  <Link href="https://github.com/diffix/dashboards/blob/master/docs/en/operation.md"> Online instructions
+                  <Link href="https://github.com/diffix/dashboards/blob/master/docs/en/operation.md">
+                    Online instructions
                   </Link>
                   for Diffix Dashboards operation (also available in the application itself).
                 </svelte:fragment>
                 <svelte:fragment slot="de">
-                  <Link href="https://github.com/diffix/dashboards/blob/master/docs/en/operation.md"> Online-Anleitung
+                  <Link href="https://github.com/diffix/dashboards/blob/master/docs/en/operation.md">
+                    Online-Anleitung
                   </Link>
                   für den Betrieb von Diffix Dashboards (auch in der Anwendung selbst verfügbar).
                 </svelte:fragment>
@@ -690,7 +692,8 @@
           <Trans>
             <svelte:fragment slot="en">
               If you prefer to play with your own data, one quick and easy way to get started is with
-              <Link href="/en/download/">Diffix Dashboards</Link>, a standalone desktop for Windows that works with a local CSV file.
+              <Link href="/en/download/">Diffix Dashboards</Link>, a standalone desktop for Windows that works with a
+              local CSV file.
             </svelte:fragment>
             <svelte:fragment slot="de">
               Wenn Sie es vorziehen, mit Ihren eigenen Daten zu experimentieren, ist eine schnelle und einfache
@@ -705,14 +708,18 @@
           <p class="mt-6">
             <Trans>
               <svelte:fragment slot="en">
-                Diffix Dashboards bundles the Business Intelligence tool <Link href="metabase.com">Metabase</Link> with pg_diffix. It does not require SQL, but rather can be used with a simple GUI query-builder. It also supports writing queries in SQL.
-                If you don't have your own data to
-                play with, we offer a couple of sample CSV datasets from the <Link href="/en/download/">download</Link> page.
+                Diffix Dashboards bundles the Business Intelligence tool <Link href="metabase.com">Metabase</Link> with pg_diffix.
+                It does not require SQL, but rather can be used with a simple GUI query-builder. It also supports writing
+                queries in SQL. If you don't have your own data to play with, we offer a couple of sample CSV datasets from
+                the <Link href="/en/download/">download</Link> page.
               </svelte:fragment>
               <svelte:fragment slot="de">
-                Diffix Dashboards bündelt das Business Intelligence-Tool <Link href="metabase.com">Metabase</Link> mit pg_diffix. Es erfordert kein SQL, sondern kann mit einem einfachen GUI-Abfragegenerator verwendet werden. Es unterstützt auch das Schreiben von Abfragen in SQL.
-                Wenn Sie keine eigenen Daten haben, mit denen Sie experimentieren können, bieten
-                wir Ihnen eine Reihe von CSV-Beispieldatensätzen zum <Link href="/de/download/">Herunterladen</Link> an.
+                Diffix Dashboards bündelt das Business Intelligence-Tool <Link href="metabase.com">Metabase</Link> mit pg_diffix.
+                Es erfordert kein SQL, sondern kann mit einem einfachen GUI-Abfragegenerator verwendet werden. Es unterstützt
+                auch das Schreiben von Abfragen in SQL. Wenn Sie keine eigenen Daten haben, mit denen Sie experimentieren
+                können, bieten wir Ihnen eine Reihe von CSV-Beispieldatensätzen zum <Link href="/de/download/"
+                  >Herunterladen</Link
+                > an.
               </svelte:fragment>
             </Trans>
           </p>
