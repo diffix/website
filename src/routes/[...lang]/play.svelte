@@ -108,7 +108,7 @@
                   <Link href="https://github.com/diffix/pg_diffix/blob/master/docs/analyst_guide.md">
                     Analyst Guide
                   </Link>
-                  (for SQL usage of pg_diffix, the PostgreSQL Diffix extension).
+                  (for SQL usage of <b>pg_diffix</b>, the PostgreSQL Diffix extension).
                 </svelte:fragment>
                 <svelte:fragment slot="de">
                   <Link href="https://github.com/diffix/pg_diffix/blob/master/docs/analyst_guide.md">
@@ -130,7 +130,7 @@
                   <Link href="https://github.com/diffix/dashboards/blob/master/docs/en/operation.md">
                     Online-Anleitung
                   </Link>
-                  für den Betrieb von Diffix Dashboards (auch in der Anwendung selbst verfügbar).
+                  für den Betrieb von Diffix Dashboards (auch in der Anwendung verfügbar).
                 </svelte:fragment>
               </Trans>
             </li>
@@ -146,7 +146,7 @@
                   <Link href="https://github.com/diffix/desktop/blob/master/docs/en/operation.md">
                     Online-Anleitung
                   </Link>
-                  für den Betrieb von (Legacy) Diffix für Desktop (auch in der Anwendung selbst verfügbar).
+                  für den Betrieb von (Legacy) Diffix für Desktop (auch in der Anwendung verfügbar).
                 </svelte:fragment>
               </Trans>
             </li>
@@ -626,7 +626,7 @@
           <Trans>
             <svelte:fragment slot="en">
               In principle, any SQL client that supports PostgreSQL should work with <b>pg_diffix</b>. In practice, each
-              SQL client has its own idiosynchrocies in how it explores the database, and so not all SQL clients work
+              SQL client has its own idiosyncrasies in how it explores the database, and so not all SQL clients work
               with <b>pg_diffix</b>.
             </svelte:fragment>
             <svelte:fragment slot="de">
@@ -708,18 +708,17 @@
           <p class="mt-6">
             <Trans>
               <svelte:fragment slot="en">
-                Diffix Dashboards bundles the Business Intelligence tool <Link href="metabase.com">Metabase</Link> with pg_diffix.
-                It does not require SQL, but rather can be used with a simple GUI query-builder. It also supports writing
-                queries in SQL. If you don't have your own data to play with, we offer a couple of sample CSV datasets from
-                the <Link href="/en/download/">download</Link> page.
+                Diffix Dashboards bundles the Business Intelligence tool <Link href="metabase.com">Metabase</Link> with
+                <b>pg_diffix</b>. It does not require SQL, but rather can be used with a simple GUI query-builder. It
+                also supports writing queries in SQL. If you don't have your own data to play with, we offer a couple of
+                sample CSV datasets from the <Link href="/en/download/">download</Link> page.
               </svelte:fragment>
               <svelte:fragment slot="de">
-                Diffix Dashboards bündelt das Business Intelligence-Tool <Link href="metabase.com">Metabase</Link> mit pg_diffix.
-                Es erfordert kein SQL, sondern kann mit einem einfachen GUI-Abfragegenerator verwendet werden. Es unterstützt
-                auch das Schreiben von Abfragen in SQL. Wenn Sie keine eigenen Daten haben, mit denen Sie experimentieren
-                können, bieten wir Ihnen eine Reihe von CSV-Beispieldatensätzen zum <Link href="/de/download/"
-                  >Herunterladen</Link
-                > an.
+                Diffix Dashboards bündelt das Business Intelligence-Tool <Link href="metabase.com">Metabase</Link> mit
+                <b>pg_diffix</b>. Es erfordert kein SQL, sondern kann mit einem einfachen GUI-Abfragegenerator verwendet
+                werden. Es unterstützt auch das Schreiben von Abfragen in SQL. Wenn Sie keine eigenen Daten haben, mit
+                denen Sie experimentieren können, bieten wir Ihnen eine Reihe von CSV-Beispieldatensätzen zum
+                <Link href="/de/download/">Herunterladen</Link> an.
               </svelte:fragment>
             </Trans>
           </p>
