@@ -62,8 +62,8 @@
           <Trans>
             <svelte:fragment slot="en">
               Diffix is a bundled set of mechanisms for anonymizing structured data. It was jointly developed by
-              Aircloak GmbH and the Max Planck Institute for Software Systems. Diffix exploits mechansims that have
-              been in use by national statistics offices for decades:
+              Aircloak GmbH and the Max Planck Institute for Software Systems. Diffix exploits mechansims that have been
+              in use by national statistics offices for decades:
               <b>aggregation</b>, <b>generalization</b>, <b>noise</b>, <b>suppression</b>, and <b>swapping</b>. It
               automatically applies these mechanisms as needed on a query-by-query basis to minimize noise while
               ensuring strong anonymity.
@@ -95,23 +95,24 @@
           <Trans>
             <svelte:fragment slot="en">
               Open Diffix is a project to make Diffix anonymization free and open. The Open Diffix project develops two
-              Diffix query engine implementations, one based on .NET and the other a PostgreSQL extension called <b>pg_diffix</b>.
-              As a PostgreSQL extension, <b>pg_diffix</b> offers the same benefits of PostgreSQL: scale, performance, deployment, and access control features.
-              Open Diffix can also be run as a stand-alone desktop application, <b>Diffix Dashboards</b>. 
-              The .NET implementation serves primarily as a reference implementation, but
-              is also used to support the legacy desktop application <b>Diffix for Desktop</b>.
-              Both implentations are strongly
-              anonymous, and satisfy the GDPR definition of anonymity.
+              Diffix query engine implementations, one based on .NET and the other a PostgreSQL extension called <b
+                >pg_diffix</b
+              >. As a PostgreSQL extension, <b>pg_diffix</b> offers the same benefits of PostgreSQL: scale, performance,
+              deployment, and access control features. Open Diffix can also be run as a stand-alone desktop application,
+              <b>Diffix Dashboards</b>. The .NET implementation serves primarily as a reference implementation, but is
+              also used to support the legacy desktop application <b>Diffix for Desktop</b>. Both implentations are
+              strongly anonymous, and satisfy the GDPR definition of anonymity.
             </svelte:fragment>
             <svelte:fragment slot="de">
               Open Diffix ist ein Projekt, das die Diffix-Anonymisierung frei und offen machen soll. Im Rahmen des Open
               Diffix-Projekts werden zwei Diffix-Abfrage-Engine-Implementierungen entwickelt, eine auf der Grundlage von
-              .NET und die andere als PostgreSQL-Erweiterung namens <b>pg_diffix</b>.
-              Als PostgreSQL-Erweiterung bietet <b>pg_diffix</b> dieselben Vorteile wie PostgreSQL: Skalierbarkeit, Leistung, Bereitstellung und Zugriffssteuerungsfunktionen.
-              Open Diffix kann auch als eigenständige Desktop-Anwendung ausgeführt werden, <b>Diffix Dashboards</b>.
-              Die .NET-Implementierung dient in erster Linie als Referenzimplementierung, aber
-              wird auch zur Unterstützung der älteren Desktop-Anwendung <b>Diffix for Desktop</b> verwendet.
-              Beide Implementierungen sind stark anonym und erfüllen die GDPR-Definition von Anonymität.
+              .NET und die andere als PostgreSQL-Erweiterung namens <b>pg_diffix</b>. Als PostgreSQL-Erweiterung bietet
+              <b>pg_diffix</b>
+              dieselben Vorteile wie PostgreSQL: Skalierbarkeit, Leistung, Bereitstellung und
+              Zugriffssteuerungsfunktionen. Open Diffix kann auch als eigenständige Desktop-Anwendung ausgeführt werden,
+              <b>Diffix Dashboards</b>. Die .NET-Implementierung dient in erster Linie als Referenzimplementierung, aber
+              wird auch zur Unterstützung der älteren Desktop-Anwendung <b>Diffix for Desktop</b> verwendet. Beide Implementierungen
+              sind stark anonym und erfüllen die GDPR-Definition von Anonymität.
             </svelte:fragment>
           </Trans>
         </FAQItem>
@@ -130,7 +131,8 @@
               Diffix Elm represented a kind of "complexity reset". It is much <b>simpler</b>, <b>easier to use</b>, and
               easier to analyze (though less feature rich).
               <p class="indent-6">
-                The latest version is Diffix Fir, which adds several new features including sum, average, and simple WHERE expressions.
+                The latest version is Diffix Fir, which adds several new features including sum, average, and simple
+                WHERE expressions.
               </p>
             </svelte:fragment>
             <svelte:fragment slot="de">
@@ -163,7 +165,8 @@
               <p class="indent-6">
                 A good overview of Diffix Elm can be found
                 <Link href="/en/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades/">
-                  here</Link>, with the additional features of Diffix Fir described
+                  here</Link
+                >, with the additional features of Diffix Fir described
                 <Link href="/en/blog/introducing-diffix-fir/">here</Link>.
               </p>
             </svelte:fragment>
@@ -200,12 +203,15 @@
                 back-ends, dashboards, and applications over a standard API with SQL, as well as the use of SQL clients.
               </p>
               <p class="indent-6">
-                Diffix Dashboards is a stand-alone Windows desktop application with data visualization features designed to work with CSV files. It bundles <b>pg_diffix</b> with the open-source Business Intelligence tool <Link href="https://metabase.com">Metabase</Link>, and offers both GUI-based query building and SQL.
+                Diffix Dashboards is a stand-alone Windows desktop application with data visualization features designed
+                to work with CSV files. It bundles <b>pg_diffix</b> with the open-source Business Intelligence tool <Link
+                  href="https://metabase.com">Metabase</Link
+                >, and offers both GUI-based query building and SQL.
               </p>
               <p class="indent-6">
                 Diffix for Desktop is built on a .NET implementation of Diffix Fir. It is designed for extreme ease of
-                installation and use. It supports CSV tables and a simple GUI (no SQL required).
-                It is a legacy application and will probably no longer be supported in lieu of Diffix Dashboards.
+                installation and use. It supports CSV tables and a simple GUI (no SQL required). It is a legacy
+                application and will probably no longer be supported in lieu of Diffix Dashboards.
               </p>
             </svelte:fragment>
             <svelte:fragment slot="de">
@@ -217,13 +223,16 @@
                 Verwendung von SQL-Clients.
               </p>
               <p class="indent-6">
-                Diffix Dashboards ist eine eigenständige Windows-Desktopanwendung mit Datenvisualisierungsfunktionen, die für die Arbeit mit CSV-Dateien entwickelt wurden. Es bündelt <b>pg_diffix</b> mit dem Open-Source-Business-Intelligence-Tool <Link href="https://metabase.com">Metabase</Link> und bietet sowohl GUI-basierte Abfrageerstellung als auch SQL.
+                Diffix Dashboards ist eine eigenständige Windows-Desktopanwendung mit Datenvisualisierungsfunktionen,
+                die für die Arbeit mit CSV-Dateien entwickelt wurden. Es bündelt <b>pg_diffix</b> mit dem
+                Open-Source-Business-Intelligence-Tool <Link href="https://metabase.com">Metabase</Link> und bietet sowohl
+                GUI-basierte Abfrageerstellung als auch SQL.
               </p>
               <p class="indent-6">
                 Diffix für Desktop basiert auf einer .NET-Implementierung von Diffix Fir. Es wurde für eine extrem
                 einfache Installation und Nutzung ausgelegt. Es unterstützt CSV-Tabellen und bietet eine einfache GUI
-                (keine SQL -Kenntnisse erforderlich).
-                Es handelt sich um eine veraltete Anwendung, die anstelle von Diffix Dashboards wahrscheinlich nicht mehr unterstützt wird.
+                (keine SQL -Kenntnisse erforderlich). Es handelt sich um eine veraltete Anwendung, die anstelle von
+                Diffix Dashboards wahrscheinlich nicht mehr unterstützt wird.
               </p>
             </svelte:fragment>
           </Trans>
@@ -291,22 +300,19 @@
         >
           <Trans>
             <svelte:fragment slot="en">
-              Diffix Fir supports a very limited but useful subset of SQL. It supports
-              numeric, text, and datetime data types. It lets you build multi-column histograms of
-              counts, sums, and averages. It supports basic generalization functions (e.g. rounding of numeric columns,
-              and substring selection of text columns). It supports JOIN and WHERE with AND logic.
+              Diffix Fir supports a very limited but useful subset of SQL. It supports numeric, text, and datetime data
+              types. It lets you build multi-column histograms of counts, sums, and averages. It supports basic
+              generalization functions (e.g. rounding of numeric columns, and substring selection of text columns). It
+              supports JOIN and WHERE with AND logic.
             </svelte:fragment>
             <svelte:fragment slot="de">
-              Diffix Fir unterstützt eine sehr begrenzte, aber nützliche Teilmenge von SQL. 
-              Es unterstützt numeric, text und datetime Datentypen.
-              Damit können Sie
-              mehrspaltige Histogramme erstellen von Zählungen, Summen und Durchschnittswerten erstellen. Es unterstützt
-              grundlegende Verallgemeinerungsfunktionen (z. B. Rundung numerischer Spalten und Teilstring-Auswahl von
-              Textspalten). Es unterstützt JOIN und WHERE mit AND-Logik.
+              Diffix Fir unterstützt eine sehr begrenzte, aber nützliche Teilmenge von SQL. Es unterstützt numeric, text
+              und datetime Datentypen. Damit können Sie mehrspaltige Histogramme erstellen von Zählungen, Summen und
+              Durchschnittswerten erstellen. Es unterstützt grundlegende Verallgemeinerungsfunktionen (z. B. Rundung
+              numerischer Spalten und Teilstring-Auswahl von Textspalten). Es unterstützt JOIN und WHERE mit AND-Logik.
             </svelte:fragment>
           </Trans>
         </FAQItem>
-
 
         <FAQItem
           {addToToc}
@@ -321,9 +327,8 @@
               exception. The data quality of Diffix is similar to data released by many national statistics offices
               (e.g. census data), and usually far exceeds that of k-anonymity and Differential Privacy.
               <p class="indent-6">
-                <b>Diffix Dashboards</b> allows the side-by-side comparison of anonymized
-                and non-anonymized data.
-                This way, you can observe Diffix' data quality for yourself.
+                <b>Diffix Dashboards</b> allows the side-by-side comparison of anonymized and non-anonymized data. This
+                way, you can observe Diffix' data quality for yourself.
                 <b>Diffix for PostgreSQL</b> can display the magnitude of noise added to each output bin.
               </p>
             </svelte:fragment>
@@ -333,10 +338,8 @@
               nationalen Statistikämtern veröffentlichten Daten (z. B. Volkszählungsdaten) und übertrifft in der Regel
               bei weitem die Qualität von k-Anonymität und Differential Privacy.
               <p class="indent-6">
-                <b>Diffix Dashboards</b> ermöglicht den direkten Vergleich anonymisierter
-                 und nicht anonymisierte Daten.
-                Auf diese Weise können
-                Sie die Datenqualität von Diffix selbst festlegen.
+                <b>Diffix Dashboards</b> ermöglicht den direkten Vergleich anonymisierter und nicht anonymisierte Daten.
+                Auf diese Weise können Sie die Datenqualität von Diffix selbst festlegen.
                 <b>Diffix für PostgreSQL</b> kann das Ausmaß des Rauschens anzeigen, das zu jeder Ausgabe-Klasse hinzugefügt
                 wurde.
               </p>
@@ -384,7 +387,7 @@
               generalization as needed.
             </svelte:fragment>
             <svelte:fragment slot="de">
-              Der vertrauenswürdige Modus ist einfacher zu verwenden. Er bietet mehr Abfragefunktionen und in Diffix 
+              Der vertrauenswürdige Modus ist einfacher zu verwenden. Er bietet mehr Abfragefunktionen und in Diffix
               Dashboards kann ein Analyst die anonymisierten Daten und die Originaldaten nebeneinander vergleichen. Auf
               diese Weise weiß der Analytiker genau, wie stark die Daten durch Unterdrückung und Rauschen verzerrt sind,
               und er kann die Spaltenauswahl und Verallgemeinerung nach Bedarf anpassen.
