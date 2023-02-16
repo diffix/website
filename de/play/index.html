@@ -11,15 +11,15 @@
     Open Diffix - Ausprobieren
   </title><link rel="canonical" href="https://www.open-diffix.org/de/play/" data-svelte="svelte-1qaks2b"><script async src="//platform.twitter.com/widgets.js" charset="utf-8" data-svelte="svelte-1qaks2b"></script>
 	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-210a0798.css">
-	<link rel="modulepreload" href="/_app/start-f52e6427.js">
+	<link rel="modulepreload" href="/_app/start-2752c787.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-cf06609c.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-282a06e8.js">
 	<link rel="modulepreload" href="/_app/chunks/ackee-c5a4a257.js">
 	<link rel="modulepreload" href="/_app/chunks/Trans-d72ba112.js">
 	<link rel="modulepreload" href="/_app/chunks/Link-e657120f.js">
-	<link rel="modulepreload" href="/_app/pages/_...lang_/play.svelte-bdd36cd7.js">
+	<link rel="modulepreload" href="/_app/pages/_...lang_/play.svelte-2e7078a7.js">
 	<link rel="modulepreload" href="/_app/chunks/FAQItem-20ac4842.js"><script type="module">
-		import { start } from "/_app/start-f52e6427.js";
+		import { start } from "/_app/start-2752c787.js";
 		start({
 			target: document.querySelector("#opendiffix"),
 			paths: {"base":"","assets":""},
@@ -32,7 +32,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-282a06e8.js"),
-						import("/_app/pages/_...lang_/play.svelte-bdd36cd7.js")
+						import("/_app/pages/_...lang_/play.svelte-2e7078a7.js")
 				],
 				url: new URL("http://sveltekit-prerender/de/play/"),
 				params: {lang:"de"}
@@ -88,7 +88,7 @@
               einzurichten und die Erweiterung <b>pg_diffix</b> zu installieren. In erster Linie betreibt das Open
               Diffix Projekt einen PostgreSQL Server mit <b>pg_diffix</b> und mehreren repräsentativen Datenbanken. Es
               gibt mehrere Möglichkeiten, mit unserem PostgreSQL-Dienst zu interagieren. Alternativ können Sie
-              <b>Diffix für Desktop</b>
+              <b>Diffix Dashboards</b>
               <a class="text-gray-800 underline hover:text-gray-500" href="/de/download/">herunterladen</a>
               und testen es mit den von uns bereitgestellten CSV-Beispieldatensätzen oder mit Ihrem eigenen CSV-Datensatz.
               <p class="mt-4">Schreiben Sie uns (<a class="text-gray-800 underline hover:text-gray-500" href="mailto:hello@open-diffix.org">hello@open-diffix.org</a>) wenn Sie
@@ -105,9 +105,13 @@
                   </a>
                   (für die SQL-Verwendung von <b>pg_diffix</b>, der PostgreSQL-Diffix-Erweiterung)
                 </li>
+            <li><a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/dashboards/blob/master/docs/en/operation.md">Online-Anleitung
+                  </a>
+                  für den Betrieb von Diffix Dashboards (auch in der Anwendung verfügbar).
+                </li>
             <li><a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/desktop/blob/master/docs/en/operation.md">Online-Anleitung
                   </a>
-                  für den Betrieb von Diffix für Desktop (auch in der Anwendung selbst verfügbar).
+                  für den Betrieb von (Legacy) Diffix für Desktop (auch in der Anwendung verfügbar).
                 </li>
             <li><a class="text-gray-800 underline hover:text-gray-500" href="https://training.open-diffix.org/training">Die Online-Schulungs-App</a>, hat eine
                   integrierte Nutzungsdokumentation.
@@ -284,34 +288,6 @@
                 jedes Beispiel durchzugehen.
               </p></p></section>
 
-        <section><div id="metabase" class="relative -top-1 md:-top-20"></div>
-  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">nach oben</a>
-  <h2 class="max-w-lg text-2xl font-semibold mt-px">Metabase</h2>
-
-  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3"><a class="text-gray-800 underline hover:text-gray-500" href="https://www.metabase.com">Metabase</a>
-              ist ein beliebtes Open-Source Business Intelligence Tool zur Datenvisualisierung. Es verwendet SQL für den
-              Datenzugriff und arbeitet mit einer Vielzahl von Backend-Datenbanktechnologien wie PostgreSQL und
-              <b>pg_diffix</b>. Metabase unterstützt Datenvisualisierung und Dashboards.
-            
-          <p class="mt-6"><img src="/figs/metabase-screenshot.png" width="500"></p>
-          <p class="mt-6">Wir betreiben einen Metabase-Server, der sich mit der Moers-Datenbank verbindet. Die Anmeldedaten sind:</p>
-          <div class="hidden sm:block shadow rounded-lg -mx-2 p-2 mt-4"><table class="table-fixed text-sm w-full"><thead class="text-left"><tr><th class="w-2/12">URL</th>
-                  <th class="w-3/12">User</th>
-                  <th class="w-2/12">Password</th></tr></thead>
-              <tbody class="border-t-2"><tr class="hover:bg-gray-50"><td><a class="text-gray-800 underline hover:text-gray-500" href="https://metabase.open-diffix.org/">metabase.open-diffix.org</a></td>
-                  <td>participant@moershackday.de </td>
-                  <td>moershackday2022 </td></tr></tbody></table></div>
-
-          <p class="mt-4">Die Metabase bietet zwei Möglichkeiten zum Schreiben von Abfragen: über einen GUI-Query-Builder und mit
-                SQL. Der Query-Builder setzt die Auswahl des Benutzers in SQL um. Da Diffix eine eingeschränkte
-                Teilmenge von SQL verwendet, funktioniert nicht der gesamte Query-Builder mit dem <b>pg_diffix</b>-Backend. In der Praxis sollte der Benutzer erwarten, dass er SQL-Abfragen schreibt, wenn er Metabase
-                mit Diffix verwendet.
-              </p>
-          <p class="mt-4">Wir haben eine
-                <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/moers-hackday/blob/main/metabase.md">kurze Anleitung geschrieben
-                </a>, wie man das macht vorbereitet.
-              </p></p></section>
-
         <section><div id="sql-clients" class="relative -top-1 md:-top-20"></div>
   <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">nach oben</a>
   <h2 class="max-w-lg text-2xl font-semibold mt-px">SQL-Clients</h2>
@@ -338,20 +314,49 @@
               von psycopg2 und ipython-sql, das Sie als Vorlage für die Erstellung Ihres eigenen Notebooks verwenden können.
             </p></section>
 
-        <section><div id="diffix-für-desktop" class="relative -top-1 md:-top-20"></div>
+        <section><div id="diffix-dashboards" class="relative -top-1 md:-top-20"></div>
   <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">nach oben</a>
-  <h2 class="max-w-lg text-2xl font-semibold mt-px">Diffix für Desktop</h2>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Diffix Dashboards</h2>
 
   <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Wenn Sie es vorziehen, mit Ihren eigenen Daten zu experimentieren, ist eine schnelle und einfache
-              Möglichkeit, <a class="text-gray-800 underline hover:text-gray-500" href="/de/download/">Diffix für Desktop</a>
-              zu benutzen, eine eigenständige Anwendung für Windows, Mac und Linux, die mit einer lokalen CSV-Datei arbeitet.
+              Möglichkeit, <a class="text-gray-800 underline hover:text-gray-500" href="/de/download/">Diffix Dashboards</a>
+              zu benutzen, eine eigenständige Anwendung für Windows die mit einer lokalen CSV-Datei arbeitet.
             
 
           <p class="mt-6"><img src="/figs/desktop-screenshot.png" width="500"></p>
-          <p class="mt-6">Diffix für Desktop benötigt kein SQL, sondern arbeitet mit einer einfachen grafischen Benutzeroberfläche
-                zur Abfrageerstellung. Es verfügt nicht über alle SQL-Funktionen von <b>pg_diffix</b>, ist aber sehr
-                einfach zu bedienen. Wenn Sie keine eigenen Daten haben, mit denen Sie experimentieren können, bieten
-                wir Ihnen eine Reihe von CSV-Beispieldatensätzen zum <a class="text-gray-800 underline hover:text-gray-500" href="/de/download/">Herunterladen</a> an.
+          <p class="mt-6">Diffix Dashboards bündelt das Business Intelligence-Tool <a class="text-gray-800 underline hover:text-gray-500" href="metabase.com">Metabase</a> mit
+                <b>pg_diffix</b>. Es erfordert kein SQL, sondern kann mit einem einfachen GUI-Abfragegenerator verwendet
+                werden. Es unterstützt auch das Schreiben von Abfragen in SQL. Wenn Sie keine eigenen Daten haben, mit
+                denen Sie experimentieren können, bieten wir Ihnen eine Reihe von CSV-Beispieldatensätzen zum
+                <a class="text-gray-800 underline hover:text-gray-500" href="/de/download/">Herunterladen</a> an.
+              </p></p></section>
+
+        <section><div id="metabase" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">nach oben</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Metabase</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3"><a class="text-gray-800 underline hover:text-gray-500" href="https://www.metabase.com">Metabase</a>
+              ist ein beliebtes Open-Source Business Intelligence Tool zur Datenvisualisierung. Es verwendet SQL für den
+              Datenzugriff und arbeitet mit einer Vielzahl von Backend-Datenbanktechnologien wie PostgreSQL und
+              <b>pg_diffix</b>. Metabase unterstützt Datenvisualisierung und Dashboards.
+            
+          <p class="mt-6"><img src="/figs/metabase-screenshot.png" width="500"></p>
+          <p class="mt-6">Wir betreiben einen Metabase-Server, der sich mit der Moers-Datenbank verbindet. Die Anmeldedaten sind:</p>
+          <div class="hidden sm:block shadow rounded-lg -mx-2 p-2 mt-4"><table class="table-fixed text-sm w-full"><thead class="text-left"><tr><th class="w-2/12">URL</th>
+                  <th class="w-3/12">User</th>
+                  <th class="w-2/12">Password</th></tr></thead>
+              <tbody class="border-t-2"><tr class="hover:bg-gray-50"><td><a class="text-gray-800 underline hover:text-gray-500" href="https://metabase.open-diffix.org/">metabase.open-diffix.org</a></td>
+                  <td>participant@moershackday.de </td>
+                  <td>moershackday2022 </td></tr></tbody></table></div>
+
+          <p class="mt-4">Die Metabase bietet zwei Möglichkeiten zum Schreiben von Abfragen: über einen GUI-Query-Builder und mit
+                SQL. Der Query-Builder setzt die Auswahl des Benutzers in SQL um. Da Diffix eine eingeschränkte
+                Teilmenge von SQL verwendet, funktioniert nicht der gesamte Query-Builder mit dem <b>pg_diffix</b>-Backend. In der Praxis sollte der Benutzer erwarten, dass er SQL-Abfragen schreibt, wenn er Metabase
+                mit Diffix verwendet.
+              </p>
+          <p class="mt-4">Wir haben eine
+                <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/moers-hackday/blob/main/metabase.md">kurze Anleitung geschrieben
+                </a>, wie man das macht vorbereitet.
               </p></p></section>
 
         <section><div id="ein-visueller-vergleich" class="relative -top-1 md:-top-20"></div>

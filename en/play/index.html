@@ -11,15 +11,15 @@
     Open Diffix - Play
   </title><link rel="canonical" href="https://www.open-diffix.org/en/play/" data-svelte="svelte-1qaks2b"><script async src="//platform.twitter.com/widgets.js" charset="utf-8" data-svelte="svelte-1qaks2b"></script>
 	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-210a0798.css">
-	<link rel="modulepreload" href="/_app/start-f52e6427.js">
+	<link rel="modulepreload" href="/_app/start-2752c787.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-cf06609c.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-282a06e8.js">
 	<link rel="modulepreload" href="/_app/chunks/ackee-c5a4a257.js">
 	<link rel="modulepreload" href="/_app/chunks/Trans-d72ba112.js">
 	<link rel="modulepreload" href="/_app/chunks/Link-e657120f.js">
-	<link rel="modulepreload" href="/_app/pages/_...lang_/play.svelte-bdd36cd7.js">
+	<link rel="modulepreload" href="/_app/pages/_...lang_/play.svelte-2e7078a7.js">
 	<link rel="modulepreload" href="/_app/chunks/FAQItem-20ac4842.js"><script type="module">
-		import { start } from "/_app/start-f52e6427.js";
+		import { start } from "/_app/start-2752c787.js";
 		start({
 			target: document.querySelector("#opendiffix"),
 			paths: {"base":"","assets":""},
@@ -32,7 +32,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-282a06e8.js"),
-						import("/_app/pages/_...lang_/play.svelte-bdd36cd7.js")
+						import("/_app/pages/_...lang_/play.svelte-2e7078a7.js")
 				],
 				url: new URL("http://sveltekit-prerender/en/play/"),
 				params: {lang:"en"}
@@ -89,7 +89,7 @@
               PostgreSQL server with <b>pg_diffix</b> and several representative databases. There are several ways to
               interact with our PostgreSQL service. Alternatively you can
               <a class="text-gray-800 underline hover:text-gray-500" href="/en/download/">download</a>
-              <b>Diffix for Desktop</b> and try it on sample CSV datasets we provide, or on your own CSV dataset.
+              <b>Diffix Dashboards</b> and try it on sample CSV datasets we provide, or on your own CSV dataset.
               <p class="mt-4">As always, you can contact us at
                 <a class="text-gray-800 underline hover:text-gray-500" href="mailto:hello@open-diffix.org">hello@open-diffix.org</a> if you have questions or comments.
               </p></p></section>
@@ -101,11 +101,15 @@
   <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3"><h2 class="block text-1xl w-full font-bold">How to use Diffix</h2>
           <ul class="mt-2 ml-8 space-y-1.0 list-disc list-outside"><li><a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/pg_diffix/blob/master/docs/analyst_guide.md">Analyst Guide
                   </a>
-                  (for SQL usage of pg_diffix, the PostgreSQL Diffix extension).
+                  (for SQL usage of <b>pg_diffix</b>, the PostgreSQL Diffix extension).
+                </li>
+            <li><a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/dashboards/blob/master/docs/en/operation.md">Online instructions
+                  </a>
+                  for Diffix Dashboards operation (also available in the application itself).
                 </li>
             <li><a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/desktop/blob/master/docs/en/operation.md">Online instructions
                   </a>
-                  for Diffix for Desktop operation (also available in the application itself).
+                  for (legacy) Diffix for Desktop operation (also available in the application itself).
                 </li>
             <li>The online
                   <a class="text-gray-800 underline hover:text-gray-500" href="https://training.open-diffix.org/training">Training App</a>
@@ -280,6 +284,48 @@
                 to run through every example.
               </p></p></section>
 
+        <section><div id="sql-clients" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">SQL Clients</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">In principle, any SQL client that supports PostgreSQL should work with <b>pg_diffix</b>. In practice, each
+              SQL client has its own idiosyncrasies in how it explores the database, and so not all SQL clients work
+              with <b>pg_diffix</b>.
+            
+
+          <p class="mt-6"><img src="/figs/dbeaver-screenshot.png" width="500"></p>
+          <p class="mt-6">We have successfully used two SQL clients with <b>pg_diffix</b>,
+                <a class="text-gray-800 underline hover:text-gray-500" href="https://www.pgadmin.org/">pgAdmin</a>
+                and
+                <a class="text-gray-800 underline hover:text-gray-500" href="https://dbeaver.io/">DBeaver</a></p></p></section>
+
+        <section><div id="software-apis-and-notebooks" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Software APIs and Notebooks</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Any software with a PostgreSQL interface can work with <b>pg_diffix</b>. We have prepared
+              <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/banking.ipynb">a demo notebook
+              </a>
+              (see <a class="text-gray-800 underline hover:text-gray-500" href="/en/demo/">here</a> for a description) using psycopg2 and ipython-sql that you may use
+              as a template for building your own notebook.
+            </p></section>
+
+        <section><div id="diffix-dashboards" class="relative -top-1 md:-top-20"></div>
+  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
+  <h2 class="max-w-lg text-2xl font-semibold mt-px">Diffix Dashboards</h2>
+
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">If you prefer to play with your own data, one quick and easy way to get started is with
+              <a class="text-gray-800 underline hover:text-gray-500" href="/en/download/">Diffix Dashboards</a>, a standalone desktop for Windows that works with a
+              local CSV file.
+            
+
+          <p class="mt-6"><img src="/figs/desktop-screenshot.png" width="500"></p>
+          <p class="mt-6">Diffix Dashboards bundles the Business Intelligence tool <a class="text-gray-800 underline hover:text-gray-500" href="metabase.com">Metabase</a> with
+                <b>pg_diffix</b>. It does not require SQL, but rather can be used with a simple GUI query-builder. It
+                also supports writing queries in SQL. If you don&#39;t have your own data to play with, we offer a couple of
+                sample CSV datasets from the <a class="text-gray-800 underline hover:text-gray-500" href="/en/download/">download</a> page.
+              </p></p></section>
+
         <section><div id="metabase" class="relative -top-1 md:-top-20"></div>
   <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
   <h2 class="max-w-lg text-2xl font-semibold mt-px">Metabase</h2>
@@ -306,47 +352,6 @@
           <p class="mt-4">We have prepared
                 <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/moers-hackday/blob/main/metabase.md">brief instructions</a>
                 on how to do this.
-              </p></p></section>
-
-        <section><div id="sql-clients" class="relative -top-1 md:-top-20"></div>
-  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
-  <h2 class="max-w-lg text-2xl font-semibold mt-px">SQL Clients</h2>
-
-  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">In principle, any SQL client that supports PostgreSQL should work with <b>pg_diffix</b>. In practice, each
-              SQL client has its own idiosynchrocies in how it explores the database, and so not all SQL clients work
-              with <b>pg_diffix</b>.
-            
-
-          <p class="mt-6"><img src="/figs/dbeaver-screenshot.png" width="500"></p>
-          <p class="mt-6">We have successfully used two SQL clients with <b>pg_diffix</b>,
-                <a class="text-gray-800 underline hover:text-gray-500" href="https://www.pgadmin.org/">pgAdmin</a>
-                and
-                <a class="text-gray-800 underline hover:text-gray-500" href="https://dbeaver.io/">DBeaver</a></p></p></section>
-
-        <section><div id="software-apis-and-notebooks" class="relative -top-1 md:-top-20"></div>
-  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
-  <h2 class="max-w-lg text-2xl font-semibold mt-px">Software APIs and Notebooks</h2>
-
-  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Any software with a PostgreSQL interface can work with <b>pg_diffix</b>. We have prepared
-              <a class="text-gray-800 underline hover:text-gray-500" href="https://github.com/diffix/pg_diffix/blob/release/elm/docs/banking.ipynb">a demo notebook
-              </a>
-              (see <a class="text-gray-800 underline hover:text-gray-500" href="/en/demo/">here</a> for a description) using psycopg2 and ipython-sql that you may use
-              as a template for building your own notebook.
-            </p></section>
-
-        <section><div id="diffix-for-desktop" class="relative -top-1 md:-top-20"></div>
-  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
-  <h2 class="max-w-lg text-2xl font-semibold mt-px">Diffix for Desktop</h2>
-
-  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">If you prefer to play with your own data, one quick and easy way to get started is with
-              <a class="text-gray-800 underline hover:text-gray-500" href="/en/download/">Diffix for Desktop</a>, a standalone desktop for Windows, Mac, and Linux
-              that works with a local CSV file.
-            
-
-          <p class="mt-6"><img src="/figs/desktop-screenshot.png" width="500"></p>
-          <p class="mt-6">Diffix for Desktop does not require SQL, but rather works with a simple GUI query-builder. It lacks all
-                of the SQL features of <b>pg_diffix</b>, but is very easy to use. If you don&#39;t have your own data to
-                play with, we offer a couple of sample CSV datasets from the <a class="text-gray-800 underline hover:text-gray-500" href="/en/download/">download</a> page.
               </p></p></section>
 
         <section><div id="a-visual-comparison" class="relative -top-1 md:-top-20"></div>
