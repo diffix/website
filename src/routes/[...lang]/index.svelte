@@ -26,8 +26,18 @@
     })}
   </h2>
   <h3 class="font-bold mx-12 mt-8 text-xl text-center">
-    <span class="text-red-500">NEW!</span>
-    <Link href="/download/">Diffix Dashboards</Link> released! <Link href="/blog/">Learn more</Link>.
+    <Trans>
+      <svelte:fragment slot="en">
+        <span class="text-red-500">NEW!</span>
+        <Link href="/en/download/">Diffix Dashboards</Link> released!
+        <Link href="/en/blog/">Learn more</Link>.
+      </svelte:fragment>
+      <svelte:fragment slot="de">
+        <span class="text-red-500">NEU!</span>
+        <Link href="/en/download/">Diffix Dashboards</Link> veröffentlicht!
+        <Link href="/de/blog/">Erfahren Sie mehr</Link>.
+      </svelte:fragment>
+    </Trans>
   </h3>
 </header>
 
@@ -89,8 +99,8 @@
     </p>
   </div>
   <div class="mx-1 mt-8 text-base lg:mt-0 lg:mx-0 lg:w-3/5">
-    <div class="overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg">
-      <img src="/dashboards-home.png" />
+    <div class="rounded-lg shadow-lg">
+      <img src="/dashboards-home.png" alt="Diffix Dashboards" />
     </div>
   </div>
 </div>
