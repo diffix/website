@@ -25,7 +25,75 @@
       de: "Starke Anonymisierung für strukturierte Daten. Offen. Frei."
     })}
   </h2>
+   <h3 class="font-bold mx-12 mt-8 text-xl text-center">
+    <span class="text-red-500">NEW!</span>
+    <Link href="/download/">Diffix Dashboards</Link> released! <Link href="/blog/">Learn more</Link>.
+  </h3>
 </header>
+
+<div class="max-w-6xl px-4 mx-auto mt-20 text-lg lg:flex">
+  <div class="flex-col justify-center max-w-lg mx-auto lg:w-2/5 lg:pr-10 lg:pb-16 lg:flex">
+    <p class="mt-4 text-2xl font-semibold">
+      {$trans({
+        en: "Diffix Dashboards",
+        de: "Diffix Dashboards"
+      })}
+    </p>
+    <p class="mt-2">
+      {$trans({
+        en: "Desktop app for unprecedented ease-of-use.",
+        de: "Desktopanwendung mit hoher Benutzerfreundlichkeit."
+      })}
+    </p>
+    <p class="mt-2">
+      {$trans({
+        en: "Bundled with Metabase data visualization.",
+        de: "Gebündelt mit Metabase Datenvisualisierung."
+      })}
+    </p>
+    <ul class="list-disc ml-8 mt-1">
+      <li>
+        {$trans({
+          en: "Import CSV table, export anonymized data",
+          de: "CSV-Tabelle importieren, anonymisierte Daten exportieren"
+        })}
+      </li>
+      <li>
+        {$trans({
+          en: "UX-based or SQL-based query build",
+          de: "UX-basierter oder SQL-basierter Abfrageaufbau"
+        })}
+      </li>
+      <li>
+        {$trans({
+          en: "Visual analytics with Metabase",
+          de: "Visuelle Analyse mit Metabase"
+        })}
+      </li>
+      <li>
+        {$trans({
+          en: "Compare anonymized and original data for quality",
+          de: "Vergleichen Sie anonymisierte und Originaldaten auf Qualität"
+        })}
+      </li>
+    </ul>
+    <p class="mt-2">
+      <Trans>
+        <svelte:fragment slot="en">
+          <Link href="/en/download/">Download Diffix Dashboards</Link>.
+        </svelte:fragment>
+        <svelte:fragment slot="de">
+          <Link href="/de/download/">Diffix Dashboards herunterladen</Link>.
+        </svelte:fragment>
+      </Trans>
+    </p>
+  </div>
+  <div class="mx-1 mt-8 text-base lg:mt-0 lg:mx-0 lg:w-3/5">
+    <div class="overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg">
+        <img src="/dashboards-home.png" >
+    </div>
+  </div>
+</div>
 
 <div class="max-w-6xl px-4 mx-auto mt-20 text-lg lg:flex">
   <div class="flex-col justify-center max-w-lg mx-auto lg:w-2/5 lg:pr-10 lg:pb-16 lg:flex">
@@ -85,78 +153,6 @@
     </p>
   </div>
   <Terminal />
-</div>
-
-<div class="max-w-6xl px-4 mx-auto mt-20 text-lg lg:flex">
-  <div class="flex-col justify-center max-w-lg mx-auto lg:w-2/5 lg:pr-10 lg:pb-16 lg:flex">
-    <p class="mt-4 text-2xl font-semibold">
-      {$trans({
-        en: "Diffix for Desktop",
-        de: "Diffix als Desktopanwendung"
-      })}
-    </p>
-    <p class="mt-2">
-      {$trans({
-        en: "Desktop app for unprecedented ease-of-use.",
-        de: "Desktopanwendung mit hoher Benutzerfreundlichkeit."
-      })}
-    </p>
-    <p class="mt-2">
-      {$trans({
-        en: "Built on the .NET Diffix query engine.",
-        de: "Basiert auf der .NET Diffix query engine."
-      })}
-    </p>
-    <ul class="list-disc ml-8 mt-1">
-      <li>
-        {$trans({
-          en: "Import data from CSV",
-          de: "CSV-Dateien importieren"
-        })}
-      </li>
-      <li>
-        {$trans({
-          en: "Select columns and bin sizes",
-          de: "Spalten und Klassengrößen bestimmen"
-        })}
-      </li>
-      <li>
-        {$trans({
-          en: "Examine data quality",
-          de: "Datenqualität prüfen"
-        })}
-      </li>
-      <li>
-        {$trans({
-          en: "Export anonymized data as CSV",
-          de: "Exportieren von anonymisierten Daten als CSV"
-        })}
-      </li>
-    </ul>
-    <p class="mt-2">
-      <Trans>
-        <svelte:fragment slot="en">
-          <Link href="/en/download/">Download Diffix for Desktop</Link>.
-        </svelte:fragment>
-        <svelte:fragment slot="de">
-          <Link href="/de/download/">Diffix für Desktop herunterladen</Link>.
-        </svelte:fragment>
-      </Trans>
-    </p>
-  </div>
-  <div class="mx-1 mt-8 text-base lg:mt-0 lg:mx-0 lg:w-3/5">
-    <div class="overflow-hidden text-white bg-gray-900 rounded-lg shadow-lg">
-      <div class="flex px-2 pt-2 pb-2 transition-colors border-b border-gray-700">
-        <div class="w-3 h-3 bg-red-500 rounded-full hover:bg-red-400" />
-        <div class="w-3 h-3 ml-1 bg-yellow-500 rounded-full hover:bg-yellow-400" />
-        <div class="w-3 h-3 ml-1 bg-green-500 rounded-full hover:bg-green-400" />
-      </div>
-      <video width="1920" height="1080" autoplay controls muted loop>
-        <source src="/short_demo.webm" type="video/webm" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </div>
 </div>
 
 <div class="flex flex-col items-center max-w-xl px-4 mx-auto mt-32 space-y-4 text-lg">
