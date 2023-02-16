@@ -95,20 +95,19 @@
           <Trans>
             <svelte:fragment slot="en">
               Open Diffix is a project to make Diffix anonymization free and open. The Open Diffix project develops two
-              Diffix query engine implementations, one based on .NET and the other a PostgreSQL extension called <b
-                >pg_diffix</b
-              >. As a PostgreSQL extension, <b>pg_diffix</b> offers the same benefits of PostgreSQL: scale, performance,
-              deployment, and access control features. Open Diffix can also be run as a stand-alone desktop application,
+              Diffix query engine implementations, one based on .NET and the other a PostgreSQL extension called
+              <b>pg_diffix</b>. As a PostgreSQL extension, <b>pg_diffix</b> offers the same benefits of PostgreSQL:
+              scale, performance, deployment, and access control features. Open Diffix can also be run as a stand-alone
+              desktop application,
               <b>Diffix Dashboards</b>. The .NET implementation serves primarily as a reference implementation, but is
-              also used to support the legacy desktop application <b>Diffix for Desktop</b>. Both implentations are
+              also used to support the legacy desktop application <b>Diffix for Desktop</b>. Both implementations are
               strongly anonymous, and satisfy the GDPR definition of anonymity.
             </svelte:fragment>
             <svelte:fragment slot="de">
               Open Diffix ist ein Projekt, das die Diffix-Anonymisierung frei und offen machen soll. Im Rahmen des Open
               Diffix-Projekts werden zwei Diffix-Abfrage-Engine-Implementierungen entwickelt, eine auf der Grundlage von
               .NET und die andere als PostgreSQL-Erweiterung namens <b>pg_diffix</b>. Als PostgreSQL-Erweiterung bietet
-              <b>pg_diffix</b>
-              dieselben Vorteile wie PostgreSQL: Skalierbarkeit, Leistung, Bereitstellung und
+              <b>pg_diffix</b> dieselben Vorteile wie PostgreSQL: Skalierbarkeit, Leistung, Bereitstellung und
               Zugriffssteuerungsfunktionen. Open Diffix kann auch als eigenständige Desktop-Anwendung ausgeführt werden,
               <b>Diffix Dashboards</b>. Die .NET-Implementierung dient in erster Linie als Referenzimplementierung, aber
               wird auch zur Unterstützung der älteren Desktop-Anwendung <b>Diffix for Desktop</b> verwendet. Beide Implementierungen
@@ -165,8 +164,8 @@
               <p class="indent-6">
                 A good overview of Diffix Elm can be found
                 <Link href="/en/blog/diffix-elm-automates-what-statistics-offices-have-been-doing-for-decades/">
-                  here</Link
-                >, with the additional features of Diffix Fir described
+                  here
+                </Link>, with the additional features of Diffix Fir described
                 <Link href="/en/blog/introducing-diffix-fir/">here</Link>.
               </p>
             </svelte:fragment>
@@ -196,17 +195,16 @@
         >
           <Trans>
             <svelte:fragment slot="en">
-              Open Diffix supports <Link href="https://open-diffix.org/download">three implementations</Link> of Diffix Fir,
-              a <b>PostgreSQL extension</b> (pg_diffix), and two stand-alone <b>desktop applications</b>.
+              Open Diffix supports <Link href="/en/download/">three implementations</Link> of Diffix Fir, a
+              <b>PostgreSQL extension</b> (pg_diffix), and two stand-alone <b>desktop applications</b>.
               <p class="indent-6">
                 Diffix for PostgreSQL provides all the benefits of PostgreSQL, allowing development of scalable web
                 back-ends, dashboards, and applications over a standard API with SQL, as well as the use of SQL clients.
               </p>
               <p class="indent-6">
                 Diffix Dashboards is a stand-alone Windows desktop application with data visualization features designed
-                to work with CSV files. It bundles <b>pg_diffix</b> with the open-source Business Intelligence tool <Link
-                  href="https://metabase.com">Metabase</Link
-                >, and offers both GUI-based query building and SQL.
+                to work with CSV files. It bundles <b>pg_diffix</b> with the open-source Business Intelligence tool
+                <Link href="https://metabase.com">Metabase</Link>, and offers both GUI-based query building and SQL.
               </p>
               <p class="indent-6">
                 Diffix for Desktop is built on a .NET implementation of Diffix Fir. It is designed for extreme ease of
@@ -215,8 +213,8 @@
               </p>
             </svelte:fragment>
             <svelte:fragment slot="de">
-              Open Diffix unterstützt <Link href="https://open-diffix.org/download">drei Implementierungen</Link> von Diffix
-              Fir, eine <b>PostgreSQL-Erweiterung</b> (pg_diffix) und zwei eigenständige <b>Desktop-Anwendungen</b>.
+              Open Diffix unterstützt <Link href="/de/download/">drei Implementierungen</Link> von Diffix Fir, eine
+              <b>PostgreSQL-Erweiterung</b> (pg_diffix) und zwei eigenständige <b>Desktop-Anwendungen</b>.
               <p class="indent-6">
                 Diffix for PostgreSQL bietet alle Vorteile von PostgreSQL und ermöglicht die Entwicklung von
                 skalierbaren Web-Backends, Dashboards und Anwendungen über eine Standard-API mit SQL sowie die
@@ -231,7 +229,7 @@
               <p class="indent-6">
                 Diffix für Desktop basiert auf einer .NET-Implementierung von Diffix Fir. Es wurde für eine extrem
                 einfache Installation und Nutzung ausgelegt. Es unterstützt CSV-Tabellen und bietet eine einfache GUI
-                (keine SQL -Kenntnisse erforderlich). Es handelt sich um eine veraltete Anwendung, die anstelle von
+                (keine SQL-Kenntnisse erforderlich). Es handelt sich um eine veraltete Anwendung, die anstelle von
                 Diffix Dashboards wahrscheinlich nicht mehr unterstützt wird.
               </p>
             </svelte:fragment>
