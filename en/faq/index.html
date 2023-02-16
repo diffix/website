@@ -11,15 +11,15 @@
     Open Diffix - FAQ
   </title><link rel="canonical" href="https://www.open-diffix.org/en/faq/" data-svelte="svelte-1qaks2b"><script async src="//platform.twitter.com/widgets.js" charset="utf-8" data-svelte="svelte-1qaks2b"></script>
 	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-210a0798.css">
-	<link rel="modulepreload" href="/_app/start-2752c787.js">
+	<link rel="modulepreload" href="/_app/start-bf95bd79.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-cf06609c.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-282a06e8.js">
 	<link rel="modulepreload" href="/_app/chunks/ackee-c5a4a257.js">
 	<link rel="modulepreload" href="/_app/chunks/Trans-d72ba112.js">
 	<link rel="modulepreload" href="/_app/chunks/Link-e657120f.js">
-	<link rel="modulepreload" href="/_app/pages/_...lang_/faq.svelte-79c09ee6.js">
+	<link rel="modulepreload" href="/_app/pages/_...lang_/faq.svelte-3e770406.js">
 	<link rel="modulepreload" href="/_app/chunks/FAQItem-20ac4842.js"><script type="module">
-		import { start } from "/_app/start-2752c787.js";
+		import { start } from "/_app/start-bf95bd79.js";
 		start({
 			target: document.querySelector("#opendiffix"),
 			paths: {"base":"","assets":""},
@@ -32,7 +32,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-282a06e8.js"),
-						import("/_app/pages/_...lang_/faq.svelte-79c09ee6.js")
+						import("/_app/pages/_...lang_/faq.svelte-3e770406.js")
 				],
 				url: new URL("http://sveltekit-prerender/en/faq/"),
 				params: {lang:"en"}
@@ -85,8 +85,8 @@
   <h2 class="max-w-lg text-2xl font-semibold mt-px">What is Diffix?</h2>
 
   <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Diffix is a bundled set of mechanisms for anonymizing structured data. It was jointly developed by
-              Aircloak GmbH and the Max Planck Institute for Software Systems. Diffix&#39; exploits mechansims that have
-              been in use by national statistics offices for decades:
+              Aircloak GmbH and the Max Planck Institute for Software Systems. Diffix exploits mechansims that have been
+              in use by national statistics offices for decades:
               <b>aggregation</b>, <b>generalization</b>, <b>noise</b>, <b>suppression</b>, and <b>swapping</b>. It
               automatically applies these mechanisms as needed on a query-by-query basis to minimize noise while
               ensuring strong anonymity.
@@ -99,10 +99,13 @@
   <h2 class="max-w-lg text-2xl font-semibold mt-px">What is Open Diffix?</h2>
 
   <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Open Diffix is a project to make Diffix anonymization free and open. The Open Diffix project develops two
-              Diffix query engine implementations, one based on .NET and the other a PostgreSQL extension.
-              <b>Diffix for Desktop</b> is a GUI-based application on the .NET query engine. Diffix for Desktop is aimed
-              towards ease-of-use, while <b>Diffix for PostgreSQL</b> targets higher complexity and scale. Both are strongly
-              anonymous, and satisfy the GDPR definition of anonymity.
+              Diffix query engine implementations, one based on .NET and the other a PostgreSQL extension called
+              <b>pg_diffix</b>. As a PostgreSQL extension, <b>pg_diffix</b> offers the same benefits of PostgreSQL:
+              scale, performance, deployment, and access control features. Open Diffix can also be run as a stand-alone
+              desktop application,
+              <b>Diffix Dashboards</b>. The .NET implementation serves primarily as a reference implementation, but is
+              also used to support the legacy desktop application <b>Diffix for Desktop</b>. Both implementations are
+              strongly anonymous, and satisfy the GDPR definition of anonymity.
             </p></section>
 
         <section><div id="what-is-diffix-fir" class="relative -top-1 md:-top-20"></div>
@@ -113,7 +116,8 @@
               GmbH. Diffix Elm was the first version developed by the Open Diffix project. Compared to earlier versions,
               Diffix Elm represented a kind of &quot;complexity reset&quot;. It is much <b>simpler</b>, <b>easier to use</b>, and
               easier to analyze (though less feature rich).
-              <p class="indent-6">The latest version is Diffix Fir, which adds several new features including sum, average, and WHERE.
+              <p class="indent-6">The latest version is Diffix Fir, which adds several new features including sum, average, and simple
+                WHERE expressions.
               </p></p></section>
 
         <section><div id="where-can-i-learn-about-diffix-fir" class="relative -top-1 md:-top-20"></div>
@@ -135,13 +139,18 @@
   <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
   <h2 class="max-w-lg text-2xl font-semibold mt-px">How is Diffix Fir deployed?</h2>
 
-  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Open Diffix supports <a class="text-gray-800 underline hover:text-gray-500" href="https://open-diffix.org/download">two implementations</a> of Diffix Fir,
-              a <b>PostgreSQL extension</b> (pg_diffix), and a stand-alone <b>desktop application</b>.
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Open Diffix supports <a class="text-gray-800 underline hover:text-gray-500" href="/en/download/">three implementations</a> of Diffix Fir, a
+              <b>PostgreSQL extension</b> (pg_diffix), and two stand-alone <b>desktop applications</b>.
               <p class="indent-6">Diffix for PostgreSQL provides all the benefits of PostgreSQL, allowing development of scalable web
                 back-ends, dashboards, and applications over a standard API with SQL, as well as the use of SQL clients.
               </p>
+              <p class="indent-6">Diffix Dashboards is a stand-alone Windows desktop application with data visualization features designed
+                to work with CSV files. It bundles <b>pg_diffix</b> with the open-source Business Intelligence tool
+                <a class="text-gray-800 underline hover:text-gray-500" href="https://metabase.com">Metabase</a>, and offers both GUI-based query building and SQL.
+              </p>
               <p class="indent-6">Diffix for Desktop is built on a .NET implementation of Diffix Fir. It is designed for extreme ease of
-                installation and use. It supports CSV tables and a simple GUI (no SQL required).
+                installation and use. It supports CSV tables and a simple GUI (no SQL required). It is a legacy
+                application and will probably no longer be supported in lieu of Diffix Dashboards.
               </p></p></section>
 
         <section><div id="how-does-diffix-compare-with-differential-privacy-and-k-anonymity" class="relative -top-1 md:-top-20"></div>
@@ -170,18 +179,10 @@
   <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
   <h2 class="max-w-lg text-2xl font-semibold mt-px">How much SQL does Diffix Fir support?</h2>
 
-  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Diffix Elm supports a very limited but useful subset of SQL. It lets you build multi-column histograms of
-              counts, sums, and averages. It supports basic generalization functions (e.g. rounding of numeric columns,
-              and substring selection of text columns). It supports WHERE with AND logic.
-            </p></section>
-
-        <section><div id="what-if-i-want-more-sql-features" class="relative -top-1 md:-top-20"></div>
-  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
-  <h2 class="max-w-lg text-2xl font-semibold mt-px">What if I want more SQL features?</h2>
-
-  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Open Diffix is constantly building new SQL features. The next planned version of Diffix (Greenheart) will
-              support JOIN and native timestamp data types. If you require additional features for your use case,
-              contact us at <a class="text-gray-800 underline hover:text-gray-500" href="mailto:hello@open-diffix.org">hello@open-diffix.org</a>.
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Diffix Fir supports a very limited but useful subset of SQL. It supports numeric, text, and datetime data
+              types. It lets you build multi-column histograms of counts, sums, and averages. It supports basic
+              generalization functions (e.g. rounding of numeric columns, and substring selection of text columns). It
+              supports JOIN and WHERE with AND logic.
             </p></section>
 
         <section><div id="what-about-data-quality" class="relative -top-1 md:-top-20"></div>
@@ -191,9 +192,8 @@
   <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">All anonymization mechanisms reduce data quality, by generalizing or distorting, and Diffix is no
               exception. The data quality of Diffix is similar to data released by many national statistics offices
               (e.g. census data), and usually far exceeds that of k-anonymity and Differential Privacy.
-              <p class="indent-6"><b>Diffix for Desktop</b> displays the amount of distortion, both as summary statistics and by
-                displaying the original and anonymized data side-by-side. This way, you can observe Diffix&#39; data quality
-                for yourself.
+              <p class="indent-6"><b>Diffix Dashboards</b> allows the side-by-side comparison of anonymized and non-anonymized data. This
+                way, you can observe Diffix&#39; data quality for yourself.
                 <b>Diffix for PostgreSQL</b> can display the magnitude of noise added to each output bin.
               </p></p></section>
 
@@ -211,7 +211,7 @@
   <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">To the top</a>
   <h2 class="max-w-lg text-2xl font-semibold mt-px">Why wouldn&#39;t I always use Untrusted Mode?</h2>
 
-  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Trusted Mode is easier to use. It has more query features, and in Diffix for Desktop it allows an analyst
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Trusted Mode is easier to use. It has more query features, and in Diffix Dashboards it allows an analyst
               to view the anonymized and original data side-by-side. In this way the analyst knows exactly how much the
               data is distorted through suppression and noise, and can more easily adjust column selection and
               generalization as needed.

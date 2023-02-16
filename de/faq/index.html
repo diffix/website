@@ -11,15 +11,15 @@
     Open Diffix - FAQ
   </title><link rel="canonical" href="https://www.open-diffix.org/de/faq/" data-svelte="svelte-1qaks2b"><script async src="//platform.twitter.com/widgets.js" charset="utf-8" data-svelte="svelte-1qaks2b"></script>
 	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-210a0798.css">
-	<link rel="modulepreload" href="/_app/start-2752c787.js">
+	<link rel="modulepreload" href="/_app/start-bf95bd79.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-cf06609c.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-282a06e8.js">
 	<link rel="modulepreload" href="/_app/chunks/ackee-c5a4a257.js">
 	<link rel="modulepreload" href="/_app/chunks/Trans-d72ba112.js">
 	<link rel="modulepreload" href="/_app/chunks/Link-e657120f.js">
-	<link rel="modulepreload" href="/_app/pages/_...lang_/faq.svelte-79c09ee6.js">
+	<link rel="modulepreload" href="/_app/pages/_...lang_/faq.svelte-3e770406.js">
 	<link rel="modulepreload" href="/_app/chunks/FAQItem-20ac4842.js"><script type="module">
-		import { start } from "/_app/start-2752c787.js";
+		import { start } from "/_app/start-bf95bd79.js";
 		start({
 			target: document.querySelector("#opendiffix"),
 			paths: {"base":"","assets":""},
@@ -32,7 +32,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-282a06e8.js"),
-						import("/_app/pages/_...lang_/faq.svelte-79c09ee6.js")
+						import("/_app/pages/_...lang_/faq.svelte-3e770406.js")
 				],
 				url: new URL("http://sveltekit-prerender/de/faq/"),
 				params: {lang:"de"}
@@ -85,7 +85,7 @@
   <h2 class="max-w-lg text-2xl font-semibold mt-px">Was ist Diffix?</h2>
 
   <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Diffix ist eine Zusammenstellung von Mechanismen zur Anonymisierung strukturierter Daten. Es wurde
-              gemeinsam entwickelt von Aircloak GmbH und dem Max-Planck-Institut für Softwaresysteme entwickelt. Diffix&#39;
+              gemeinsam entwickelt von Aircloak GmbH und dem Max-Planck-Institut für Softwaresysteme entwickelt. Diffix
               nutzt Mechanismen, die von den nationalen Statistikämtern seit Jahrzehnten verwendet werden:
               <b>Aggregation</b>, <b>Generalisierung</b>, <b>Rauschen</b>, <b>Unterdrückung</b> und <b>Vertauschung</b>.
               Es wendet diese Mechanismen bei Bedarf automatisch auf jede einzelne Abfrage an, um das Rauschen zu
@@ -100,10 +100,12 @@
 
   <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Open Diffix ist ein Projekt, das die Diffix-Anonymisierung frei und offen machen soll. Im Rahmen des Open
               Diffix-Projekts werden zwei Diffix-Abfrage-Engine-Implementierungen entwickelt, eine auf der Grundlage von
-              .NET und die andere als PostgreSQL-Erweiterung.
-              <b>Diffix für Desktop</b> ist eine GUI-basierte Anwendung auf der .NET-Abfrage-Engine. Diffix for Desktop
-              zielt auf eine einfache Bedienung ab, während <b>Diffix for PostgreSQL</b> auf eine höhere Komplexität und
-              Skalierung abzielt. Beide sind stark anonym und erfüllen die GDPR-Definition von Anonymität.
+              .NET und die andere als PostgreSQL-Erweiterung namens <b>pg_diffix</b>. Als PostgreSQL-Erweiterung bietet
+              <b>pg_diffix</b> dieselben Vorteile wie PostgreSQL: Skalierbarkeit, Leistung, Bereitstellung und
+              Zugriffssteuerungsfunktionen. Open Diffix kann auch als eigenständige Desktop-Anwendung ausgeführt werden,
+              <b>Diffix Dashboards</b>. Die .NET-Implementierung dient in erster Linie als Referenzimplementierung, aber
+              wird auch zur Unterstützung der älteren Desktop-Anwendung <b>Diffix for Desktop</b> verwendet. Beide Implementierungen
+              sind stark anonym und erfüllen die GDPR-Definition von Anonymität.
             </p></section>
 
         <section><div id="was-ist-diffix-fir" class="relative -top-1 md:-top-20"></div>
@@ -137,15 +139,21 @@
   <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">nach oben</a>
   <h2 class="max-w-lg text-2xl font-semibold mt-px">Wie wird Diffix Fir eingesetzt?</h2>
 
-  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Open Diffix unterstützt <a class="text-gray-800 underline hover:text-gray-500" href="https://open-diffix.org/download">zwei Implementierungen</a> von Diffix
-              Fir, eine <b>PostgreSQL-Erweiterung</b> (pg_diffix) und eine eigenständige <b>Desktop-Anwendung</b>.
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Open Diffix unterstützt <a class="text-gray-800 underline hover:text-gray-500" href="/de/download/">drei Implementierungen</a> von Diffix Fir, eine
+              <b>PostgreSQL-Erweiterung</b> (pg_diffix) und zwei eigenständige <b>Desktop-Anwendungen</b>.
               <p class="indent-6">Diffix for PostgreSQL bietet alle Vorteile von PostgreSQL und ermöglicht die Entwicklung von
                 skalierbaren Web-Backends, Dashboards und Anwendungen über eine Standard-API mit SQL sowie die
                 Verwendung von SQL-Clients.
               </p>
+              <p class="indent-6">Diffix Dashboards ist eine eigenständige Windows-Desktopanwendung mit Datenvisualisierungsfunktionen,
+                die für die Arbeit mit CSV-Dateien entwickelt wurden. Es bündelt <b>pg_diffix</b> mit dem
+                Open-Source-Business-Intelligence-Tool <a class="text-gray-800 underline hover:text-gray-500" href="https://metabase.com">Metabase</a> und bietet sowohl
+                GUI-basierte Abfrageerstellung als auch SQL.
+              </p>
               <p class="indent-6">Diffix für Desktop basiert auf einer .NET-Implementierung von Diffix Fir. Es wurde für eine extrem
                 einfache Installation und Nutzung ausgelegt. Es unterstützt CSV-Tabellen und bietet eine einfache GUI
-                (keine SQL -Kenntnisse erforderlich).
+                (keine SQL-Kenntnisse erforderlich). Es handelt sich um eine veraltete Anwendung, die anstelle von
+                Diffix Dashboards wahrscheinlich nicht mehr unterstützt wird.
               </p>
             </p></section>
 
@@ -178,20 +186,10 @@
   <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">nach oben</a>
   <h2 class="max-w-lg text-2xl font-semibold mt-px">Wie viel SQL wird von Diffix Fir unterstützt?</h2>
 
-  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Diffix Elm unterstützt eine sehr begrenzte, aber nützliche Teilmenge von SQL. Damit können Sie
-              mehrspaltige Histogramme erstellen von Zählungen, Summen und Durchschnittswerten erstellen. Es unterstützt
-              grundlegende Verallgemeinerungsfunktionen (z. B. Rundung numerischer Spalten und Teilstring-Auswahl von
-              Textspalten). Es unterstützt WHERE mit AND-Logik.
-            </p></section>
-
-        <section><div id="was-ist-wenn-ich-mehr-sql-funktionen-möchte" class="relative -top-1 md:-top-20"></div>
-  <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">nach oben</a>
-  <h2 class="max-w-lg text-2xl font-semibold mt-px">Was ist, wenn ich mehr SQL-Funktionen möchte?</h2>
-
-  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Open Diffix arbeitet ständig an der Entwicklung neuer SQL-Funktionen. Die nächste geplante Version von
-              Diffix (Greenheart) wird JOIN und native Zeitstempel-Datentypen unterstützen. Wenn Sie zusätzliche
-              Funktionen für Ihren Anwendungsfall benötigen, kontaktieren Sie uns unter
-              <a class="text-gray-800 underline hover:text-gray-500" href="mailto:hello@open-diffix.org">hello@open-diffix.org</a>.
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Diffix Fir unterstützt eine sehr begrenzte, aber nützliche Teilmenge von SQL. Es unterstützt numeric, text
+              und datetime Datentypen. Damit können Sie mehrspaltige Histogramme erstellen von Zählungen, Summen und
+              Durchschnittswerten erstellen. Es unterstützt grundlegende Verallgemeinerungsfunktionen (z. B. Rundung
+              numerischer Spalten und Teilstring-Auswahl von Textspalten). Es unterstützt JOIN und WHERE mit AND-Logik.
             </p></section>
 
         <section><div id="wie-steht-es-um-die-datenqualität" class="relative -top-1 md:-top-20"></div>
@@ -202,9 +200,8 @@
               und Diffix bildet da keine Ausnahme. Die Datenqualität von Diffix ist vergleichbar mit den von vielen
               nationalen Statistikämtern veröffentlichten Daten (z. B. Volkszählungsdaten) und übertrifft in der Regel
               bei weitem die Qualität von k-Anonymität und Differential Privacy.
-              <p class="indent-6"><b>Diffix für Desktop</b> zeigt das Ausmaß der Verzerrung an, sowohl als zusammenfassende Statistik als
-                auch durch die Originaldaten und die anonymisierten Daten nebeneinander anzeigt. Auf diese Weise können
-                Sie die Datenqualität von Diffix selbst festlegen.
+              <p class="indent-6"><b>Diffix Dashboards</b> ermöglicht den direkten Vergleich anonymisierter und nicht anonymisierte Daten.
+                Auf diese Weise können Sie die Datenqualität von Diffix selbst festlegen.
                 <b>Diffix für PostgreSQL</b> kann das Ausmaß des Rauschens anzeigen, das zu jeder Ausgabe-Klasse hinzugefügt
                 wurde.
               </p>
@@ -226,8 +223,8 @@
   <a href="#faq-top" class="lg:hidden mt-2 text-xs underline text-gray-600 hover:text-gray-700">nach oben</a>
   <h2 class="max-w-lg text-2xl font-semibold mt-px">Warum sollte ich nicht immer den nicht-vertrauenswürdigen Modus verwenden?</h2>
 
-  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Der vertrauenswürdige Modus ist einfacher zu verwenden. Er bietet mehr Abfragefunktionen und in Diffix for
-              Desktop kann ein Analyst die anonymisierten Daten und die Originaldaten nebeneinander vergleichen. Auf
+  <p class="max-w-xl leading-relaxed overflow-hidden transition transition-height duration-500 pt-3">Der vertrauenswürdige Modus ist einfacher zu verwenden. Er bietet mehr Abfragefunktionen und in Diffix
+              Dashboards kann ein Analyst die anonymisierten Daten und die Originaldaten nebeneinander vergleichen. Auf
               diese Weise weiß der Analytiker genau, wie stark die Daten durch Unterdrückung und Rauschen verzerrt sind,
               und er kann die Spaltenauswahl und Verallgemeinerung nach Bedarf anpassen.
             </p></section>
