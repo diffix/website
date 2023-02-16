@@ -692,13 +692,16 @@
           <Trans>
             <svelte:fragment slot="en">
               If you prefer to play with your own data, one quick and easy way to get started is with
-              <Link href="/en/download/">Diffix Dashboards</Link>, a standalone desktop for Windows that works with a
-              local CSV file.
+              <Link href="/en/blog/diffix-dashboards">Diffix Dashboards</Link>
+              (<Link href="/en/download/">download</Link>), a standalone desktop for Windows that works with a local CSV
+              file.
             </svelte:fragment>
             <svelte:fragment slot="de">
               Wenn Sie es vorziehen, mit Ihren eigenen Daten zu experimentieren, ist eine schnelle und einfache
-              Möglichkeit, <Link href="/de/download/">Diffix Dashboards</Link>
-              zu benutzen, eine eigenständige Anwendung für Windows die mit einer lokalen CSV-Datei arbeitet.
+              Möglichkeit,
+              <Link href="/en/blog/diffix-dashboards">Diffix Dashboards</Link>
+              (<Link href="/en/download/">download</Link>), zu benutzen, eine eigenständige Anwendung für Windows die
+              mit einer lokalen CSV-Datei arbeitet.
             </svelte:fragment>
           </Trans>
 
