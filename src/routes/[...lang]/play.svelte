@@ -697,11 +697,10 @@
               file.
             </svelte:fragment>
             <svelte:fragment slot="de">
-              Wenn Sie es vorziehen, mit Ihren eigenen Daten zu experimentieren, ist eine schnelle und einfache
-              Möglichkeit,
+              Wenn Sie mit Ihren eigenen Daten experimentieren möchten, können Sie schnell und einfach mit
               <Link href="/de/blog/diffix-dashboards/">Diffix Dashboards</Link>
-              (<Link href="/de/download/">download</Link>) zu benutzen, eine eigenständige Anwendung für Windows die mit
-              einer lokalen CSV-Datei arbeitet.
+              (<Link href="/de/download/">Download</Link>) loslegen. Diffix Dashboards ist eine eigenständige Anwendung
+              für Windows, die mit einer lokalen CSV-Datei arbeitet.
             </svelte:fragment>
           </Trans>
 
