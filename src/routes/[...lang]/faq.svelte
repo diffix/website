@@ -202,7 +202,7 @@
                 back-ends, dashboards, and applications over a standard API with SQL, as well as the use of SQL clients.
               </p>
               <p class="indent-6">
-                <Link href="/en/blog/diffix-dashboards">Diffix Dashboards</Link> is a stand-alone Windows desktop application
+                <Link href="/en/blog/diffix-dashboards/">Diffix Dashboards</Link> is a stand-alone Windows desktop application
                 with data visualization features designed to work with CSV files. It bundles <b>pg_diffix</b> with the
                 open-source Business Intelligence tool
                 <Link href="https://metabase.com">Metabase</Link>, and offers both GUI-based query building and SQL.
@@ -222,7 +222,7 @@
                 Verwendung von SQL-Clients.
               </p>
               <p class="indent-6">
-                <Link href="/en/blog/diffix-dashboards">Diffix Dashboards</Link> ist eine eigenständige Windows-Desktopanwendung
+                <Link href="/de/blog/diffix-dashboards/">Diffix Dashboards</Link> ist eine eigenständige Windows-Desktopanwendung
                 mit Datenvisualisierungsfunktionen, die für die Arbeit mit CSV-Dateien entwickelt wurden. Es bündelt
                 <b>pg_diffix</b>
                 mit dem Open-Source-Business-Intelligence-Tool <Link href="https://metabase.com">Metabase</Link> und bietet
