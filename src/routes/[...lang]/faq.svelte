@@ -223,10 +223,10 @@
               </p>
               <p class="indent-6">
                 <Link href="/de/blog/diffix-dashboards/">Diffix Dashboards</Link> ist eine eigenständige Windows-Desktopanwendung
-                mit Datenvisualisierungsfunktionen, die für die Arbeit mit CSV-Dateien entwickelt wurden. Es bündelt
-                <b>pg_diffix</b>
-                mit dem Open-Source-Business-Intelligence-Tool <Link href="https://metabase.com">Metabase</Link> und bietet
-                sowohl GUI-basierte Abfrageerstellung als auch SQL.
+                mit Datenvisualisierungsfunktionen, die für die Arbeit mit CSV-Dateien entwickelt wurde. Es bündelt
+                <b>pg_diffix</b> mit dem Open-Source-Business-Intelligence-Tool
+                <Link href="https://metabase.com">Metabase</Link> und bietet sowohl GUI-basierte Abfrageerstellung als auch
+                SQL.
               </p>
               <p class="indent-6">
                 Diffix für Desktop basiert auf einer .NET-Implementierung von Diffix Fir. Es wurde für eine extrem
