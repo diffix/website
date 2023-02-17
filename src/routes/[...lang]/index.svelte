@@ -35,7 +35,7 @@
       <svelte:fragment slot="de">
         <span class="text-red-500">NEU!</span>
         <Link href="/en/download/">Diffix Dashboards</Link> veröffentlicht!
-        <Link href="/de/blog/">Erfahren Sie mehr</Link>.
+        <Link href="/de/blog/diffix-dashboards">Erfahren Sie mehr</Link>.
       </svelte:fragment>
     </Trans>
   </h3>

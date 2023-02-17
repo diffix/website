@@ -700,8 +700,8 @@
               Wenn Sie es vorziehen, mit Ihren eigenen Daten zu experimentieren, ist eine schnelle und einfache
               Möglichkeit,
               <Link href="/en/blog/diffix-dashboards">Diffix Dashboards</Link>
-              (<Link href="/en/download/">download</Link>), zu benutzen, eine eigenständige Anwendung für Windows die
-              mit einer lokalen CSV-Datei arbeitet.
+              (<Link href="/en/download/">download</Link>) zu benutzen, eine eigenständige Anwendung für Windows die mit
+              einer lokalen CSV-Datei arbeitet.
             </svelte:fragment>
           </Trans>
 
