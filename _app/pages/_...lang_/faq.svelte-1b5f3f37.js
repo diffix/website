@@ -119,10 +119,10 @@ import{S as We,i as He,s as Ue,e as x,w as S,k as U,c as y,a as z,x as P,m as j,
               `),a=x("p"),m=f(`Diffix for PostgreSQL bietet alle Vorteile von PostgreSQL und erm\xF6glicht die Entwicklung von
                 skalierbaren Web-Backends, Dashboards und Anwendungen \xFCber eine Standard-API mit SQL sowie die
                 Verwendung von SQL-Clients.`),D=U(),k=x("p"),S(h.$$.fragment),B=f(` ist eine eigenst\xE4ndige Windows-Desktopanwendung
-                mit Datenvisualisierungsfunktionen, die f\xFCr die Arbeit mit CSV-Dateien entwickelt wurden. Es b\xFCndelt
-                `),Q=x("b"),F=f("pg_diffix"),V=f(`
-                mit dem Open-Source-Business-Intelligence-Tool `),S(G.$$.fragment),g=f(` und bietet
-                sowohl GUI-basierte Abfrageerstellung als auch SQL.`),w=U(),O=x("p"),K=f(`Diffix f\xFCr Desktop basiert auf einer .NET-Implementierung von Diffix Fir. Es wurde f\xFCr eine extrem
+                mit Datenvisualisierungsfunktionen, die f\xFCr die Arbeit mit CSV-Dateien entwickelt wurde. Es b\xFCndelt
+                `),Q=x("b"),F=f("pg_diffix"),V=f(` mit dem Open-Source-Business-Intelligence-Tool
+                `),S(G.$$.fragment),g=f(` und bietet sowohl GUI-basierte Abfrageerstellung als auch
+                SQL.`),w=U(),O=x("p"),K=f(`Diffix f\xFCr Desktop basiert auf einer .NET-Implementierung von Diffix Fir. Es wurde f\xFCr eine extrem
                 einfache Installation und Nutzung ausgelegt. Es unterst\xFCtzt CSV-Tabellen und bietet eine einfache GUI
                 (keine SQL-Kenntnisse erforderlich). Es handelt sich um eine veraltete Anwendung, die anstelle von
                 Diffix Dashboards wahrscheinlich nicht mehr unterst\xFCtzt wird.`),this.h()},l(p){n=l(p,"Open Diffix unterst\xFCtzt "),P(e.$$.fragment,p),t=l(p,` von Diffix Fir, eine
@@ -130,10 +130,10 @@ import{S as We,i as He,s as Ue,e as x,w as S,k as U,c as y,a as z,x as P,m as j,
               `),a=y(p,"P",{class:!0});var C=z(a);m=l(C,`Diffix for PostgreSQL bietet alle Vorteile von PostgreSQL und erm\xF6glicht die Entwicklung von
                 skalierbaren Web-Backends, Dashboards und Anwendungen \xFCber eine Standard-API mit SQL sowie die
                 Verwendung von SQL-Clients.`),C.forEach(s),D=j(p),k=y(p,"P",{class:!0});var M=z(k);P(h.$$.fragment,M),B=l(M,` ist eine eigenst\xE4ndige Windows-Desktopanwendung
-                mit Datenvisualisierungsfunktionen, die f\xFCr die Arbeit mit CSV-Dateien entwickelt wurden. Es b\xFCndelt
-                `),Q=y(M,"B",{});var Y=z(Q);F=l(Y,"pg_diffix"),Y.forEach(s),V=l(M,`
-                mit dem Open-Source-Business-Intelligence-Tool `),P(G.$$.fragment,M),g=l(M,` und bietet
-                sowohl GUI-basierte Abfrageerstellung als auch SQL.`),M.forEach(s),w=j(p),O=y(p,"P",{class:!0});var ne=z(O);K=l(ne,`Diffix f\xFCr Desktop basiert auf einer .NET-Implementierung von Diffix Fir. Es wurde f\xFCr eine extrem
+                mit Datenvisualisierungsfunktionen, die f\xFCr die Arbeit mit CSV-Dateien entwickelt wurde. Es b\xFCndelt
+                `),Q=y(M,"B",{});var Y=z(Q);F=l(Y,"pg_diffix"),Y.forEach(s),V=l(M,` mit dem Open-Source-Business-Intelligence-Tool
+                `),P(G.$$.fragment,M),g=l(M,` und bietet sowohl GUI-basierte Abfrageerstellung als auch
+                SQL.`),M.forEach(s),w=j(p),O=y(p,"P",{class:!0});var ne=z(O);K=l(ne,`Diffix f\xFCr Desktop basiert auf einer .NET-Implementierung von Diffix Fir. Es wurde f\xFCr eine extrem
                 einfache Installation und Nutzung ausgelegt. Es unterst\xFCtzt CSV-Tabellen und bietet eine einfache GUI
                 (keine SQL-Kenntnisse erforderlich). Es handelt sich um eine veraltete Anwendung, die anstelle von
                 Diffix Dashboards wahrscheinlich nicht mehr unterst\xFCtzt wird.`),ne.forEach(s),this.h()},h(){N(a,"class","indent-6"),N(k,"class","indent-6"),N(O,"class","indent-6")},m(p,L){d(p,n,L),I(e,p,L),d(p,t,L),d(p,i,L),b(i,r),d(p,$,L),d(p,o,L),b(o,c),d(p,_,L),d(p,a,L),b(a,m),d(p,D,L),d(p,k,L),I(h,k,null),b(k,B),b(k,Q),b(Q,F),b(k,V),I(G,k,null),b(k,g),d(p,w,L),d(p,O,L),b(O,K),H=!0},p(p,L){const X={};L&64&&(X.$$scope={dirty:L,ctx:p}),e.$set(X);const C={};L&64&&(C.$$scope={dirty:L,ctx:p}),h.$set(C);const M={};L&64&&(M.$$scope={dirty:L,ctx:p}),G.$set(M)},i(p){H||(E(e.$$.fragment,p),E(h.$$.fragment,p),E(G.$$.fragment,p),H=!0)},o(p){A(e.$$.fragment,p),A(h.$$.fragment,p),A(G.$$.fragment,p),H=!1},d(p){p&&s(n),q(e,p),p&&s(t),p&&s(i),p&&s($),p&&s(o),p&&s(_),p&&s(a),p&&s(D),p&&s(k),q(h),q(G),p&&s(w),p&&s(O)}}}function Sn(u){let n,e;return n=new Z({props:{$$slots:{de:[An],en:[xn]},$$scope:{ctx:u}}}),{c(){S(n.$$.fragment)},l(t){P(n.$$.fragment,t)},m(t,i){I(n,t,i),e=!0},p(t,i){const r={};i&64&&(r.$$scope={dirty:i,ctx:t}),n.$set(r)},i(t){e||(E(n.$$.fragment,t),e=!0)},o(t){A(n.$$.fragment,t),e=!1},d(t){q(n,t)}}}function Pn(u){let n;return{c(){n=f(`K-anonymity uses generalization and suppression. Systems based on Differential Privacy use noise and often
